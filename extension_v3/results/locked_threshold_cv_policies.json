@@ -1,0 +1,58 @@
+[
+  {
+    "variant": "threshold_cv_lora256_seed17",
+    "source_variant": "lora_seed17",
+    "lambda": 1,
+    "thresholds": [
+      0.3500000000000001,
+      0.30000000000000004,
+      0.4500000000000001,
+      0.40000000000000013,
+      0.15000000000000002,
+      0.4500000000000001,
+      0.4500000000000001
+    ],
+    "unshrunk_thresholds": [
+      0.3500000000000001,
+      0.30000000000000004,
+      0.4500000000000001,
+      0.40000000000000013,
+      0.15000000000000002,
+      0.4500000000000001,
+      0.4500000000000001
+    ],
+    "global_threshold": 0.30000000000000004,
+    "fit_on": "original tune600 only, fivefold internal selection; CAL400 untouched",
+    "tie_rule": "first maximum in ascending lambda order, prefer more shared threshold on exact tie",
+    "cv_mean_macro_f1": 0.7898060303543997,
+    "source_checkpoint_sha256": "dde8039cd7c772188b4ff1811fc1c1fdaed260a6b1fac236289879f2937bde02"
+  },
+  {
+    "variant": "threshold_cv_lora512_seed17",
+    "source_variant": "lora512_seed17",
+    "lambda": 0,
+    "thresholds": [
+      0.3500000000000001,
+      0.3500000000000001,
+      0.3500000000000001,
+      0.3500000000000001,
+      0.3500000000000001,
+      0.3500000000000001,
+      0.3500000000000001
+    ],
+    "unshrunk_thresholds": [
+      0.4500000000000001,
+      0.25000000000000006,
+      0.20000000000000004,
+      0.40000000000000013,
+      0.20000000000000004,
+      0.25000000000000006,
+      0.3500000000000001
+    ],
+    "global_threshold": 0.3500000000000001,
+    "fit_on": "original tune600 only, fivefold internal selection; CAL400 untouched",
+    "tie_rule": "first maximum in ascending lambda order, prefer more shared threshold on exact tie",
+    "cv_mean_macro_f1": 0.801548245231251,
+    "source_checkpoint_sha256": "d6bfc83850764f29040fd87dbc2297f30d3534c8ddf1263cba2be74a052eb4ff"
+  }
+]

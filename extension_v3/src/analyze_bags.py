@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 V3 = ROOT / "extension_v3"
 sys.path.insert(0, str(ROOT / "followup_v2/src"))
-from common import data, train_ids
+from common import data, train_ids, metrics
 from bag_model import AttentionHead, predict
 import numpy as np, torch, joblib
 
@@ -58,6 +58,7 @@ def main():
         trainp, _ = predict(head, torch.tensor(xx), torch.tensor(trainmask[ids]))
         pc = np.clip(trainp, 1e-7, 1 - 1e-7)
         bce = float(-(y * np.log(pc) + (1 - y) * np.log(1 - pc)).mean())
+        train_macro = metrics(y, trainp, cfg["thresholds"])["macro_f1"]
         out.append(
             {
                 "variant": name,
@@ -67,6 +68,9 @@ def main():
                 "per_label_normalized_attention_entropy_audit": normalized.mean(0).tolist(),
                 "query_l2_per_label": head.query.detach().norm(dim=1).tolist(),
                 "selected_model_train_eval_bce": bce,
+                "selected_model_train_macro_f1": train_macro,
+                "selected_tune_macro_f1": cfg["tune_macro_f1"],
+                "train_minus_tune_macro_f1": train_macro - cfg["tune_macro_f1"],
                 "unweighted_graph_penalty": reg,
                 "weighted_graph_penalty": cfg["lambda"] * reg,
                 "weighted_penalty_to_train_eval_bce_ratio": cfg["lambda"] * reg / bce,

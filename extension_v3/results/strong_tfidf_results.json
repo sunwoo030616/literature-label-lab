@@ -1,0 +1,222 @@
+[
+  {
+    "variant": "tuned_tfidf_full",
+    "split": "test",
+    "micro_f1": 0.85491640691414,
+    "macro_f1": 0.8176101819158185,
+    "hamming_loss": 0.05879650895728066,
+    "subset_accuracy": 0.6852893890675241,
+    "macro_ap": 0.8996231539029801,
+    "multi_topic_recall": 0.790808999521302,
+    "predicted_labels_mean": 1.390273311897106,
+    "per_label": {
+      "Treatment": {
+        "precision": 0.8920335429769392,
+        "recall": 0.827016520894072,
+        "f1": 0.8582955118507312,
+        "support": 1029
+      },
+      "Diagnosis": {
+        "precision": 0.8791946308724832,
+        "recall": 0.7287899860917941,
+        "f1": 0.7969581749049429,
+        "support": 719
+      },
+      "Prevention": {
+        "precision": 0.8590998043052838,
+        "recall": 0.9502164502164502,
+        "f1": 0.9023638232271326,
+        "support": 924
+      },
+      "Mechanism": {
+        "precision": 0.8617747440273038,
+        "recall": 0.8969804618117229,
+        "f1": 0.8790252393385553,
+        "support": 563
+      },
+      "Transmission": {
+        "precision": 0.7674418604651163,
+        "recall": 0.515625,
+        "f1": 0.616822429906542,
+        "support": 128
+      },
+      "Epidemic Forecasting": {
+        "precision": 0.7346938775510204,
+        "recall": 0.8780487804878049,
+        "f1": 0.8,
+        "support": 41
+      },
+      "Case Report": {
+        "precision": 0.9457831325301205,
+        "recall": 0.8051282051282052,
+        "f1": 0.8698060941828255,
+        "support": 195
+      }
+    }
+  },
+  {
+    "variant": "tuned_tfidf_full",
+    "split": "audit",
+    "micro_f1": 0.861244019138756,
+    "macro_f1": 0.8115052233552563,
+    "hamming_loss": 0.05385714285714286,
+    "subset_accuracy": 0.718,
+    "macro_ap": 0.862712568114089,
+    "multi_topic_recall": 0.7985185185185185,
+    "predicted_labels_mean": 1.357,
+    "per_label": {
+      "Treatment": {
+        "precision": 0.8742331288343558,
+        "recall": 0.8189655172413793,
+        "f1": 0.8456973293768546,
+        "support": 348
+      },
+      "Diagnosis": {
+        "precision": 0.8685446009389671,
+        "recall": 0.7773109243697479,
+        "f1": 0.8203991130820399,
+        "support": 238
+      },
+      "Prevention": {
+        "precision": 0.893305439330544,
+        "recall": 0.9510022271714922,
+        "f1": 0.9212513484358145,
+        "support": 449
+      },
+      "Mechanism": {
+        "precision": 0.8088235294117647,
+        "recall": 0.9166666666666666,
+        "f1": 0.859375,
+        "support": 180
+      },
+      "Transmission": {
+        "precision": 0.6122448979591837,
+        "recall": 0.6818181818181818,
+        "f1": 0.6451612903225806,
+        "support": 44
+      },
+      "Epidemic Forecasting": {
+        "precision": 0.7727272727272727,
+        "recall": 0.68,
+        "f1": 0.723404255319149,
+        "support": 25
+      },
+      "Case Report": {
+        "precision": 0.9384615384615385,
+        "recall": 0.8026315789473685,
+        "f1": 0.8652482269503546,
+        "support": 76
+      }
+    }
+  },
+  {
+    "variant": "tuned_tfidf_truncated256",
+    "split": "test",
+    "micro_f1": 0.8404069767441861,
+    "macro_f1": 0.8060456286088982,
+    "hamming_loss": 0.06304547542489665,
+    "subset_accuracy": 0.6696141479099679,
+    "macro_ap": 0.8905027556570205,
+    "multi_topic_recall": 0.742939205361417,
+    "predicted_labels_mean": 1.3187299035369775,
+    "per_label": {
+      "Treatment": {
+        "precision": 0.9078179696616102,
+        "recall": 0.7560738581146744,
+        "f1": 0.8250265111346765,
+        "support": 1029
+      },
+      "Diagnosis": {
+        "precision": 0.8694915254237288,
+        "recall": 0.713490959666203,
+        "f1": 0.7838044308632544,
+        "support": 719
+      },
+      "Prevention": {
+        "precision": 0.889589905362776,
+        "recall": 0.9155844155844156,
+        "f1": 0.9024,
+        "support": 924
+      },
+      "Mechanism": {
+        "precision": 0.8821362799263351,
+        "recall": 0.8507992895204263,
+        "f1": 0.8661844484629295,
+        "support": 563
+      },
+      "Transmission": {
+        "precision": 0.7848101265822784,
+        "recall": 0.484375,
+        "f1": 0.5990338164251208,
+        "support": 128
+      },
+      "Epidemic Forecasting": {
+        "precision": 0.7446808510638298,
+        "recall": 0.8536585365853658,
+        "f1": 0.7954545454545454,
+        "support": 41
+      },
+      "Case Report": {
+        "precision": 0.8317757009345794,
+        "recall": 0.9128205128205128,
+        "f1": 0.8704156479217604,
+        "support": 195
+      }
+    }
+  },
+  {
+    "variant": "tuned_tfidf_truncated256",
+    "split": "audit",
+    "micro_f1": 0.8431226765799257,
+    "macro_f1": 0.7836901385501742,
+    "hamming_loss": 0.06028571428571428,
+    "subset_accuracy": 0.69,
+    "macro_ap": 0.849730479820972,
+    "multi_topic_recall": 0.7511111111111111,
+    "predicted_labels_mean": 1.33,
+    "per_label": {
+      "Treatment": {
+        "precision": 0.8904109589041096,
+        "recall": 0.7471264367816092,
+        "f1": 0.8125,
+        "support": 348
+      },
+      "Diagnosis": {
+        "precision": 0.8571428571428571,
+        "recall": 0.7815126050420168,
+        "f1": 0.8175824175824176,
+        "support": 238
+      },
+      "Prevention": {
+        "precision": 0.9039301310043668,
+        "recall": 0.9220489977728286,
+        "f1": 0.9128996692392503,
+        "support": 449
+      },
+      "Mechanism": {
+        "precision": 0.8186528497409327,
+        "recall": 0.8777777777777778,
+        "f1": 0.8471849865951743,
+        "support": 180
+      },
+      "Transmission": {
+        "precision": 0.58,
+        "recall": 0.6590909090909091,
+        "f1": 0.6170212765957447,
+        "support": 44
+      },
+      "Epidemic Forecasting": {
+        "precision": 0.6666666666666666,
+        "recall": 0.64,
+        "f1": 0.6530612244897959,
+        "support": 25
+      },
+      "Case Report": {
+        "precision": 0.7395833333333334,
+        "recall": 0.9342105263157895,
+        "f1": 0.8255813953488372,
+        "support": 76
+      }
+    }
+  }
+]

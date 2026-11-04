@@ -68,3 +68,19 @@ LoRA512가 학습 중이고 bag 특성 추출·학습·평가가 시작되기 �
 새 최종 표본에서 fixed seed17의 다음6개 차이에 문헌 단위 paired bootstrap1,000회/percentile95% 구간을 기록한다: 튜닝 frozen−최초 frozen, last2−최초 frozen, LoRA256−튜닝 full TF-IDF, LoRA512−LoRA256, 학습 attention−uniform head, 실제 관계−무작위 관계. 최종 표본 점수로 비교 대상을 고르지 않는다. 모델/설정 선택·외부 도메인의 불확실성을 포함하지 않으며 다중 비교 보정 없는 서술적 구간이다.
 
 bag 특성 추출에서도20배치마다 MPS synchronize/empty_cache를 호출한다. encoder.eval/inference_mode의 출력이나 학습 대상을 바꾸지 않고 오래 실행하는 로컬 encoding의 메모리 관리를 위한 조치다. driver memory는 정리 전 매 배치에서 관측한 최댓값을 별도 기록한다.
+
+## tokenizer API 경계 오류와 검증
+
+완료된 LoRA512의 테스트/감사 결과를 저장한 뒤 bag 단계에서 Transformers5.22.1의 BertTokenizer에 build_inputs_with_special_tokens가 없어 중단됐다. 최초 오류 로그를 보존했다. 고정 BERT 모델의 single-sequence CLS + content + SEP를 구성하는 helper로 바꾸고, 실제 tokenizer의 native encoding과 세 입력에서 일치하는지 및126content/128전체·padding mask 경계를 검사한다. 이 변경은 이미 정한 window 크기·문헌 선택·학습 조건을 바꾸지 않는다. 완료된 LoRA512를 재학습하지 않고 run_v3_pipeline.py --from-stage bag으로 재개한다.
+
+## 512 후속 진단 이후의 임계값 안정화 개발 대조
+
+이 추가 분기는 기존512 테스트/감사 결과를 본 뒤 개발한 탐색이다. 512는 유행 예측에서 기존 테스트의 TP32→37, FP26→48로 recall 증가와 precision 손실이 함께 나타났다. 기존 정책은 지우지 않는다. 모델 출력 순위 AP와 결정 F1이 일부 다르게 움직여, 표현 성능과 임계값 선택을 분리하는 대조를 추가한다.
+
+원래 tune600만 fixed RNG20261105의5fold로 나눈다. 각480편에서 라벨별 F1 임계값과 공통 Macro-F1 임계값을 기존 grid.1~.8/.05에서 고른 뒤, held120에서 `lambda*label_threshold+(1-lambda)*global_threshold`를 비교한다. lambda=[0,.25,.5,.75,1],5fold 평균 Macro-F1 최대, 동점은 작은lambda 우선.600편 전체로 다시 계산해 고정한다. lambda1은 기존 라벨별 정책과 같음을 assert한다. LoRA256 seed17/LoRA512 seed17 둘 다 같은 규칙을 적용한다. CAL400·test·audit로 lambda를 고르지 않고, 정책 저장 후 기존 평가와 최종 새 내부 감사에 비교한다. 이는 확률 보정이나 가중치 미세조정이 아니고, 알려진 shrinkage 아이디어를 적용한 작은 탐색 대조다. 개선을 보장하지 않으며 API 기본 정책을 이 결과로 자동 교체하지 않는다.
+
+최종 새 감사의 사전 지정 paired 비교에 `threshold_cv_lora512_seed17 − lora512_seed17`도 추가한다. 새 표본 결과를 보기 전에 고정한 추가 비교이며, 기존 여섯 비교와 함께 다중 비교 보정 없는 서술적 구간으로 보고한다.
+
+## 강한 단순 모델 결과 이후 추가한 고정 비교
+
+튜닝한 full TF-IDF의 기존 결과를 확인한 뒤, 최종 새 표본을 보기 전에 `last2_seed17 − tuned_tfidf_full`도 paired bootstrap 비교에 추가했다. 기존 개발 평가를 본 뒤 추가한 비교라는 이력을 명시하며, 최종 새 표본에서 비교 대상을 고른 것은 아니다. 비교는 총8개이고 다중 비교 보정 없는 서술적 구간이다.

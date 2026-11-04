@@ -47,6 +47,8 @@ if __name__ == "__main__":
         V3 / "results/locked_strong_tfidf_policies.json",
         V3 / "results/locked_replica512_policy.json",
         V3 / "results/locked_temperature.json",
+        V3 / "results/locked_threshold_cv_policies.json",
+        V3 / "src/threshold_cv.py",
         V2 / "results/llm_sample_manifest.json",
         V3 / "results/llm_training_examples.json",
         llm_path() / "manifest.local.json",
@@ -202,6 +204,13 @@ if __name__ == "__main__":
             )
             p, _ = predict(head, torch.tensor(x), torch.tensor(mask))
         add(key, p, cfg["thresholds"])
+    cv_policy = V3 / "results/locked_threshold_cv_policies.json"
+    if cv_policy.exists():
+        for cfg in json.loads(cv_policy.read_text()):
+            original_cfg = next(c for _, c in configs if c["variant"] == cfg["source_variant"])
+            assert original_cfg["checkpoint_sha256"] == cfg["source_checkpoint_sha256"]
+            p = np.load(V3 / "results" / f"final_audit_{cfg['source_variant']}_probs.npy")
+            add(cfg["variant"], p, cfg["thresholds"])
     dump("final_audit_results.json", results)
     print(
         "FINAL INTERNAL AUDIT COMPLETE",

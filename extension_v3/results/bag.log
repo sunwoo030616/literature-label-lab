@@ -1,0 +1,82 @@
+W1104 15:48:31.153000 15176 kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 42394.68it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+bag chunks 0 / 26493 seconds 1.6
+bag chunks 512 / 26493 seconds 10.2
+bag chunks 1024 / 26493 seconds 19.1
+bag chunks 1536 / 26493 seconds 28.0
+bag chunks 2048 / 26493 seconds 36.8
+bag chunks 2560 / 26493 seconds 45.6
+bag chunks 3072 / 26493 seconds 54.3
+bag chunks 3584 / 26493 seconds 63.0
+bag chunks 4096 / 26493 seconds 72.2
+bag chunks 4608 / 26493 seconds 82.9
+bag chunks 5120 / 26493 seconds 93.4
+bag chunks 5632 / 26493 seconds 103.5
+bag chunks 6144 / 26493 seconds 112.3
+bag chunks 6656 / 26493 seconds 121.0
+bag chunks 7168 / 26493 seconds 129.7
+bag chunks 7680 / 26493 seconds 138.4
+bag chunks 8192 / 26493 seconds 150.5
+bag chunks 8704 / 26493 seconds 159.6
+bag chunks 9216 / 26493 seconds 168.7
+bag chunks 9728 / 26493 seconds 177.6
+bag chunks 10240 / 26493 seconds 186.7
+bag chunks 10752 / 26493 seconds 195.5
+bag chunks 11264 / 26493 seconds 204.6
+bag chunks 11776 / 26493 seconds 214.3
+bag chunks 12288 / 26493 seconds 223.6
+bag chunks 12800 / 26493 seconds 233.9
+bag chunks 13312 / 26493 seconds 244.6
+bag chunks 13824 / 26493 seconds 254.3
+bag chunks 14336 / 26493 seconds 264.2
+bag chunks 14848 / 26493 seconds 274.9
+bag chunks 15360 / 26493 seconds 285.9
+bag chunks 15872 / 26493 seconds 295.5
+bag chunks 16384 / 26493 seconds 304.4
+bag chunks 16896 / 26493 seconds 313.9
+bag chunks 17408 / 26493 seconds 323.5
+bag chunks 17920 / 26493 seconds 332.8
+bag chunks 18432 / 26493 seconds 342.0
+bag chunks 18944 / 26493 seconds 351.4
+bag chunks 19456 / 26493 seconds 360.4
+bag chunks 19968 / 26493 seconds 370.4
+bag chunks 20480 / 26493 seconds 379.7
+bag chunks 20992 / 26493 seconds 389.2
+bag chunks 21504 / 26493 seconds 398.4
+bag chunks 22016 / 26493 seconds 407.5
+bag chunks 22528 / 26493 seconds 417.2
+bag chunks 23040 / 26493 seconds 426.7
+bag chunks 23552 / 26493 seconds 435.8
+bag chunks 24064 / 26493 seconds 445.9
+bag chunks 24576 / 26493 seconds 455.7
+bag chunks 25088 / 26493 seconds 465.4
+bag chunks 25600 / 26493 seconds 475.0
+bag chunks 26112 / 26493 seconds 483.9
+bag tuned attention_seed17 0.7773643498897261
+bag tuned label_graph_seed17 0.7773643498897261
+bag tuned random_graph_seed17 0.7779999678270252
+bag tuned uniform_attention_seed17 0.8085178098212662
+bag tuned attention_seed42 0.7725914200084596
+bag tuned label_graph_seed42 0.7730184162230803
+bag tuned random_graph_seed42 0.7729006225910272
+bag tuned uniform_attention_seed42 0.811084359956943
+bag tuned attention_seed73 0.7848288405478413
+bag tuned label_graph_seed73 0.7848288405478413
+bag tuned random_graph_seed73 0.7848288405478413
+bag tuned uniform_attention_seed73 0.8130770421927505
+BAG COMPLETE [('attention_seed17', 'test', 0.758378823723304), ('attention_seed17', 'audit', 0.7558341961609943), ('label_graph_seed17', 'test', 0.758378823723304), ('label_graph_seed17', 'audit', 0.7558341961609943), ('random_graph_seed17', 'test', 0.7584658055806066), ('random_graph_seed17', 'audit', 0.7514932492808458), ('uniform_attention_seed17', 'test', 0.7796672364835391), ('uniform_attention_seed17', 'audit', 0.7833650317950485), ('bag_mean_seed17', 'test', 0.7902072960931484), ('bag_mean_seed17', 'audit', 0.8015076844988622), ('attention_seed42', 'test', 0.7417378044777273), ('attention_seed42', 'audit', 0.7390016892477739), ('label_graph_seed42', 'test', 0.7437928321721012), ('label_graph_seed42', 'audit', 0.7395296099323637), ('random_graph_seed42', 'test', 0.7413947474661343), ('random_graph_seed42', 'audit', 0.733263611251054), ('uniform_attention_seed42', 'test', 0.7855054107814714), ('uniform_attention_seed42', 'audit', 0.7956027134370729), ('bag_mean_seed42', 'test', 0.775177897888654), ('bag_mean_seed42', 'audit', 0.7859036872129735), ('attention_seed73', 'test', 0.7587185258856118), ('attention_seed73', 'audit', 0.7583871767916267), ('label_graph_seed73', 'test', 0.7587185258856118), ('label_graph_seed73', 'audit', 0.7583871767916267), ('random_graph_seed73', 'test', 0.7587185258856118), ('random_graph_seed73', 'audit', 0.7583871767916267), ('uniform_attention_seed73', 'test', 0.7839602666027741), ('uniform_attention_seed73', 'audit', 0.7873825646417087), ('bag_mean_seed73', 'test', 0.7887054347296459), ('bag_mean_seed73', 'audit', 0.7911258257839773)]

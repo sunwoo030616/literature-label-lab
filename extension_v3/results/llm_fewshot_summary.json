@@ -1,0 +1,120 @@
+{
+  "scope": "Same40 development calibration papers; exploratory, not final test",
+  "training_examples": 3,
+  "selection": "Greedy label coverage, hash-order ties, training seed17 only; no calibration error selection",
+  "valid_json_rate": 1.0,
+  "verbatim_evidence_rate": 0.7941176470588235,
+  "median_seconds": 11.277593333506957,
+  "p95_seconds": 21.34166855178773,
+  "conditions": [
+    {
+      "variant": "fewshot_raw_topics",
+      "micro_f1": 0.48333333333333334,
+      "macro_f1": 0.3648416942534589,
+      "hamming_loss": 0.22142857142857142,
+      "subset_accuracy": 0.35,
+      "macro_ap": 0.2853267520560754,
+      "multi_topic_recall": 0.5652173913043478,
+      "predicted_labels_mean": 1.7,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.5263157894736842,
+          "recall": 0.6666666666666666,
+          "f1": 0.5882352941176471,
+          "support": 15
+        },
+        "Diagnosis": {
+          "precision": 0.5555555555555556,
+          "recall": 0.38461538461538464,
+          "f1": 0.45454545454545453,
+          "support": 13
+        },
+        "Prevention": {
+          "precision": 0.46153846153846156,
+          "recall": 0.42857142857142855,
+          "f1": 0.4444444444444444,
+          "support": 14
+        },
+        "Mechanism": {
+          "precision": 0.36363636363636365,
+          "recall": 1.0,
+          "f1": 0.5333333333333333,
+          "support": 4
+        },
+        "Transmission": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Case Report": {
+          "precision": 0.4444444444444444,
+          "recall": 0.6666666666666666,
+          "f1": 0.5333333333333333,
+          "support": 6
+        }
+      }
+    },
+    {
+      "variant": "fewshot_verified_topics",
+      "micro_f1": 0.4528301886792453,
+      "macro_f1": 0.3585034013605442,
+      "hamming_loss": 0.20714285714285716,
+      "subset_accuracy": 0.25,
+      "macro_ap": 0.2949727455084598,
+      "multi_topic_recall": 0.5217391304347826,
+      "predicted_labels_mean": 1.35,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.5333333333333333,
+          "recall": 0.5333333333333333,
+          "f1": 0.5333333333333333,
+          "support": 15
+        },
+        "Diagnosis": {
+          "precision": 0.625,
+          "recall": 0.38461538461538464,
+          "f1": 0.47619047619047616,
+          "support": 13
+        },
+        "Prevention": {
+          "precision": 0.4,
+          "recall": 0.2857142857142857,
+          "f1": 0.3333333333333333,
+          "support": 14
+        },
+        "Mechanism": {
+          "precision": 0.375,
+          "recall": 0.75,
+          "f1": 0.5,
+          "support": 4
+        },
+        "Transmission": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Case Report": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.6666666666666666,
+          "support": 6
+        }
+      }
+    }
+  ],
+  "note": "In-context examples do not update Qwen model weights. No prompt tuning/retry after seeing40 outputs. Example text and current input are token-truncated; quotation occurrence is not entailment."
+}

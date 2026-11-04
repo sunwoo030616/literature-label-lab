@@ -1,0 +1,1 @@
+Strong baseline complete [('tuned_tfidf_full', 'test', 0.8176101819158185), ('tuned_tfidf_full', 'audit', 0.8115052233552563), ('tuned_tfidf_truncated256', 'test', 0.8060456286088982), ('tuned_tfidf_truncated256', 'audit', 0.7836901385501742)]

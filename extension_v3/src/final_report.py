@@ -81,6 +81,8 @@ def main():
     allres = diag + inp + ft + v3ft
     if (V3 / "results/strong_tfidf_results.json").exists():
         allres += read(V3 / "results/strong_tfidf_results.json")
+    if (V3 / "results/threshold_cv_results.json").exists():
+        allres += read(V3 / "results/threshold_cv_results.json")
     confirmation = []
     if (V3 / "results/final_audit_results.json").exists():
         confirmation = read(V3 / "results/final_audit_results.json")
@@ -203,11 +205,19 @@ def main():
         "Frozen\nclassifier",
         "LoRA\nclassifier",
     ] + (["Few-shot\nraw", "Few-shot\nquote filter"] if fewshot else [])
-    ax.bar(
+    llm_bars = ax.bar(
         llm_names,
         [r["macro_f1"] for r in rr],
         color=["#9099aa", "#39a69b", "#286bdf", "#ed7b24", "#aa80d0", "#557c55"][: len(rr)],
     )
+    for bar, row in zip(llm_bars, rr):
+        ax.text(
+            bar.get_x() + bar.get_width() / 2,
+            row["macro_f1"] + 0.015,
+            f"{row['macro_f1']:.3f}",
+            ha="center",
+            fontsize=8,
+        )
     ax.set_ylim(0, 1)
     ax.set_ylabel("Macro-F1")
     ax.set_title("Same 40 development papers; two topics have zero positives; NOT final test")
@@ -306,7 +316,8 @@ def main():
         "- attention MIL: https://proceedings.mlr.press/v80/ilse18a.html",
         "- attention 설명 평가: https://aclanthology.org/N19-1357/ 및 https://aclanthology.org/D19-1002/",
         "- probability calibration: https://proceedings.mlr.press/v70/guo17a.html",
-        "- T-MDML AAAI2025: 사용자가 제공한 Multi-label_AAAI.pdf 원문.",
+        "- T-MDML AAAI2025: https://doi.org/10.1609/aaai.v39i17.33963 (Kim, Kan, Yi;39(17),17850–17858)",
+        "- LoRA: https://arxiv.org/abs/2106.09685",
     ]
     lines += [
         "",
@@ -327,6 +338,35 @@ def main():
     lines += [
         "완료된 각 실행의 학습·epoch 검증·checkpoint 저장 구간이며, 사전 모델 적재·입력 토큰화·최종 test/audit 추론은 별도다. 중단한 실행의 비용은 여기에 합산하지 않고 별도 로그와 전체 개발 경과에 남겼다. 같은 desktop host의 부하가 달랐고 partial3epoch/LoRA1epoch, padding·attention backend도 달라 일반적인 모델 속도 우열로 해석하지 않는다. 512 재시작은 fixed512 padding과25optimizer step마다 cache 정리를 사용했다. host memory/swap 관측도 results에 보존했다."
     ]
+    diagnosis_path = V3 / "results/long_input_diagnosis.json"
+    if diagnosis_path.exists():
+        diagnosis = read(diagnosis_path)
+        lines += [
+            "",
+            "## 긴 입력 결과의 후속 진단",
+            "가중치나 선택 임계값을 바꾸지 않고 순위 AP·F1·TP/FP/FN을 분리했다. 기존 테스트에서 유행 예측·증례의 recall은 늘었지만 오탐도 늘었다. 이것은 관측한 결정의 손익이며 길이·batch·padding 등의 인과 효과를 분리한 증명이 아니다.",
+            "| 분할 | 조건 | Macro-F1 | Macro-AP |",
+            "|---|---|---:|---:|",
+        ]
+        for item in diagnosis["splits"]:
+            for name, result in item["conditions"].items():
+                lines.append(
+                    f"| {item['split']} | {name} | {result['macro_f1']:.4f} | {result['macro_average_precision']:.4f} |"
+                )
+        lines += [
+            "세부 주제의 임계값·TP/FP/FN·AP·검증 support는 long_input_diagnosis.json에 있다. 표현의 순위와 결정 지표가 다르게 움직일 수 있으며 임계값 숫자는 서로 다른 score 분포에서 직접 비교할 수 없다."
+        ]
+    cv_path = V3 / "results/locked_threshold_cv_policies.json"
+    if cv_path.exists():
+        lines += [
+            "",
+            "## 검증 내부 교차분할로 임계값 안정화",
+            "512의 기존 테스트 결과를 본 뒤 추가한 개발 대조다. tune600 내부5fold에서 공통/라벨별 threshold의 혼합 lambda를 선택하고600편 전체로 다시 고정했다. CAL400·test·audit로 고르지 않았다. 가중치·확률은 그대로이고 결정 규칙만 달라지므로 temperature scaling과 구분한다. lambda1이면 기존 라벨별 정책이 그대로 선택된 것이며 API 기본 정책을 바꾸지 않았다.",
+        ]
+        for r in read(cv_path):
+            lines.append(
+                f"- {r['variant']}: lambda={r['lambda']}, 공통 threshold={r['global_threshold']:.2f}, 내부5fold 평균 Macro-F1={r['cv_mean_macro_f1']:.4f}. 최종 새 감사 결과는 전체 표에 별도로 보존했다."
+            )
     uncertainty_path = V3 / "results/final_audit_uncertainty.json"
     if uncertainty_path.exists():
         uncertainty = read(uncertainty_path)
@@ -361,12 +401,12 @@ def main():
         lines += [
             "",
             "## 고정 bag 모델의 작동 진단",
-            "| 조건 | 선택 lambda | 선택 epoch | audit 정규화 attention entropy | 규제/BCE 비율 |",
-            "|---|---:|---:|---:|---:|",
+            "| 조건 | 선택 lambda | 선택 epoch | train/tune Macro 차이 | audit 정규화 attention entropy | 규제/BCE 비율 |",
+            "|---|---:|---:|---:|---:|---:|",
         ]
         for r in mechanisms["models"]:
             lines.append(
-                f"| {r['variant']} | {r['selected_lambda']} | {r['selected_epoch']} | {r['mean_normalized_attention_entropy_audit']:.4f} | {r['weighted_penalty_to_train_eval_bce_ratio']:.6g} |"
+                f"| {r['variant']} | {r['selected_lambda']} | {r['selected_epoch']} | {r['train_minus_tune_macro_f1']:.4f} | {r['mean_normalized_attention_entropy_audit']:.4f} | {r['weighted_penalty_to_train_eval_bce_ratio']:.6g} |"
             )
         lines += [
             "entropy1은 거의 균등,0은 집중이다. lambda0이면 관계 규제를 사용하지 않은 모델이 선택된 것이다. 규제/BCE는 선택 모델 eval-mode의 서술 통계로 확률적 학습 loss와 동일하지 않으며, 작은 값만으로 성능 변화 원인을 증명하지 않는다."
@@ -509,7 +549,7 @@ def main():
         para(
             42,
             y,
-            "<b>실행 증거</b>  학습 곡선·선택 epoch·원본 동결/어댑터 변화·모델 해시를 저장했다. Mac GPU 오류와 실행 프로파일을 남기고 지원 연산·LoRA로 전환한 이유도 기록했다.",
+            "<b>실행 증거</b>  학습 곡선·선택 epoch·원본 동결/어댑터 변화·모델 해시를 저장했다. partial3epoch/LoRA1epoch이고 padding·dropout도 달라 구조 하나의 효과로 해석하지 않았다.",
         )
         - 12
     )
@@ -537,18 +577,26 @@ def main():
         )
         - 12
     )
+
+    def bag_mean_score(group):
+        return next(
+            r["macro_f1"]
+            for r in agg
+            if r["variant"] == group + "_3seed_mean" and r["split"] == confirmation_split
+        )
+
     y = (
         para(
             42,
             y,
-            "<b>원논문과의 경계</b>  bag과 라벨 관계에서 착안한 후속 모델이다. T-MDML의 triplet·전역/개별 거리 행렬을 재현했다고 주장하지 않는다. attention 비중은 정답 근거의 보장이 아니다.",
+            f"<b>새 내부 감사</b>  균등 head {bag_mean_score('uniform_attention'):.3f}, 학습 attention {bag_mean_score('attention'):.3f}, 실제 관계 {bag_mean_score('label_graph'):.3f}, 무작위 관계 {bag_mean_score('random_graph'):.3f}. 3개 학습 부분표본 평균이며 모든 조건을 고정한 뒤 확인했다.",
         )
         - 12
     )
     para(
         42,
         y,
-        "<b>설명의 검증</b>  높은/낮은 attention 및 무작위 문단을 제거해 예측 민감도를 비교했다. 모델의 입력 사용을 조사하되 attention을 인과적 근거로 주장하지 않았다. 선택된 관계 규제 강도와 실패 조건도 보존했다.",
+        "<b>검증 범위</b>  bag·관계에서 착안한 후속 구성이며 T-MDML의 triplet 거리 학습 재현은 아니다. 문단 제거 민감도도 비교했으나 attention 비중을 인과적 근거로 주장하지 않는다.",
         10,
         color=muted,
     )

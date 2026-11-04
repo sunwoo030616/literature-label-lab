@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "ordered_document_sha256": "a5de79f054c45eab41194cbb90a4bcd2933fdb893fb4262b4bd0282cbf48a730",
+  "base_weights_sha256": "d513412d396cecec5f67936ac871b4aaf1178dfb5193776e790fd2b28bba240c",
+  "content_tokens_per_window": 126,
+  "max_windows": 4,
+  "selection": "uniform indices including endpoints",
+  "pooling": "attention-mask mean including special tokens",
+  "shape": [
+    9488,
+    4,
+    768
+  ],
+  "valid_windows": 26493,
+  "dtype": "float32"
+}

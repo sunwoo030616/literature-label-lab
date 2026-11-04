@@ -1,0 +1,375 @@
+{
+  "splits": [
+    {
+      "split": "test",
+      "conditions": {
+        "lora_seed17": {
+          "macro_f1": 0.8131577447515769,
+          "macro_average_precision": 0.8945837755210327,
+          "labels": {
+            "Treatment": {
+              "support": 1029,
+              "tune_support": 199,
+              "threshold": 0.3500000000000001,
+              "tp": 940,
+              "fp": 174,
+              "fn": 89,
+              "f1": 0.8772748483434438,
+              "average_precision": 0.9486968250431608,
+              "mean_score_positive": 0.8017876148223877,
+              "mean_score_negative": 0.11271915584802628
+            },
+            "Diagnosis": {
+              "support": 719,
+              "tune_support": 131,
+              "threshold": 0.30000000000000004,
+              "tp": 575,
+              "fp": 74,
+              "fn": 144,
+              "f1": 0.8406432748538012,
+              "average_precision": 0.938544660256807,
+              "mean_score_positive": 0.6855669021606445,
+              "mean_score_negative": 0.05060514807701111
+            },
+            "Prevention": {
+              "support": 924,
+              "tune_support": 270,
+              "threshold": 0.4500000000000001,
+              "tp": 855,
+              "fp": 92,
+              "fn": 69,
+              "f1": 0.9139497594869054,
+              "average_precision": 0.9773905586979909,
+              "mean_score_positive": 0.8750811219215393,
+              "mean_score_negative": 0.08966121077537537
+            },
+            "Mechanism": {
+              "support": 563,
+              "tune_support": 108,
+              "threshold": 0.40000000000000013,
+              "tp": 475,
+              "fp": 33,
+              "fn": 88,
+              "f1": 0.8870214752567693,
+              "average_precision": 0.9594967231218178,
+              "mean_score_positive": 0.7170027494430542,
+              "mean_score_negative": 0.05239766463637352
+            },
+            "Transmission": {
+              "support": 128,
+              "tune_support": 31,
+              "threshold": 0.15000000000000002,
+              "tp": 68,
+              "fp": 29,
+              "fn": 60,
+              "f1": 0.6044444444444445,
+              "average_precision": 0.6603658588796123,
+              "mean_score_positive": 0.23262430727481842,
+              "mean_score_negative": 0.015448964200913906
+            },
+            "Epidemic Forecasting": {
+              "support": 41,
+              "tune_support": 14,
+              "threshold": 0.4500000000000001,
+              "tp": 32,
+              "fp": 26,
+              "fn": 9,
+              "f1": 0.6464646464646465,
+              "average_precision": 0.808479902495793,
+              "mean_score_positive": 0.6405723094940186,
+              "mean_score_negative": 0.01595446653664112
+            },
+            "Case Report": {
+              "support": 195,
+              "tune_support": 49,
+              "threshold": 0.4500000000000001,
+              "tp": 184,
+              "fp": 20,
+              "fn": 11,
+              "f1": 0.9223057644110275,
+              "average_precision": 0.9691119001520477,
+              "mean_score_positive": 0.9123179912567139,
+              "mean_score_negative": 0.012703106738626957
+            }
+          }
+        },
+        "lora512_seed17": {
+          "macro_f1": 0.8034300705535253,
+          "macro_average_precision": 0.89730161520742,
+          "labels": {
+            "Treatment": {
+              "support": 1029,
+              "tune_support": 199,
+              "threshold": 0.4500000000000001,
+              "tp": 903,
+              "fp": 114,
+              "fn": 126,
+              "f1": 0.8826979472140762,
+              "average_precision": 0.9569456096554382,
+              "mean_score_positive": 0.7926243543624878,
+              "mean_score_negative": 0.09489107131958008
+            },
+            "Diagnosis": {
+              "support": 719,
+              "tune_support": 131,
+              "threshold": 0.25000000000000006,
+              "tp": 577,
+              "fp": 70,
+              "fn": 142,
+              "f1": 0.8448023426061494,
+              "average_precision": 0.9425610122518506,
+              "mean_score_positive": 0.6596466898918152,
+              "mean_score_negative": 0.04385816678404808
+            },
+            "Prevention": {
+              "support": 924,
+              "tune_support": 270,
+              "threshold": 0.20000000000000004,
+              "tp": 893,
+              "fp": 150,
+              "fn": 31,
+              "f1": 0.9079816980172852,
+              "average_precision": 0.980655586393711,
+              "mean_score_positive": 0.8695353865623474,
+              "mean_score_negative": 0.07351997494697571
+            },
+            "Mechanism": {
+              "support": 563,
+              "tune_support": 108,
+              "threshold": 0.40000000000000013,
+              "tp": 487,
+              "fp": 37,
+              "fn": 76,
+              "f1": 0.8960441582336707,
+              "average_precision": 0.9640054318681424,
+              "mean_score_positive": 0.7263096570968628,
+              "mean_score_negative": 0.05483388155698776
+            },
+            "Transmission": {
+              "support": 128,
+              "tune_support": 31,
+              "threshold": 0.20000000000000004,
+              "tp": 71,
+              "fp": 35,
+              "fn": 57,
+              "f1": 0.6068376068376068,
+              "average_precision": 0.6512686814793026,
+              "mean_score_positive": 0.29495295882225037,
+              "mean_score_negative": 0.020510094240307808
+            },
+            "Epidemic Forecasting": {
+              "support": 41,
+              "tune_support": 14,
+              "threshold": 0.25000000000000006,
+              "tp": 37,
+              "fp": 48,
+              "fn": 4,
+              "f1": 0.5873015873015873,
+              "average_precision": 0.8118710227874595,
+              "mean_score_positive": 0.6162632703781128,
+              "mean_score_negative": 0.016025803983211517
+            },
+            "Case Report": {
+              "support": 195,
+              "tune_support": 49,
+              "threshold": 0.3500000000000001,
+              "tp": 190,
+              "fp": 38,
+              "fn": 5,
+              "f1": 0.8983451536643026,
+              "average_precision": 0.9738039620160367,
+              "mean_score_positive": 0.9382009506225586,
+              "mean_score_negative": 0.01887449249625206
+            }
+          }
+        }
+      }
+    },
+    {
+      "split": "audit",
+      "conditions": {
+        "lora_seed17": {
+          "macro_f1": 0.8086548662209553,
+          "macro_average_precision": 0.8746423226067909,
+          "labels": {
+            "Treatment": {
+              "support": 348,
+              "tune_support": 199,
+              "threshold": 0.3500000000000001,
+              "tp": 315,
+              "fp": 61,
+              "fn": 33,
+              "f1": 0.8701657458563536,
+              "average_precision": 0.9453856977295146,
+              "mean_score_positive": 0.8082470297813416,
+              "mean_score_negative": 0.09340279549360275
+            },
+            "Diagnosis": {
+              "support": 238,
+              "tune_support": 131,
+              "threshold": 0.30000000000000004,
+              "tp": 194,
+              "fp": 36,
+              "fn": 44,
+              "f1": 0.8290598290598291,
+              "average_precision": 0.9155099487005075,
+              "mean_score_positive": 0.7434215545654297,
+              "mean_score_negative": 0.05954611301422119
+            },
+            "Prevention": {
+              "support": 449,
+              "tune_support": 270,
+              "threshold": 0.4500000000000001,
+              "tp": 413,
+              "fp": 38,
+              "fn": 36,
+              "f1": 0.9177777777777778,
+              "average_precision": 0.9785048205191085,
+              "mean_score_positive": 0.8893067240715027,
+              "mean_score_negative": 0.09954285621643066
+            },
+            "Mechanism": {
+              "support": 180,
+              "tune_support": 108,
+              "threshold": 0.40000000000000013,
+              "tp": 155,
+              "fp": 18,
+              "fn": 25,
+              "f1": 0.8781869688385269,
+              "average_precision": 0.9385537818495856,
+              "mean_score_positive": 0.749812662601471,
+              "mean_score_negative": 0.04703502357006073
+            },
+            "Transmission": {
+              "support": 44,
+              "tune_support": 31,
+              "threshold": 0.15000000000000002,
+              "tp": 29,
+              "fp": 29,
+              "fn": 15,
+              "f1": 0.5686274509803921,
+              "average_precision": 0.641040838550366,
+              "mean_score_positive": 0.3354247212409973,
+              "mean_score_negative": 0.021061254665255547
+            },
+            "Epidemic Forecasting": {
+              "support": 25,
+              "tune_support": 14,
+              "threshold": 0.4500000000000001,
+              "tp": 18,
+              "fp": 9,
+              "fn": 7,
+              "f1": 0.6923076923076923,
+              "average_precision": 0.7556834270648511,
+              "mean_score_positive": 0.5786606669425964,
+              "mean_score_negative": 0.01446195412427187
+            },
+            "Case Report": {
+              "support": 76,
+              "tune_support": 49,
+              "threshold": 0.4500000000000001,
+              "tp": 71,
+              "fp": 10,
+              "fn": 5,
+              "f1": 0.9044585987261147,
+              "average_precision": 0.9478177438336022,
+              "mean_score_positive": 0.9048150777816772,
+              "mean_score_negative": 0.016240132972598076
+            }
+          }
+        },
+        "lora512_seed17": {
+          "macro_f1": 0.7940212407395268,
+          "macro_average_precision": 0.8697851626824383,
+          "labels": {
+            "Treatment": {
+              "support": 348,
+              "tune_support": 199,
+              "threshold": 0.4500000000000001,
+              "tp": 306,
+              "fp": 37,
+              "fn": 42,
+              "f1": 0.8856729377713459,
+              "average_precision": 0.9473343243890023,
+              "mean_score_positive": 0.7970708012580872,
+              "mean_score_negative": 0.07748255133628845
+            },
+            "Diagnosis": {
+              "support": 238,
+              "tune_support": 131,
+              "threshold": 0.25000000000000006,
+              "tp": 196,
+              "fp": 42,
+              "fn": 42,
+              "f1": 0.8235294117647058,
+              "average_precision": 0.9196030919714558,
+              "mean_score_positive": 0.7198943495750427,
+              "mean_score_negative": 0.05085844546556473
+            },
+            "Prevention": {
+              "support": 449,
+              "tune_support": 270,
+              "threshold": 0.20000000000000004,
+              "tp": 434,
+              "fp": 55,
+              "fn": 15,
+              "f1": 0.9253731343283582,
+              "average_precision": 0.9815879182472502,
+              "mean_score_positive": 0.8820391893386841,
+              "mean_score_negative": 0.08091701567173004
+            },
+            "Mechanism": {
+              "support": 180,
+              "tune_support": 108,
+              "threshold": 0.40000000000000013,
+              "tp": 158,
+              "fp": 20,
+              "fn": 22,
+              "f1": 0.88268156424581,
+              "average_precision": 0.935685218258959,
+              "mean_score_positive": 0.7698001265525818,
+              "mean_score_negative": 0.05082161724567413
+            },
+            "Transmission": {
+              "support": 44,
+              "tune_support": 31,
+              "threshold": 0.20000000000000004,
+              "tp": 28,
+              "fp": 31,
+              "fn": 16,
+              "f1": 0.5436893203883495,
+              "average_precision": 0.6272880653281754,
+              "mean_score_positive": 0.3844923675060272,
+              "mean_score_negative": 0.027332285419106483
+            },
+            "Epidemic Forecasting": {
+              "support": 25,
+              "tune_support": 14,
+              "threshold": 0.25000000000000006,
+              "tp": 19,
+              "fp": 17,
+              "fn": 6,
+              "f1": 0.6229508196721312,
+              "average_precision": 0.7295001368072263,
+              "mean_score_positive": 0.5323275923728943,
+              "mean_score_negative": 0.01405545324087143
+            },
+            "Case Report": {
+              "support": 76,
+              "tune_support": 49,
+              "threshold": 0.3500000000000001,
+              "tp": 73,
+              "fp": 18,
+              "fn": 3,
+              "f1": 0.874251497005988,
+              "average_precision": 0.9474973837749986,
+              "mean_score_positive": 0.9241011738777161,
+              "mean_score_negative": 0.02538411319255829
+            }
+          }
+        }
+      }
+    }
+  ],
+  "interpretation": "Descriptive fixed-model comparison. AP evaluates ranking without the selected threshold; F1 evaluates chosen decisions. Divergence can motivate calibration/threshold hypotheses, but does not prove a cause. Padding, physical batch/dropout RNG and training input all differ; one additional512seed. No retuning from these reused-test/audit labels. Final new internal-audit comparison was predefined separately."
+}

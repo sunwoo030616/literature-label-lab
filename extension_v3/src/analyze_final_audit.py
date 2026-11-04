@@ -17,6 +17,8 @@ PAIRS = [
     ("lora_seed17", "lora512_seed17"),
     ("uniform_attention_seed17", "attention_seed17"),
     ("random_graph_seed17", "label_graph_seed17"),
+    ("lora512_seed17", "threshold_cv_lora512_seed17"),
+    ("tuned_tfidf_full", "last2_seed17"),
 ]
 
 
@@ -42,6 +44,7 @@ if __name__ == "__main__":
         V3 / "results/locked_finetune_policies.json",
         V3 / "results/locked_policies.json",
         V3 / "results/locked_strong_tfidf_policies.json",
+        V3 / "results/locked_threshold_cv_policies.json",
     ]:
         for c in read(p):
             thresholds[c["variant"]] = c["thresholds"]

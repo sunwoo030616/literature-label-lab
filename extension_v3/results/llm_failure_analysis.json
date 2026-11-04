@@ -1,0 +1,408 @@
+{
+  "zero_shot": {
+    "documents": 40,
+    "items": 43,
+    "exact_substring_in_original_count": 37,
+    "pure_original_substring_rate": 0.8604651162790697,
+    "full_quote_rule_pass_count": 34,
+    "full_quote_rule_definition": "known label, string length15..240, exact original substring AND exact model-visible substring",
+    "invalid_reason_counts_nonexclusive": {
+      "quote_length_outside_15_240": 5,
+      "not_verbatim_in_original": 6
+    },
+    "filter_removed_true_label_predictions": 2,
+    "filter_removed_false_label_predictions": 7,
+    "per_label": {
+      "Treatment": {
+        "gold_support": 15,
+        "raw_predicted": 22,
+        "raw_true_positive": 12,
+        "raw_false_positive": 10,
+        "raw_false_negative": 3
+      },
+      "Diagnosis": {
+        "gold_support": 13,
+        "raw_predicted": 2,
+        "raw_true_positive": 2,
+        "raw_false_positive": 0,
+        "raw_false_negative": 11
+      },
+      "Prevention": {
+        "gold_support": 14,
+        "raw_predicted": 1,
+        "raw_true_positive": 1,
+        "raw_false_positive": 0,
+        "raw_false_negative": 13
+      },
+      "Mechanism": {
+        "gold_support": 4,
+        "raw_predicted": 3,
+        "raw_true_positive": 1,
+        "raw_false_positive": 2,
+        "raw_false_negative": 3
+      },
+      "Transmission": {
+        "gold_support": 0,
+        "raw_predicted": 5,
+        "raw_true_positive": 0,
+        "raw_false_positive": 5,
+        "raw_false_negative": 0
+      },
+      "Epidemic Forecasting": {
+        "gold_support": 0,
+        "raw_predicted": 2,
+        "raw_true_positive": 0,
+        "raw_false_positive": 2,
+        "raw_false_negative": 0
+      },
+      "Case Report": {
+        "gold_support": 6,
+        "raw_predicted": 8,
+        "raw_true_positive": 5,
+        "raw_false_positive": 3,
+        "raw_false_negative": 1
+      }
+    },
+    "topics_with_no_positive_examples": [
+      "Transmission",
+      "Epidemic Forecasting"
+    ],
+    "invalid_examples": [
+      {
+        "pmid": "32955773",
+        "label": "Transmission",
+        "evidence": "The gastroenterologists are facing multiple challenges in the safe practice of medicine because of patient's inability to visit physicians' offices, endoscopy centers and the threat of potential virus spread through gastrointestinal secretions by endoscopies in emergent cases.",
+        "reasons": [
+          "quote_length_outside_15_240",
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "32890525",
+        "label": "Treatment",
+        "evidence": "telemedicine was rapidly implemented for initial consultations and radiation treatment planning",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "32755212",
+        "label": "Mechanism",
+        "evidence": "The conclusion states that MIS-C associated with COVID-19 is characterized predominantly by cardiovascular abnormalities, although solid visceral organ, gallbladder, and bowel abnormalities as well as ascites are also seen, reflecting a multisystemic inflammatory process.",
+        "reasons": [
+          "quote_length_outside_15_240",
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Diagnosis"
+        ]
+      },
+      {
+        "pmid": "32731215",
+        "label": "Case Report",
+        "evidence": "We describe the characteristics, presentation, and outcomes of adult ESKD patients on chronic PD hospitalized with CO-VID-19.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Case Report"
+        ]
+      },
+      {
+        "pmid": "32871886",
+        "label": "Treatment",
+        "evidence": "The duration of wearing protective glasses may be a protective factor of dry eye symptoms.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "32301206",
+        "label": "Treatment",
+        "evidence": "We are determined to use our hard-earned skills in some way, to help in what is the biggest global emergency of our lifetime.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "33040189",
+        "label": "Treatment",
+        "evidence": "However, data on cancer patients with SARS-CoV-2 infection remains scarce. METHODS: We conducted a retrospective study on 223 cancer patients with SARS-CoV-2 from 26 hospitals in Hubei, China. An individualized nomogram was constructed based on multivariate Cox analysis. Considering the convenience of the nomogram application, an online tool was also created. The predictive performance and clinical application of nomogram were verified by C-index, calibration curve and decision curve analysis (DCA).",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Treatment",
+          "Diagnosis"
+        ]
+      },
+      {
+        "pmid": "33040189",
+        "label": "Epidemic Forecasting",
+        "evidence": "However, data on cancer patients with SARS-CoV-2 infection remains scarce. METHODS: We conducted a retrospective study on 223 cancer patients with SARS-CoV-2 from 26 hospitals in Hubei, China. An individualized nomogram was constructed based on multivariate Cox analysis. Considering the convenience of the nomogram application, an online tool was also created. The predictive performance and clinical application of nomogram were verified by C-index, calibration curve and decision curve analysis (DCA).",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Treatment",
+          "Diagnosis"
+        ]
+      },
+      {
+        "pmid": "33040189",
+        "label": "Case Report",
+        "evidence": "However, data on cancer patients with SARS-CoV-2 infection remains scarce. METHODS: We conducted a retrospective study on 223 cancer patients with SARS-CoV-2 from 26 hospitals in Hubei, China. An individualized nomogram was constructed based on multivariate Cox analysis. Considering the convenience of the nomogram application, an online tool was also created. The predictive performance and clinical application of nomogram were verified by C-index, calibration curve and decision curve analysis (DCA).",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Treatment",
+          "Diagnosis"
+        ]
+      }
+    ],
+    "note": "String occurrence does not establish semantic support. Length violations are not automatically fabricated quotations. Full-rule rate was named verbatim_evidence_rate in the original output; preserve that field and use this decomposition to interpret it."
+  },
+  "few_shot": {
+    "documents": 40,
+    "items": 68,
+    "exact_substring_in_original_count": 61,
+    "pure_original_substring_rate": 0.8970588235294118,
+    "full_quote_rule_pass_count": 54,
+    "full_quote_rule_definition": "known label, string length15..240, exact original substring AND exact model-visible substring",
+    "invalid_reason_counts_nonexclusive": {
+      "quote_length_outside_15_240": 8,
+      "not_verbatim_in_original": 7
+    },
+    "filter_removed_true_label_predictions": 5,
+    "filter_removed_false_label_predictions": 9,
+    "per_label": {
+      "Treatment": {
+        "gold_support": 15,
+        "raw_predicted": 19,
+        "raw_true_positive": 10,
+        "raw_false_positive": 9,
+        "raw_false_negative": 5
+      },
+      "Diagnosis": {
+        "gold_support": 13,
+        "raw_predicted": 9,
+        "raw_true_positive": 5,
+        "raw_false_positive": 4,
+        "raw_false_negative": 8
+      },
+      "Prevention": {
+        "gold_support": 14,
+        "raw_predicted": 13,
+        "raw_true_positive": 6,
+        "raw_false_positive": 7,
+        "raw_false_negative": 8
+      },
+      "Mechanism": {
+        "gold_support": 4,
+        "raw_predicted": 11,
+        "raw_true_positive": 4,
+        "raw_false_positive": 7,
+        "raw_false_negative": 0
+      },
+      "Transmission": {
+        "gold_support": 0,
+        "raw_predicted": 3,
+        "raw_true_positive": 0,
+        "raw_false_positive": 3,
+        "raw_false_negative": 0
+      },
+      "Epidemic Forecasting": {
+        "gold_support": 0,
+        "raw_predicted": 4,
+        "raw_true_positive": 0,
+        "raw_false_positive": 4,
+        "raw_false_negative": 0
+      },
+      "Case Report": {
+        "gold_support": 6,
+        "raw_predicted": 9,
+        "raw_true_positive": 4,
+        "raw_false_positive": 5,
+        "raw_false_negative": 2
+      }
+    },
+    "topics_with_no_positive_examples": [
+      "Transmission",
+      "Epidemic Forecasting"
+    ],
+    "invalid_examples": [
+      {
+        "pmid": "32456751",
+        "label": "Case Report",
+        "evidence": "The Alternative Pandemic. While the world is gripped by the current pandemic caused by COVID-19, Dr. Chris Alderman, editor-in-chief, reminds readers that the world has been and continues to be in the grips of another, equally as serious, but less publicized, global pandemic.",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "32837091",
+        "label": "Case Report",
+        "evidence": "Coronavirus disease 2019 associated with aggressive neurological and mental abnormalities confirmed based on cerebrospinal fluid antibodies: A case report.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Treatment"
+        ]
+      },
+      {
+        "pmid": "32890525",
+        "label": "Treatment",
+        "evidence": "telemedicine was rapidly implemented for initial consultations and radiation treatment planning in the wake of the coronavirus disease 2019 (COVID-19) pandemic.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "32353740",
+        "label": "Treatment",
+        "evidence": "We are suggesting here a strategy for the COVID-19 treatment that could be effective in curing the patients in the current scenario when no efficient medicine or Vaccine is currently available, and Clinicians solely depend upon the performing trials with drugs with known antiviral activities.",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Treatment"
+        ]
+      },
+      {
+        "pmid": "32755212",
+        "label": "Mechanism",
+        "evidence": "The conclusion states that MIS-C associated with COVID-19 is characterized predominantly by cardiovascular abnormalities, although solid visceral organ, gallbladder, and bowel abnormalities as well as ascites are also seen, reflecting a multisystemic inflammatory process.",
+        "reasons": [
+          "quote_length_outside_15_240",
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Diagnosis"
+        ]
+      },
+      {
+        "pmid": "32731215",
+        "label": "Diagnosis",
+        "evidence": "We describe the clinical characteristics, presentations, clinical course, and outcomes of ESKD patients on PD hospitalized with COVID-19.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Case Report"
+        ]
+      },
+      {
+        "pmid": "32871886",
+        "label": "Prevention",
+        "evidence": "The duration of wearing protective glasses may be a protective factor of dry eye symptoms.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "32325718",
+        "label": "Prevention",
+        "evidence": "Access to protective equipment was as follows: gel hand sanitizer (n = 889; 95%), disposable gloves (n = 853; 91.1%), disposable gowns (n = 630; 67.3%), disposable surgical masks (785; 83.9%), N95 masks (n = 516; 56.1%), and facial protective shields (n = 305; 32.6%).",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "32519768",
+        "label": "Prevention",
+        "evidence": "The effective treatment and prevention remain obscured.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Case Report"
+        ]
+      },
+      {
+        "pmid": "32301206",
+        "label": "Treatment",
+        "evidence": "We are determined to use our hard-earned skills in some way, to help in what is the biggest global emergency of our lifetime.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "32757751",
+        "label": "Case Report",
+        "evidence": "Cerebrovascular Complications of COVID-19. BACKGROUND AND PURPOSE: Coronavirus disease 2019 (COVID-19) evolved quickly into a global pandemic with myriad systemic complications, including stroke. We report the largest case series to date of cerebrovascular complications of COVID-19 and compare with stroke patients without infection.",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Diagnosis",
+          "Treatment"
+        ]
+      },
+      {
+        "pmid": "32798514",
+        "label": "Mechanism",
+        "evidence": "Although in vitro diagnostics, primarily using PCR- and ELISA-based methods, efficiently contribute to the etiological identification of SARS-CoV-2 infection, we suggest that laboratory medicine may also be of significant assistance when differentiating between severe and non-severe COVID-19.",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Diagnosis",
+          "Treatment"
+        ]
+      },
+      {
+        "pmid": "32759007",
+        "label": "Mechanism",
+        "evidence": "The mechanism of lymphopenia in COVID-19 is uncertain. It has been variously attributed to the release of inflammatory cytokines including IL-6 and TNF-alpha; direct infection of the lymphocytes by the virus; and rapid sequestration of lymphocytes in the tissues.",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Treatment",
+          "Mechanism"
+        ]
+      },
+      {
+        "pmid": "32598953",
+        "label": "Treatment",
+        "evidence": "This article reviewed the clinical use, mechanism and efficacy of the clinically approved drugs recommended in the Diagnosis and Treatment Protocol for Novel Coronavirus Pneumonia (DTPNCP) released by National Health Commission of P.R.China, and the novel therapeutic agents now undergoing clinical trials approved by China National Medical Products Administration (NMPA) to evaluate experimental treatment for COVID-19.",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Treatment"
+        ]
+      }
+    ],
+    "note": "String occurrence does not establish semantic support. Length violations are not automatically fabricated quotations. Full-rule rate was named verbatim_evidence_rate in the original output; preserve that field and use this decomposition to interpret it."
+  }
+}

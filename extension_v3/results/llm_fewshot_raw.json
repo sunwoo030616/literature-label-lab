@@ -1,0 +1,1227 @@
+[
+  {
+    "index": 156,
+    "pmid": "32157862",
+    "gold": [
+      "Case Report"
+    ],
+    "latency_seconds": 11.496222792076878,
+    "prompt_tokens": 1221,
+    "prompt_sha256": "a346092cb49ffdfbc44e82ef5f75cdceaecd0dec705ddab1b1c14ac95d1f588e",
+    "raw_output": "{\"topics\":[{\"label\":\"Case Report\",\"evidence\":\"In this case report, we aim to define the chest computed tomography findings of 2019-novel coronavirus associated with pneumonia and its successful resolution after treatment.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Case Report"
+    ],
+    "verified_topics": [
+      "Case Report"
+    ],
+    "items": [
+      {
+        "label": "Case Report",
+        "evidence": "In this case report, we aim to define the chest computed tomography findings of 2019-novel coronavirus associated with pneumonia and its successful resolution after treatment.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 351,
+    "pmid": "32955773",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 11.182378749945201,
+    "prompt_tokens": 1295,
+    "prompt_sha256": "67b9ae8f09c5ed59eba76fc2278773be436384d4f93c7ef383689cc109c58c2d",
+    "raw_output": "{\"topics\":[{\"label\":\"Transmission\",\"evidence\":\"patient's inability to visit physicians' offices, endoscopy centers and the threat of potential virus spread through gastrointestinal secretions by endoscopies in emergent cases.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Transmission"
+    ],
+    "verified_topics": [
+      "Transmission"
+    ],
+    "items": [
+      {
+        "label": "Transmission",
+        "evidence": "patient's inability to visit physicians' offices, endoscopy centers and the threat of potential virus spread through gastrointestinal secretions by endoscopies in emergent cases.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 780,
+    "pmid": "32431289",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 9.728224209044129,
+    "prompt_tokens": 1062,
+    "prompt_sha256": "3a70125a9f85a129e19cd8e75aff08d1d2606b67b9c7f6f10211a55673e77bb5",
+    "raw_output": "{\"topics\":[{\"label\":\"Epidemic Forecasting\",\"evidence\":\"Data from the rapid mortality surveillance system in 19 major Italian cities were used to carry out a timely assessment of the health impact of the COVID-19 epidemic.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Epidemic Forecasting"
+    ],
+    "verified_topics": [
+      "Epidemic Forecasting"
+    ],
+    "items": [
+      {
+        "label": "Epidemic Forecasting",
+        "evidence": "Data from the rapid mortality surveillance system in 19 major Italian cities were used to carry out a timely assessment of the health impact of the COVID-19 epidemic.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 911,
+    "pmid": "32605581",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 9.480388750089332,
+    "prompt_tokens": 1068,
+    "prompt_sha256": "9d4e945a30f1bf730d67019b33ae91e9db3f32cc817ba25d1df058394813717c",
+    "raw_output": "{\"topics\":[{\"label\":\"Prevention\",\"evidence\":\"Increasing the intensive care unit (ICU) capacities is essential. In order to adjust surge capacity, the reduction of planned, elective patient care is an adequate response.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Prevention"
+    ],
+    "verified_topics": [
+      "Prevention"
+    ],
+    "items": [
+      {
+        "label": "Prevention",
+        "evidence": "Increasing the intensive care unit (ICU) capacities is essential. In order to adjust surge capacity, the reduction of planned, elective patient care is an adequate response.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 959,
+    "pmid": "32456751",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 10.648773915949278,
+    "prompt_tokens": 990,
+    "prompt_sha256": "8fa736315dd5f3df52d22c1c41ff590c82001974a98d7cc0fb23fb236336d700",
+    "raw_output": "{\"topics\":[{\"label\":\"Case Report\",\"evidence\":\"The Alternative Pandemic. While the world is gripped by the current pandemic caused by COVID-19, Dr. Chris Alderman, editor-in-chief, reminds readers that the world has been and continues to be in the grips of another, equally as serious, but less publicized, global pandemic.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Case Report"
+    ],
+    "verified_topics": [],
+    "items": [
+      {
+        "label": "Case Report",
+        "evidence": "The Alternative Pandemic. While the world is gripped by the current pandemic caused by COVID-19, Dr. Chris Alderman, editor-in-chief, reminds readers that the world has been and continues to be in the grips of another, equally as serious, but less publicized, global pandemic.",
+        "exact_quote_valid": false
+      }
+    ]
+  },
+  {
+    "index": 965,
+    "pmid": "32333619",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 10.755372749990784,
+    "prompt_tokens": 1195,
+    "prompt_sha256": "c644c35a96f882a042cfc0a0edf2954d260294f56b88fb44ec879975ba42f7a7",
+    "raw_output": "{\"topics\":[{\"label\":\"Treatment\",\"evidence\":\"The objective of this review was to discuss topical preparations that could be utilized preoperatively to help to decrease viral load and potentially reduce the risks of viral transmission.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Treatment"
+    ],
+    "verified_topics": [
+      "Treatment"
+    ],
+    "items": [
+      {
+        "label": "Treatment",
+        "evidence": "The objective of this review was to discuss topical preparations that could be utilized preoperatively to help to decrease viral load and potentially reduce the risks of viral transmission.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 573,
+    "pmid": "32837091",
+    "gold": [
+      "Treatment"
+    ],
+    "latency_seconds": 10.36233449995052,
+    "prompt_tokens": 1217,
+    "prompt_sha256": "2faf1b8e62502a142354fe2a07b3212b2bdfddcc9f76ea78e4927170ab5d343f",
+    "raw_output": "{\"topics\":[{\"label\":\"Case Report\",\"evidence\":\"Coronavirus disease 2019 associated with aggressive neurological and mental abnormalities confirmed based on cerebrospinal fluid antibodies: A case report.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Case Report"
+    ],
+    "verified_topics": [],
+    "items": [
+      {
+        "label": "Case Report",
+        "evidence": "Coronavirus disease 2019 associated with aggressive neurological and mental abnormalities confirmed based on cerebrospinal fluid antibodies: A case report.",
+        "exact_quote_valid": false
+      }
+    ]
+  },
+  {
+    "index": 479,
+    "pmid": "32561148",
+    "gold": [
+      "Treatment"
+    ],
+    "latency_seconds": 10.088024582946673,
+    "prompt_tokens": 1275,
+    "prompt_sha256": "5281b00b496eed2503d4592d1a9e603d9d5e23f4faeea59bbd5a31bf7219419a",
+    "raw_output": "{\"topics\":[{\"label\":\"Treatment\",\"evidence\":\"There is currently no drug that has been proven as an effective therapy for COVID-19.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Treatment"
+    ],
+    "verified_topics": [
+      "Treatment"
+    ],
+    "items": [
+      {
+        "label": "Treatment",
+        "evidence": "There is currently no drug that has been proven as an effective therapy for COVID-19.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 358,
+    "pmid": "32641351",
+    "gold": [
+      "Diagnosis",
+      "Treatment",
+      "Prevention"
+    ],
+    "latency_seconds": 11.572192832943983,
+    "prompt_tokens": 1349,
+    "prompt_sha256": "1d253053bb0e66d72d5f15a16926dde009fac17d3dd7511736c8ecf99cd45fc7",
+    "raw_output": "{\"topics\":[{\"label\":\"Treatment\",\"evidence\":\"Data related to the applicability of the Clinical Frailty Scale (CFS) for risk stratification in patients with COVID-19 are currently lacking.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Treatment"
+    ],
+    "verified_topics": [
+      "Treatment"
+    ],
+    "items": [
+      {
+        "label": "Treatment",
+        "evidence": "Data related to the applicability of the Clinical Frailty Scale (CFS) for risk stratification in patients with COVID-19 are currently lacking.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 999,
+    "pmid": "32890525",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 11.68047091702465,
+    "prompt_tokens": 1397,
+    "prompt_sha256": "8cece02a6fda302dd480449d3369fb1a205c383be913585c1af0a6ae0c8ec712",
+    "raw_output": "{\"topics\":[{\"label\":\"Treatment\",\"evidence\":\"telemedicine was rapidly implemented for initial consultations and radiation treatment planning in the wake of the coronavirus disease 2019 (COVID-19) pandemic.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Treatment"
+    ],
+    "verified_topics": [],
+    "items": [
+      {
+        "label": "Treatment",
+        "evidence": "telemedicine was rapidly implemented for initial consultations and radiation treatment planning in the wake of the coronavirus disease 2019 (COVID-19) pandemic.",
+        "exact_quote_valid": false
+      }
+    ]
+  },
+  {
+    "index": 677,
+    "pmid": "33012695",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 9.74318954104092,
+    "prompt_tokens": 1106,
+    "prompt_sha256": "67ea5732ef2a6d00c5f4edfb831ad249c094c7398c9f5a5fee73daeb8fa5e8cb",
+    "raw_output": "{\"topics\":[{\"label\":\"Prevention\",\"evidence\":\"Non-therapeutic interventions such as practicing good hand hygiene continue to be the mainstay of protection from SARS-CoV-2 and other emerging respiratory viruses.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Prevention"
+    ],
+    "verified_topics": [
+      "Prevention"
+    ],
+    "items": [
+      {
+        "label": "Prevention",
+        "evidence": "Non-therapeutic interventions such as practicing good hand hygiene continue to be the mainstay of protection from SARS-CoV-2 and other emerging respiratory viruses.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 613,
+    "pmid": "32555674",
+    "gold": [
+      "Diagnosis",
+      "Treatment"
+    ],
+    "latency_seconds": 12.401450208970346,
+    "prompt_tokens": 1499,
+    "prompt_sha256": "f262aebb3f7a480638898fe596fdeb65c9abca7c839b3215c589fc9b4ee92680",
+    "raw_output": "{\"topics\":[{\"label\":\"Case Report\",\"evidence\":\"In this retrospective cohort study, we report the early clinical features of 80 patients with COVID-19 admitted to the hospital in Beijing.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Case Report"
+    ],
+    "verified_topics": [
+      "Case Report"
+    ],
+    "items": [
+      {
+        "label": "Case Report",
+        "evidence": "In this retrospective cohort study, we report the early clinical features of 80 patients with COVID-19 admitted to the hospital in Beijing.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 969,
+    "pmid": "32353740",
+    "gold": [
+      "Treatment"
+    ],
+    "latency_seconds": 12.806211124989204,
+    "prompt_tokens": 1320,
+    "prompt_sha256": "61986ba69b0ace57f9784f3a44cc15cd8a3f0d72c690cde13c2f1f3076973683",
+    "raw_output": "{\"topics\":[{\"label\":\"Treatment\",\"evidence\":\"We are suggesting here a strategy for the COVID-19 treatment that could be effective in curing the patients in the current scenario when no efficient medicine or Vaccine is currently available, and Clinicians solely depend upon the performing trials with drugs with known antiviral activities.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Treatment"
+    ],
+    "verified_topics": [],
+    "items": [
+      {
+        "label": "Treatment",
+        "evidence": "We are suggesting here a strategy for the COVID-19 treatment that could be effective in curing the patients in the current scenario when no efficient medicine or Vaccine is currently available, and Clinicians solely depend upon the performing trials with drugs with known antiviral activities.",
+        "exact_quote_valid": false
+      }
+    ]
+  },
+  {
+    "index": 282,
+    "pmid": "32755212",
+    "gold": [
+      "Diagnosis"
+    ],
+    "latency_seconds": 15.408953250036575,
+    "prompt_tokens": 1787,
+    "prompt_sha256": "23ff9e4dffab97520fd5cdb5f705f9db6bc21985c97bd5d4f2f03b5241e994a9",
+    "raw_output": "{\"topics\":[{\"label\":\"Mechanism\",\"evidence\":\"The conclusion states that MIS-C associated with COVID-19 is characterized predominantly by cardiovascular abnormalities, although solid visceral organ, gallbladder, and bowel abnormalities as well as ascites are also seen, reflecting a multisystemic inflammatory process.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Mechanism"
+    ],
+    "verified_topics": [],
+    "items": [
+      {
+        "label": "Mechanism",
+        "evidence": "The conclusion states that MIS-C associated with COVID-19 is characterized predominantly by cardiovascular abnormalities, although solid visceral organ, gallbladder, and bowel abnormalities as well as ascites are also seen, reflecting a multisystemic inflammatory process.",
+        "exact_quote_valid": false
+      }
+    ]
+  },
+  {
+    "index": 550,
+    "pmid": "32770582",
+    "gold": [
+      "Treatment",
+      "Mechanism"
+    ],
+    "latency_seconds": 15.811107874964364,
+    "prompt_tokens": 1122,
+    "prompt_sha256": "758bc118206c90e107dacb44fafe984e42234196c4d6b423dddd177b927eecc8",
+    "raw_output": "{\"topics\":[{\"label\":\"Mechanism\",\"evidence\":\"The virus effectively spreads through saliva aerosols or nasal discharge from an infected person.\"},{\"label\":\"Transmission\",\"evidence\":\"The virus effectively spreads through saliva aerosols or nasal discharge from an infected person.\"},{\"label\":\"Treatment\",\"evidence\":\"Currently, no specific vaccines or treatments exist for coronavirus; however, several attempts are being made to develop possible treatments.\"},{\"label\":\"Prevention\",\"evidence\":\"Further, such studies can aid in the development of vaccinations against this virus.\"},{\"label\":\"Diagnosis\",\"evidence\":\"Microscopy plays an important role in examining the structure and topology of the virus as well as pathogenesis in infected host cells.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Mechanism",
+      "Transmission",
+      "Treatment",
+      "Prevention",
+      "Diagnosis"
+    ],
+    "verified_topics": [
+      "Mechanism",
+      "Transmission",
+      "Treatment",
+      "Prevention",
+      "Diagnosis"
+    ],
+    "items": [
+      {
+        "label": "Mechanism",
+        "evidence": "The virus effectively spreads through saliva aerosols or nasal discharge from an infected person.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Transmission",
+        "evidence": "The virus effectively spreads through saliva aerosols or nasal discharge from an infected person.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Treatment",
+        "evidence": "Currently, no specific vaccines or treatments exist for coronavirus; however, several attempts are being made to develop possible treatments.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Prevention",
+        "evidence": "Further, such studies can aid in the development of vaccinations against this virus.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Diagnosis",
+        "evidence": "Microscopy plays an important role in examining the structure and topology of the virus as well as pathogenesis in infected host cells.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 598,
+    "pmid": "32731215",
+    "gold": [
+      "Case Report"
+    ],
+    "latency_seconds": 23.715288874926046,
+    "prompt_tokens": 1236,
+    "prompt_sha256": "dc2c616d75f50fcd705e0200259a24074e1962cdaa8842e8e9c857871d7b53e9",
+    "raw_output": "{\"topics\":[{\"label\":\"Case Report\",\"evidence\":\"COVID-19 in Hospitalized Patients on Chronic Peritoneal Dialysis: A Case Series.\"},{\"label\":\"Treatment\",\"evidence\":\"However, the degree to which it has affected the peritoneal dialysis (PD) population in the United States has not yet been elucidated.\"},{\"label\":\"Diagnosis\",\"evidence\":\"We describe the clinical characteristics, presentations, clinical course, and outcomes of ESKD patients on PD hospitalized with COVID-19.\"},{\"label\":\"Prevention\",\"evidence\":\"However, the degree to which it has affected the peritoneal dialysis (PD) population in the United States has not yet been elucidated.\"},{\"label\":\"Mechanism\",\"evidence\":\"However, the degree to which it has affected the peritoneal dialysis (PD) population in the United States has not yet been elucidated.\"},{\"label\":\"Transmission\",\"evidence\":\"Seven patients reported positive SARS-CoV-2 exposure from a member of their household.\"},{\"label\":\"Epidemic Forecasting\",\"evidence\":\"However, the degree to which it has affected the peritoneal dialysis (PD) population in the United States has not yet been elucidated.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Case Report",
+      "Treatment",
+      "Diagnosis",
+      "Prevention",
+      "Mechanism",
+      "Transmission",
+      "Epidemic Forecasting"
+    ],
+    "verified_topics": [
+      "Case Report",
+      "Treatment",
+      "Prevention",
+      "Mechanism",
+      "Transmission",
+      "Epidemic Forecasting"
+    ],
+    "items": [
+      {
+        "label": "Case Report",
+        "evidence": "COVID-19 in Hospitalized Patients on Chronic Peritoneal Dialysis: A Case Series.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Treatment",
+        "evidence": "However, the degree to which it has affected the peritoneal dialysis (PD) population in the United States has not yet been elucidated.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Diagnosis",
+        "evidence": "We describe the clinical characteristics, presentations, clinical course, and outcomes of ESKD patients on PD hospitalized with COVID-19.",
+        "exact_quote_valid": false
+      },
+      {
+        "label": "Prevention",
+        "evidence": "However, the degree to which it has affected the peritoneal dialysis (PD) population in the United States has not yet been elucidated.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Mechanism",
+        "evidence": "However, the degree to which it has affected the peritoneal dialysis (PD) population in the United States has not yet been elucidated.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Transmission",
+        "evidence": "Seven patients reported positive SARS-CoV-2 exposure from a member of their household.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Epidemic Forecasting",
+        "evidence": "However, the degree to which it has affected the peritoneal dialysis (PD) population in the United States has not yet been elucidated.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 747,
+    "pmid": "32708750",
+    "gold": [
+      "Diagnosis"
+    ],
+    "latency_seconds": 14.70850904204417,
+    "prompt_tokens": 1344,
+    "prompt_sha256": "d33f229726a3506cdfdb06eea56601559cc8dcd48688bda614a5817a4819f617",
+    "raw_output": "{\"topics\":[{\"label\":\"Mechanism\",\"evidence\":\"The inherent immunosuppression of uremia increases the susceptibility of hemodialysis patients to infection.\"},{\"label\":\"Diagnosis\",\"evidence\":\"Diagnosis may be retrospective, based on seroconversion, as PCR may be negative.\"},{\"label\":\"Treatment\",\"evidence\":\"The clinical and analytical spectrum and treatment responses and mortality are poorly characterized.\"},{\"label\":\"Prevention\",\"evidence\":\"This information should guide preventive and patient isolation strategies.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Mechanism",
+      "Diagnosis",
+      "Treatment",
+      "Prevention"
+    ],
+    "verified_topics": [
+      "Mechanism",
+      "Diagnosis",
+      "Treatment",
+      "Prevention"
+    ],
+    "items": [
+      {
+        "label": "Mechanism",
+        "evidence": "The inherent immunosuppression of uremia increases the susceptibility of hemodialysis patients to infection.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Diagnosis",
+        "evidence": "Diagnosis may be retrospective, based on seroconversion, as PCR may be negative.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Treatment",
+        "evidence": "The clinical and analytical spectrum and treatment responses and mortality are poorly characterized.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Prevention",
+        "evidence": "This information should guide preventive and patient isolation strategies.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 260,
+    "pmid": "32653475",
+    "gold": [
+      "Treatment"
+    ],
+    "latency_seconds": 8.544817041023634,
+    "prompt_tokens": 1018,
+    "prompt_sha256": "9dcc992f1ee362e26a76f322c8cf75077d506789132be70357dd324424de6110",
+    "raw_output": "{\"topics\":[{\"label\":\"Mechanism\",\"evidence\":\"residence in low hygienic conditions acts to train innate immune defenses to minimize the severity of infection\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Mechanism"
+    ],
+    "verified_topics": [
+      "Mechanism"
+    ],
+    "items": [
+      {
+        "label": "Mechanism",
+        "evidence": "residence in low hygienic conditions acts to train innate immune defenses to minimize the severity of infection",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 712,
+    "pmid": "32889551",
+    "gold": [
+      "Diagnosis",
+      "Treatment"
+    ],
+    "latency_seconds": 13.355069959070534,
+    "prompt_tokens": 1706,
+    "prompt_sha256": "34322abd88a7b25264518d1990e287f9abc72feca90812ad3874650cc50c1390",
+    "raw_output": "{\"topics\":[{\"label\":\"Case Report\",\"evidence\":\"Maternal and neonatal outcomes in COVID-19 infected pregnancies: a prospective cohort study.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Case Report"
+    ],
+    "verified_topics": [
+      "Case Report"
+    ],
+    "items": [
+      {
+        "label": "Case Report",
+        "evidence": "Maternal and neonatal outcomes in COVID-19 infected pregnancies: a prospective cohort study.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 763,
+    "pmid": "33031863",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 8.891053333994932,
+    "prompt_tokens": 1113,
+    "prompt_sha256": "7d575e880544e2af8cf4d143cc99aeafc3bd263f002806c5dc5b88d3e5ca01e7",
+    "raw_output": "{\"topics\":[{\"label\":\"Prevention\",\"evidence\":\"several strategies to reduce microorganism spread were adopted in hospital setting\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Prevention"
+    ],
+    "verified_topics": [
+      "Prevention"
+    ],
+    "items": [
+      {
+        "label": "Prevention",
+        "evidence": "several strategies to reduce microorganism spread were adopted in hospital setting",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 449,
+    "pmid": "32823540",
+    "gold": [
+      "Diagnosis",
+      "Mechanism"
+    ],
+    "latency_seconds": 9.853793999995105,
+    "prompt_tokens": 1189,
+    "prompt_sha256": "cd2fc93e7e8bfbcc17bcecd3881c3d25520234be7b2a5b264c5a796d0a28966c",
+    "raw_output": "{\"topics\":[{\"label\":\"Mechanism\",\"evidence\":\"discuss potential mechanisms of neural injury through psycho-neuroimmunity.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Mechanism"
+    ],
+    "verified_topics": [
+      "Mechanism"
+    ],
+    "items": [
+      {
+        "label": "Mechanism",
+        "evidence": "discuss potential mechanisms of neural injury through psycho-neuroimmunity.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 81,
+    "pmid": "32871886",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 9.854454625048675,
+    "prompt_tokens": 1233,
+    "prompt_sha256": "e1b8e0bf322f6c4f9d5a6338c0285b5b6f03dde271908f7e2cbfb248bf17e6c3",
+    "raw_output": "{\"topics\":[{\"label\":\"Prevention\",\"evidence\":\"The duration of wearing protective glasses may be a protective factor of dry eye symptoms.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Prevention"
+    ],
+    "verified_topics": [],
+    "items": [
+      {
+        "label": "Prevention",
+        "evidence": "The duration of wearing protective glasses may be a protective factor of dry eye symptoms.",
+        "exact_quote_valid": false
+      }
+    ]
+  },
+  {
+    "index": 674,
+    "pmid": "32325718",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 21.25028395804111,
+    "prompt_tokens": 1358,
+    "prompt_sha256": "a03150d63c768d9c49a29187d918c91e737bfe9379b369158d6265ef78c8cf11",
+    "raw_output": "{\"topics\":[{\"label\":\"Prevention\",\"evidence\":\"Access to protective equipment was as follows: gel hand sanitizer (n = 889; 95%), disposable gloves (n = 853; 91.1%), disposable gowns (n = 630; 67.3%), disposable surgical masks (785; 83.9%), N95 masks (n = 516; 56.1%), and facial protective shields (n = 305; 32.6%).\"},{\"label\":\"Diagnosis\",\"evidence\":\"699 (74.7%) participants had access to diagnostic algorithms.\"},{\"label\":\"Treatment\",\"evidence\":\"Healthcare workers exposed to coronavirus (COVID-19) may not have adequate access to personal protective equipment (PPE), safety procedures, and diagnostic protocols.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Prevention",
+      "Diagnosis",
+      "Treatment"
+    ],
+    "verified_topics": [
+      "Diagnosis",
+      "Treatment"
+    ],
+    "items": [
+      {
+        "label": "Prevention",
+        "evidence": "Access to protective equipment was as follows: gel hand sanitizer (n = 889; 95%), disposable gloves (n = 853; 91.1%), disposable gowns (n = 630; 67.3%), disposable surgical masks (785; 83.9%), N95 masks (n = 516; 56.1%), and facial protective shields (n = 305; 32.6%).",
+        "exact_quote_valid": false
+      },
+      {
+        "label": "Diagnosis",
+        "evidence": "699 (74.7%) participants had access to diagnostic algorithms.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Treatment",
+        "evidence": "Healthcare workers exposed to coronavirus (COVID-19) may not have adequate access to personal protective equipment (PPE), safety procedures, and diagnostic protocols.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 627,
+    "pmid": "32967329",
+    "gold": [
+      "Treatment",
+      "Mechanism"
+    ],
+    "latency_seconds": 16.837345040985383,
+    "prompt_tokens": 1258,
+    "prompt_sha256": "0ccdaede6b17b268980025bab94fc115606e40045d3f51505448473449934101",
+    "raw_output": "{\"topics\":[{\"label\":\"Mechanism\",\"evidence\":\"Recent evidence suggests the mechanistic role of mitochondria and vitamin D in the development of COVID-19.\"},{\"label\":\"Treatment\",\"evidence\":\"Furthermore, vitamin D reduces renin-angiotensin-aldosterone system activation and, consequently, decreases ROS generation and improves the prognosis of SARS-CoV-2 infection.\"},{\"label\":\"Prevention\",\"evidence\":\"As future prospects, evidence suggests enhancing the vitamin D levels of the world population, especially of those individuals with additional risk factors that predispose to the lethal consequences of SARS-CoV-2 infection.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Mechanism",
+      "Treatment",
+      "Prevention"
+    ],
+    "verified_topics": [
+      "Mechanism",
+      "Treatment",
+      "Prevention"
+    ],
+    "items": [
+      {
+        "label": "Mechanism",
+        "evidence": "Recent evidence suggests the mechanistic role of mitochondria and vitamin D in the development of COVID-19.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Treatment",
+        "evidence": "Furthermore, vitamin D reduces renin-angiotensin-aldosterone system activation and, consequently, decreases ROS generation and improves the prognosis of SARS-CoV-2 infection.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Prevention",
+        "evidence": "As future prospects, evidence suggests enhancing the vitamin D levels of the world population, especially of those individuals with additional risk factors that predispose to the lethal consequences of SARS-CoV-2 infection.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 40,
+    "pmid": "32519768",
+    "gold": [
+      "Case Report"
+    ],
+    "latency_seconds": 18.085502541041933,
+    "prompt_tokens": 1209,
+    "prompt_sha256": "1c5018286c6b11674c1625e4558e7bdfd8c2ef8a788c346e7d0bf47369c686d9",
+    "raw_output": "{\"topics\":[{\"label\":\"Mechanism\",\"evidence\":\"The underlying mechanisms of developing hyperpyrexia in COVID-19 are mysterious. We propose it may be caused by SARS-CoV-2-related brain injury, exuberant immune response, and thrombus formation.\"},{\"label\":\"Treatment\",\"evidence\":\"Understanding the association between hyperpyrexia and SARS-CoV-2 will help to elucidate the COVID-19 pathogenesis, which is mandatory for developing effective treatment strategies.\"},{\"label\":\"Prevention\",\"evidence\":\"The effective treatment and prevention remain obscured.\"},{\"label\":\"Diagnosis\",\"evidence\":\"Hyperpyrexia is an elevation of body temperature above 106.7 degrees F (41.5 degrees C) due to an abnormally increased hypothalamic-thermoregulatory set.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Mechanism",
+      "Treatment",
+      "Prevention",
+      "Diagnosis"
+    ],
+    "verified_topics": [
+      "Mechanism",
+      "Treatment",
+      "Diagnosis"
+    ],
+    "items": [
+      {
+        "label": "Mechanism",
+        "evidence": "The underlying mechanisms of developing hyperpyrexia in COVID-19 are mysterious. We propose it may be caused by SARS-CoV-2-related brain injury, exuberant immune response, and thrombus formation.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Treatment",
+        "evidence": "Understanding the association between hyperpyrexia and SARS-CoV-2 will help to elucidate the COVID-19 pathogenesis, which is mandatory for developing effective treatment strategies.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Prevention",
+        "evidence": "The effective treatment and prevention remain obscured.",
+        "exact_quote_valid": false
+      },
+      {
+        "label": "Diagnosis",
+        "evidence": "Hyperpyrexia is an elevation of body temperature above 106.7 degrees F (41.5 degrees C) due to an abnormally increased hypothalamic-thermoregulatory set.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 375,
+    "pmid": "32120913",
+    "gold": [
+      "Diagnosis"
+    ],
+    "latency_seconds": 11.286808999953791,
+    "prompt_tokens": 1245,
+    "prompt_sha256": "a4085e3e0e7db345fb4c579c370bc3816af4640f3aee9a0f02644860fd5431ae",
+    "raw_output": "{\"topics\":[{\"label\":\"Epidemic Forecasting\",\"evidence\":\"The probability (expressed as a percentage) that Disease X is driving the outbreak was assessed as over 29% on 31 December 2019, one week before virus identification.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Epidemic Forecasting"
+    ],
+    "verified_topics": [
+      "Epidemic Forecasting"
+    ],
+    "items": [
+      {
+        "label": "Epidemic Forecasting",
+        "evidence": "The probability (expressed as a percentage) that Disease X is driving the outbreak was assessed as over 29% on 31 December 2019, one week before virus identification.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 760,
+    "pmid": "32760732",
+    "gold": [
+      "Diagnosis"
+    ],
+    "latency_seconds": 9.977681166958064,
+    "prompt_tokens": 1195,
+    "prompt_sha256": "897d9a0b73f084203a57daf422b884640983fe7b371c4f8016ed7a1e1feb2216",
+    "raw_output": "{\"topics\":[{\"label\":\"Diagnosis\",\"evidence\":\"This study investigates the feasibility of using a deep learning-based decision-tree classifier for detecting COVID-19 from CXR images.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Diagnosis"
+    ],
+    "verified_topics": [
+      "Diagnosis"
+    ],
+    "items": [
+      {
+        "label": "Diagnosis",
+        "evidence": "This study investigates the feasibility of using a deep learning-based decision-tree classifier for detecting COVID-19 from CXR images.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 52,
+    "pmid": "32301206",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 9.113877624971792,
+    "prompt_tokens": 1064,
+    "prompt_sha256": "90b076e92d2e0771eac3ae49189e715b761643efe379d3547b15f9a242f87da1",
+    "raw_output": "{\"topics\":[{\"label\":\"Treatment\",\"evidence\":\"We are determined to use our hard-earned skills in some way, to help in what is the biggest global emergency of our lifetime.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Treatment"
+    ],
+    "verified_topics": [],
+    "items": [
+      {
+        "label": "Treatment",
+        "evidence": "We are determined to use our hard-earned skills in some way, to help in what is the biggest global emergency of our lifetime.",
+        "exact_quote_valid": false
+      }
+    ]
+  },
+  {
+    "index": 671,
+    "pmid": "33069219",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 11.367557874997146,
+    "prompt_tokens": 1505,
+    "prompt_sha256": "ced87016ad089da7c263dc8a4c7edbdf7686c77ec66169a3d63ba961801ae8f1",
+    "raw_output": "{\"topics\":[{\"label\":\"Prevention\",\"evidence\":\"This study was approved by the University of Manitoba's Health Research Ethics Board.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Prevention"
+    ],
+    "verified_topics": [
+      "Prevention"
+    ],
+    "items": [
+      {
+        "label": "Prevention",
+        "evidence": "This study was approved by the University of Manitoba's Health Research Ethics Board.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 908,
+    "pmid": "33062489",
+    "gold": [
+      "Case Report"
+    ],
+    "latency_seconds": 9.904660459025763,
+    "prompt_tokens": 1172,
+    "prompt_sha256": "c1bf9b832febbf262c1fa38bac662bbfaf3414d192939d88302442f63f70e011",
+    "raw_output": "{\"topics\":[{\"label\":\"Case Report\",\"evidence\":\"First Australian Case of Good Recovery of a COVID-19 Patient With Severe Neurological Symptoms Post Prolonged Hospitalization.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Case Report"
+    ],
+    "verified_topics": [
+      "Case Report"
+    ],
+    "items": [
+      {
+        "label": "Case Report",
+        "evidence": "First Australian Case of Good Recovery of a COVID-19 Patient With Severe Neurological Symptoms Post Prolonged Hospitalization.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 590,
+    "pmid": "32757751",
+    "gold": [
+      "Diagnosis",
+      "Treatment"
+    ],
+    "latency_seconds": 13.456214917008765,
+    "prompt_tokens": 1349,
+    "prompt_sha256": "c63701505d2aa9841fb40d0730513d767eaea16d3979df652f0cdd47b9fe3d7b",
+    "raw_output": "{\"topics\":[{\"label\":\"Case Report\",\"evidence\":\"Cerebrovascular Complications of COVID-19. BACKGROUND AND PURPOSE: Coronavirus disease 2019 (COVID-19) evolved quickly into a global pandemic with myriad systemic complications, including stroke. We report the largest case series to date of cerebrovascular complications of COVID-19 and compare with stroke patients without infection.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Case Report"
+    ],
+    "verified_topics": [],
+    "items": [
+      {
+        "label": "Case Report",
+        "evidence": "Cerebrovascular Complications of COVID-19. BACKGROUND AND PURPOSE: Coronavirus disease 2019 (COVID-19) evolved quickly into a global pandemic with myriad systemic complications, including stroke. We report the largest case series to date of cerebrovascular complications of COVID-19 and compare with stroke patients without infection.",
+        "exact_quote_valid": false
+      }
+    ]
+  },
+  {
+    "index": 635,
+    "pmid": "32798514",
+    "gold": [
+      "Diagnosis",
+      "Treatment"
+    ],
+    "latency_seconds": 23.077975832973607,
+    "prompt_tokens": 1232,
+    "prompt_sha256": "ddba281af1fa7eeba23d0c3d8daf22d554148a615e5110edd56e43978ca73dc7",
+    "raw_output": "{\"topics\":[{\"label\":\"Diagnosis\",\"evidence\":\"we searched the Scopus, PubMed, and Web of Science medical databases and selected 19 articles (totaling 2988 patients, 484 of whom [16.1%] had severe disease) that reported panels of laboratory examinations in patients with COVID-19.\"},{\"label\":\"Mechanism\",\"evidence\":\"Although in vitro diagnostics, primarily using PCR- and ELISA-based methods, efficiently contribute to the etiological identification of SARS-CoV-2 infection, we suggest that laboratory medicine may also be of significant assistance when differentiating between severe and non-severe COVID-19.\"},{\"label\":\"Prevention\",\"evidence\":\"the analysis of the current scientific literature demonstrates the value of laboratory parameters as simple, rapid, and cost-effective biomarkers in COVID-19 patients.\"},{\"label\":\"Treatment\",\"evidence\":\"we suggest that laboratory medicine may also be of significant assistance when differentiating between severe and non-severe COVID-19.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Diagnosis",
+      "Mechanism",
+      "Prevention",
+      "Treatment"
+    ],
+    "verified_topics": [
+      "Diagnosis",
+      "Prevention",
+      "Treatment"
+    ],
+    "items": [
+      {
+        "label": "Diagnosis",
+        "evidence": "we searched the Scopus, PubMed, and Web of Science medical databases and selected 19 articles (totaling 2988 patients, 484 of whom [16.1%] had severe disease) that reported panels of laboratory examinations in patients with COVID-19.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Mechanism",
+        "evidence": "Although in vitro diagnostics, primarily using PCR- and ELISA-based methods, efficiently contribute to the etiological identification of SARS-CoV-2 infection, we suggest that laboratory medicine may also be of significant assistance when differentiating between severe and non-severe COVID-19.",
+        "exact_quote_valid": false
+      },
+      {
+        "label": "Prevention",
+        "evidence": "the analysis of the current scientific literature demonstrates the value of laboratory parameters as simple, rapid, and cost-effective biomarkers in COVID-19 patients.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Treatment",
+        "evidence": "we suggest that laboratory medicine may also be of significant assistance when differentiating between severe and non-severe COVID-19.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 882,
+    "pmid": "32963155",
+    "gold": [
+      "Case Report"
+    ],
+    "latency_seconds": 11.268377667060122,
+    "prompt_tokens": 1132,
+    "prompt_sha256": "af59484787d6b94682e35e62774c48a3c2929b9db02a89e6944f5e3e46c70951",
+    "raw_output": "{\"topics\":[{\"label\":\"Treatment\",\"evidence\":\"Treatment with tocilizumab (TCZ) to block interleukin-6 (IL-6) signalling is predicted to mitigate cytokine release syndrome (CRS) caused by coronavirus disease 2019 (COVID-19).\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Treatment"
+    ],
+    "verified_topics": [
+      "Treatment"
+    ],
+    "items": [
+      {
+        "label": "Treatment",
+        "evidence": "Treatment with tocilizumab (TCZ) to block interleukin-6 (IL-6) signalling is predicted to mitigate cytokine release syndrome (CRS) caused by coronavirus disease 2019 (COVID-19).",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 104,
+    "pmid": "33040189",
+    "gold": [
+      "Treatment",
+      "Diagnosis"
+    ],
+    "latency_seconds": 17.318594333948568,
+    "prompt_tokens": 1347,
+    "prompt_sha256": "a508125ccdaa5ad87148af2b1db3415fb9092c72cfeb05f0227262c8279e99dd",
+    "raw_output": "{\"topics\":[{\"label\":\"Epidemic Forecasting\",\"evidence\":\"However, data on cancer patients with SARS-CoV-2 infection remains scarce.\"},{\"label\":\"Treatment\",\"evidence\":\"to develop more rational treatment strategies for cancer patients.\"},{\"label\":\"Prevention\",\"evidence\":\"to reduce the risk of SARS-CoV-2 infection and tumor recurrence.\"},{\"label\":\"Diagnosis\",\"evidence\":\"based on multivariate Cox analysis.\"},{\"label\":\"Mechanism\",\"evidence\":\"Male, dyspnea, elevated PCT, increased heart rate, elevated D-dimers, and decreased platelets were risk factors for these patients.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Epidemic Forecasting",
+      "Treatment",
+      "Prevention",
+      "Diagnosis",
+      "Mechanism"
+    ],
+    "verified_topics": [
+      "Epidemic Forecasting",
+      "Treatment",
+      "Prevention",
+      "Diagnosis",
+      "Mechanism"
+    ],
+    "items": [
+      {
+        "label": "Epidemic Forecasting",
+        "evidence": "However, data on cancer patients with SARS-CoV-2 infection remains scarce.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Treatment",
+        "evidence": "to develop more rational treatment strategies for cancer patients.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Prevention",
+        "evidence": "to reduce the risk of SARS-CoV-2 infection and tumor recurrence.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Diagnosis",
+        "evidence": "based on multivariate Cox analysis.",
+        "exact_quote_valid": true
+      },
+      {
+        "label": "Mechanism",
+        "evidence": "Male, dyspnea, elevated PCT, increased heart rate, elevated D-dimers, and decreased platelets were risk factors for these patients.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 409,
+    "pmid": "32759007",
+    "gold": [
+      "Treatment",
+      "Mechanism"
+    ],
+    "latency_seconds": 14.860150833032094,
+    "prompt_tokens": 1196,
+    "prompt_sha256": "3de0fc195a843b67c86c1696a07aa985c5d26082ec944f30b5676251128fc58c",
+    "raw_output": "{\"topics\":[{\"label\":\"Mechanism\",\"evidence\":\"The mechanism of lymphopenia in COVID-19 is uncertain. It has been variously attributed to the release of inflammatory cytokines including IL-6 and TNF-alpha; direct infection of the lymphocytes by the virus; and rapid sequestration of lymphocytes in the tissues.\"},{\"label\":\"Treatment\",\"evidence\":\"We propose targeting PGD2/DP2 signaling using a receptor antagonist such as ramatroban as an immunotherapy for immune dysfunction and lymphopenia in COVID-19 disease.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Mechanism",
+      "Treatment"
+    ],
+    "verified_topics": [
+      "Treatment"
+    ],
+    "items": [
+      {
+        "label": "Mechanism",
+        "evidence": "The mechanism of lymphopenia in COVID-19 is uncertain. It has been variously attributed to the release of inflammatory cytokines including IL-6 and TNF-alpha; direct infection of the lymphocytes by the virus; and rapid sequestration of lymphocytes in the tissues.",
+        "exact_quote_valid": false
+      },
+      {
+        "label": "Treatment",
+        "evidence": "We propose targeting PGD2/DP2 signaling using a receptor antagonist such as ramatroban as an immunotherapy for immune dysfunction and lymphopenia in COVID-19 disease.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 542,
+    "pmid": "32850105",
+    "gold": [
+      "Prevention"
+    ],
+    "latency_seconds": 9.94124820898287,
+    "prompt_tokens": 1133,
+    "prompt_sha256": "bf6dd09e0aafc4f8a3b0c9e068f09860b485aa831c43c1ea0c7d6a47a8bc743f",
+    "raw_output": "{\"topics\":[{\"label\":\"Treatment\",\"evidence\":\"decision makers (DMs), especially policymakers, governors, and physicians, evaluate the importance of intervention strategy alternatives applied by various countries for the COVID-19 pandemic.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Treatment"
+    ],
+    "verified_topics": [
+      "Treatment"
+    ],
+    "items": [
+      {
+        "label": "Treatment",
+        "evidence": "decision makers (DMs), especially policymakers, governors, and physicians, evaluate the importance of intervention strategy alternatives applied by various countries for the COVID-19 pandemic.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 990,
+    "pmid": "32803531",
+    "gold": [
+      "Diagnosis"
+    ],
+    "latency_seconds": 8.909859832958318,
+    "prompt_tokens": 1058,
+    "prompt_sha256": "f71c20d7ac16afc912115f72d0211ec632e0919a00f7bd86013997d2450e8bf8",
+    "raw_output": "{\"topics\":[{\"label\":\"Diagnosis\",\"evidence\":\"The nasopharyngeal swab is a critical component of the COVID-19 testing kit.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Diagnosis"
+    ],
+    "verified_topics": [
+      "Diagnosis"
+    ],
+    "items": [
+      {
+        "label": "Diagnosis",
+        "evidence": "The nasopharyngeal swab is a critical component of the COVID-19 testing kit.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 889,
+    "pmid": "32594164",
+    "gold": [
+      "Diagnosis",
+      "Treatment"
+    ],
+    "latency_seconds": 9.806803542072885,
+    "prompt_tokens": 1336,
+    "prompt_sha256": "a199ed905a69988cc518f86ae8a17aba06db4f874d038a62f359badf8f41787e",
+    "raw_output": "{\"topics\":[{\"label\":\"Treatment\",\"evidence\":\"treatment, and outcomes from this group\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Treatment"
+    ],
+    "verified_topics": [
+      "Treatment"
+    ],
+    "items": [
+      {
+        "label": "Treatment",
+        "evidence": "treatment, and outcomes from this group",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 237,
+    "pmid": "32982611",
+    "gold": [
+      "Case Report"
+    ],
+    "latency_seconds": 9.837231959099881,
+    "prompt_tokens": 1079,
+    "prompt_sha256": "e0346405baf888f357c19bd25933d26baa008836ed784c2cb3fa454e98e0405d",
+    "raw_output": "{\"topics\":[{\"label\":\"Case Report\",\"evidence\":\"This article uses a patient case to highlight the importance of infection control during the height of the SARS-CoV-2 surge at a Level I affiliated community hospital in Western New York.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Case Report"
+    ],
+    "verified_topics": [
+      "Case Report"
+    ],
+    "items": [
+      {
+        "label": "Case Report",
+        "evidence": "This article uses a patient case to highlight the importance of infection control during the height of the SARS-CoV-2 surge at a Level I affiliated community hospital in Western New York.",
+        "exact_quote_valid": true
+      }
+    ]
+  },
+  {
+    "index": 458,
+    "pmid": "32598953",
+    "gold": [
+      "Treatment"
+    ],
+    "latency_seconds": 13.325877499999478,
+    "prompt_tokens": 1176,
+    "prompt_sha256": "f5774488d413bf57b0ddcdade248bd342e9b282d56e4211b074c86a809a17932",
+    "raw_output": "{\"topics\":[{\"label\":\"Treatment\",\"evidence\":\"This article reviewed the clinical use, mechanism and efficacy of the clinically approved drugs recommended in the Diagnosis and Treatment Protocol for Novel Coronavirus Pneumonia (DTPNCP) released by National Health Commission of P.R.China, and the novel therapeutic agents now undergoing clinical trials approved by China National Medical Products Administration (NMPA) to evaluate experimental treatment for COVID-19.\"}]}",
+    "error": null,
+    "valid_json": true,
+    "raw_topics": [
+      "Treatment"
+    ],
+    "verified_topics": [],
+    "items": [
+      {
+        "label": "Treatment",
+        "evidence": "This article reviewed the clinical use, mechanism and efficacy of the clinically approved drugs recommended in the Diagnosis and Treatment Protocol for Novel Coronavirus Pneumonia (DTPNCP) released by National Health Commission of P.R.China, and the novel therapeutic agents now undergoing clinical trials approved by China National Medical Products Administration (NMPA) to evaluate experimental treatment for COVID-19.",
+        "exact_quote_valid": false
+      }
+    ]
+  }
+]

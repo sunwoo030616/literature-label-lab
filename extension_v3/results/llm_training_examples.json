@@ -1,0 +1,27 @@
+[
+  {
+    "pmid": "32313822",
+    "sha256": "0a61ef11d29c7f65195ebb142a67d155948c94dcccae061042455356b096d48c",
+    "labels": [
+      "Mechanism",
+      "Transmission",
+      "Treatment",
+      "Prevention",
+      "Diagnosis"
+    ]
+  },
+  {
+    "pmid": "32868967",
+    "sha256": "00acee86c2253cd89b2d92a025eed1cc7070b029154342581c00bc833594f207",
+    "labels": [
+      "Epidemic Forecasting"
+    ]
+  },
+  {
+    "pmid": "32898993",
+    "sha256": "00e9e44c026653dd1c2db5a1ab010168fdc3a0910289bef4cfae72d555dd45e6",
+    "labels": [
+      "Case Report"
+    ]
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "check": "actual_prediction_registration",
+    "response": {
+      "id": 2,
+      "digest": "0498bd2b67d05ecb7cca3399ba783192c40091be303891473c931c47ccf5c871",
+      "model_version": "dde8039cd7c772188b4ff1811fc1c1fdaed260a6b1fac236289879f2937bde02:merged-v1:aebca84c638fe6df87f42ecfb9db2a0756dcacb4fcdd66324ed673a726282c72",
+      "title": "[MANAGEMENT AND LEADERSHIP OF NURSING SERVICES IN THE EMERGENCY PLAN FOR THE PANDEMIC COVID-19: THE EXPERIENCE OF THE CLINIC HOSPITAL OF BARCELONA].",
+      "abstract": "At the international level, the enormous demand to manage the COVID-19 pandemic has posed a challenge both in the provision of personnel and in supplies and sanitary material. There is no precedent or publication related to the management and leadership of nursing services in Spain within the emergency plan for the COVID-19 pandemic. This article describes the experience of the Hospital Clinico de Barcelona in the current extraordinary circumstances that undoubtedly constitute a nursing management of enormous magnitude and unprecedented due to the high number of people affected and the extraordinary risk of healthcare personnel. Following national and international guidelines to alleviate the pandemic, protect health and prevent the spread of the outbreak. The ability to work as a team, emotional management and respect for organizational decisions have made it possible to face the challenges that the pandemic has put in place and that the Nursing Department can lead in a calm and orderly manner the different actions to perform. Lastly, it will be necessary to continue with an in-depth analysis of the situation and of the actions carried out in order to identify the areas for improvement as well as to evaluate the overall nature of the process.",
+      "prediction": {
+        "version": "v2",
+        "variant": "lora_seed17",
+        "selected_epoch": 1,
+        "topics": [
+          "Prevention"
+        ],
+        "scores": {
+          "Treatment": 0.005051282234489918,
+          "Diagnosis": 0.0006697384524159133,
+          "Prevention": 0.9943473935127258,
+          "Mechanism": 0.0005536674289032817,
+          "Transmission": 0.0018865723395720124,
+          "Epidemic Forecasting": 0.00203155935741961,
+          "Case Report": 0.004497331567108631
+        },
+        "input_tokens": 255,
+        "truncated": false,
+        "threshold_margin": 0.148113427660428,
+        "review_reasons": [],
+        "latency_seconds": 0.08228387497365475,
+        "limitations": [
+          "Scores are not calibrated probabilities.",
+          "Review reasons are heuristics, not quality guarantees.",
+          "COVID-19 literature task; other domains unvalidated."
+        ],
+        "serving_merged": true,
+        "calibrated_scores": {
+          "Treatment": 0.0023883987831018884,
+          "Diagnosis": 0.0002368714740792521,
+          "Prevention": 0.9972831790018908,
+          "Mechanism": 0.0001905716794018039,
+          "Transmission": 0.0007738321880493523,
+          "Epidemic Forecasting": 0.0008422101542977896,
+          "Case Report": 0.0020909118653655687
+        },
+        "calibration": {
+          "temperature": 0.8754392625552956,
+          "quality_guaranteed": false
+        }
+      },
+      "review": null,
+      "revision": 0,
+      "created": 1793776297.051747,
+      "updated": 1793776297.051747,
+      "status": "awaiting_review"
+    }
+  },
+  {
+    "check": "duplicate_registration_same_id",
+    "id": 2
+  },
+  {
+    "check": "review_saved",
+    "revision": 1
+  },
+  {
+    "check": "stale_review_rejected",
+    "status": 409
+  },
+  {
+    "check": "read_back_saved_review",
+    "status": "reviewed"
+  },
+  {
+    "check": "actual_local_llm_evidence",
+    "response": {
+      "run_id": 2,
+      "document_id": 2,
+      "result": {
+        "model": "mlx-community/Qwen3-4B-4bit",
+        "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+        "raw_output": "{\"topics\":[{\"label\":\"Treatment\",\"evidence\":\"Following national and international guidelines to alleviate the pandemic, protect health and prevent the spread of the outbreak.\"}]}",
+        "latency_seconds": 6.064560165978037,
+        "prompt_sha256": "41d411ececa31117565d5f1e81dac62c1663305eaf62fc8ede17abd1d51a7eaa",
+        "input_tokens": 263,
+        "used_document_tokens": 263,
+        "max_document_tokens": 1600,
+        "document_truncated": false,
+        "status": "parsed",
+        "valid_json": true,
+        "raw_topics": [
+          "Treatment"
+        ],
+        "verified_topics": [
+          "Treatment"
+        ],
+        "items": [
+          {
+            "label": "Treatment",
+            "evidence": "Following national and international guidelines to alleviate the pandemic, protect health and prevent the spread of the outbreak.",
+            "exact_quote_valid": true
+          }
+        ],
+        "limitations": [
+          "Quote occurrence is not semantic entailment.",
+          "Generated topics do not replace classifier predictions or reviewed labels."
+        ]
+      }
+    }
+  },
+  {
+    "check": "llm_evidence_persisted_separately",
+    "runs": 1
+  }
+]

@@ -1,0 +1,377 @@
+{
+  "models": [
+    {
+      "variant": "attention_seed17",
+      "selected_lambda": 0,
+      "selected_epoch": 29,
+      "mean_normalized_attention_entropy_audit": 0.7719970302505468,
+      "per_label_normalized_attention_entropy_audit": [
+        0.9174799843003196,
+        0.8417531857586458,
+        0.9475457372694439,
+        0.7868575821024164,
+        0.6409291438070496,
+        0.648513729562904,
+        0.6208998489530458
+      ],
+      "query_l2_per_label": [
+        5.977393627166748,
+        6.474433898925781,
+        4.960712909698486,
+        7.3777265548706055,
+        8.454717636108398,
+        8.395183563232422,
+        8.935848236083984
+      ],
+      "selected_model_train_eval_bce": 0.08984703580297002,
+      "selected_model_train_macro_f1": 0.8607834349425334,
+      "selected_tune_macro_f1": 0.7773643498897261,
+      "train_minus_tune_macro_f1": 0.08341908505280726,
+      "unweighted_graph_penalty": 0.0,
+      "weighted_graph_penalty": 0.0,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.0
+    },
+    {
+      "variant": "label_graph_seed17",
+      "selected_lambda": 0,
+      "selected_epoch": 29,
+      "mean_normalized_attention_entropy_audit": 0.7719970302505468,
+      "per_label_normalized_attention_entropy_audit": [
+        0.9174799843003196,
+        0.8417531857586458,
+        0.9475457372694439,
+        0.7868575821024164,
+        0.6409291438070496,
+        0.648513729562904,
+        0.6208998489530458
+      ],
+      "query_l2_per_label": [
+        5.977393627166748,
+        6.474433898925781,
+        4.960712909698486,
+        7.3777265548706055,
+        8.454717636108398,
+        8.395183563232422,
+        8.935848236083984
+      ],
+      "selected_model_train_eval_bce": 0.08984703580297002,
+      "selected_model_train_macro_f1": 0.8607834349425334,
+      "selected_tune_macro_f1": 0.7773643498897261,
+      "train_minus_tune_macro_f1": 0.08341908505280726,
+      "unweighted_graph_penalty": 0.01313669966119523,
+      "weighted_graph_penalty": 0.0,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.0
+    },
+    {
+      "variant": "random_graph_seed17",
+      "selected_lambda": 0.1,
+      "selected_epoch": 29,
+      "mean_normalized_attention_entropy_audit": 0.7715408340693433,
+      "per_label_normalized_attention_entropy_audit": [
+        0.9175853437521425,
+        0.8429090353289523,
+        0.9475457372694439,
+        0.7866090698395354,
+        0.6404686006987454,
+        0.6468117256503908,
+        0.6188563259461926
+      ],
+      "query_l2_per_label": [
+        5.974540710449219,
+        6.461684226989746,
+        4.960712909698486,
+        7.3806843757629395,
+        8.459060668945312,
+        8.417109489440918,
+        8.965739250183105
+      ],
+      "selected_model_train_eval_bce": 0.09034226693698266,
+      "selected_model_train_macro_f1": 0.8601119672910036,
+      "selected_tune_macro_f1": 0.7779999678270252,
+      "train_minus_tune_macro_f1": 0.0821119994639784,
+      "unweighted_graph_penalty": 0.012366370488359283,
+      "weighted_graph_penalty": 0.0012366370488359284,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.013688355304373004
+    },
+    {
+      "variant": "uniform_attention_seed17",
+      "selected_lambda": 0,
+      "selected_epoch": 16,
+      "mean_normalized_attention_entropy_audit": 1.0000000088634866,
+      "per_label_normalized_attention_entropy_audit": [
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484
+      ],
+      "query_l2_per_label": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selected_model_train_eval_bce": 0.24363812854902647,
+      "selected_model_train_macro_f1": 0.836052630740072,
+      "selected_tune_macro_f1": 0.8085178098212662,
+      "train_minus_tune_macro_f1": 0.02753482091880577,
+      "unweighted_graph_penalty": 0.0,
+      "weighted_graph_penalty": 0.0,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.0
+    },
+    {
+      "variant": "attention_seed42",
+      "selected_lambda": 0,
+      "selected_epoch": 27,
+      "mean_normalized_attention_entropy_audit": 0.776676093416437,
+      "per_label_normalized_attention_entropy_audit": [
+        0.9159621017418116,
+        0.871242970881823,
+        0.941718504354388,
+        0.7760398069106644,
+        0.6870155460234383,
+        0.628532039896739,
+        0.6162216841061949
+      ],
+      "query_l2_per_label": [
+        5.827499866485596,
+        5.971646308898926,
+        4.707615852355957,
+        7.805892467498779,
+        7.712585926055908,
+        8.463955879211426,
+        8.86082649230957
+      ],
+      "selected_model_train_eval_bce": 0.09866642536034413,
+      "selected_model_train_macro_f1": 0.8252316355467543,
+      "selected_tune_macro_f1": 0.7725914200084596,
+      "train_minus_tune_macro_f1": 0.05264021553829468,
+      "unweighted_graph_penalty": 0.0,
+      "weighted_graph_penalty": 0.0,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.0
+    },
+    {
+      "variant": "label_graph_seed42",
+      "selected_lambda": 0.1,
+      "selected_epoch": 29,
+      "mean_normalized_attention_entropy_audit": 0.7747491189388713,
+      "per_label_normalized_attention_entropy_audit": [
+        0.914871199993271,
+        0.8723383380491421,
+        0.9387239692172247,
+        0.7787786541818055,
+        0.6844881748417416,
+        0.6236976531682369,
+        0.610345843120677
+      ],
+      "query_l2_per_label": [
+        6.074347019195557,
+        6.142409324645996,
+        4.965818881988525,
+        7.993844985961914,
+        7.872594833374023,
+        8.62739372253418,
+        9.063321113586426
+      ],
+      "selected_model_train_eval_bce": 0.09673645563302681,
+      "selected_model_train_macro_f1": 0.833931478605982,
+      "selected_tune_macro_f1": 0.7730184162230803,
+      "train_minus_tune_macro_f1": 0.06091306238290173,
+      "unweighted_graph_penalty": 0.012974530135780883,
+      "weighted_graph_penalty": 0.0012974530135780884,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.013412244691908317
+    },
+    {
+      "variant": "random_graph_seed42",
+      "selected_lambda": 0.1,
+      "selected_epoch": 28,
+      "mean_normalized_attention_entropy_audit": 0.7752295070774442,
+      "per_label_normalized_attention_entropy_audit": [
+        0.9154696188064485,
+        0.8722228938703096,
+        0.9402095360208724,
+        0.7776929477864509,
+        0.6862254835426883,
+        0.6244048978930747,
+        0.6103811716222638
+      ],
+      "query_l2_per_label": [
+        5.954479217529297,
+        6.050602912902832,
+        4.838064193725586,
+        7.900444507598877,
+        7.792581081390381,
+        8.568174362182617,
+        8.997912406921387
+      ],
+      "selected_model_train_eval_bce": 0.09800284040630088,
+      "selected_model_train_macro_f1": 0.8363049850579608,
+      "selected_tune_macro_f1": 0.7729006225910272,
+      "train_minus_tune_macro_f1": 0.0634043624669336,
+      "unweighted_graph_penalty": 0.012830079423318371,
+      "weighted_graph_penalty": 0.0012830079423318372,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.013091538337182206
+    },
+    {
+      "variant": "uniform_attention_seed42",
+      "selected_lambda": 0,
+      "selected_epoch": 26,
+      "mean_normalized_attention_entropy_audit": 1.0000000088634866,
+      "per_label_normalized_attention_entropy_audit": [
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484
+      ],
+      "query_l2_per_label": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selected_model_train_eval_bce": 0.19085717289497325,
+      "selected_model_train_macro_f1": 0.8531569745046242,
+      "selected_tune_macro_f1": 0.811084359956943,
+      "train_minus_tune_macro_f1": 0.0420726145476813,
+      "unweighted_graph_penalty": 0.0,
+      "weighted_graph_penalty": 0.0,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.0
+    },
+    {
+      "variant": "attention_seed73",
+      "selected_lambda": 0,
+      "selected_epoch": 23,
+      "mean_normalized_attention_entropy_audit": 0.7774700396500221,
+      "per_label_normalized_attention_entropy_audit": [
+        0.9138090007234533,
+        0.8633395277245487,
+        0.9476170141006313,
+        0.7561942004474711,
+        0.6745589040507353,
+        0.6481625966056097,
+        0.6386090338977068
+      ],
+      "query_l2_per_label": [
+        5.215853691101074,
+        5.669398307800293,
+        4.191320419311523,
+        7.1070427894592285,
+        7.60786247253418,
+        7.9897942543029785,
+        8.256233215332031
+      ],
+      "selected_model_train_eval_bce": 0.0980088982077324,
+      "selected_model_train_macro_f1": 0.8447664836329454,
+      "selected_tune_macro_f1": 0.7848288405478413,
+      "train_minus_tune_macro_f1": 0.059937643085104075,
+      "unweighted_graph_penalty": 0.0,
+      "weighted_graph_penalty": 0.0,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.0
+    },
+    {
+      "variant": "label_graph_seed73",
+      "selected_lambda": 0,
+      "selected_epoch": 23,
+      "mean_normalized_attention_entropy_audit": 0.7774700396500221,
+      "per_label_normalized_attention_entropy_audit": [
+        0.9138090007234533,
+        0.8633395277245487,
+        0.9476170141006313,
+        0.7561942004474711,
+        0.6745589040507353,
+        0.6481625966056097,
+        0.6386090338977068
+      ],
+      "query_l2_per_label": [
+        5.215853691101074,
+        5.669398307800293,
+        4.191320419311523,
+        7.1070427894592285,
+        7.60786247253418,
+        7.9897942543029785,
+        8.256233215332031
+      ],
+      "selected_model_train_eval_bce": 0.0980088982077324,
+      "selected_model_train_macro_f1": 0.8447664836329454,
+      "selected_tune_macro_f1": 0.7848288405478413,
+      "train_minus_tune_macro_f1": 0.059937643085104075,
+      "unweighted_graph_penalty": 0.010434516246237646,
+      "weighted_graph_penalty": 0.0,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.0
+    },
+    {
+      "variant": "random_graph_seed73",
+      "selected_lambda": 0,
+      "selected_epoch": 23,
+      "mean_normalized_attention_entropy_audit": 0.7774700396500221,
+      "per_label_normalized_attention_entropy_audit": [
+        0.9138090007234533,
+        0.8633395277245487,
+        0.9476170141006313,
+        0.7561942004474711,
+        0.6745589040507353,
+        0.6481625966056097,
+        0.6386090338977068
+      ],
+      "query_l2_per_label": [
+        5.215853691101074,
+        5.669398307800293,
+        4.191320419311523,
+        7.1070427894592285,
+        7.60786247253418,
+        7.9897942543029785,
+        8.256233215332031
+      ],
+      "selected_model_train_eval_bce": 0.0980088982077324,
+      "selected_model_train_macro_f1": 0.8447664836329454,
+      "selected_tune_macro_f1": 0.7848288405478413,
+      "train_minus_tune_macro_f1": 0.059937643085104075,
+      "unweighted_graph_penalty": 0.010253925961698083,
+      "weighted_graph_penalty": 0.0,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.0
+    },
+    {
+      "variant": "uniform_attention_seed73",
+      "selected_lambda": 0,
+      "selected_epoch": 10,
+      "mean_normalized_attention_entropy_audit": 1.0000000088634866,
+      "per_label_normalized_attention_entropy_audit": [
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484,
+        1.000000008863484
+      ],
+      "query_l2_per_label": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selected_model_train_eval_bce": 0.29487396446656877,
+      "selected_model_train_macro_f1": 0.820603665586186,
+      "selected_tune_macro_f1": 0.8130770421927505,
+      "train_minus_tune_macro_f1": 0.007526623393435572,
+      "unweighted_graph_penalty": 0.0,
+      "weighted_graph_penalty": 0.0,
+      "weighted_penalty_to_train_eval_bce_ratio": 0.0
+    }
+  ],
+  "interpretation": "Entropy near 1 means nearly uniform attention, near 0 means concentrated. Descriptive association only. Graph/BCE ratio uses selected-model eval mode, not exact stochastic training loss; a small penalty is consistent with weak influence but not proof of why performance changed. Lambda0 means the selected model did not use graph regularization."
+}

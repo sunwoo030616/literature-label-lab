@@ -1,0 +1,49 @@
+FEWSHOT 1 /40 11.5
+FEWSHOT 2 /40 11.18
+FEWSHOT 3 /40 9.73
+FEWSHOT 4 /40 9.48
+FEWSHOT 5 /40 10.65
+FEWSHOT 6 /40 10.76
+FEWSHOT 7 /40 10.36
+FEWSHOT 8 /40 10.09
+FEWSHOT 9 /40 11.57
+FEWSHOT 10 /40 11.68
+FEWSHOT 11 /40 9.74
+FEWSHOT 12 /40 12.4
+FEWSHOT 13 /40 12.81
+FEWSHOT 14 /40 15.41
+FEWSHOT 15 /40 15.81
+FEWSHOT 16 /40 23.72
+FEWSHOT 17 /40 14.71
+FEWSHOT 18 /40 8.54
+FEWSHOT 19 /40 13.36
+FEWSHOT 20 /40 8.89
+FEWSHOT 21 /40 9.85
+FEWSHOT 22 /40 9.85
+FEWSHOT 23 /40 21.25
+FEWSHOT 24 /40 16.84
+FEWSHOT 25 /40 18.09
+FEWSHOT 26 /40 11.29
+FEWSHOT 27 /40 9.98
+FEWSHOT 28 /40 9.11
+FEWSHOT 29 /40 11.37
+FEWSHOT 30 /40 9.9
+FEWSHOT 31 /40 13.46
+FEWSHOT 32 /40 23.08
+FEWSHOT 33 /40 11.27
+FEWSHOT 34 /40 17.32
+FEWSHOT 35 /40 14.86
+FEWSHOT 36 /40 9.94
+FEWSHOT 37 /40 8.91
+FEWSHOT 38 /40 9.81
+FEWSHOT 39 /40 9.84
+FEWSHOT 40 /40 13.33
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+FEWSHOT COMPLETE [('fewshot_raw_topics', 0.3648416942534589), ('fewshot_verified_topics', 0.3585034013605442)]

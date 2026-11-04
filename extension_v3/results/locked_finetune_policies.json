@@ -1,0 +1,37 @@
+[
+  {
+    "variant": "lora512_seed17",
+    "mode": "lora512",
+    "seed": 17,
+    "epoch": 1,
+    "thresholds": [
+      0.4500000000000001,
+      0.25000000000000006,
+      0.20000000000000004,
+      0.40000000000000013,
+      0.20000000000000004,
+      0.25000000000000006,
+      0.3500000000000001
+    ],
+    "tune_macro_f1": 0.8193124968324128,
+    "trainable_parameters": 300295,
+    "physical_batch": 4,
+    "padding_strategy": "fixed512",
+    "mps_cache_release_every_optimizer_steps": 25,
+    "gradient_accumulation": 4,
+    "effective_batch": 16,
+    "max_length": 512,
+    "encoder_lr": 0.0005,
+    "adapter_rank": 8,
+    "adapter_alpha": 16,
+    "head_lr": 0.001,
+    "attention_backend": "sdpa",
+    "scheduled_optimizer_steps": 750,
+    "completed_optimizer_steps": 250,
+    "epoch_budget": 1,
+    "attention_dropout": 0.0,
+    "checkpoint": "models/lora512_seed17.pt",
+    "training_seconds": 2545.1650913329795,
+    "checkpoint_sha256": "d6bfc83850764f29040fd87dbc2297f30d3534c8ddf1263cba2be74a052eb4ff"
+  }
+]

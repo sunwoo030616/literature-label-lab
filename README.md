@@ -66,7 +66,7 @@ PYTHONPATH=src uvicorn api:app --host 127.0.0.1 --port 8767
 - NCBI 과제 설명 및 공식 평가 스크립트: https://github.com/ncbi/biocreative_litcovid
 - 모델(MIT): https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract
 - 모델 설명: https://arxiv.org/abs/2007.15779
-- 선행 논문: Kim, Kan, Yi. *T-MDML: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation*. AAAI 2025, 17850–17857. 사용자가 제공한 원문.
+- 선행 논문: Kim, Kan, Yi. *T-MDML: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation*. AAAI 2025, 39(17), 17850–17858. [공식 원문·DOI](https://doi.org/10.1609/aaai.v39i17.33963).
 
 본 프로젝트는 의료 판단 도구가 아닙니다. COVID-19 문헌 주제 분류 범위의 연구 프로토타입입니다. 다른 도메인에 대한 정확성은 검증하지 않았습니다.
 

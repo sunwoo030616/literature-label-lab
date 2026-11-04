@@ -1,0 +1,74 @@
+[
+  {
+    "variant": "lora_seed17",
+    "base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "base_revision": "d673b8835373c6fa116d6d8006b33d48734e305d",
+    "base_weights_sha256": "d513412d396cecec5f67936ac871b4aaf1178dfb5193776e790fd2b28bba240c",
+    "base_model_required": true,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "max_length": 256,
+    "thresholds": [
+      0.3500000000000001,
+      0.30000000000000004,
+      0.4500000000000001,
+      0.40000000000000013,
+      0.15000000000000002,
+      0.4500000000000001,
+      0.4500000000000001
+    ],
+    "trained_parameters": 300295,
+    "adapter_bytes": 1206732,
+    "full_checkpoint_bytes": 439211149,
+    "tensor_roundtrip_exact": true
+  },
+  {
+    "variant": "lora_seed42",
+    "base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "base_revision": "d673b8835373c6fa116d6d8006b33d48734e305d",
+    "base_weights_sha256": "d513412d396cecec5f67936ac871b4aaf1178dfb5193776e790fd2b28bba240c",
+    "base_model_required": true,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "max_length": 256,
+    "thresholds": [
+      0.5000000000000001,
+      0.40000000000000013,
+      0.4500000000000001,
+      0.30000000000000004,
+      0.25000000000000006,
+      0.8000000000000003,
+      0.5000000000000001
+    ],
+    "trained_parameters": 300295,
+    "adapter_bytes": 1206732,
+    "full_checkpoint_bytes": 439211149,
+    "tensor_roundtrip_exact": true
+  },
+  {
+    "variant": "lora512_seed17",
+    "base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "base_revision": "d673b8835373c6fa116d6d8006b33d48734e305d",
+    "base_weights_sha256": "d513412d396cecec5f67936ac871b4aaf1178dfb5193776e790fd2b28bba240c",
+    "base_model_required": true,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "max_length": 512,
+    "thresholds": [
+      0.4500000000000001,
+      0.25000000000000006,
+      0.20000000000000004,
+      0.40000000000000013,
+      0.20000000000000004,
+      0.25000000000000006,
+      0.3500000000000001
+    ],
+    "trained_parameters": 300295,
+    "adapter_bytes": 1206732,
+    "full_checkpoint_bytes": 439211149,
+    "tensor_roundtrip_exact": true
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "device": "mps",
+  "documents": 32,
+  "batch": 8,
+  "repeats": 3,
+  "merged_layers": 24,
+  "max_probability_difference": 8.344650268554688e-07,
+  "mean_probability_difference": 4.600665803877746e-08,
+  "document_labelset_agreement": 1.0,
+  "runs": [
+    {
+      "phase": "unmerged",
+      "repeat": 0,
+      "seconds": 1.340156292077154,
+      "documents_per_second": 23.877812005346115,
+      "driver_mb": 1032.625
+    },
+    {
+      "phase": "unmerged",
+      "repeat": 1,
+      "seconds": 1.2693505410570651,
+      "documents_per_second": 25.20974227761518,
+      "driver_mb": 1032.625
+    },
+    {
+      "phase": "unmerged",
+      "repeat": 2,
+      "seconds": 1.4952602499397472,
+      "documents_per_second": 21.400956790825855,
+      "driver_mb": 1032.625
+    },
+    {
+      "phase": "merged",
+      "repeat": 0,
+      "seconds": 1.2722840419737622,
+      "documents_per_second": 25.151616262007572,
+      "driver_mb": 1032.625
+    },
+    {
+      "phase": "merged",
+      "repeat": 1,
+      "seconds": 1.2042015410261229,
+      "documents_per_second": 26.57362485413546,
+      "driver_mb": 1032.625
+    },
+    {
+      "phase": "merged",
+      "repeat": 2,
+      "seconds": 1.1753630000166595,
+      "documents_per_second": 27.225631570456475,
+      "driver_mb": 1032.625
+    }
+  ],
+  "note": "Same32 calibration documents, warm-up per condition; encoder+head path only. Fixed unmerged\u2192merged order, no API/network/load time. No global equivalence guarantee from this small sample."
+}

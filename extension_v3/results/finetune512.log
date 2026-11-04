@@ -1,0 +1,66 @@
+TRAINING DEVICE mps
+W1104 14:54:39.628000 3780 kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 25982.65it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+lora512_seed17 epoch 1 batch 50 loss 0.75123 elapsed 94.5
+MPS cache release 25 driver_mb 1040.6
+lora512_seed17 epoch 1 batch 100 loss 0.69074 elapsed 179.1
+lora512_seed17 epoch 1 batch 150 loss 0.60574 elapsed 275.7
+MPS cache release 50 driver_mb 1040.6
+lora512_seed17 epoch 1 batch 200 loss 0.55423 elapsed 377.3
+lora512_seed17 epoch 1 batch 250 loss 0.51383 elapsed 482.5
+MPS cache release 75 driver_mb 1040.6
+lora512_seed17 epoch 1 batch 300 loss 0.47223 elapsed 577.6
+lora512_seed17 epoch 1 batch 350 loss 0.43303 elapsed 701.8
+MPS cache release 100 driver_mb 1040.6
+lora512_seed17 epoch 1 batch 400 loss 0.40169 elapsed 815.0
+lora512_seed17 epoch 1 batch 450 loss 0.37811 elapsed 940.2
+MPS cache release 125 driver_mb 1040.6
+lora512_seed17 epoch 1 batch 500 loss 0.35696 elapsed 1065.5
+lora512_seed17 epoch 1 batch 550 loss 0.34009 elapsed 1161.7
+MPS cache release 150 driver_mb 1040.6
+lora512_seed17 epoch 1 batch 600 loss 0.32414 elapsed 1262.8
+lora512_seed17 epoch 1 batch 650 loss 0.31283 elapsed 1595.5
+MPS cache release 175 driver_mb 1040.6
+lora512_seed17 epoch 1 batch 700 loss 0.30297 elapsed 1776.9
+lora512_seed17 epoch 1 batch 750 loss 0.29275 elapsed 1827.3
+MPS cache release 200 driver_mb 1040.6
+lora512_seed17 epoch 1 batch 800 loss 0.28264 elapsed 1883.5
+lora512_seed17 epoch 1 batch 850 loss 0.27436 elapsed 1968.1
+MPS cache release 225 driver_mb 1040.6
+lora512_seed17 epoch 1 batch 900 loss 0.26585 elapsed 2051.6
+lora512_seed17 epoch 1 batch 950 loss 0.25979 elapsed 2130.5
+MPS cache release 250 driver_mb 1040.6
+lora512_seed17 epoch 1 batch 1000 loss 0.25209 elapsed 2327.0
+EPOCH lora512_seed17 1 train_bce 0.25209 tune_macro 0.8193 BEST 0.8193
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 28782.60it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+FINETUNING COMPLETE [('lora512_seed17', 'test', 0.8034300705535253), ('lora512_seed17', 'audit', 0.7940212407395268)]
