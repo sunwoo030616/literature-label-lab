@@ -81,6 +81,9 @@ def make_bags(rows, tok, model, device, profile_path=None):
                 max_driver_mb_observed = max(
                     max_driver_mb_observed, torch.mps.driver_allocated_memory() / 2**20
                 )
+                if (i // 32 + 1) % 20 == 0:
+                    torch.mps.synchronize()
+                    torch.mps.empty_cache()
             if i % 512 == 0:
                 print(
                     "bag chunks",
@@ -107,6 +110,7 @@ def make_bags(rows, tok, model, device, profile_path=None):
                     "windows": len(allchunks),
                     "batch": 32,
                     "max_window_tokens": 128,
+                    "mps_cache_release_every_batches": 20,
                     "embedding_loop_seconds": embedding_loop_seconds,
                     "max_driver_mb_observed_after_batches": max_driver_mb_observed,
                     "note": "Driver memory includes allocator caches; sampled after each batch, not a true instantaneous peak. Host desktop load is not controlled. Tokenization and feature compression are outside the timed embedding loop.",
@@ -205,7 +209,7 @@ def main():
         (V3 / "results/bag_encoding_profile.json").write_text(json.dumps(profile, indent=2))
         np.savez_compressed(cache, bags=bags, mask=mask)
         cache_manifest.write_text(json.dumps(provenance, indent=2))
-        dump("bag_windows.json", texts)
+        (V3 / "data/bag_windows.json").write_text(json.dumps(texts, ensure_ascii=False))
         del model
         gc.collect()
         if device == "mps":

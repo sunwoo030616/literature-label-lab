@@ -41,7 +41,7 @@ TF-IDF 256제한은 BiomedBERT tokenizer로 잘라 단어를 복원했다. 잘�
 test는 이미 V1에서 본 2,488편이다. audit는 기존 선택/학습에 쓰지 않은 공식 train 문헌1,000편이다. 감사 표본의 라벨로 설정을 선택하지 않았다. 동일 데이터 원천의 내부 IID 표본이며 완전히 새로운 외부 검증은 아니다. 서로 다른 seed의 학습 표본도 달라 점수 차이를 단순한 초기화 효과로 해석하지 않는다.
 
 ## 4. 실제 가중치 미세조정
-![학습과 검증 곡선](/Users/filledu/Documents/ChatGPT/선우/literature-label-lab/followup_v2/results/figures/learning_curves.png)
+![학습과 검증 곡선](../results/figures/learning_curves.png)
 mean pooling+dropout+linear multi-label head, BCEWithLogitsLoss, partial encoder LR2e-5 / LoRA LR5e-4 / head1e-3, effective batch16, max256, partial3epoch/LoRA1epoch. 마지막2개 block의 원본 가중치를 학습한 조건과 모든12개 block query/value에 LoRA를 붙인 seed17/42를 비교했다. 원본 전체 가중치 학습은 비용 때문에 중단했으며 성공 결과로 세지 않는다. 모든 checkpoint/threshold 선택은 tune600에서만 수행했다.
 - last2_seed17: 선택 epoch 3, tune Macro-F1 0.8551, requires_grad 파라미터 14,181,127, 학습 18.7분. requires_grad 수는 optimizer 대상이며 사용하지 않는 pooler는 실제 gradient를 받지 않을 수 있다.
 - lora_seed17: 선택 epoch 1, tune Macro-F1 0.8162, requires_grad 파라미터 300,295, 학습 13.0분. requires_grad 수는 optimizer 대상이며 사용하지 않는 pooler는 실제 gradient를 받지 않을 수 있다.
@@ -63,7 +63,7 @@ MPS의 SDPA dropout 미지원 오류를 보존하고 eager attention으로 재�
 | frozen_classifier_same40 | 0.5230 | 0.7255 |
 | finetuned_classifier_same40 | 0.6331 | 0.8785 |
 
-이40편은 개발용 calibration의 일부라 최종 테스트 성능으로 쓰지 않는다. Transmission·Epidemic Forecasting 정답이0개라 전체7라벨 Macro-F1은 이 두 라벨의0점을 포함하며 같은40편 조건끼리 비교한다. invalid/empty 출력은 all-negative로 평가했다. 원래 JSON의 verbatim_evidence_rate는 알려진 라벨·15~240자·원문 및 모델 입력과의 정확 일치라는 복합 인용 규칙의 통과율이다. 순수한 원문 substring 비율과 다르며, 길이 위반을 사실적 환각으로 부르지 않는다. 인용 원문 일치는 의미적 entailment나 모델 설명의 충실성을 보장하지 않는다. JSON parsing만 통과한 출력과 근거 검증 후 출력을 구분했다.
+이40편은 개발용 calibration의 일부라 최종 테스트 성능으로 쓰지 않는다. 분류기는4,000편 과제 학습/최대256 BERT token, Qwen은 zero-shot/최대1,600 Qwen token을 사용한 pipeline 비교다. 학습·입력 예산을 맞춘 모델 계열 우열 실험이 아니다. Transmission·Epidemic Forecasting 정답이0개라 전체7라벨 Macro-F1은 이 두 라벨의0점을 포함하며 같은40편 조건끼리 비교한다. invalid/empty 출력은 all-negative로 평가했다. 원래 JSON의 verbatim_evidence_rate는 알려진 라벨·15~240자·원문 및 모델 입력과의 정확 일치라는 복합 인용 규칙의 통과율이다. 순수한 원문 substring 비율과 다르며, 길이 위반을 사실적 환각으로 부르지 않는다. 인용 원문 일치는 의미적 entailment나 모델 설명의 충실성을 보장하지 않는다. JSON parsing만 통과한 출력과 근거 검증 후 출력을 구분했다.
 
 ## 6. 원인별로 말할 수 있는 범위
 - 규제: 같은 표현에서 train/tune 간격이 줄고 후속 평가가 개선됐다. 분류기 과적합이 최초 결과에 영향을 줬다는 직접 근거다.

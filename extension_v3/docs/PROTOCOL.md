@@ -66,3 +66,5 @@ LoRA512가 학습 중이고 bag 특성 추출·학습·평가가 시작되기 �
 ## 최종 내부 감사의 불확실성 — 결과를 보기 전 고정
 
 새 최종 표본에서 fixed seed17의 다음6개 차이에 문헌 단위 paired bootstrap1,000회/percentile95% 구간을 기록한다: 튜닝 frozen−최초 frozen, last2−최초 frozen, LoRA256−튜닝 full TF-IDF, LoRA512−LoRA256, 학습 attention−uniform head, 실제 관계−무작위 관계. 최종 표본 점수로 비교 대상을 고르지 않는다. 모델/설정 선택·외부 도메인의 불확실성을 포함하지 않으며 다중 비교 보정 없는 서술적 구간이다.
+
+bag 특성 추출에서도20배치마다 MPS synchronize/empty_cache를 호출한다. encoder.eval/inference_mode의 출력이나 학습 대상을 바꾸지 않고 오래 실행하는 로컬 encoding의 메모리 관리를 위한 조치다. driver memory는 정리 전 매 배치에서 관측한 최댓값을 별도 기록한다.

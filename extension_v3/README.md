@@ -38,3 +38,5 @@ Qwen은 기존 로컬 snapshot을 읽기 전용 사용합니다. LoRA classifier
 - 실행 환경 버전은 `../followup_v2/requirements-observed.txt`에 보존. GPU 작업은 순차 실행.
 
 평균 LR과 attention 사이에는 optimizer 차이도 있으므로, 같은 BCE/AdamW/dropout/epoch 선택을 유지하고 문단 비중만 고정하는 uniform head를 추가했습니다. 현재 bag 비교는 평균 LR / 균등 head / 학습 attention / 실제 관계 / 무작위 관계의5조건×3학습 부분표본입니다. 원논문 수식과 구현의 구분은 docs/PAPER_TO_IMPLEMENTATION.md에 있습니다. 인용 규칙 실패의 길이·원문 불일치 구분은 analyze_llm.py로 기록합니다.
+
+LLM evidence 응답에는 원래 문헌 token 수, 실제 사용한 문헌 token 수와 truncated 여부도 남깁니다. 모델이 문헌 전체를 읽지 않은 경우 검토자가 이를 구분할 수 있습니다. 인용 규칙 통과는 라벨·길이·원문/모델 입력 문자열 일치를 검사한 결과이며 의미적 정답 보장이 아닙니다.

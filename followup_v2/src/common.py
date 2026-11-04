@@ -33,6 +33,10 @@ def sha(p):
 
 
 def data():
+    # Ignored artifact directories are absent in a fresh Git clone.
+    for home in [V2, ROOT / "extension_v3"]:
+        for directory in ["data", "models", "results", "docs"]:
+            (home / directory).mkdir(parents=True, exist_ok=True)
     manifest = json.loads((ROOT / "results/split_manifest.json").read_text())
     splits = {}
     for k in ["train", "dev", "test"]:

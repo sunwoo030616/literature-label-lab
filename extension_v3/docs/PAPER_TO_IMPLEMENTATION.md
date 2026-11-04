@@ -32,3 +32,9 @@ V3 관계 penalty는 `sum(G[i,j] * mean_d((w_i-w_j)^2)) / sum(G)`입니다. 분�
 원논문의 주 평가는 Hamming Loss·Ranking Loss·One Error·Coverage·Average Precision과5-fold cross-validation입니다. 이번 Macro/Micro-F1·고정 분할의 수치를 논문 표의 숫자와 직접 비교하지 않습니다.
 
 관계 penalty는 관계가 낮은 라벨을 서로 밀어내는 항이 아닙니다. 관계가 높은 쌍을 가깝게 만드는 힘이 크고, 낮은 쌍은 그 제약이 약할 뿐입니다.
+
+## attention 평가 논쟁도 함께 확인
+
+[Jain & Wallace,2019](https://aclanthology.org/N19-1357/)는 높은 attention 비중을 예측의 설명으로 곧바로 간주하기 어렵다는 실험을 제시했습니다. 반면 [Wiegreffe & Pinter,2019](https://aclanthology.org/D19-1002/)는 설명의 정의와 모델 전체의 요소를 고려해야 한다며 uniform weights·여러 seed 등 진단 기준을 제안합니다.
+
+이번 대조군과 문단 제거 실험은 이러한 평가 관점에 맞는지 추가 확인했습니다. 둘 다 당시의 주된 RNN 설정을 포함한 논의이고, 이번 label-query 문헌 bag에서 결과가 그대로 성립한다는 뜻은 아닙니다. 우리 uniform head·3개 학습 부분표본·삭제 민감도를 그 논문의 전체 재현이나 새 설명 가능성 알고리즘으로 주장하지 않습니다. 실제 수치와 평가 범위를 함께 확인합니다.

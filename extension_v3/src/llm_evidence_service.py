@@ -24,7 +24,8 @@ def generate_evidence(title, abstract):
     model = _CACHE["model"]
     tok = _CACHE["tok"]
     original = title + " " + abstract
-    visible = tok.decode(tok.encode(original)[:1600])
+    original_ids = tok.encode(original)
+    visible = tok.decode(original_ids[:1600])
     user = (
         "Allowed topic definitions:\n" + DEFINITIONS + "\nDOCUMENT:\n" + visible + "\nEND DOCUMENT"
     )
@@ -52,6 +53,10 @@ def generate_evidence(title, abstract):
         "raw_output": raw,
         "latency_seconds": time.perf_counter() - start,
         "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
+        "input_tokens": len(original_ids),
+        "used_document_tokens": min(len(original_ids), 1600),
+        "max_document_tokens": 1600,
+        "document_truncated": len(original_ids) > 1600,
         "status": "parsed" if result["valid_json"] else "invalid_output",
         **result,
         "limitations": [

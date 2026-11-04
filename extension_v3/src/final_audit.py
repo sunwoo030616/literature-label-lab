@@ -34,7 +34,13 @@ if __name__ == "__main__":
         V3 / "results/locked_policies.json",
     ]
     assert all(p.exists() for p in required)
-    required += [V2 / "src/finetune.py", V3 / "src/bag_model.py", V3 / "src/final_audit.py"]
+    required += [
+        V2 / "src/common.py",
+        V2 / "src/finetune.py",
+        V3 / "src/finetune512.py",
+        V3 / "src/bag_model.py",
+        V3 / "src/final_audit.py",
+    ]
     required += [V2 / "src/llm_review.py", V3 / "src/llm_fewshot.py"]
     for optional in [
         V2 / "results/locked_classifier_policy.json",

@@ -20,6 +20,9 @@ if __name__ == "__main__":
         for c in json.loads((V3 / "results/locked_finetune_policies.json").read_text())
         if c["mode"].startswith("lora")
     ]
+    replica = V3 / "results/locked_replica512_policy.json"
+    if replica.exists():
+        configs.append((V3, json.loads(replica.read_text())))
     out = []
     for home, cfg in configs:
         checkpoint = home / cfg["checkpoint"]

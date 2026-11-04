@@ -74,7 +74,7 @@ def main():
             }
         )
         if name == "highest_attention":
-            windows = json.loads((V3 / "results/bag_windows.json").read_text())[offset:]
+            windows = json.loads((V3 / "data/bag_windows.json").read_text())[offset:]
             for local, global_i in enumerate(ix[:10]):
                 detailed.append(
                     {

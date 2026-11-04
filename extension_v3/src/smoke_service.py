@@ -40,6 +40,11 @@ with TestClient(app) as client:
     before = client.get(f"/documents/{id}").json()
     result = client.post(f"/documents/{id}/evidence")
     assert result.status_code == 200
+    llm_result = result.json()["result"]
+    assert 0 < llm_result["used_document_tokens"] <= llm_result["max_document_tokens"]
+    assert llm_result["document_truncated"] == (
+        llm_result["input_tokens"] > llm_result["max_document_tokens"]
+    )
     after = client.get(f"/documents/{id}").json()
     assert after["review"] == before["review"] and after["prediction"] == before["prediction"]
     checks.append({"check": "actual_local_llm_evidence", "response": result.json()})

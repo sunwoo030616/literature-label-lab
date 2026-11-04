@@ -126,7 +126,7 @@ def main():
     fig.savefig(figdir / "regularization.png")
     plt.close(fig)
     core = ["tuned_frozen256", "last2_seed17", "lora_seed17", "lora_seed42", "lora512_seed17"]
-    fig, ax = plt.subplots(figsize=(8, 3))
+    fig, ax = plt.subplots(figsize=(9, 3))
     positions = np.arange(len(core))
     width = 0.36
     for off, split, color in [
@@ -141,7 +141,11 @@ def main():
             positions + off,
             vals,
             width,
-            label=("new internal audit" if split == "final_internal_audit1000" else split),
+            label=(
+                "new internal audit"
+                if split == "final_internal_audit1000"
+                else "reused test" if split == "test" else split
+            ),
             color=color,
         )
         for x, v in zip(positions + off, vals):
@@ -162,7 +166,7 @@ def main():
     fig.tight_layout()
     fig.savefig(figdir / "finetuning.png")
     plt.close(fig)
-    fig, axs = plt.subplots(1, 2, figsize=(9, 2.8))
+    fig, axs = plt.subplots(1, 2, figsize=(9, 2.76))
     groups = ["bag_mean", "uniform_attention", "attention", "label_graph", "random_graph"]
     labels = ["Bag mean LR", "Uniform head", "Attention", "Label graph", "Random graph"]
     for ax, split in zip(axs, ["test", confirmation_split]):
@@ -180,14 +184,18 @@ def main():
         ax.set_ylim(0, 1)
         ax.tick_params(axis="x", labelsize=8)
         ax.set_title(
-            ("new internal audit" if split == "final_internal_audit1000" else split)
+            (
+                "new internal audit"
+                if split == "final_internal_audit1000"
+                else "reused test" if split == "test" else split
+            )
             + " | mean +/- sample SD"
         )
         ax.set_ylabel("Macro-F1")
     fig.tight_layout()
     fig.savefig(figdir / "bags.png")
     plt.close(fig)
-    fig, ax = plt.subplots(figsize=(8, 2.5))
+    fig, ax = plt.subplots(figsize=(9, 2.5))
     rr = llm["conditions"] + (fewshot["conditions"] if fewshot else [])
     llm_names = [
         "Zero-shot\nraw",
@@ -214,6 +222,8 @@ def main():
         "## 1. 기존 결과 보존과 핵심 원인",
         "V1 baseline을 그대로 보존했다. 최초 frozen BiomedBERT의 저성능을 모델 자체의 한계로 단정하지 않고 분류기 규제·입력 길이·pooling·encoder 적응을 분리했다. C1에서 C.01로 규제를 강하게 하자 train/tune 간격이 줄고, 같은 seed17 재사용 테스트 Macro-F1이 .7484→.7927로 개선됐다. 최초 저성능에 분류기 과적합이 영향을 줬다는 근거다.",
         "",
+        "![규제 진단](../results/figures/regularization.png)",
+        "",
         "## 2. 실제 결과 전체 비교",
         "| 조건 | 분할 | Macro-F1 | Micro-F1 |",
         "|---|---|---:|---:|",
@@ -233,9 +243,13 @@ def main():
         "## 3. 최종 일회 내부 감사 및 실제 미세조정",
         "V2: 마지막2개 block seed17, 모든 층 LoRA seed17/42. V3: LoRA max512 seed17 추가. partial은 원본 마지막2개 block을, LoRA는 모든층에 추가한 query/value 저랭크 가중치를 task BCE로 업데이트했다. partial3epoch/LoRA1epoch 예산 안에서 tune600으로 checkpoint와 threshold를 선택했고, calibration/test/audit로 고르지 않았다. V2의 처음/마지막 block 가중치 변화는 verification.json에 있다. partial은3epoch/eager/attention dropout.1, LoRA는1epoch/SDPA/attention dropout0이므로 학습량과 구조가 함께 다른 비교다. LoRA256과 LoRA512는 epoch·LR schedule·attention/dropout을 맞췄으나 physical batch와 padding·cache 관리는 다르다. 512 미완료 시도는 보존하고 fixed512 padding/25optimizer step마다 MPS cache 정리를 적용해 재시작했다. 이때 dropout RNG·연산 순서와 호스트 부하도 달라질 수 있다. V3 max512는 읽는 길이와 계산 비용이 함께 증가한다. 하나의 추가 seed 결과이므로 일반적인 우열을 증명하지 않는다.",
         "",
+        "![미세조정 비교](../results/figures/finetuning.png)",
+        "",
         "## 4. 논문 공부에서 더 확장한 문헌 bag 실험",
         "문헌을 최대4개 token window의 bag으로 표현했다. frozen encoder로 각 조각을 벡터화한 뒤 bag mean LR, 같은 학습 조건의 균등 head, 주제별 attention, 실제 관계 규제, 무작위 관계 규제를 비교했다. 균등 head와 학습 attention은 query의 학습 여부만 다르게 두고 optimizer·dropout·epoch 선택을 맞췄다. 평균 LR과 attention의 차이를 attention 하나의 효과로 해석하지 않는다. 각 조건을3개 학습 부분표본에서 반복했다. 관계 규제는 classifier weight를 가깝게 하는 후속 구성이고, T-MDML의 distance metric/triplet 학습 재현은 아니다.",
         "라벨별 attention은 어떤 조각에 비중을 주었는지 살펴보는 도구다. 정답 근거나 인과적 설명을 보장하지 않는다. 4개보다 많은 window는 균등 선택하여 원문 전체를 항상 읽지는 않는다. 검증 선택 조건이 많아져 선택 과적합 가능성도 남긴다.",
+        "",
+        "![문헌 bag 비교](../results/figures/bags.png)",
         "",
         "## 5. 생성형 LLM의 실제 효과",
         f"무료 Qwen3-4B-4bit를 로컬 MLX로 실행했다. 고정40편에서 JSON 유효율 {llm['valid_json_rate']:.1%}, 인용 규칙 통과율 {llm['verbatim_evidence_rate']:.1%}, 지연 중앙값 {llm['median_seconds']:.2f}초, p95 {llm['p95_seconds']:.2f}초.",
@@ -255,7 +269,9 @@ def main():
             )
     lines += [
         "",
-        "개발용40편의 탐색 실험이며 최종 test 성능이 아니다. 원문에 있는 문장인지 검사해도 의미적 entailment를 검증한 것은 아니다. 분류기 예측을 LLM에 보여주지 않았으며 invalid 출력도 all-negative 오류로 포함했다. LLM의 결과가 낮거나 인용을 잘못 내면 그대로 실패로 기록했다.",
+        "개발용40편의 탐색 실험이며 최종 test 성능이 아니다. 분류기는4,000편의 과제 학습과 최대256 BERT token, Qwen은 zero/few-shot과 최대1,600 Qwen token의 현재 문헌을 사용했다. 같은 문헌의 pipeline 비교이지 학습·입력·계산 예산을 맞춘 모델 계열 우열 실험은 아니다. 원문에 있는 문장인지 검사해도 의미적 entailment를 검증한 것은 아니다. 분류기 예측을 LLM에 보여주지 않았으며 invalid 출력도 all-negative 오류로 포함했다. LLM의 결과가 낮거나 인용을 잘못 내면 그대로 실패로 기록했다.",
+        "",
+        "![동일40편 LLM 비교](../results/figures/llm.png)",
         "",
         "## 6. 확률 보정은 정확도와 별도",
         "calibration400으로 scalar temperature를 binary NLL에 맞췄다. threshold도 같은 단조 함수로 변환하여 분류 결과를 유지했다. 따라서 F1은 의도적으로 변하지 않는다. 확률 품질 NLL/Brier/ECE가 개선되는지를 별도로 평가했다.",
@@ -288,8 +304,28 @@ def main():
         "- frozen embedding 해석: https://aclanthology.org/2022.findings-emnlp.314/",
         "- 관련 pooling 연구: https://aclanthology.org/2023.emnlp-main.359/",
         "- attention MIL: https://proceedings.mlr.press/v80/ilse18a.html",
+        "- attention 설명 평가: https://aclanthology.org/N19-1357/ 및 https://aclanthology.org/D19-1002/",
         "- probability calibration: https://proceedings.mlr.press/v70/guo17a.html",
         "- T-MDML AAAI2025: 사용자가 제공한 Multi-label_AAAI.pdf 원문.",
+    ]
+    lines += [
+        "",
+        "## 완료 실행의 학습 비용",
+        "| 조건 | 선택 epoch | 학습 실행 분 | 학습 대상 파라미터 | physical batch × accumulation |",
+        "|---|---:|---:|---:|---|",
+    ]
+    training_configs = read(V2 / "results/locked_finetune_policies.json") + read(
+        V3 / "results/locked_finetune_policies.json"
+    )
+    replica_policy = V3 / "results/locked_replica512_policy.json"
+    if replica_policy.exists():
+        training_configs.append(read(replica_policy))
+    for r in training_configs:
+        lines.append(
+            f"| {r['variant']} | {r['epoch']} | {r['training_seconds']/60:.2f} | {r['trainable_parameters']:,} | {r['physical_batch']} × {r['gradient_accumulation']} |"
+        )
+    lines += [
+        "완료된 각 실행의 학습·epoch 검증·checkpoint 저장 구간이며, 사전 모델 적재·입력 토큰화·최종 test/audit 추론은 별도다. 중단한 실행의 비용은 여기에 합산하지 않고 별도 로그와 전체 개발 경과에 남겼다. 같은 desktop host의 부하가 달랐고 partial3epoch/LoRA1epoch, padding·attention backend도 달라 일반적인 모델 속도 우열로 해석하지 않는다. 512 재시작은 fixed512 padding과25optimizer step마다 cache 정리를 사용했다. host memory/swap 관측도 results에 보존했다."
     ]
     uncertainty_path = V3 / "results/final_audit_uncertainty.json"
     if uncertainty_path.exists():
