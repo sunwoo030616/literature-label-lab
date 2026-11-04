@@ -1,0 +1,19 @@
+{
+  "experiment_source_git_revision": "f8762ec0a6edf5255457e8e317fd6e2cd167e7a4",
+  "scope": "Experiment source revision before final documentation/artifact commit; final Git commit is verified separately to avoid a circular self-hash.",
+  "sha256": {
+    "README.md": "fd934c2ba071496c06d2fb2892952c1cad2cd5a7cb3c5bbc4963f0a61cf06d3e",
+    "extension_v3/output/portfolio_followup.pdf": "38108c0e1424bbfbc9a0528f9c2ae312a4cd2b1da00e1b9edae11cefce5af9d5",
+    "extension_v3/docs/REPORT.md": "1f9ed4e221344f105be6f889642c4d44299731399c4706bb31b30d3699e01545",
+    "extension_v3/docs/RESULTS_WALKTHROUGH.md": "d714e1815b01287b0d88b937e608d46919499bd3b1663321cc4d55dad9569bb9",
+    "extension_v3/docs/EXPLAIN.md": "a45e6bb93e6923873f69d71798d17b71b50394d0f7abdd4f99ac3bc2620d590f",
+    "extension_v3/docs/INTERVIEW.md": "ce75e9885814505816fdbbce8cf9a8ad9dc70db7a31d3294f065f2a2649653da",
+    "extension_v3/results/final_verification.json": "1b03accd6487776774ef66f287959b5b65dad6b3bda452881386d2eeeddf9160",
+    "extension_v3/results/final_audit_results.json": "0683d9d129a0d40890df8e75a6f86f7f01f4f1368cf6539799a2285f7b69f6a8",
+    "extension_v3/results/final_audit_manifest.json": "abc74745dec08eaa97f7f846bfbde3748c1babd52f98126fc0e10e1cee54ecf5",
+    "extension_v3/results/final_audit_uncertainty.json": "9f845276a883f5b263d12c09020f172628a70aeb44e1e7971a44d3eb1add2440",
+    "extension_v3/results/extra_phase_start.json": "8fc479ab5f390579691e47b8af7ba8a4afc9784be5f9d7c3f006ecdafa523f35",
+    "extension_v3/results/extra_phase_end.json": "6f7e003dcd8272eb44cbb113ea1396b4b79b93ccc79cf5883ca98423a4aa7262",
+    "extension_v3/results/pdf_visual_qa.json": "30846857710f3a4e7c9991c7ba61dc6239b3349fe1717475f838e9cbf7f30bef"
+  }
+}

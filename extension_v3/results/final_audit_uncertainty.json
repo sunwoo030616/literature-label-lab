@@ -1,0 +1,86 @@
+{
+  "comparisons": [
+    {
+      "comparison": "tuned_frozen256 minus v1_frozen256",
+      "delta_macro_f1": 0.04144857295133475,
+      "paired_document_bootstrap_ci95": [
+        0.01568680750251455,
+        0.06400402282017496
+      ],
+      "resamples": 1000
+    },
+    {
+      "comparison": "last2_seed17 minus v1_frozen256",
+      "delta_macro_f1": 0.059309001407751416,
+      "paired_document_bootstrap_ci95": [
+        0.02831756015520237,
+        0.09097058231532397
+      ],
+      "resamples": 1000
+    },
+    {
+      "comparison": "lora_seed17 minus tuned_tfidf_full",
+      "delta_macro_f1": 0.0006745618235418638,
+      "paired_document_bootstrap_ci95": [
+        -0.03341776379345315,
+        0.033342156867508
+      ],
+      "resamples": 1000
+    },
+    {
+      "comparison": "lora512_seed17 minus lora_seed17",
+      "delta_macro_f1": 0.0014876712756367594,
+      "paired_document_bootstrap_ci95": [
+        -0.01705529812155098,
+        0.022888688153821224
+      ],
+      "resamples": 1000
+    },
+    {
+      "comparison": "attention_seed17 minus uniform_attention_seed17",
+      "delta_macro_f1": -0.031032492612838358,
+      "paired_document_bootstrap_ci95": [
+        -0.06483020089855948,
+        0.002868209615689873
+      ],
+      "resamples": 1000
+    },
+    {
+      "comparison": "label_graph_seed17 minus random_graph_seed17",
+      "delta_macro_f1": -0.001289754634373641,
+      "paired_document_bootstrap_ci95": [
+        -0.005626339344881342,
+        0.0012909118090273812
+      ],
+      "resamples": 1000
+    },
+    {
+      "comparison": "threshold_cv_lora512_seed17 minus lora512_seed17",
+      "delta_macro_f1": 0.0016924278799859138,
+      "paired_document_bootstrap_ci95": [
+        -0.01817900339054566,
+        0.019135333858723718
+      ],
+      "resamples": 1000
+    },
+    {
+      "comparison": "last2_seed17 minus tuned_tfidf_full",
+      "delta_macro_f1": 0.013773733799338217,
+      "paired_document_bootstrap_ci95": [
+        -0.01960588938685678,
+        0.04521140197257143
+      ],
+      "resamples": 1000
+    }
+  ],
+  "label_support": {
+    "Treatment": 337,
+    "Diagnosis": 246,
+    "Prevention": 434,
+    "Mechanism": 177,
+    "Transmission": 46,
+    "Epidemic Forecasting": 26,
+    "Case Report": 91
+  },
+  "scope": "One new internal1000-document set; same source corpus, not external validation. Models, thresholds and comparisons fixed before this set. Percentile intervals only resample documents for fixed models; no model/selection/domain uncertainty and no familywise multiple-comparison correction. Not a global significance claim."
+}

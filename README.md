@@ -1,6 +1,8 @@
 # Biomedical Literature Label Lab
 
-개별연구에서 공부한 **라벨 상관관계**를 실제 문헌 분류 실험과 로컬 백엔드로 확장하는 프로젝트입니다. T-MDML 전체 재현이 아니며 성능 향상을 전제하지 않습니다.
+개별연구에서 공부한 **bag·라벨 상관관계**를 공개 생의학 제목·초록 분류로 확장한 연구 프로젝트입니다. 최초 저성능의 원인을 조사하고 무료 부분/LoRA 미세조정, attention 대조, LLM 근거 추출과 검토 API를 실제로 구현·평가했습니다. T-MDML 전체 재현이나 SOTA를 주장하지 않습니다.
+
+새 내부1,000편에서 최초 frozen BiomedBERT .7474→규제 조정 .7889→부분 미세조정 .8068이었습니다. 튜닝 TF-IDF도 .7930으로 경쟁력 있었고, attention·관계 규제·temperature 보정의 일관된 이득은 확인하지 못했습니다. 최종 새 내부 표본의28개 조건과 불리한 결과를 보존합니다. [먼저 읽을 결과 해설](extension_v3/docs/RESULTS_WALKTHROUGH.md)에서 범위를 확인할 수 있습니다.
 
 ## 개발 단계별로 보기
 
@@ -8,7 +10,7 @@
 |---|---|---|
 | V1 | 최초 baseline·라벨 관계 대조·검색 API | 완료. 아래 최초 실행 기록 및 [원본 보고서](docs/REPORT.md) |
 | V2 | 저성능 원인 진단·partial/LoRA 미세조정·Qwen 인용 비교 | 완료. [보고서](followup_v2/docs/REPORT.md) / [쉬운 설명](followup_v2/docs/EXPLAIN.md) |
-| V3 | 긴 문헌 LoRA·chunk bag·관계 규제·검토 이력·최종 내부 감사 | 추가 실험 진행 중. [계획](extension_v3/docs/PROTOCOL.md) / [면접 설명](extension_v3/docs/INTERVIEW.md) |
+| V3 | 긴 문헌 LoRA·chunk bag·관계 규제·검토 이력·최종 내부 감사 | 완료. [결과 해설](extension_v3/docs/RESULTS_WALKTHROUGH.md) / [전체 보고서](extension_v3/docs/REPORT.md) / [포폴 추가본](extension_v3/output/portfolio_followup.pdf) |
 
 V1의 결과·보고서·모델은 해시로 보존합니다. 후속 버전은 최초 실패를 지우지 않고 별도로 비교합니다. 저장소에는 코드·정책·측정 결과를 올리고 원본 데이터·학습 가중치·SQLite·로컬 환경은 포함하지 않습니다. 생성형 Qwen의 in-context 예시와 BiomedBERT의 실제 가중치 미세조정을 구분합니다.
 

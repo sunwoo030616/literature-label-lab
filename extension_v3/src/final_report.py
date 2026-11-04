@@ -76,6 +76,7 @@ def main():
     old = read(ROOT / "results/test_results.json")
     grid = read(V2 / "results/classifier_grid.json")
     verify = read(V2 / "results/verification.json")
+    extension_verify = read(V3 / "results/final_verification.json")
     start = read(V3 / "results/extra_phase_start.json")
     end = read(V3 / "results/extra_phase_end.json")
     allres = diag + inp + ft + v3ft
@@ -127,7 +128,14 @@ def main():
     fig.tight_layout()
     fig.savefig(figdir / "regularization.png")
     plt.close(fig)
-    core = ["tuned_frozen256", "last2_seed17", "lora_seed17", "lora_seed42", "lora512_seed17"]
+    core = [
+        "tuned_tfidf_full",
+        "tuned_frozen256",
+        "last2_seed17",
+        "lora_seed17",
+        "lora_seed42",
+        "lora512_seed17",
+    ]
     fig, ax = plt.subplots(figsize=(9, 3))
     positions = np.arange(len(core))
     width = 0.36
@@ -155,6 +163,7 @@ def main():
     ax.set_xticks(
         positions,
         [
+            "Tuned\nTF-IDF",
             "Tuned\nfrozen256",
             "Last 2\nseed17",
             "LoRA256\nseed17",
@@ -162,15 +171,22 @@ def main():
             "LoRA512\nseed17",
         ],
     )
-    ax.set_ylim(0, 1)
-    ax.legend(loc="lower right")
+    ax.set_ylim(0, 1.10)
+    ax.set_yticks(np.arange(0, 1.01, 0.2))
+    ax.legend(loc="upper center", ncol=2, frameon=False, fontsize=9)
     ax.set_ylabel("Macro-F1")
     fig.tight_layout()
     fig.savefig(figdir / "finetuning.png")
     plt.close(fig)
     fig, axs = plt.subplots(1, 2, figsize=(9, 2.76))
     groups = ["bag_mean", "uniform_attention", "attention", "label_graph", "random_graph"]
-    labels = ["Bag mean LR", "Uniform head", "Attention", "Label graph", "Random graph"]
+    labels = [
+        "Bag mean\nLR",
+        "Uniform\nhead",
+        "Learned\nattention",
+        "Label\ngraph",
+        "Random\ngraph",
+    ]
     for ax, split in zip(axs, ["test", confirmation_split]):
         rr = [
             next(r for r in agg if r["variant"] == n + "_3seed_mean" and r["split"] == split)
@@ -186,12 +202,9 @@ def main():
         ax.set_ylim(0, 1)
         ax.tick_params(axis="x", labelsize=8)
         ax.set_title(
-            (
-                "new internal audit"
-                if split == "final_internal_audit1000"
-                else "reused test" if split == "test" else split
-            )
-            + " | mean +/- sample SD"
+            ("New internal audit" if split == "final_internal_audit1000" else "Reused test")
+            + "\nMean +/- sample SD (3 train subsets)",
+            fontsize=9,
         )
         ax.set_ylabel("Macro-F1")
     fig.tight_layout()
@@ -414,7 +427,7 @@ def main():
     if sensitivity:
         lines += [
             "",
-            f"문단 제거 민감도: 기존 audit 중 chunk2개 이상 {sensitivity['eligible_documents']}편, 원본 Macro-F1 {sensitivity['baseline']['macro_f1']:.4f}.",
+            f"토큰 조각 제거 민감도: 기존 audit 중 chunk2개 이상 {sensitivity['eligible_documents']}편, 원본 Macro-F1 {sensitivity['baseline']['macro_f1']:.4f}.",
         ]
         for r in sensitivity["conditions"]:
             lines.append(
@@ -434,6 +447,13 @@ def main():
         lines.append(
             f"- {r['variant']}: adapter+head {r['adapter_bytes']/1e6:.3f}MB / 원본 포함 checkpoint {r['full_checkpoint_bytes']/1e6:.1f}MB. tensor round-trip 정확 일치. 별도 base model이 필요하므로 전체 모델 크기 축소라고 쓰지 않는다."
         )
+    lines += [
+        "",
+        "## 최종 산출물 무결성 확인",
+        f"V1 원본 {extension_verify['v1_files_unchanged']}개 파일과 최종 평가 전에 고정한 {extension_verify['locked_hashes_unchanged']}개 파일 해시가 그대로였다. 새 내부 표본의 {extension_verify['final_audit_conditions']}개 조건 점수를 저장된 확률·고정 threshold로 다시 계산해 일치함을 확인했다. PMID와 정규화 텍스트 해시는 기존 표본과 겹치지 않았다.",
+        f"DOI가 있는 {1000-extension_verify['final_audit_missing_doi']}편의 기존 표본 중복은0이었다. 나머지 {extension_verify['final_audit_missing_doi']}편은 DOI가 없어 PMID·텍스트 해시만 확인했다. 의미적 근접 중복까지 검증한 것은 아니다.",
+        "LoRA512의 원본 encoder199개 대조 텐서는 정확히 유지됐고, adapter B norm과 checkpoint 해시를 확인했다. uniform head3개의 query가 실제 저장 가중치에서도0인지 확인했고, CV 임계값 분기는 원래 모델과 확률 배열이 완전히 같았다. 검사는 result JSON의 재서술이 아니라 실제 가중치·예측·원본 ID와의 대조를 포함한다.",
+    ]
     (V3 / "docs/REPORT.md").write_text("\n".join(lines))
     out = V3 / "output"
     out.mkdir(exist_ok=True)
@@ -473,7 +493,7 @@ def main():
     def head(n, title, sub):
         c.setFillColor(HexColor(orange))
         c.rect(0, 583, 842, 12, fill=1, stroke=0)
-        text(42, 550, f"FOLLOW-UP RESEARCH / 2026.11 / {n}", 10, orange)
+        text(42, 550, f"LITERATURE LABEL LAB / RESEARCH FOLLOW-UP / 2026.11 / {n}", 10, orange)
         text(42, 513, title, 24)
         para(42, 485, sub, 10, color=muted)
 
@@ -497,7 +517,7 @@ def main():
     head(
         "01",
         "낮은 점수를 모델의 한계로 단정하지 않았다",
-        "V1 결과를 보존하고 분류기 설정·입력 길이·pooling·과제 적응을 분리해 조사했다.",
+        "LitCovid 제목·초록7주제 분류. 최초 결과를 보존하고 규제·입력 표현·과제 적응을 분리해 조사했다.",
     )
     c.drawImage(str(figdir / "regularization.png"), 65, 242, width=710, height=231)
     y = 220
@@ -505,7 +525,7 @@ def main():
         para(
             42,
             y,
-            "<b>확인한 원인</b>  같은 frozen BiomedBERT 표현에서 C1은 학습 .981 / 검증 .776이었다. 규제를 강화한 C.01은 학습 .869 / 검증 .813으로 간격이 줄었다.",
+            "<b>확인한 원인</b>  같은 frozen BiomedBERT 표현에서 C=1은 학습 .981 / 검증 .776이었다. 규제를 강화한 C=0.01은 학습 .869 / 검증 .813으로 간격이 줄었다.",
         )
         - 12
     )
@@ -520,7 +540,7 @@ def main():
     para(
         42,
         y,
-        "<b>추가 확인</b>  256 token으로 제한한 TF-IDF도 full TF-IDF보다 높았다. 따라서 긴 문헌 잘림 하나만을 원인으로 가정하지 않았다. 설정 선택은 검증 데이터에서만 했다.",
+        "<b>추가 확인</b>  최초 C=1 조건에서는256 token TF-IDF가 full보다 높았지만, 별도 규제 튜닝 뒤에는 full .8176 /256제한 .8060으로 순위가 바뀌었다. 입력 잘림만을 원인으로 단정하지 않았고 설정은 검증에서만 골랐다.",
         10,
         color=muted,
     )
@@ -532,16 +552,25 @@ def main():
         "마지막2개 층 / 모든층 LoRA / 다른 학습 표본 / 긴 입력을 비교. checkpoint는 tune600에서 선택했다.",
     )
     c.drawImage(str(figdir / "finetuning.png"), 45, 219, width=750, height=250)
-    best17 = next(r for r in ft if r["variant"] == "lora_seed17" and r["split"] == "test")
-    audit17 = next(
-        r for r in allres if r["variant"] == "lora_seed17" and r["split"] == confirmation_split
+
+    def final_score(variant):
+        return next(
+            r["macro_f1"]
+            for r in allres
+            if r["variant"] == variant and r["split"] == confirmation_split
+        )
+
+    partial_ci = next(
+        r
+        for r in read(V3 / "results/final_audit_uncertainty.json")["comparisons"]
+        if r["comparison"] == "last2_seed17 minus tuned_tfidf_full"
     )
     y = 200
     y = (
         para(
             42,
             y,
-            f"<b>미리 지정한 LoRA256 seed17</b>  test Macro-F1 {best17['macro_f1']:.4f} / 내부 audit {audit17['macro_f1']:.4f}. 기존 테스트2,488편과 이전 모델에 쓰지 않은 감사1,000편을 분리해 보고했다.",
+            f"<b>새 내부 감사1,000편</b>  부분 미세조정 {final_score('last2_seed17'):.4f}, 튜닝 TF-IDF {final_score('tuned_tfidf_full'):.4f}, 사전 지정 LoRA256 seed17 {final_score('lora_seed17'):.4f}. 부분 미세조정과 TF-IDF 차이의 문헌95% 구간 [{partial_ci['paired_document_bootstrap_ci95'][0]:.4f}, {partial_ci['paired_document_bootstrap_ci95'][1]:.4f}]은0을 포함했다.",
         )
         - 12
     )
@@ -565,7 +594,7 @@ def main():
     head(
         "03",
         "논문 개념을 긴 문헌의 bag 학습으로 확장",
-        "문헌을 최대4개 token window로 나누고 주제별 attention과 관계 규제를 실제로 학습했다.",
+        "제목·초록을 최대4개 token window로 나누고 주제별 attention과 관계 규제를 학습했다.",
     )
     c.drawImage(str(figdir / "bags.png"), 42, 239, width=750, height=230)
     y = 220
@@ -596,7 +625,7 @@ def main():
     para(
         42,
         y,
-        "<b>검증 범위</b>  bag·관계에서 착안한 후속 구성이며 T-MDML의 triplet 거리 학습 재현은 아니다. 문단 제거 민감도도 비교했으나 attention 비중을 인과적 근거로 주장하지 않는다.",
+        "<b>검증 범위</b>  bag·관계에서 착안한 후속 구성이며 T-MDML의 triplet 거리 학습 재현은 아니다. 토큰 조각 제거 민감도도 비교했으나 attention 비중을 인과적 근거로 주장하지 않는다.",
         10,
         color=muted,
     )
@@ -604,7 +633,7 @@ def main():
     c.showPage()
     head(
         "04",
-        "LLM의 설명을 검증하고 사람 검토까지 연결",
+        "LLM 근거 후보를 검증하고 검토까지 연결",
         "생성형 Qwen3-4B와 encoder 분류기를 분리해 비교하고, 인용·확률·검토 상태를 각각 검증했다.",
     )
     c.drawImage(str(figdir / "llm.png"), 50, 257, width=742, height=206)
@@ -613,7 +642,7 @@ def main():
         para(
             42,
             y,
-            f"<b>무료 로컬 LLM</b>  고정40편의 개발 실험. JSON 유효율 {llm['valid_json_rate']:.1%}, 인용 규칙 통과율 {llm['verbatim_evidence_rate']:.1%}. 인용 일치가 의미적 정답을 증명하지는 않는다.",
+            f"<b>무료 로컬 LLM</b>  같은40편에서 train-only 예시{fewshot['training_examples']}개로 zero/few-shot 대조. JSON {llm['valid_json_rate']:.1%} / {fewshot['valid_json_rate']:.1%}, 인용 규칙 {llm['verbatim_evidence_rate']:.1%} / {fewshot['verbatim_evidence_rate']:.1%}. 라벨·길이·문자열 일치는 의미적 정답을 보장하지 않는다.",
         )
         - 10
     )
@@ -621,7 +650,7 @@ def main():
         para(
             42,
             y,
-            "<b>확률 보정</b>  별도 calibration400으로 temperature를 선택하고 NLL/Brier/ECE를 평가했다. threshold도 함께 변환해 분류 결정은 유지했다. 정확도와 확률 품질을 구분했다.",
+            "<b>확률 보정</b>  calibration400으로 temperature를 선택했으나 test/audit의 NLL·Brier는 개선되지 않았다. threshold를 함께 변환해 분류 결정은 유지했고, 정확도와 확률 품질을 구분했다.",
         )
         - 10
     )
@@ -636,7 +665,7 @@ def main():
     para(
         42,
         y,
-        "기존 최초 실험·후속 진단·새 모델·실패 결과는 별도 파일로 보존했다. 유료 API를 사용하지 않았다. 전체 수치와 한계는 실험 보고서·raw JSON에서 확인할 수 있다.",
+        "40편에는2개 주제의 정답이 없었다. 분류기는 과제 학습, LLM은 zero/few-shot으로 학습·입력 예산이 다르다. 개발용 pipeline 비교이며 모델 계열의 일반적 우열·최종 테스트 성능으로 주장하지 않는다.",
         10,
         color=muted,
     )

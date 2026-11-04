@@ -1,0 +1,9 @@
+{
+  "pdf_pages": 4,
+  "pdf_sha256": "38108c0e1424bbfbc9a0528f9c2ae312a4cd2b1da00e1b9edae11cefce5af9d5",
+  "render_engine": "bundled Poppler pdftoppm",
+  "preview_max_dimension_pixels": 1600,
+  "all_four_pages_visually_inspected": true,
+  "verified_layout": "No clipping or label overlap after wrapping bag axis labels and moving the model legend. All four final rendered pages inspected.",
+  "repository_markdown_relative_links_checked": true
+}
