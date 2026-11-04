@@ -1,0 +1,27 @@
+TRAINING DEVICE mps
+REUSE COMPLETED LAST2
+W1104 12:20:25.489000 79334 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 11368.85it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Traceback (most recent call last):
+  File "/Users/filledu/Documents/ChatGPT/선우/literature-label-lab/followup_v2/src/finetune.py", line 63, in <module>
+    else:configs.append(train_one(mode,seed,trainenc,devenc,Y['train'],TUNE,tok,device))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/literature-label-lab/followup_v2/src/finetune.py", line 41, in train_one
+    (loss/accum).backward();loss_sum+=loss.item()*len(ix);seen+=len(ix)
+                                      ^^^^^^^^^^^
+KeyboardInterrupt

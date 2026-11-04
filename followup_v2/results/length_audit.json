@@ -1,0 +1,146 @@
+{
+  "train": {
+    "median": 288.0,
+    "p90": 456.0,
+    "over256": 0.5842,
+    "over512": 0.0548,
+    "by_label": {
+      "Treatment": {
+        "count": 1737,
+        "over256": 0.6367299942429476
+      },
+      "Diagnosis": {
+        "count": 1216,
+        "over256": 0.759046052631579
+      },
+      "Prevention": {
+        "count": 2243,
+        "over256": 0.5746767721801159
+      },
+      "Mechanism": {
+        "count": 882,
+        "over256": 0.5498866213151927
+      },
+      "Transmission": {
+        "count": 230,
+        "over256": 0.6173913043478261
+      },
+      "Epidemic Forecasting": {
+        "count": 115,
+        "over256": 0.5478260869565217
+      },
+      "Case Report": {
+        "count": 390,
+        "over256": 0.2717948717948718
+      }
+    }
+  },
+  "dev": {
+    "median": 283.5,
+    "p90": 448.0,
+    "over256": 0.601,
+    "over512": 0.059,
+    "by_label": {
+      "Treatment": {
+        "count": 345,
+        "over256": 0.6463768115942029
+      },
+      "Diagnosis": {
+        "count": 226,
+        "over256": 0.7300884955752213
+      },
+      "Prevention": {
+        "count": 437,
+        "over256": 0.6018306636155606
+      },
+      "Mechanism": {
+        "count": 175,
+        "over256": 0.52
+      },
+      "Transmission": {
+        "count": 47,
+        "over256": 0.6808510638297872
+      },
+      "Epidemic Forecasting": {
+        "count": 27,
+        "over256": 0.6666666666666666
+      },
+      "Case Report": {
+        "count": 86,
+        "over256": 0.36046511627906974
+      }
+    }
+  },
+  "test": {
+    "median": 315.0,
+    "p90": 458.0,
+    "over256": 0.7081993569131833,
+    "over512": 0.050241157556270094,
+    "by_label": {
+      "Treatment": {
+        "count": 1029,
+        "over256": 0.7201166180758017
+      },
+      "Diagnosis": {
+        "count": 719,
+        "over256": 0.8178025034770514
+      },
+      "Prevention": {
+        "count": 924,
+        "over256": 0.7716450216450217
+      },
+      "Mechanism": {
+        "count": 563,
+        "over256": 0.6394316163410302
+      },
+      "Transmission": {
+        "count": 128,
+        "over256": 0.78125
+      },
+      "Epidemic Forecasting": {
+        "count": 41,
+        "over256": 0.5121951219512195
+      },
+      "Case Report": {
+        "count": 195,
+        "over256": 0.3435897435897436
+      }
+    }
+  },
+  "audit": {
+    "median": 284.0,
+    "p90": 446.1,
+    "over256": 0.58,
+    "over512": 0.053,
+    "by_label": {
+      "Treatment": {
+        "count": 348,
+        "over256": 0.6350574712643678
+      },
+      "Diagnosis": {
+        "count": 238,
+        "over256": 0.773109243697479
+      },
+      "Prevention": {
+        "count": 449,
+        "over256": 0.5367483296213809
+      },
+      "Mechanism": {
+        "count": 180,
+        "over256": 0.5888888888888889
+      },
+      "Transmission": {
+        "count": 44,
+        "over256": 0.5909090909090909
+      },
+      "Epidemic Forecasting": {
+        "count": 25,
+        "over256": 0.64
+      },
+      "Case Report": {
+        "count": 76,
+        "over256": 0.2631578947368421
+      }
+    }
+  }
+}

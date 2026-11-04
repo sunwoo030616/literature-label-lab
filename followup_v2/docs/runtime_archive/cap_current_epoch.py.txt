@@ -1,0 +1,17 @@
+"""Stop the already-running old loop only after its first LoRA epoch is saved."""
+import sys,time,json,os,signal
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[2]/'.deps'))
+import psutil
+pid=int(sys.argv[1]);p=psutil.Process(pid);started=p.create_time();assert 'followup_v2/src/finetune.py' in ' '.join(p.cmdline())
+root=Path(__file__).resolve().parents[1];selection=root/'results/lora_seed17_selection.json'
+while not selection.exists():
+ if not p.is_running():raise RuntimeError('Training exited before checkpoint')
+ time.sleep(2)
+# Both checkpoint and policy have been saved before the next epoch begins.
+assert psutil.Process(pid).create_time()==started
+os.kill(pid,signal.SIGINT)
+for _ in range(60):
+ if not psutil.pid_exists(pid):break
+ time.sleep(1)
+cfg=json.loads(selection.read_text());hist=json.loads((root/'results/lora_seed17_history.json').read_text());cfg['training_seconds']=hist[0]['elapsed_seconds'];cfg['epoch_budget_complete']=True;cfg['epoch_budget']=1;cfg['scheduled_optimizer_steps']=750;cfg['completed_optimizer_steps']=250;cfg['checkpoint_sha256']=__import__('hashlib').sha256((root/cfg['checkpoint']).read_bytes()).hexdigest();selection.write_text(json.dumps(cfg,ensure_ascii=False,indent=2));print('Saved one-epoch budget checkpoint; training stopped safely.')

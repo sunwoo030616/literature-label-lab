@@ -1,0 +1,75 @@
+TRAINING DEVICE mps
+REUSE COMPLETED last2 17
+REUSE COMPLETED lora 17
+W1104 13:41:53.968000 86628 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 21746.30it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+lora_seed42 epoch 1 batch 50 loss 0.53687 elapsed 137.0
+lora_seed42 epoch 1 batch 100 loss 0.39428 elapsed 237.7
+lora_seed42 epoch 1 batch 150 loss 0.32073 elapsed 405.1
+lora_seed42 epoch 1 batch 200 loss 0.27609 elapsed 580.6
+lora_seed42 epoch 1 batch 250 loss 0.24718 elapsed 794.2
+EPOCH lora_seed42 1 train_bce 0.24718 tune_macro 0.831 BEST 0.831
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 25907.64it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 43747.92it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 55279.59it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+FINETUNING COMPLETE [('last2_seed17', 'test', 0.8459829809871117), ('last2_seed17', 'audit', 0.8144394627831951), ('lora_seed17', 'test', 0.8131577447515769), ('lora_seed17', 'audit', 0.8086548662209553), ('lora_seed42', 'test', 0.8190329437719562), ('lora_seed42', 'audit', 0.7760456208278598)]

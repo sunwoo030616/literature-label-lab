@@ -1,0 +1,60 @@
+W1104 14:07:09.476000 92691 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9782.32it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+encode 512 0 / 9488 elapsed 2.9
+encode 512 256 / 9488 elapsed 21.9
+encode 512 512 / 9488 elapsed 40.1
+encode 512 768 / 9488 elapsed 58.6
+encode 512 1024 / 9488 elapsed 79.5
+encode 512 1280 / 9488 elapsed 98.7
+encode 512 1536 / 9488 elapsed 119.9
+encode 512 1792 / 9488 elapsed 144.4
+encode 512 2048 / 9488 elapsed 173.9
+encode 512 2304 / 9488 elapsed 213.6
+encode 512 2560 / 9488 elapsed 246.4
+encode 512 2816 / 9488 elapsed 272.0
+encode 512 3072 / 9488 elapsed 298.8
+encode 512 3328 / 9488 elapsed 328.0
+encode 512 3584 / 9488 elapsed 355.5
+encode 512 3840 / 9488 elapsed 384.3
+encode 512 4096 / 9488 elapsed 412.8
+encode 512 4352 / 9488 elapsed 440.8
+encode 512 4608 / 9488 elapsed 469.5
+encode 512 4864 / 9488 elapsed 496.6
+encode 512 5120 / 9488 elapsed 532.9
+encode 512 5376 / 9488 elapsed 559.0
+encode 512 5632 / 9488 elapsed 584.6
+encode 512 5888 / 9488 elapsed 618.4
+encode 512 6144 / 9488 elapsed 645.9
+encode 512 6400 / 9488 elapsed 665.9
+encode 512 6656 / 9488 elapsed 689.1
+encode 512 6912 / 9488 elapsed 711.3
+encode 512 7168 / 9488 elapsed 729.8
+encode 512 7424 / 9488 elapsed 747.2
+encode 512 7680 / 9488 elapsed 765.0
+encode 512 7936 / 9488 elapsed 783.8
+encode 512 8192 / 9488 elapsed 801.6
+encode 512 8448 / 9488 elapsed 819.4
+encode 512 8704 / 9488 elapsed 839.1
+encode 512 8960 / 9488 elapsed 859.9
+encode 512 9216 / 9488 elapsed 878.7
+encode 512 9472 / 9488 elapsed 897.3
+encode 256 0 / 1000 elapsed 0.8
+encode 256 256 / 1000 elapsed 10.6
+encode 256 512 / 1000 elapsed 20.1
+encode 256 768 / 1000 elapsed 29.4
+INPUT ABLATION COMPLETE [('mean512', 'test', 0.7893368069094754), ('mean512', 'audit', 0.7964419060389561), ('cls512', 'test', 0.781775056244929), ('cls512', 'audit', 0.8029379176924689), ('v1_frozen256', 'audit', 0.7661808326451357), ('tuned_frozen256', 'audit', 0.7989170641699188), ('tfidf_full_refit', 'audit', 0.7832504729692069), ('tfidf_truncated256', 'audit', 0.7919055132415436)]

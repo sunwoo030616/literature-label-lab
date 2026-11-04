@@ -1,0 +1,92 @@
+TRAINING DEVICE mps
+W1104 11:56:52.991000 74642 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 43195.49it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Traceback (most recent call last):
+  File "/Users/filledu/Documents/ChatGPT/선우/literature-label-lab/followup_v2/src/finetune.py", line 61, in <module>
+    configs.append(train_one(mode,seed,trainenc,devenc,Y['train'],TUNE,tok,device))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/literature-label-lab/followup_v2/src/finetune.py", line 39, in train_one
+    logits=model(**x);loss=nn.functional.binary_cross_entropy_with_logits(logits,target)
+           ^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/literature-label-lab/followup_v2/src/finetune.py", line 13, in forward
+    h=self.encoder(**x).last_hidden_state;mask=x['attention_mask'].unsqueeze(-1);pooled=(h*mask).sum(1)/mask.sum(1).clamp(min=1);return self.head(self.dropout(pooled))
+      ^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1081, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 669, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 436, in forward
+    hidden_states = layer_module(
+                    ^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 111, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 383, in forward
+    self_attention_output, _ = self.attention(
+                               ^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 314, in forward
+    attention_output, attn_weights = self.self(
+                                     ^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 192, in forward
+    attn_output, attn_weights = attention_interface(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/transformers/integrations/sdpa_attention.py", line 174, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotImplementedError: scaled_dot_product_attention for MPS does not support dropout.

@@ -1,0 +1,26 @@
+{
+  "variant": "last2_seed17",
+  "mode": "last2",
+  "seed": 17,
+  "epoch": 3,
+  "thresholds": [
+    0.5000000000000001,
+    0.5500000000000002,
+    0.6000000000000002,
+    0.40000000000000013,
+    0.25000000000000006,
+    0.7500000000000002,
+    0.15000000000000002
+  ],
+  "tune_macro_f1": 0.8550581467828297,
+  "trainable_parameters": 14181127,
+  "physical_batch": 8,
+  "gradient_accumulation": 2,
+  "effective_batch": 16,
+  "max_length": 256,
+  "encoder_lr": 2e-05,
+  "head_lr": 0.001,
+  "checkpoint": "models/last2_seed17.pt",
+  "training_seconds": 1119.0773033329751,
+  "checkpoint_sha256": "e3c71217177fc76724e54c83d29c64810a0649ebc87d2d40967dad08c58b6091"
+}

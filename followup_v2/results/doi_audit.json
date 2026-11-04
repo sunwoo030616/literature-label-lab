@@ -1,0 +1,11 @@
+{
+  "cross_split_collisions": {
+    "train_dev": [],
+    "train_test": [],
+    "train_audit": [],
+    "dev_test": [],
+    "dev_audit": [],
+    "test_audit": []
+  },
+  "note": "DOI not present for all articles; absence of exact DOI matches does not exclude near-duplicate content."
+}

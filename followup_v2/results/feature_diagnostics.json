@@ -1,0 +1,69 @@
+{
+  "geometry_on_train": {
+    "raw": {
+      "random_pair_cosine_mean": 0.9780591726303101,
+      "random_pair_cosine_std": 0.008675971068441868,
+      "shared_label_mean": 0.9796667695045471,
+      "no_shared_label_mean": 0.977031946182251
+    },
+    "centered": {
+      "random_pair_cosine_mean": 0.0006979235913604498,
+      "random_pair_cosine_std": 0.24351558089256287,
+      "shared_label_mean": 0.059438660740852356,
+      "no_shared_label_mean": -0.036841847002506256
+    },
+    "standardized": {
+      "random_pair_cosine_mean": 0.0009639938361942768,
+      "random_pair_cosine_std": 0.14015698432922363,
+      "shared_label_mean": 0.04904227331280708,
+      "no_shared_label_mean": -0.02976165898144245
+    }
+  },
+  "test_length_groups": [
+    {
+      "tokens": [
+        0,
+        128
+      ],
+      "count": 96,
+      "old_sample_f1": 0.6906249999999999,
+      "new_sample_f1": 0.7840277777777777,
+      "old_exact_match": 0.5104166666666666,
+      "new_exact_match": 0.625
+    },
+    {
+      "tokens": [
+        129,
+        256
+      ],
+      "count": 630,
+      "old_sample_f1": 0.8015419501133787,
+      "new_sample_f1": 0.8690476190476191,
+      "old_exact_match": 0.6349206349206349,
+      "new_exact_match": 0.707936507936508
+    },
+    {
+      "tokens": [
+        257,
+        512
+      ],
+      "count": 1637,
+      "old_sample_f1": 0.7933342060098322,
+      "new_sample_f1": 0.8561218256392356,
+      "old_exact_match": 0.6072083078802688,
+      "new_exact_match": 0.6866218692730605
+    },
+    {
+      "tokens": [
+        513,
+        100000
+      ],
+      "count": 125,
+      "old_sample_f1": 0.7704,
+      "new_sample_f1": 0.8455999999999999,
+      "old_exact_match": 0.568,
+      "new_exact_match": 0.704
+    }
+  ],
+  "note": "Descriptive geometry is not causal proof of classifier performance. Shared-label cosine also depends on label prevalence. Length slices are post-hoc descriptions, not selection."
+}

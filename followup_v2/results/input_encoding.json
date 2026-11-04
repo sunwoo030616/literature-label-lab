@@ -1,0 +1,6 @@
+{
+  "device": "mps",
+  "mean_cls512_seconds": 898.4281471659197,
+  "audit256_seconds": 37.860509625053965,
+  "count512": 9488
+}

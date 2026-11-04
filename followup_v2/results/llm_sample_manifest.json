@@ -1,0 +1,202 @@
+[
+  {
+    "index": 156,
+    "pmid": "32157862",
+    "sha256": "008ad67f78bb14efb7930ab092c9c1a544f821df6e3d51edf69ec19fcc1f52a3"
+  },
+  {
+    "index": 351,
+    "pmid": "32955773",
+    "sha256": "00a9546cdb31ce92b0713c0beb4370977392bc3bed1138b0931996ab4c1f8edb"
+  },
+  {
+    "index": 780,
+    "pmid": "32431289",
+    "sha256": "00db07b9e37a1bd7a033e2465fa9f6715898018be670b2c658dbdc89c98eee7c"
+  },
+  {
+    "index": 911,
+    "pmid": "32605581",
+    "sha256": "011f62c7b3549056663f4f5df3142885f25c6d13d1d734f8cbf6e173e1fe8830"
+  },
+  {
+    "index": 959,
+    "pmid": "32456751",
+    "sha256": "028e751dc6ccd93f8c46d42c6d52fc0da927d26702037dd3e8a610a8c8202618"
+  },
+  {
+    "index": 965,
+    "pmid": "32333619",
+    "sha256": "02ec1241b9c1330acd209d9a672feb0ac98fbba37ba2d6b7141ac3fb12a1edc3"
+  },
+  {
+    "index": 573,
+    "pmid": "32837091",
+    "sha256": "02ff1d568ff71abd843637f360cfc345ca01e3aaa94f7559bcf43a896f136988"
+  },
+  {
+    "index": 479,
+    "pmid": "32561148",
+    "sha256": "03351852163f92ee233076c88334d5ba68caa0ce9515ca87f5e0314f2ca8eb8f"
+  },
+  {
+    "index": 358,
+    "pmid": "32641351",
+    "sha256": "04f9e655b35e701022d11b5f5bdf4fce363db764706f77e087536d04f48c7bd9"
+  },
+  {
+    "index": 999,
+    "pmid": "32890525",
+    "sha256": "0571496d3184fe8513385c0a221338fe82357b8eb7874f0476da514366a12ca1"
+  },
+  {
+    "index": 677,
+    "pmid": "33012695",
+    "sha256": "05cd1d6c4363889148bd5c022f99cffbf712463cb6554692f6dda0765ece4520"
+  },
+  {
+    "index": 613,
+    "pmid": "32555674",
+    "sha256": "0673d4f41fdef39a246846e4b60a42be37dbe18be925a7a47af7075f01b188f2"
+  },
+  {
+    "index": 969,
+    "pmid": "32353740",
+    "sha256": "068156042bd188f492523d9866f182ccfc2badcd07cb874bcd42b91e708412dd"
+  },
+  {
+    "index": 282,
+    "pmid": "32755212",
+    "sha256": "069eef7abc92e389c46985984bcc0fe28711a994b81d737ff14449ee664c8631"
+  },
+  {
+    "index": 550,
+    "pmid": "32770582",
+    "sha256": "06affadf1193e49af86159650949f831102ee3f68fc5085b1a6c51f0703317fb"
+  },
+  {
+    "index": 598,
+    "pmid": "32731215",
+    "sha256": "0779c100e6bf0dca6bbbddb4eefad6b6a2d67374bb9f47f83ca1f610baca860d"
+  },
+  {
+    "index": 747,
+    "pmid": "32708750",
+    "sha256": "08b9957ca5c10bfa6e618937c3f0b4f817af87763ea0eb8914a0f793fc870c00"
+  },
+  {
+    "index": 260,
+    "pmid": "32653475",
+    "sha256": "0a35eadea57a60db009ff352f14f22130ead6b802e3fc7096619fa3fa6437afe"
+  },
+  {
+    "index": 712,
+    "pmid": "32889551",
+    "sha256": "0a425e3b6cdbc0f1a175a17ef085ec6c5b7608701600a99b9f183cf0395c1fd0"
+  },
+  {
+    "index": 763,
+    "pmid": "33031863",
+    "sha256": "0bae9e893dbfdceac16fdce948a8981da08abb16f9a37524579640bcf65457a8"
+  },
+  {
+    "index": 449,
+    "pmid": "32823540",
+    "sha256": "0bf1d4e0a9c38e0b3f4ffbd822562fa40dec4ce551c618fa6609e0237fb21656"
+  },
+  {
+    "index": 81,
+    "pmid": "32871886",
+    "sha256": "0c6b4d50056208d72401a572d221ff62b6dbef159c981df4aead62acb4e5edac"
+  },
+  {
+    "index": 674,
+    "pmid": "32325718",
+    "sha256": "0ca2d4a82df4c2381dd3bb42ec4b296ae505de9063d9eaa5d763f9e61309e727"
+  },
+  {
+    "index": 627,
+    "pmid": "32967329",
+    "sha256": "0cd343a9cc1974877420c5809f6d74adb7bc8eb29ed8e0053aeb78819c004da3"
+  },
+  {
+    "index": 40,
+    "pmid": "32519768",
+    "sha256": "0de808b31625e29112e877ea776e00bbab03cf8a7cde503ee7b7699c46830e44"
+  },
+  {
+    "index": 375,
+    "pmid": "32120913",
+    "sha256": "0e8efe181febac324364875b6eebb6599101e5688974cfa19c619932315aa5d9"
+  },
+  {
+    "index": 760,
+    "pmid": "32760732",
+    "sha256": "0f0601d972c1e428ac7a7faf6025cc0c52f35cf908e7deba43910b0afd6a56be"
+  },
+  {
+    "index": 52,
+    "pmid": "32301206",
+    "sha256": "0f82211600cbafa1018a90eb5b03084267c618112e8f55dc084eda0d4045b4a2"
+  },
+  {
+    "index": 671,
+    "pmid": "33069219",
+    "sha256": "105817fdbf1e06daa0da1c1aa1e8b916b65bd6b7fb377633e39fe5f1ae2eda1d"
+  },
+  {
+    "index": 908,
+    "pmid": "33062489",
+    "sha256": "10b852d8181aa72053f3375ba2272616eb17e73aa0f4a9b8a1c1846432508c48"
+  },
+  {
+    "index": 590,
+    "pmid": "32757751",
+    "sha256": "11df134c7923f64d41879bdf1369d241729d584de48e067a2e3a7e9ae4d591e3"
+  },
+  {
+    "index": 635,
+    "pmid": "32798514",
+    "sha256": "1212dd9d43df6daf26609efd85cf7802971151d973429569f163982650077ec1"
+  },
+  {
+    "index": 882,
+    "pmid": "32963155",
+    "sha256": "12844dabaa0f729f0438de726152b0540eab243e6fd21cdb65d7ef3a27a09634"
+  },
+  {
+    "index": 104,
+    "pmid": "33040189",
+    "sha256": "13053ac63ab4141e77b1e4b81459cf8059b37507421b2a5d4ec3b774a24b7b8a"
+  },
+  {
+    "index": 409,
+    "pmid": "32759007",
+    "sha256": "135ee78b8c366a8f19f044899b5a77ea6db21f814a90baaa022274a98a678ba0"
+  },
+  {
+    "index": 542,
+    "pmid": "32850105",
+    "sha256": "13d66ebd22a829ed27d2954f8acfbc5c1d68c85c1ab204f18f919d3c4dd10170"
+  },
+  {
+    "index": 990,
+    "pmid": "32803531",
+    "sha256": "16114551ded334cfc1ac970810aca944595b63fdfe4fd752a02c0365b99f4207"
+  },
+  {
+    "index": 889,
+    "pmid": "32594164",
+    "sha256": "16235167ba4bdc77d7a102459234f09b0ef0864db93d77990c849e2f22cd7a55"
+  },
+  {
+    "index": 237,
+    "pmid": "32982611",
+    "sha256": "17425668ca17ef6ba3efd621839f64e5f34fea6967fafcfaa072542aac2d168d"
+  },
+  {
+    "index": 458,
+    "pmid": "32598953",
+    "sha256": "182591e60565fdc4b284b7a5cc1eeaf6e38b88ea6aa3de6c7703d5757d5b8bcc"
+  }
+]

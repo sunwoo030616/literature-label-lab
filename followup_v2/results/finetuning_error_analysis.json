@@ -1,0 +1,951 @@
+{
+  "comparisons": {
+    "test": {
+      "tuned_minus_v1": {
+        "point_delta_macro_f1": 0.04430736633575805,
+        "bootstrap_ci95": [
+          0.02562451349241631,
+          0.062463319279872066
+        ],
+        "exact_match_fixed": 333,
+        "exact_match_broken": 129,
+        "per_label": {
+          "Treatment": {
+            "v1": {
+              "tp": 744,
+              "fp": 114,
+              "fn": 285
+            },
+            "tuned": {
+              "tp": 876,
+              "fp": 141,
+              "fn": 153
+            }
+          },
+          "Diagnosis": {
+            "v1": {
+              "tp": 526,
+              "fp": 134,
+              "fn": 193
+            },
+            "tuned": {
+              "tp": 529,
+              "fp": 60,
+              "fn": 190
+            }
+          },
+          "Prevention": {
+            "v1": {
+              "tp": 807,
+              "fp": 120,
+              "fn": 117
+            },
+            "tuned": {
+              "tp": 876,
+              "fp": 149,
+              "fn": 48
+            }
+          },
+          "Mechanism": {
+            "v1": {
+              "tp": 458,
+              "fp": 91,
+              "fn": 105
+            },
+            "tuned": {
+              "tp": 492,
+              "fp": 51,
+              "fn": 71
+            }
+          },
+          "Transmission": {
+            "v1": {
+              "tp": 44,
+              "fp": 30,
+              "fn": 84
+            },
+            "tuned": {
+              "tp": 39,
+              "fp": 9,
+              "fn": 89
+            }
+          },
+          "Epidemic Forecasting": {
+            "v1": {
+              "tp": 32,
+              "fp": 20,
+              "fn": 9
+            },
+            "tuned": {
+              "tp": 30,
+              "fp": 9,
+              "fn": 11
+            }
+          },
+          "Case Report": {
+            "v1": {
+              "tp": 158,
+              "fp": 11,
+              "fn": 37
+            },
+            "tuned": {
+              "tp": 180,
+              "fp": 24,
+              "fn": 15
+            }
+          }
+        }
+      },
+      "last2_seed17_minus_v1": {
+        "point_delta_macro_f1": 0.09754376812109133,
+        "bootstrap_ci95": [
+          0.07712793422969834,
+          0.11845469934974419
+        ],
+        "exact_match_fixed": 463,
+        "exact_match_broken": 116,
+        "per_label": {
+          "Treatment": {
+            "v1": {
+              "tp": 744,
+              "fp": 114,
+              "fn": 285
+            },
+            "last2_seed17": {
+              "tp": 902,
+              "fp": 89,
+              "fn": 127
+            }
+          },
+          "Diagnosis": {
+            "v1": {
+              "tp": 526,
+              "fp": 134,
+              "fn": 193
+            },
+            "last2_seed17": {
+              "tp": 548,
+              "fp": 42,
+              "fn": 171
+            }
+          },
+          "Prevention": {
+            "v1": {
+              "tp": 807,
+              "fp": 120,
+              "fn": 117
+            },
+            "last2_seed17": {
+              "tp": 855,
+              "fp": 78,
+              "fn": 69
+            }
+          },
+          "Mechanism": {
+            "v1": {
+              "tp": 458,
+              "fp": 91,
+              "fn": 105
+            },
+            "last2_seed17": {
+              "tp": 474,
+              "fp": 23,
+              "fn": 89
+            }
+          },
+          "Transmission": {
+            "v1": {
+              "tp": 44,
+              "fp": 30,
+              "fn": 84
+            },
+            "last2_seed17": {
+              "tp": 75,
+              "fp": 23,
+              "fn": 53
+            }
+          },
+          "Epidemic Forecasting": {
+            "v1": {
+              "tp": 32,
+              "fp": 20,
+              "fn": 9
+            },
+            "last2_seed17": {
+              "tp": 29,
+              "fp": 3,
+              "fn": 12
+            }
+          },
+          "Case Report": {
+            "v1": {
+              "tp": 158,
+              "fp": 11,
+              "fn": 37
+            },
+            "last2_seed17": {
+              "tp": 185,
+              "fp": 23,
+              "fn": 10
+            }
+          }
+        }
+      },
+      "lora_seed17_minus_tuned": {
+        "point_delta_macro_f1": 0.020411165549798493,
+        "bootstrap_ci95": [
+          0.0006352041524518432,
+          0.04075585536063125
+        ],
+        "exact_match_fixed": 252,
+        "exact_match_broken": 159,
+        "per_label": {
+          "Treatment": {
+            "tuned": {
+              "tp": 876,
+              "fp": 141,
+              "fn": 153
+            },
+            "lora_seed17": {
+              "tp": 940,
+              "fp": 174,
+              "fn": 89
+            }
+          },
+          "Diagnosis": {
+            "tuned": {
+              "tp": 529,
+              "fp": 60,
+              "fn": 190
+            },
+            "lora_seed17": {
+              "tp": 575,
+              "fp": 74,
+              "fn": 144
+            }
+          },
+          "Prevention": {
+            "tuned": {
+              "tp": 876,
+              "fp": 149,
+              "fn": 48
+            },
+            "lora_seed17": {
+              "tp": 855,
+              "fp": 92,
+              "fn": 69
+            }
+          },
+          "Mechanism": {
+            "tuned": {
+              "tp": 492,
+              "fp": 51,
+              "fn": 71
+            },
+            "lora_seed17": {
+              "tp": 475,
+              "fp": 33,
+              "fn": 88
+            }
+          },
+          "Transmission": {
+            "tuned": {
+              "tp": 39,
+              "fp": 9,
+              "fn": 89
+            },
+            "lora_seed17": {
+              "tp": 68,
+              "fp": 29,
+              "fn": 60
+            }
+          },
+          "Epidemic Forecasting": {
+            "tuned": {
+              "tp": 30,
+              "fp": 9,
+              "fn": 11
+            },
+            "lora_seed17": {
+              "tp": 32,
+              "fp": 26,
+              "fn": 9
+            }
+          },
+          "Case Report": {
+            "tuned": {
+              "tp": 180,
+              "fp": 24,
+              "fn": 15
+            },
+            "lora_seed17": {
+              "tp": 184,
+              "fp": 20,
+              "fn": 11
+            }
+          }
+        }
+      }
+    },
+    "audit": {
+      "tuned_minus_v1": {
+        "point_delta_macro_f1": 0.03273623152478311,
+        "bootstrap_ci95": [
+          0.0010683365384019275,
+          0.06509678200991731
+        ],
+        "exact_match_fixed": 116,
+        "exact_match_broken": 44,
+        "per_label": {
+          "Treatment": {
+            "v1": {
+              "tp": 266,
+              "fp": 51,
+              "fn": 82
+            },
+            "tuned": {
+              "tp": 300,
+              "fp": 45,
+              "fn": 48
+            }
+          },
+          "Diagnosis": {
+            "v1": {
+              "tp": 199,
+              "fp": 58,
+              "fn": 39
+            },
+            "tuned": {
+              "tp": 184,
+              "fp": 31,
+              "fn": 54
+            }
+          },
+          "Prevention": {
+            "v1": {
+              "tp": 396,
+              "fp": 43,
+              "fn": 53
+            },
+            "tuned": {
+              "tp": 430,
+              "fp": 58,
+              "fn": 19
+            }
+          },
+          "Mechanism": {
+            "v1": {
+              "tp": 155,
+              "fp": 42,
+              "fn": 25
+            },
+            "tuned": {
+              "tp": 163,
+              "fp": 27,
+              "fn": 17
+            }
+          },
+          "Transmission": {
+            "v1": {
+              "tp": 27,
+              "fp": 33,
+              "fn": 17
+            },
+            "tuned": {
+              "tp": 21,
+              "fp": 16,
+              "fn": 23
+            }
+          },
+          "Epidemic Forecasting": {
+            "v1": {
+              "tp": 15,
+              "fp": 5,
+              "fn": 10
+            },
+            "tuned": {
+              "tp": 14,
+              "fp": 2,
+              "fn": 11
+            }
+          },
+          "Case Report": {
+            "v1": {
+              "tp": 61,
+              "fp": 5,
+              "fn": 15
+            },
+            "tuned": {
+              "tp": 69,
+              "fp": 6,
+              "fn": 7
+            }
+          }
+        }
+      },
+      "last2_seed17_minus_v1": {
+        "point_delta_macro_f1": 0.04825863013805942,
+        "bootstrap_ci95": [
+          0.018279150993396467,
+          0.07798430585430557
+        ],
+        "exact_match_fixed": 158,
+        "exact_match_broken": 48,
+        "per_label": {
+          "Treatment": {
+            "v1": {
+              "tp": 266,
+              "fp": 51,
+              "fn": 82
+            },
+            "last2_seed17": {
+              "tp": 309,
+              "fp": 36,
+              "fn": 39
+            }
+          },
+          "Diagnosis": {
+            "v1": {
+              "tp": 199,
+              "fp": 58,
+              "fn": 39
+            },
+            "last2_seed17": {
+              "tp": 198,
+              "fp": 29,
+              "fn": 40
+            }
+          },
+          "Prevention": {
+            "v1": {
+              "tp": 396,
+              "fp": 43,
+              "fn": 53
+            },
+            "last2_seed17": {
+              "tp": 412,
+              "fp": 35,
+              "fn": 37
+            }
+          },
+          "Mechanism": {
+            "v1": {
+              "tp": 155,
+              "fp": 42,
+              "fn": 25
+            },
+            "last2_seed17": {
+              "tp": 155,
+              "fp": 21,
+              "fn": 25
+            }
+          },
+          "Transmission": {
+            "v1": {
+              "tp": 27,
+              "fp": 33,
+              "fn": 17
+            },
+            "last2_seed17": {
+              "tp": 32,
+              "fp": 28,
+              "fn": 12
+            }
+          },
+          "Epidemic Forecasting": {
+            "v1": {
+              "tp": 15,
+              "fp": 5,
+              "fn": 10
+            },
+            "last2_seed17": {
+              "tp": 12,
+              "fp": 0,
+              "fn": 13
+            }
+          },
+          "Case Report": {
+            "v1": {
+              "tp": 61,
+              "fp": 5,
+              "fn": 15
+            },
+            "last2_seed17": {
+              "tp": 70,
+              "fp": 9,
+              "fn": 6
+            }
+          }
+        }
+      },
+      "lora_seed17_minus_tuned": {
+        "point_delta_macro_f1": 0.00973780205103647,
+        "bootstrap_ci95": [
+          -0.023779748027193924,
+          0.04333754321806803
+        ],
+        "exact_match_fixed": 83,
+        "exact_match_broken": 75,
+        "per_label": {
+          "Treatment": {
+            "tuned": {
+              "tp": 300,
+              "fp": 45,
+              "fn": 48
+            },
+            "lora_seed17": {
+              "tp": 315,
+              "fp": 61,
+              "fn": 33
+            }
+          },
+          "Diagnosis": {
+            "tuned": {
+              "tp": 184,
+              "fp": 31,
+              "fn": 54
+            },
+            "lora_seed17": {
+              "tp": 194,
+              "fp": 36,
+              "fn": 44
+            }
+          },
+          "Prevention": {
+            "tuned": {
+              "tp": 430,
+              "fp": 58,
+              "fn": 19
+            },
+            "lora_seed17": {
+              "tp": 413,
+              "fp": 38,
+              "fn": 36
+            }
+          },
+          "Mechanism": {
+            "tuned": {
+              "tp": 163,
+              "fp": 27,
+              "fn": 17
+            },
+            "lora_seed17": {
+              "tp": 155,
+              "fp": 18,
+              "fn": 25
+            }
+          },
+          "Transmission": {
+            "tuned": {
+              "tp": 21,
+              "fp": 16,
+              "fn": 23
+            },
+            "lora_seed17": {
+              "tp": 29,
+              "fp": 29,
+              "fn": 15
+            }
+          },
+          "Epidemic Forecasting": {
+            "tuned": {
+              "tp": 14,
+              "fp": 2,
+              "fn": 11
+            },
+            "lora_seed17": {
+              "tp": 18,
+              "fp": 9,
+              "fn": 7
+            }
+          },
+          "Case Report": {
+            "tuned": {
+              "tp": 69,
+              "fp": 6,
+              "fn": 7
+            },
+            "lora_seed17": {
+              "tp": 71,
+              "fp": 10,
+              "fn": 5
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "split": "test",
+      "variant": "last2_seed17",
+      "pmid": "34201687",
+      "title": "Occurrence of SARS-CoV-2 RNA in Six Municipal Wastewater Treatment Plants at the Early Stage of COVID-19 Pandemic in The United States.",
+      "gold": [
+        "Prevention",
+        "Transmission"
+      ],
+      "predicted": [
+        "Prevention"
+      ],
+      "false_positive": [],
+      "false_negative": [
+        "Transmission"
+      ]
+    },
+    {
+      "split": "test",
+      "variant": "last2_seed17",
+      "pmid": "34203847",
+      "title": "COVID-19 Vaccine Acceptance, Hesitancy, and Resistancy among University Students in France.",
+      "gold": [
+        "Treatment"
+      ],
+      "predicted": [
+        "Prevention"
+      ],
+      "false_positive": [
+        "Prevention"
+      ],
+      "false_negative": [
+        "Treatment"
+      ]
+    },
+    {
+      "split": "test",
+      "variant": "last2_seed17",
+      "pmid": "34346709",
+      "title": "Overlapping of Independent SARS-CoV-2 Nosocomial Transmissions in a Complex Outbreak.",
+      "gold": [
+        "Transmission"
+      ],
+      "predicted": [
+        "Prevention",
+        "Transmission"
+      ],
+      "false_positive": [
+        "Prevention"
+      ],
+      "false_negative": []
+    },
+    {
+      "split": "test",
+      "variant": "last2_seed17",
+      "pmid": "34133805",
+      "title": "Agricultural workers in meatpacking plants presenting to an emergency department with suspected COVID-19 infection are disproportionately Black and Hispanic.",
+      "gold": [
+        "Prevention"
+      ],
+      "predicted": [
+        "Diagnosis",
+        "Prevention"
+      ],
+      "false_positive": [
+        "Diagnosis"
+      ],
+      "false_negative": []
+    },
+    {
+      "split": "test",
+      "variant": "last2_seed17",
+      "pmid": "34334951",
+      "title": "The coSIR model predicts effective strategies to limit the spread of SARS-CoV-2 variants with low severity and high transmissibility.",
+      "gold": [
+        "Prevention",
+        "Transmission"
+      ],
+      "predicted": [
+        "Prevention"
+      ],
+      "false_positive": [],
+      "false_negative": [
+        "Transmission"
+      ]
+    },
+    {
+      "split": "test",
+      "variant": "lora_seed17",
+      "pmid": "34201687",
+      "title": "Occurrence of SARS-CoV-2 RNA in Six Municipal Wastewater Treatment Plants at the Early Stage of COVID-19 Pandemic in The United States.",
+      "gold": [
+        "Prevention",
+        "Transmission"
+      ],
+      "predicted": [
+        "Prevention"
+      ],
+      "false_positive": [],
+      "false_negative": [
+        "Transmission"
+      ]
+    },
+    {
+      "split": "test",
+      "variant": "lora_seed17",
+      "pmid": "33566839",
+      "title": "Adaptive social contact rates induce complex dynamics during epidemics.",
+      "gold": [
+        "Prevention"
+      ],
+      "predicted": [
+        "Prevention",
+        "Epidemic Forecasting"
+      ],
+      "false_positive": [
+        "Epidemic Forecasting"
+      ],
+      "false_negative": []
+    },
+    {
+      "split": "test",
+      "variant": "lora_seed17",
+      "pmid": "34203847",
+      "title": "COVID-19 Vaccine Acceptance, Hesitancy, and Resistancy among University Students in France.",
+      "gold": [
+        "Treatment"
+      ],
+      "predicted": [
+        "Prevention"
+      ],
+      "false_positive": [
+        "Prevention"
+      ],
+      "false_negative": [
+        "Treatment"
+      ]
+    },
+    {
+      "split": "test",
+      "variant": "lora_seed17",
+      "pmid": "34346709",
+      "title": "Overlapping of Independent SARS-CoV-2 Nosocomial Transmissions in a Complex Outbreak.",
+      "gold": [
+        "Transmission"
+      ],
+      "predicted": [
+        "Prevention",
+        "Transmission"
+      ],
+      "false_positive": [
+        "Prevention"
+      ],
+      "false_negative": []
+    },
+    {
+      "split": "test",
+      "variant": "lora_seed17",
+      "pmid": "34282250",
+      "title": "Understanding small Chinese cities as COVID-19 hotspots with an urban epidemic hazard index.",
+      "gold": [
+        "Prevention"
+      ],
+      "predicted": [
+        "Prevention",
+        "Epidemic Forecasting"
+      ],
+      "false_positive": [
+        "Epidemic Forecasting"
+      ],
+      "false_negative": []
+    },
+    {
+      "split": "audit",
+      "variant": "last2_seed17",
+      "pmid": "32687681",
+      "title": "Neuropathogenic human coronaviruses: A review.",
+      "gold": [
+        "Mechanism",
+        "Diagnosis",
+        "Treatment"
+      ],
+      "predicted": [
+        "Prevention",
+        "Mechanism"
+      ],
+      "false_positive": [
+        "Prevention"
+      ],
+      "false_negative": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "split": "audit",
+      "variant": "last2_seed17",
+      "pmid": "32579012",
+      "title": "COVID-19. Immunothrombosis and the gastrointestinal tract.",
+      "gold": [
+        "Diagnosis",
+        "Mechanism"
+      ],
+      "predicted": [
+        "Mechanism",
+        "Case Report"
+      ],
+      "false_positive": [
+        "Case Report"
+      ],
+      "false_negative": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "split": "audit",
+      "variant": "last2_seed17",
+      "pmid": "32725087",
+      "title": "Description and comparison of demographic characteristics and comorbidities in SARI from COVID-19, SARI from influenza, and the Brazilian general population.",
+      "gold": [
+        "Diagnosis",
+        "Prevention"
+      ],
+      "predicted": [
+        "Treatment",
+        "Diagnosis"
+      ],
+      "false_positive": [
+        "Treatment"
+      ],
+      "false_negative": [
+        "Prevention"
+      ]
+    },
+    {
+      "split": "audit",
+      "variant": "last2_seed17",
+      "pmid": "32771640",
+      "title": "Increased Complement Receptor-3 levels in monocytes and granulocytes distinguish COVID-19 patients with pneumonia from those with mild symptoms.",
+      "gold": [
+        "Treatment",
+        "Diagnosis",
+        "Mechanism"
+      ],
+      "predicted": [
+        "Treatment",
+        "Diagnosis"
+      ],
+      "false_positive": [],
+      "false_negative": [
+        "Mechanism"
+      ]
+    },
+    {
+      "split": "audit",
+      "variant": "last2_seed17",
+      "pmid": "32314810",
+      "title": "Central nervous system involvement by severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2).",
+      "gold": [
+        "Case Report"
+      ],
+      "predicted": [
+        "Mechanism",
+        "Case Report"
+      ],
+      "false_positive": [
+        "Mechanism"
+      ],
+      "false_negative": []
+    },
+    {
+      "split": "audit",
+      "variant": "lora_seed17",
+      "pmid": "32579012",
+      "title": "COVID-19. Immunothrombosis and the gastrointestinal tract.",
+      "gold": [
+        "Diagnosis",
+        "Mechanism"
+      ],
+      "predicted": [
+        "Case Report"
+      ],
+      "false_positive": [
+        "Case Report"
+      ],
+      "false_negative": [
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "split": "audit",
+      "variant": "lora_seed17",
+      "pmid": "32725087",
+      "title": "Description and comparison of demographic characteristics and comorbidities in SARI from COVID-19, SARI from influenza, and the Brazilian general population.",
+      "gold": [
+        "Diagnosis",
+        "Prevention"
+      ],
+      "predicted": [
+        "Treatment",
+        "Diagnosis"
+      ],
+      "false_positive": [
+        "Treatment"
+      ],
+      "false_negative": [
+        "Prevention"
+      ]
+    },
+    {
+      "split": "audit",
+      "variant": "lora_seed17",
+      "pmid": "32771640",
+      "title": "Increased Complement Receptor-3 levels in monocytes and granulocytes distinguish COVID-19 patients with pneumonia from those with mild symptoms.",
+      "gold": [
+        "Treatment",
+        "Diagnosis",
+        "Mechanism"
+      ],
+      "predicted": [
+        "Treatment",
+        "Diagnosis"
+      ],
+      "false_positive": [],
+      "false_negative": [
+        "Mechanism"
+      ]
+    },
+    {
+      "split": "audit",
+      "variant": "lora_seed17",
+      "pmid": "33051780",
+      "title": "Non-invasive Thoracic Impedance Changes in COVID-19 Pulmonary Infection.",
+      "gold": [
+        "Case Report"
+      ],
+      "predicted": [
+        "Treatment",
+        "Diagnosis"
+      ],
+      "false_positive": [
+        "Treatment",
+        "Diagnosis"
+      ],
+      "false_negative": [
+        "Case Report"
+      ]
+    },
+    {
+      "split": "audit",
+      "variant": "lora_seed17",
+      "pmid": "32023682",
+      "title": "[2019-nCoV: new challenges from coronavirus].",
+      "gold": [
+        "Mechanism",
+        "Prevention",
+        "Transmission",
+        "Treatment"
+      ],
+      "predicted": [
+        "Mechanism",
+        "Transmission"
+      ],
+      "false_positive": [],
+      "false_negative": [
+        "Treatment",
+        "Prevention"
+      ]
+    }
+  ],
+  "note": "Paired bootstrap accounts only for document resampling with fixed trained models, not hyperparameter/model selection or new domains. Examples are descriptive first errors by locked order, not causal explanations."
+}

@@ -1,0 +1,7366 @@
+{
+  "scope": "Sanitized export of the audit manifest created before V2 training; source manifest kept locally because it includes full text. Export is not a newly selected split.",
+  "source_manifest_sha256": "dd84f6384b9511a6eaa16ae4fc359d0b2e06e6b52c0a36ee42cc62356ad6bdaf",
+  "documents": [
+    {
+      "pmid": "32687681",
+      "sha256": "0004744bb390b2a6b3e99a8192f42bb5734e052090c40fd79749a0a58cd2fed7",
+      "labels": [
+        "Mechanism",
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32706827",
+      "sha256": "0007a01c225bc4bd09665123fbb0a71104d4b0ee675c934c26439e978b94a2e9",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32757827",
+      "sha256": "0011e83053873c97e584f7ea2ba3980680418dedc069285f429bd1fb4042a97d",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32419770",
+      "sha256": "00157327b62541a8bda76d2c263d451cc11e62e1dbbeb734826e7f55d1a41e55",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32352421",
+      "sha256": "001af312f6843b42cb1e1d2a894347caad09a2549b4167b29441888da96cf83e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32827661",
+      "sha256": "0026b34359545d865928959c16c5e5170e69016de38becb44c2eb00185517042",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32579012",
+      "sha256": "0030e0118e36fdc8626408b153d36f9f68447a4cfbc2c62fd26b9aa7364a0bfc",
+      "labels": [
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32752587",
+      "sha256": "00360ff8f6fb79c2feb85f40d5bf442ec4537400f3575a48326e67cc177d03ba",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33064159",
+      "sha256": "00380438b01f3688174c76e270125f9b629b1963f803bd0e1440828b8f159251",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32434707",
+      "sha256": "003aef20eee37a75e81aaef8edea2d597af7116aea9860f354727fca64d9ef16",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32725087",
+      "sha256": "0044db3039da72337ef015dbf3ac512a21748c125a7ff51f4a578257d67269e6",
+      "labels": [
+        "Diagnosis",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32771640",
+      "sha256": "0047245026b46551a63232de87def3966d5fc3c548ab3453452b180e4b9814e2",
+      "labels": [
+        "Treatment",
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32706099",
+      "sha256": "0048312eb8460db77da31741066295c3fdda895df3ebd722d5f03084dbffd5c1",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32314810",
+      "sha256": "00516b777b7c1a66195379ca81250d3947887fe9b709d8fbcddb8e64eb595935",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32610878",
+      "sha256": "005de7916f7156e74b83a2923cab8d9f48dcb75fc728af2efe7305ddd56138b6",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33073552",
+      "sha256": "006409fab920e23f643a376f67de52745df4ed26d4b5332570bd5db6bd962cca",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33051780",
+      "sha256": "00684edf15e37c1160ee93cb4fdbfb01960eb73a61b1970e8bb80908ce27de6f",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32023682",
+      "sha256": "006a6a541ee9bede9912882f4dd0d39e62d1ab3815052fbaa024aa246f923018",
+      "labels": [
+        "Mechanism",
+        "Prevention",
+        "Transmission",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32352957",
+      "sha256": "006e817f30d817c56ed7e0987210c3977791ddd6c2fe9955f00a5ba8fef863b7",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32398902",
+      "sha256": "006ede2c8451206f1f8c9366b5e240c93082b32498b5f19f032b27574ea0f699",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32824564",
+      "sha256": "006f166ea389613c161b3a452319a1d807458edbc505289e10d366a3b222e7a1",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32448136",
+      "sha256": "00739681728b6e08c7afefa0a23d06eccb583c2fc263a1da8f3a2238931fb279",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32683321",
+      "sha256": "0079d8c359a358381e8c05d9b7619fa1edabcc58b08ca523500982a2807cefcd",
+      "labels": [
+        "Epidemic Forecasting",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32515570",
+      "sha256": "007c29eaacd14d0423649aff67f605e1d3fdaf44cb7ecd43503a38eadf068869",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32562843",
+      "sha256": "007e6e77b8f19d15c2c05800d346f09e0d8d5614c960545bcd09c251451b3521",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32356641",
+      "sha256": "007fe3ead85c6bd1cd7523937b4a7d363d16167405e71fd9f7f23a9ce1fa7187",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32612431",
+      "sha256": "008575c5bf27c2ca97a7a428761638bed63a78c7eb94be0cbf76f615b3f7a701",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33059225",
+      "sha256": "0088ad29d98ceceaea041ce60a06076c0f50371274a97031acb976a6ff8ef117",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32855261",
+      "sha256": "008dd025a3ddf5a00a71874b7e4a0d38b2023fe5e842c6ea6e14867d8d013222",
+      "labels": [
+        "Transmission",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32541273",
+      "sha256": "008ec6795dfe0df29105070a574e97009cfd504aa2fb3870843da34dcb97c378",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32706396",
+      "sha256": "0092063aa303f1d674d918819d37623d9420be65d8bd703e093d28347f4089c3",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32681935",
+      "sha256": "009b1fe8433e333d5ea3bdd3e43a3810e3f25b6188d4d4285b17a2b7c6f5372d",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33048865",
+      "sha256": "009d4e46fdff55bdc720d504ccc2d36b4617c8847e4a4c67891cf2eeaa8e0207",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32745072",
+      "sha256": "009ecaf1601084421d29319023258f386f90101767104966dc94f2b3f9622fd7",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32474087",
+      "sha256": "009f58fcfda1c9135383555c3fb4c99efea079a204974dc4781749083bd5b741",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32718008",
+      "sha256": "00a59c1df881bb19820194aa6c8d336b90447f4fe2329982c09c9c61506e26e3",
+      "labels": [
+        "Prevention",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32771089",
+      "sha256": "00a7caf7d46e1412db79ad0bb7a1306e5d53917a21c078c72ee0d11ae064f20e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32599534",
+      "sha256": "00aaf5be32cb8f34f315c336c1712e75efac2332ff4702fd181162ae4976945a",
+      "labels": [
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32650509",
+      "sha256": "00aea7ac281fd1b792101f8a1780cb3f07cfd7086470fbd5a4f2ab50bc40e008",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32603205",
+      "sha256": "00b097777dfeeacd263b81cf88f20eae12a5264358fd84a92d963fc8fbf4829e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32821132",
+      "sha256": "00b7cadf2360cd7445fc17c493b77b5d3ae69a3ecc55a2aab57cee2a81fe0965",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32554734",
+      "sha256": "00b8aed79682d161f2497b88045f2a8e307e729fa923bfa528ab363a1165c47a",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32109273",
+      "sha256": "00bf7bd4501650db25593b594cc1417b9605c2ec95bcaed129f384481001c438",
+      "labels": [
+        "Prevention",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32653890",
+      "sha256": "00c0d1a5042b65d7f47b729fda62d2ddc24d65eb3966477bf28ee54246d94e15",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33060565",
+      "sha256": "00cf3b747ad96a1c75b3677cdb65b7f6c3d2312c3f57a26dbf9545b618764267",
+      "labels": [
+        "Diagnosis",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32471311",
+      "sha256": "00d05670d6440f4cdbbe318315fe198e722d28e6f58e3b591638a31423ff5deb",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32904031",
+      "sha256": "00d53f46323fee0c926e5d51ca9ec1b4462abd3a3745b0356cd90c591272e4fe",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33026202",
+      "sha256": "00d8e046605e8086e71357cce1de0b5b33aebe557b3595eca68d130e75e9536d",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32834306",
+      "sha256": "00defd376f280bf6debea3553bbd9d5bc3d523054d13ac446cc778de7f59984b",
+      "labels": [
+        "Prevention",
+        "Mechanism",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32768974",
+      "sha256": "00e560bd3ebda31c9c989d93b818b7f88f31c6868ddcb0549add2cbdd8e59bec",
+      "labels": [
+        "Treatment",
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32357378",
+      "sha256": "00eedd8a62b71f4a3a83be61b85b6d50d30530da2fb71ea9ec863a563a7e2593",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32944437",
+      "sha256": "00f92552c297e2c284f1bf5387d30d59dbb3e1a906d2cef8cc46219998dd7254",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32984999",
+      "sha256": "00fa38fbfff5cba1527181f01891b9622bb7252bb584dbf08dfccdf4d9f18668",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32644981",
+      "sha256": "00faf29a78bd1b6117675fea48d7c3dbed1db0473f6c506480ea7f61c583ead3",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33007454",
+      "sha256": "00fb71655c3d95354b1c81533cc023b82a2f95f5a52b17bdd79b921c9e16b10e",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32451533",
+      "sha256": "00fed8b2faa137add7b771e6cab026e839ccac2ab6017b5c560694849f59ca83",
+      "labels": [
+        "Mechanism",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32834947",
+      "sha256": "00ff95b9148ed4d813a779e0e60cd9c5299b7616342891a37eeb1fac7a53f002",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33006559",
+      "sha256": "010342f3b9e20d5ee13a18b041b66767b23dafeb72bc0e6eeb7460743d54ac4c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32480361",
+      "sha256": "0109d3c8afaefdb50383e12662a7b7ce517a8e0db6eb718c761d4c1111327bea",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33052531",
+      "sha256": "010bfe5c9f0a84cfc7112fdc10ac3f5278b30e4dba4de2a846693b235405a51b",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "33062732",
+      "sha256": "010f9ba5c4f5f92c232c8d1bb71ba334dc42074f3a5d53280c465c9b4d951980",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32187007",
+      "sha256": "011358e449c0b9ac12a903b1bc88b50196475f6d95251b9b30afa000cdea1310",
+      "labels": [
+        "Transmission",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32424503",
+      "sha256": "01137821dd6acba6d70d18e670616db7760d9b7343a157570476a0d173090c53",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32454982",
+      "sha256": "0114d3338c935c86c5ddea601ade62f96760660416ba8acb176f2b45730133a4",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32553536",
+      "sha256": "01164f83417f519b74a1d3562b2a50071f101003a4a73b2a0ed42d36a2389ab0",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32732744",
+      "sha256": "0118e21a1ba02eaa86d14ee12e1b1c081cc2162ae09dadd8fa1d291b5d1c0e3d",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32783787",
+      "sha256": "0119184306c532094e9f5948ff35ec86ea80f03c921ec22df468ec2f06cdfbba",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32963564",
+      "sha256": "011bad30beb0937aeebedfa1645bdb84b8cef1d23a3d95397655660c669ceaf5",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32335900",
+      "sha256": "011d255ccbc826e5b72223704acb426e28ee74bc7243711efa3bf751d6743cc0",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32515033",
+      "sha256": "011ead3cc38997a3b93d4a59962af00e05539aa02b9fe3e306826154a4ac52ae",
+      "labels": [
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32836805",
+      "sha256": "011f0947e93ff079d7fbd58fbea47c73146db545cf549c066f2097fc67af8fb9",
+      "labels": [
+        "Prevention",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32362061",
+      "sha256": "0123a54f011cf97a09e5f0e030ce2d95a5e8d15794b2a1c8861586eb4cae2187",
+      "labels": [
+        "Prevention",
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32366178",
+      "sha256": "0128c199475e0fe78ebeb1fc3b07c7475174b963a3c2c014d6a5cea36d5f89a8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32652240",
+      "sha256": "0129a8649304699db1d6a8ea05655b7f5b33a2c89fad217ec05fb4ee328e8a24",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32379863",
+      "sha256": "012a29e2b9b88859c0b488be92575ad374cde376f82a1ac11a266194ef615f03",
+      "labels": [
+        "Mechanism",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32448589",
+      "sha256": "012a40b9eeb4c1567b6c33063ba3afd833a9cf2d054294d1594dd0e9c43e3f43",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32278693",
+      "sha256": "012ff981936746679da8cbdda664546374a77dbfb407aac03a5e592e60e90b69",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32692666",
+      "sha256": "01310b93da73bbd16af9c9977e2694793201132b200c31fbd0390655cddb28df",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32963467",
+      "sha256": "0137eda1cf96cbb25e232831812404d2842b91bdfe377d711fb6f986bb59af12",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32396759",
+      "sha256": "013d08a009b7a052b1bbce798d10b73193a9595884836147aa3d06fc423383f8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32531146",
+      "sha256": "013dab500c3868466b29e360dd42493c52dbeeb380a169889c1998536aa75430",
+      "labels": [
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "33038241",
+      "sha256": "01438b82b61db77b30efdd00d0a3fefa1a8573440fab330315de1d829a311eef",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32670439",
+      "sha256": "0145de46aa66e0b0fd418b1596dcf9c5c63d3012792109b6d644bc87e55941d5",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32219471",
+      "sha256": "014881c4d0f5f6d24a88b91a55fe59b201e93cdcc2fb2b35fa9986b191b3f777",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32871183",
+      "sha256": "015a44cf77c31d1c0db819303821f1920638d8f1c1462c71444592cb5e731d78",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33013059",
+      "sha256": "015effe742433e586514a67f6919537d54dea47b60909fc2882ba5415e450c36",
+      "labels": [
+        "Treatment",
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32513832",
+      "sha256": "015f5b2e20050077ca5fff6a90ed0539f34aaabb1864734c3bfcfd7b21a246c9",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32375011",
+      "sha256": "0161a7e1399d44b1b9c80ebe7def23b90c02d3e3ba19c2b45a5dfb28b3224994",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32723468",
+      "sha256": "0161f971b7d786c9e7f42fa7c7504df4de8a06de07eba0aa0520b3dcbf469a57",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32243672",
+      "sha256": "016369a91e9d0813baf73ad476687238cb5424f72a7f722730b0f41ca680b087",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32837881",
+      "sha256": "01659922f999049886a6b914af594817852cbb17c5170bc56fa230d22720a522",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "33040064",
+      "sha256": "0168bb8fe4feba991e4a5b79ec0b8c9074bd20eb60abc704c360227db964359a",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32836713",
+      "sha256": "016ad342cf87d3d6ad920c0d6d27b624cb6503127d99650ccaa03ca0e8c79bbc",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32922854",
+      "sha256": "0171b52f644216db6940c1b0b0399a526238fd5efd187419e4531e41bb0e356e",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "33051732",
+      "sha256": "01736f1d0847ec74343f96edd249117c4fff5a719cc1d6ff6a36531704038f45",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32556893",
+      "sha256": "01777a98032bad89790925ba26035e79b7e18b286d7aafae45aab3b96919fc8e",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32578784",
+      "sha256": "0177b596b1007a9f2cf16c0faf4a4f184368cc8ebc8988c802397ad54c6a6569",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32409680",
+      "sha256": "017dcb6b2e98bfb954577f85e47089e764dff7cef0f1c044bacf0f00c1f221f4",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32461326",
+      "sha256": "01830dbfab20a2bf914323ba1dba5b9aee522e1d1c31b846284a5e144909c5b4",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32893160",
+      "sha256": "0183dbc1bf61edce534fa75e0f4f6f5f08746c2f4c330a33d68929e1ea671c43",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32719203",
+      "sha256": "01857bc8180db93fb92c2c064357d54ecd7a426935dbe928dd09a16b8825ede1",
+      "labels": [
+        "Prevention",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32340538",
+      "sha256": "018615e4fe42f6d57ad9a5d7e27b5db40b59c6a45fb58985e9cd36e75c5165b4",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32485102",
+      "sha256": "018660a11a6b5ca5c51106aca22c0b3d880eade7c670766a9c8dc5dd3f29b9d6",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32809115",
+      "sha256": "018952b68e1d3ab8095b74de536e9eb5072a958d79044514d4417ddcb30bbf7b",
+      "labels": [
+        "Prevention",
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32982760",
+      "sha256": "018ff770b11ae3f2cb1bc50a9ab231f5430f19dd661924600695a54f29b39cd3",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32635234",
+      "sha256": "0197bb4a6332781ec0adcb5910272e8c32f979249707689c3860c914a1f20bbc",
+      "labels": [
+        "Diagnosis",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32589165",
+      "sha256": "019b818e0cbcc9fa3b34021dc34666564065fbb91504a5f1e9507aaa028430ef",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32937193",
+      "sha256": "019dd16055ebdf7768eda66f33ea80acb7a90e1997eb027cfa8f390e65c848ca",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33017611",
+      "sha256": "01a277d753a8842124ebb34220147f09e946c00216758c14093c2330cd0470ea",
+      "labels": [
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "33039660",
+      "sha256": "01a7299be2922893ceda4ed06e0d1ccd081aa2bd3562d2e7b95b0e3a2ac69197",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32637293",
+      "sha256": "01ab7e2438d7a293d18084319e55b20a233e6a1c645535fe4ff96a16426236be",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32599638",
+      "sha256": "01abef5f5d416024d52873e9c05b7bc6ee92ceea324a6137161965e492ce86f3",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32325167",
+      "sha256": "01ac28c3c009e446e0207c6ed86114292c9817b25f00caad24e0eea2dcc50916",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32304108",
+      "sha256": "01b276642a3ccf121a67c92629e74450d4fb14d9cf57da49589e94816149f3aa",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32335408",
+      "sha256": "01b4af6596cb7491de1e907ee7a17664bc395ca92f5ee8f7b56b04c483b91078",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32923351",
+      "sha256": "01b9f745fdc529d6aeee7ec6232e272ab0131ccc19610791072484fa8ed9b2fb",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32893047",
+      "sha256": "01c03e5ee1929052fc818cf9925d80fd0d2629184e92afd4cb2cf2c313cfa84e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32395425",
+      "sha256": "01c17674b4bffb4aec246e5099f008f018655411631ceddc8e087588fbb703dc",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32302278",
+      "sha256": "01ca3fbd78065566736b46b4892ef5fdb1dc35e2887f6aac1caa10c3178c2abd",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32994262",
+      "sha256": "01d998e9065663932a2a138a631c0ce95bffbeefed730b62f4bc64319092c194",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32986441",
+      "sha256": "01da4182b09fda82aece991b3fd5f003439d2f159a2df0b288ee21e34a848a9f",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32450106",
+      "sha256": "01e0a8ee492d570f9b7c98183d61c30d0ef0e9487ad0df4933e1febe19a590b3",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32419750",
+      "sha256": "01e43150fe9b09d81fcc8cd1ea17d3226982e782879865b106b896a6c25d8ffa",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32379896",
+      "sha256": "01e4ae585aac9e577d725235256d6822a7fd1d22429a983bd5228070b0589486",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32630064",
+      "sha256": "01e4ddad447c7fbecb1d8fbea8d9bb9c44954916694fb5317964c22633037e0c",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32721790",
+      "sha256": "01e5d916cb05067435bea1a207b4d5e0f9686f49311a96a2f0387cac8a57c04c",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32970557",
+      "sha256": "01ec40a42c8ac650b4e825350c6e368e4173ef3b25e6ca6abf6ad7dab1d8ca5a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32984798",
+      "sha256": "01ef8c580f602988822b48a99c8f4eccf811517b8aa5383d4c4744ad93ca6c69",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32904117",
+      "sha256": "01f0375c506f4d3a004b1f2de2e40956f3bf147592d24800d9fcbd8ba4945e1a",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32919879",
+      "sha256": "01f1ac13cf4bab5daec4951c2ba2748d05a26eb2a2a6eece1f4751de1fb6d738",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32632722",
+      "sha256": "01f1f4a9418aafd7d4d2877f0b6a5b947afe7f62df1dabbba861ba27ef9464dd",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32455807",
+      "sha256": "01f2a00ace22008290e2f3d7312f9de8aa847847c2e8ca264f796753cb9f9483",
+      "labels": [
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "33041315",
+      "sha256": "01f2cbbe47ab176dcd085b5e6ec4bcee94112d100363da2d93d0cef12868daf7",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32587153",
+      "sha256": "01f358568b72075da5992c31b290743902c3d40988b4fef9aaf51d1bee806244",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32978651",
+      "sha256": "01f4e8803b0fdb549c08fca5e0597350a351228e919ae7ec70d48508481d3766",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32724296",
+      "sha256": "01f6c53788626cdb4c54dea86f49dcdd1a48f01b800208f68147523fced84107",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32901391",
+      "sha256": "01f71c334b3e2824c1b914c96c049d4a11a331e5f18ff3d041c872d6c6741cf8",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32844538",
+      "sha256": "01f81cb462cd64f3673c05e886253819b03761cf19187a92b3d34168f8aca7f0",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32576263",
+      "sha256": "01fd5f6571da0a9df941db2f17dff74d50090f13256906c3e1b7b99e606705b6",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32729633",
+      "sha256": "01fe45a1afd540ef654fd4c4b5a0b765f7ccb267c774436d8ef528122d9530f8",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32754162",
+      "sha256": "01fef549e0f2adf59ac26c5f275bc152ce8cf0da2dada51d715b8e9d9d5211b2",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32569204",
+      "sha256": "02044ffe5b35fc3de37ae82fae6a3ae3e2d99b9a9594f00cebe37f97c3d3628e",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32407758",
+      "sha256": "0208c18f922ad0e8350e677316a609dd6ba9beede3a36333ffeeaa445d4d7000",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32687455",
+      "sha256": "020c89867a5a9d6f953b9b5d4593c115c177698e78a2c4188f1fb8119492187a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32772010",
+      "sha256": "02132916a5cce84fcdae465d01aaba6b9f5d5b9ff74dac8959564abb69c6d8c6",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32783675",
+      "sha256": "021491be835caff6ea92b2967443f1ecbf3a10204fb34c75e2fe6d95c9631b20",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32654267",
+      "sha256": "021cfa6416446b046b38df70e7d26af9f38c07cdde038f9d5c50f57fc974c58b",
+      "labels": [
+        "Treatment",
+        "Transmission",
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32342928",
+      "sha256": "021f78e6c2f4d5eac9785be5c43f2fe95c2a51150ae84503fe5fb8e5cb19c16e",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32443442",
+      "sha256": "022166225d30b2b7babbe0fb21082ffd79dd3ebad3020e9e8fab4bd4d1cd180d",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32613939",
+      "sha256": "02231b480f9ec14c83cf8a58ac4411f991578efbce16d2bce1f6a88c2b21e214",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32363249",
+      "sha256": "0223c764375070446751c58284d554cd05327ef5aa64d9ddf708809456411433",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32589691",
+      "sha256": "0224060292bdd3999d1d3f7d0b9cc501e5ae78006d6b3bf8d094e4f2a9f56020",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32520401",
+      "sha256": "022840be9163d8924f36dec361e1a80ffe636da0e97bc57261d760f7ca4a3b85",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32266873",
+      "sha256": "0228e88bfce19c5772e49c2c4569496022fd85d1ddd77f0e340a09f1070dc189",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32467968",
+      "sha256": "022f14dcea51e90cb2415a1cf3fdc1398ac37e6ac08bda618afdff37962aecf2",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32340912",
+      "sha256": "02305088f7a2461959328e6486d01f1bcfb88ea77bac306ff7a72945daaf8a7d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32692365",
+      "sha256": "023280356bfab13ea9927ab6ce716a20670faacff2d6e8e7d81840ff68340658",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32423299",
+      "sha256": "02363130a773005dcb99bdb540bc7e148a7b840ed55ae6b05e4b4639f09a1475",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33045996",
+      "sha256": "02386c27ef5cc44e43cd40c0f411e95bfe779650d3d276df667066e1a01dc3cf",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32769260",
+      "sha256": "023bbf6996c226534d29685951d26bc6341559a501f40848c26266bc276dc505",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32573468",
+      "sha256": "02419c1ecd3dfc7abe18b068987d823b95b5dfa2e6efc9e3d18bec2d2c0bab8c",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32830284",
+      "sha256": "02448085f5cb6c643686e054971972f7e4e7d98ff040b33117fd969c8c72e3b9",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32618220",
+      "sha256": "02454e89d56f1842dbedfdd2b74e8b9b12afd045a56140edba04621e3b035013",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33011717",
+      "sha256": "0245f6071bb260f93566754cc7b55bf71aec0e1433127841aa08e949a522a905",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32936281",
+      "sha256": "0246105fc950d64b898242383dd067baf41681100dc8f91348788dd65ce1d709",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32360286",
+      "sha256": "024bdcad2e84a3522d21a762e345a6374d076480251c17510dc04d3a6a6f8c04",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32633712",
+      "sha256": "024d8fc569f248d98311c02adc8a58459923cf892cdd547b8d068b7ece4c0b57",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32216803",
+      "sha256": "024e7a9ce48f5a6c3596fb9776d9dabce4dbe1ebb140dff66e4cd4eb2575a330",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32309812",
+      "sha256": "0251137a0eb12aa3573bb17fe53ac4e164eda5a028299fe0a116684ee2985c1d",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32812887",
+      "sha256": "02543b98f295052253c3a41013b6d62fdc62aa417755dd0b0d9c19012112e366",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32531154",
+      "sha256": "0257cf39f977c130a40a80908e46b9505635a7507bb121c1a6fb1d616a14b610",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32954711",
+      "sha256": "025b6fe1725a3887dfab440477ca11769d5775a375363b55c28a84c82f53350d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32501839",
+      "sha256": "025e30f60ba5d84d6a86b86919b8cf404af9ab2e67d471f15476384ab2f7f0d8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32931069",
+      "sha256": "025fa8405eb3e30038740245006bdc801cfa8a2b724e67ab8a95ffdccfed98cd",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32350226",
+      "sha256": "02656fa97575cd461081dea4022ced4e11a551bbb81b6c63147bf17fe5a09725",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32459832",
+      "sha256": "0267ce7f11d488ad14021d67a6db92c2944e1cb44eb1c79e00bb505e0312002c",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32638888",
+      "sha256": "026836c1f56adc86730976ebbb0b30a135d511b631b9f50af5a7c8208adc25ad",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32405081",
+      "sha256": "0268c2e55bd4de67a5ff38ba14d0dae7e806be066d82bf012260bdb87db78e55",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32404512",
+      "sha256": "026968916a68355975d74ed95b3a8478ee407d5af9cff1a9c9c2790807313041",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32615199",
+      "sha256": "0269f3c0858692518db8b7c62b4ef6d0539d98a9314120674241a376f67fd205",
+      "labels": [
+        "Transmission",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32676542",
+      "sha256": "026b545c73a53b521ef14103d952462105f050d7e3691d5fb0727f7f318a278d",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32855190",
+      "sha256": "0271d41bedc27afe36958e69d87b2b712dadea9fe8ec584669e562f3285fc210",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32837879",
+      "sha256": "027351e4d6b0d781234bd071e051017df0d65159b98c9cc7b2f37fc736a31550",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32771064",
+      "sha256": "02774c1bf97b75948b0d97902ba86c94920071fbc5b4331dcd9a5ce4f05cb10d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32451906",
+      "sha256": "027b370c96b06e983878470cf6bd1f25eaa5ff5334c22d84fdd9251f2e8ac8c7",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32826326",
+      "sha256": "027b669cfd9327f8b35ffee94956eb4b5758070d5c4c00d38251d4396a764cee",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33008007",
+      "sha256": "028085654715eabbc535076c79455e2734f7156818fa010b1242102aa4b91106",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32386966",
+      "sha256": "0280a477d3ff0b98866506d62ddf6dd665334a49a931d73b6f15e5f2fc39e3c6",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32516817",
+      "sha256": "0280eb9e9ff817b7c2dc6e199ad656a509b4e96f0e2c06b6cf5a99e9cb4f2afd",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32298028",
+      "sha256": "0281498ed71aa51d2a527e019d7bc818ea06906b7e6c5457caa3cbf34adf3e1b",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32761228",
+      "sha256": "02818eee4a316417303edac89aca693971030bf90edfdb10931ab7f477164497",
+      "labels": [
+        "Transmission",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32879103",
+      "sha256": "028c6c7e19683a92267b2b0c8b38ea949cef353506a0d2e3833622dbf65585f8",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33039766",
+      "sha256": "0296868f1b0afb07c621c8d18dddf1bb122b4115aede88e260854295653deff6",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32630367",
+      "sha256": "0296acd5e1b1f504f38c769734f3561380a372705795fe852fc8761354e56432",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32826322",
+      "sha256": "029d31b80248474040a9a4006ac0e45e6c461001d6c17e964e49e519b464fc1b",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32927129",
+      "sha256": "02a20f5d5bd477d3bf4f6a3c0e6937d36b9ab59a1fdd37be1c20f11b1bea0c38",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32787459",
+      "sha256": "02a2333a50e838904803a79be15eec61f534d3ba924be54159a795f61919131f",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32850608",
+      "sha256": "02a4f88d8873a806b755ef240cf6c8527f618fd5f28de42eb04d5bb548e37599",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32867137",
+      "sha256": "02a51ff6b1bfdf5d61a703694d9d6040356ea1f0606f8d77c8c484dd2f3d5fd1",
+      "labels": [
+        "Treatment",
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32744616",
+      "sha256": "02a78005e4681a3e3facfcd2061d351ae8591cf8d9bbfe9f08411b2f01b2b1d6",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32296570",
+      "sha256": "02ab59d93303c68a01593c4a76ebcd99ac224c670b3b9d4ed8ca418fa3b00ebd",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32864589",
+      "sha256": "02ab80eccbfd55de1c786c2224c495f2ffc84fe040866105873add23dde64144",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32838447",
+      "sha256": "02adefeb51b8f51f606d7677616d7b8aa160cecb6fef6c5e13b069a7725cd42e",
+      "labels": [
+        "Transmission",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32023681",
+      "sha256": "02b2b6689b116daa0e4b866c8279b3d389eb07491fd127cbcaa69ba816f892fe",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32838342",
+      "sha256": "02b45ac68bcb5640420c3b3ae84b8a81c846e47d1481dd9490f150b9fb4d0366",
+      "labels": [
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32602361",
+      "sha256": "02b59495ecb18d89bc709c58bbc6e198ba899849b86494f1293cfeb5f5abe406",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32606285",
+      "sha256": "02b7eb004459b5e33bd5ecd5b3629fdb36a94c0252dfd9d76f507699c31dba81",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32077660",
+      "sha256": "02b88efd2a591735c097941f9c1e9a6c3ad13c41c17642fad96228e9fe9e252d",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33069265",
+      "sha256": "02bc5e686262fafcbd18640955a8c890101a963f76966d5c598a5287be0907e6",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32968623",
+      "sha256": "02bc9791baf96b8eb39c9cf2314943b3f835276266f1c9d041f5fb0690593e39",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32501801",
+      "sha256": "02c8680addd3312ee8aaf6d869c3514d6f9920e5b510ac13abbde4072da4cd2c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32703158",
+      "sha256": "02ca0218c5f3c5c32fdf1383a3a18e41cf0f8b3223a7c3ffc73c37db99a008af",
+      "labels": [
+        "Diagnosis",
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32225133",
+      "sha256": "02cc093939c7dc487ebdc591d73ddc5da9088067215dee6838aa65d69f5a88e3",
+      "labels": [
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32945634",
+      "sha256": "02cd4796936a1222b6c2082411ae4276a98429c8ea5c59da0cca5a84fe11407f",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32459372",
+      "sha256": "02d0755ac05654ae810032022007a2947799b86d0d9ab7bf105c1b673ef35764",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33047077",
+      "sha256": "02d25d054b76e39bc8525c1134c2eaf9954d37d553630f1d767e77992e3e0584",
+      "labels": [
+        "Diagnosis",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32675217",
+      "sha256": "02d8cdc805450f3938e974bbbbe17ab284894629eedd27063a2fee8cf64f348a",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32542914",
+      "sha256": "02e16457bbe7c4c162b52e2c1b7d313381db6a8431d6881110bcf7b410dfc354",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32452282",
+      "sha256": "02e2158b636930668b9d865e8ada63fbfce87236f401d66675517dc420ab7b6e",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32921719",
+      "sha256": "02edd48a7ebca29ada31e5863f5a2d845db0ef144bbde47e1f0afd3ade4b8992",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32717432",
+      "sha256": "02f1702a40c76723590cf7af3676ba179a765848b22cb45f1ce68eeee5e98764",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32750442",
+      "sha256": "02f2dbd5b514ba3f2ffb64b5ca9eaf4b4c5c40b5c2f6ba1e1373a2e8aafc8849",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32529703",
+      "sha256": "02f798abbb0c4dff99cec1ab545ef6b30f2fd3e4eb4cb3c6e96dcbec54690eec",
+      "labels": [
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "33053640",
+      "sha256": "02f79ffd69d15aed0e3f223d48fc212629093a3dde9ccba2ae22a5a0b1d88095",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32838499",
+      "sha256": "02f9f019a3985a43d97d29b0a98d5ff6763a93f4550bcf7f948fcc469e28785a",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32699321",
+      "sha256": "02fb5bb0ef9bdc378eddcef0c00aba44dca13066191de0b88363faa2f76763cf",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32747400",
+      "sha256": "03005485c191ebac3cba7787962078ccc8dd9a1aaa09faa1c15515af4f24288e",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32837772",
+      "sha256": "0301ff978fc022b782ea818b903f1a9244961bc13a47a484099c06c9d22e0a8e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32467422",
+      "sha256": "0302405c58ce41c97f0048edd8069966142da7213f694cbc847834f062fb1ea9",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32837555",
+      "sha256": "0303eb7437ae6f42ec94f7a42d5f9a55b0af45903eb7819088a69ed20a43f6b3",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32930391",
+      "sha256": "0304c5bf1217707572d5dd6f1792f60600dd27a977031b718acf906f20ab4de4",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32458279",
+      "sha256": "030695cd0004c819315d54df9133e87ec7b541b825fab71bc532a157f9d9372f",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32952535",
+      "sha256": "03098fa8330308c470de8164af53db93c2ce397b5b2838c8624b082371e0412e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32920584",
+      "sha256": "0309a3bd890060b159f001a40b8a475879ad320841e8c74e83fa28920149c555",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32594340",
+      "sha256": "030a0f8e54a66adb583c7efe3cf1705d676bc766eefacacc9085d589e27767a4",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32995557",
+      "sha256": "030c4f728bda0d31b9f39d2f9490c7a7973970e36b1fd5bb263d66e60e4606bc",
+      "labels": [
+        "Transmission",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33025500",
+      "sha256": "03157c3b89b9551464cd1814140d8c4c0bfb94bd3ef249380d4177163ceab0f0",
+      "labels": [
+        "Prevention",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32350686",
+      "sha256": "0319ab0b35d0b2b73ed6d393845600b8e0723590ed3ce84fdb5c6d2959dfe4f5",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32863403",
+      "sha256": "031a8ac8c78e178501bd09574000d197c90a5104701d83a580f890dbb1f66e27",
+      "labels": [
+        "Treatment",
+        "Prevention",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32385187",
+      "sha256": "032f51d02e8a42f97be6ca4d73462597f1a77574f208b1ee8cbc7be9a198d6e2",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32965016",
+      "sha256": "0330b63a727bc5ee27627b7d98c092e7a3eadb5852f13f9df88d80d3aae81008",
+      "labels": [
+        "Treatment",
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32336583",
+      "sha256": "03317c7d20c21ab6e7e747d7b7906d056300282a742893598a3df44a04ca7b53",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32375884",
+      "sha256": "03340538521d1927558172b8f396f3388447991e7e8ad24e262f2577e18c1ac9",
+      "labels": [
+        "Transmission",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32973779",
+      "sha256": "03376016b1189680a3dd5128bce7d2482c15ed05ff53cf9c450f03e52bb807c8",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32982155",
+      "sha256": "0337653870237ff28e975de27b154a2a7a578472ddaa3dca880af19f63ffcdc6",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32758306",
+      "sha256": "0339d0b4bf42d30d62054b071609b072507f498a8d18598847185294e65118a1",
+      "labels": [
+        "Mechanism",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32504757",
+      "sha256": "0343cdd6dbeb3100e820c4f32bf596d08c2e789472266fa0dc47e9e439a6aa64",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32780181",
+      "sha256": "03462f775f46fc47e236f521aabedd9b34ed4c19c816907521e0f99d36f11f10",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32593563",
+      "sha256": "03465119e08eb8ea15ef9d94ae6ab3170d298db09b5e812ce40e88702c4d20db",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32773727",
+      "sha256": "0352fdd0a304aeb973a8c0448bb543d48234142c62681046fa37894a1809575c",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32618909",
+      "sha256": "035adeb2a56f4660ac6b523fcad7df9636effe9a1d90aaf58c1f2644ef7f760d",
+      "labels": [
+        "Prevention",
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32412510",
+      "sha256": "035d6c3df18af770eb47ae4c0730f24783c39137b7113b6774e9070e15193747",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33063256",
+      "sha256": "035f54ab545a1397547ebdbf015bbdb0eb7f542e49cdd5ae8aeb5fa1f5c1db4b",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33040594",
+      "sha256": "036044e19a56f573c0f85e6f81a5360f4a2a9b3c1f6087200669b317dfaa8f90",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32794675",
+      "sha256": "036085267d48da42869c58ca010793002a9ad41e7a8442a54fa06290fab68342",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32760114",
+      "sha256": "0363cd70ab76521ba8a2a67159514ac24858771bd88ee3d43e9630e6a40a6310",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32679426",
+      "sha256": "0364f441c3c12c8ff22dd84f1cace0907502908e5a1b0b0ff3953d021bb69b01",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32739265",
+      "sha256": "0366c043bffd7e1c91fc95029d992049b47e347c2ad4f8f1790b18fb972635c5",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33033955",
+      "sha256": "0366dbc016892db7ed1bf34285a818720f2baa6675fd50241c07379afd48561c",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32645826",
+      "sha256": "036cb0ccad738eaaeb5c3c1f702ebb62a11b69d9f460d44871aee6680b6cccc3",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32297089",
+      "sha256": "036e2626a7dbffe55323c20c3a33f28cab88fdfa3aae3ff43c6b71b55494c277",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33031078",
+      "sha256": "036f8d7658a3bb2a0a9ba4dd6d202c5fb7c2490b2453befbb501f31a40494099",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32525388",
+      "sha256": "03726c1c2a6c0c305c0b426491af0a316ee658381916427908e42aa4d91e28ba",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32912711",
+      "sha256": "037505c6c6a23faac17f2dd8809dea1f693560fba2bade05ae8c5f7da358b6b7",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32192561",
+      "sha256": "0377914c45220076a597363876ed6d414dcb76cefb38050a0df656f8fce025e2",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32537527",
+      "sha256": "037811fda04552cb6d525ae9e5ccdb6ec2bea4e8cc7fa39488ced4b747f2029f",
+      "labels": [
+        "Prevention",
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32904497",
+      "sha256": "0378d3ef10d46d2dbffd48c09700484fede38004611c0e42f50288c8646d68e7",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32769150",
+      "sha256": "037e9bfedd597bffb0db5b66ebfd49d9bc9b63aac39c23147e8cb2d5eb02758f",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32816767",
+      "sha256": "037ebb0cb250aa2c66e6f1072d25f5bef4d9bef041475aaf91b4bc82b2e666ab",
+      "labels": [
+        "Diagnosis",
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32879987",
+      "sha256": "038104dbb4a6bb313c114b8cb214256e77d30ad4454d3735aad4691f0eee27f5",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32838181",
+      "sha256": "038208a4a89dd667ce3c1e6758105db4d32e47648042462bd8bb9b23824e5ab8",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32940180",
+      "sha256": "038262e43cefa8099f183fc7f3f9752725f3e1887bcb8953562f847c79066a77",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33064671",
+      "sha256": "0384f31f0c06072d3593ef2aea92e684627d484687d3e85f90973055662bfb0c",
+      "labels": [
+        "Treatment",
+        "Mechanism",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32212058",
+      "sha256": "038aae89d5ae87d8d480a2eae0cbbe3de30190d8839ef93cf38a1c243f02f34a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32541745",
+      "sha256": "038bf4aa4bdc6ba4075b26a0bcf1ba0e524f5fcc56668a7fb6c160acb943a713",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32446311",
+      "sha256": "038d9343f39faf83c5a9e0e53fa800cb6102545cb47c8675f85fba718dbf3e9a",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32993622",
+      "sha256": "038dd75a4ed3bfe1482e9731fb07ffa63507094c90e6932f093fc2d9cc9771a1",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32291094",
+      "sha256": "038f165fcce61f840e09843cd988167f3f932f5906a29c493ec309c0edc6f35a",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32376901",
+      "sha256": "0391e8edb87274d59e4e4b1a772a5a28eb1024272529bc24c5f3cdd78d296add",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33028491",
+      "sha256": "0393a6b63e530f2b5a18d634cbf92c3eb194b3546684f4d387b38d63ca7c1a24",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32655579",
+      "sha256": "039749ed0428acd5056c475bdcf6453f17720750d59f291c230fe7455ab871f4",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33062950",
+      "sha256": "0397ebd8fce25d602ad7cfaeafbc02973ced7c4b719a368ea29364e76921d005",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32725381",
+      "sha256": "0399f753c93b4f59cac63dc48a04a7c17795f0ae68cdb1994934b01bd1014a16",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32561661",
+      "sha256": "03a355a3b8b078c21ffe95cfcb71fb71d0b2a421556fb129742a41a0a0c1b9c1",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32282373",
+      "sha256": "03a71f22fd29d6153b7fa5d91c6fe08f01b139d3549fc278df7897bcd7688f94",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32830564",
+      "sha256": "03a743e2a22f92b7c16bbbd3a999df9eb0baf955e5dbaed5f32a2b15a94be1d6",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32660993",
+      "sha256": "03b0b6285e9de1a9e3844d066c0a6ddf9c6b2d2b88fedc6eae677a6dbb34e2b1",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32728918",
+      "sha256": "03b76989d4f3c7954e5b49e82e6cfc6c4cb4bbf6b78262b214540700e15c7a5e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32346843",
+      "sha256": "03bb974fd80cad60a7cb7af69fe920b309fdaa82ab6cdd13d49d90f5e0b3d744",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32809963",
+      "sha256": "03bf39fa0b21ac89feae5fb799983b341595757d11089b14ed3ee8d98b115558",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32759252",
+      "sha256": "03c0a1dc3d6226c1fa9991f17e202e641dca0dfc3d8b42ac19ba51001c0f4f0c",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32704018",
+      "sha256": "03c912d9c9ba44b9926b56e6b20ed217ad01360d1c934673b6fc1ceef1b28c1b",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32931446",
+      "sha256": "03c9a459eb6070289d2822325d55803232465f9df07a5d9c474b139f55b63972",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33074594",
+      "sha256": "03d099b080a0647bee667d18042edac81b570e142f104ff8fe93dbac434d2c96",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32855214",
+      "sha256": "03d0ca727311ab39c07b11ea7a3b9bd824038aa0f2547746a13d97b0f44b8c6a",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32770412",
+      "sha256": "03d655360f4b55c18ef82e40ac3f5b709d74dd3ab4ddc9b68295f18975d8e450",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32428069",
+      "sha256": "03d8400e18e4f21d5e30de233c717a61b92c24c380270c814df7e80129869a60",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32708870",
+      "sha256": "03dae9e7c9a9c23296b49a029a7fb5dab28fd8f720aecb8fc8ed3f7a0daf715a",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32836897",
+      "sha256": "03e0afc0a0ca38e41d51128fff1cd3fe26144e1fcfc705d7959b522eea74a469",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32505994",
+      "sha256": "03e2b93b431b08e1da833fb2eed72d92b6d8077cbdebe5fae49798ee102b8d60",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32463288",
+      "sha256": "03e581c33463fb223cbd14cd316fe0cbaa799dcbfef262c8e2aa9768a6f5a6ce",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32562832",
+      "sha256": "03eb6998dde451313c9988545385f443a906f79ab2d64194392a74db2a6c1d64",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32740817",
+      "sha256": "03ee0c27e5a9eaa9b22e99a4d9a98492eb85ce6b17c6523af0c6e172268a566b",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32393451",
+      "sha256": "03f14dc6153fa5638133cfdbce3fbfb1b41ecab6b8819b3e49079086e6f7119f",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32890723",
+      "sha256": "03f61692606c7a9fe33af44819dcfe5d5d41c104d967c9af3b6835830e551538",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "33012056",
+      "sha256": "03fdaad5b92582f0884117ae3693fbd960c0529a8a59465a60a089bca0bdd2ad",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32292630",
+      "sha256": "04040af8f901f08c79cd38ad160bd8b7b7cd32c3f077e5e8f5f8b17fed67966a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32951064",
+      "sha256": "0404e5ab07dc909075792b3a0ea7479d9915949ef672de67ba68f8b8ae7845cb",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32869005",
+      "sha256": "0405fefe993af4348397651c7fa203cbdc9fd289a65ee2c5a07b70a75959f0d7",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32379077",
+      "sha256": "0407b4229fccdac389c8b24c076795cd2b82a1da1b2023692976c0dbd746d682",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32677918",
+      "sha256": "040c17c5c64a8d5e4fb6c0e214afe436b79faf793e483cea7b071d6319e9149f",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32621399",
+      "sha256": "0410f08a4d46d15b13ea0ad2dece01f429c1e513eb2c4b7e47976309ab89829e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32367431",
+      "sha256": "0413523129b002c7d3cac92fbff4270c0011afc3a102a319caf436f96198abb2",
+      "labels": [
+        "Mechanism",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32478472",
+      "sha256": "0414155025e23ea382cf3e2e4abd1694b9693fb14078445ad868783ec1c3e9ad",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32537662",
+      "sha256": "0417232072c202707c9dc443838a2dffc7845c2f3a81a0e2a87cbad2212f0fc9",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32399908",
+      "sha256": "041a897c04135c668f7d03e23f425cec4184dff25e67365b21411d909c4ef4f8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32834899",
+      "sha256": "041e34fade70ecd6dfe0c11c9f342ea527197b38ed15d0f85183647065d9e29f",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32511678",
+      "sha256": "041fe6d5544402fd92db39bfe4a3cf683b2db45b7f758e6c955e25aadba0cdad",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32396947",
+      "sha256": "0423a930234a1c334c1298fea480ac465c123d9abf80f3fdc47d9cdbfc5e7949",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32333487",
+      "sha256": "04257057a7004203ef0af170166de5e15ea961a6f81977b47f3e6d5a29b8f1fe",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32892615",
+      "sha256": "04288ad88abba3fd7b9e3d755b9eca139feaf9e20e5d83b5777214b4e2ab57a5",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32833213",
+      "sha256": "0428ab582b01f0c396c899c2628be58f2647dbfee694a9a2ebaad2ec034e97a2",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32938471",
+      "sha256": "04295e1d727d471724709a3b29f2242780ceaab83e3d6c8554383c8f8b8ecc7a",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32878333",
+      "sha256": "042a89182912b81f9494448240f451f878c32baf95d4ec581a30c31ea81a6ddd",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33080630",
+      "sha256": "04324ba418833feb66840e6f9606f5598d8b4fb6f1d1e3c6b5e681dd2cc59679",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32429038",
+      "sha256": "0432fd4e494fd6628baeeb5434fdf8d367d0cc89fa59b168ff88c7db187d4ca3",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32291502",
+      "sha256": "0434cf5ca46f99eb5110fcb9b40e4dac073aeb1f430bed53783ddb3ca4d40ed3",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32425200",
+      "sha256": "0435ea198e16cef2c98f233231857bd06571a3a0ffdd4fb398ef4a179c80a528",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32238584",
+      "sha256": "04382268adc2624843ac5ad3b00b662a9484be077216fe1f6027e162a98490af",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32990010",
+      "sha256": "0438acd1d0fdbfa0f956a0848ac5d3636874b3db1ab37722c5730224c804f67a",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33073388",
+      "sha256": "0439d28a37b7018d9990db3b2013351dde434559f3a4a25fa2f7a6ee4469272b",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32533663",
+      "sha256": "043ca888069837b06b69e1d5b592017b0f0fdba5f9e57f14bd632e01244cae97",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32861584",
+      "sha256": "043e3f70e74efd795e04b36c6dca0235392ff88b867f59d1b35c25d064cbdfa1",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32818132",
+      "sha256": "043e9306ce5af1a371ed0f5ae9c73477ad58469497cb648e360462870e349d84",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33065808",
+      "sha256": "0443a155638e2d193e9ec3b4807e0dcc1303fdf324ec67076d5b639ee636c528",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32183935",
+      "sha256": "0443b7bc7e022a6779a22b1f40f224d20cc98df66b523129532344f570ab4ba9",
+      "labels": [
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32495337",
+      "sha256": "04455debfb59ab696bbc685111e897fd93661863ee52780346ceed6cb61b36b8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32703701",
+      "sha256": "04471c9c2139dffc2d92220e6f6e9b7580673b5078780192a538a425d7adc533",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32980556",
+      "sha256": "044792c60b2877cfeb8b35b164856fd79940c00a9c5953b7302cd9ab0ba1e69c",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32562948",
+      "sha256": "044b26940fa20ddb7dd10905703985c9efff3f2177f84a59c73d4d03d852195f",
+      "labels": [
+        "Transmission",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32848486",
+      "sha256": "044b4db423acbd7f88198087eb0e9a13d7ef75379b37f36bc929cb3e56d9ed69",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32551408",
+      "sha256": "044ba6e341643733308b2319ca4d6cfb327aeaf3d11e54798dd96581d5f045c9",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33027056",
+      "sha256": "044fbd03eb6dc157d8b5aa0324f38b01fcbbf46114709cbf6fc42d7317fc298a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32931348",
+      "sha256": "0450fb0ccbc40fbb145117f1d5a58c34b1bc47a904716e8415734c839b6da9eb",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32928086",
+      "sha256": "04513889203f76870dd9ac7018c9eb3ef7aa0b3458b10bb5666bcc950cf9b90b",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32931363",
+      "sha256": "04517e3af9e904316824a15381516c2ad9782e4a0debfcf34e3f72722d1a66c1",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32834328",
+      "sha256": "0451fda15f7885a6b9b1ae37343284da351d43996f5b16a3a24e2ad0016024a3",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32767259",
+      "sha256": "04525cd1ae7f8938d230249fb8bb5fcbdb1d0a021ba5e92ced8ca6f50e19b984",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32450877",
+      "sha256": "0452a122a669d1e294173ba1fd86b20b4fbd6ffa630ea0cbbc0b50a2c204472f",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32855347",
+      "sha256": "0453744f2d2e8a6e5ba81917c88f49cb5136bcac63be6727c2eb1822ecd4e3af",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32368424",
+      "sha256": "045561a54d2d0b0f7a9879058585a6b9bd080185fc8ce3243398f01dd432556c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32528042",
+      "sha256": "04590d3f76cfdcd0168b8bb1a26d275ca677a26bbeea557f2ea444690d0fe6bd",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32272522",
+      "sha256": "045a3ceb866d98fc235b6545cf52b2838eddf8497114aef854ada74e7d8047db",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32963431",
+      "sha256": "045b218182a2f120c7c3dac547c97678dec7e73214a5c8fd33f40f5ae889d2ec",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32993479",
+      "sha256": "045ba564653d6b8ff0e7615c79e3189f327f3a6bc3774b0fea44e923d39ee704",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32903802",
+      "sha256": "045d9507577f1911b45c7318a03d0d29f738e8a44756dc52d87015003380294e",
+      "labels": [
+        "Prevention",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32900326",
+      "sha256": "04671a98f2563b6ba67b0f8427ba7318c70a6e570c281b3ad99a93d4e68f1e0b",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32360301",
+      "sha256": "046750a171e46be6021fa4d702610d76922cb2351cb67c419bb5fadfadf2d56a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32956730",
+      "sha256": "046aff803550cfe0d58550c83b9bdf58ecc33ef99a1cb89c1fcc6786a516d793",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32055945",
+      "sha256": "046b568eab4aef2f5a7116dd8abdb5d6f5eeba2146af7be75fd41ca79a2d8634",
+      "labels": [
+        "Mechanism",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32837951",
+      "sha256": "046bfb8222b9343f9cd5cdf89b4aed598d975c077a893e5740446717ac1a03e7",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32362678",
+      "sha256": "046e5c829974e550e53ea51775d11b4f5b38ee8afe1683678934f03ae939fd72",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32997868",
+      "sha256": "0473576702431bb064fdaa6132e820191a5cd2d93b8ee9c3765e94576914caf2",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32665809",
+      "sha256": "0475afaa9b76d6d63537f45475e48e05bf5496ab05ee30465e0a20ba83fc56d6",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32422341",
+      "sha256": "04776cb603e7f34e4ea8b0478e3c51b477ff5e2b142c68e14cd2f28e84e78207",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32333398",
+      "sha256": "0478ffcbd19315c7c1dfdc1ee7078c11fcf324d29b0e536032c4c472046f8000",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32208840",
+      "sha256": "047a5172d96e98f89358c9511d9dac38e447dea13bacb60156bc7d520feca4a4",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32762795",
+      "sha256": "047b2b145436ec9a5bcd847f3fc9d094c639c650a435043c0b1babc3a776dfd8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32885797",
+      "sha256": "047b516beae45edf480edf3960ce3bc38eceb20a0bf5bb995f05eda3830fdc4d",
+      "labels": [
+        "Prevention",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32918792",
+      "sha256": "048cc414604888238f65accfda497cf6cc1ed454118970c8238e1dbcbd0e5a67",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32310916",
+      "sha256": "04900e0def07ef30ef0880a82a129203566555817bb4766bb2c539eb5d0b22b4",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32384387",
+      "sha256": "04952e6834ea01b37c2e61c9c7d4795b728447d2a209ac908bd9d293c7c1d706",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32997314",
+      "sha256": "04956515b2b0fe10fea2e623d12d621a2ef80fe69bcf1ecfd3cc7ab29b7f9a8a",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32665890",
+      "sha256": "049c2e6cd8f0333711004227c57bb791c2244b90fa1eceadbce1b1f8f2357a70",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32757352",
+      "sha256": "04a1bcfc67fc8cd0e3f44ff39d73c5a1a28e688a778328ee7fb92d573e5be906",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32961074",
+      "sha256": "04a3c40560381f61c316c32b4c424dd0b8c0c5792fab19bfe4583fd685cd2bac",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32339231",
+      "sha256": "04a3dfc4366ea31cf5b115e07d90a852696eae45c6aca6211bfa494f26477c5d",
+      "labels": [
+        "Transmission",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32563273",
+      "sha256": "04a671a69ac8942c46590006148174de1ef39d9cf0adfb9086d1207b952b71a3",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32761796",
+      "sha256": "04a98063b7a720fbae83ecd3d313d487ff5c288ef0324a386c12e9558f869cab",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32764519",
+      "sha256": "04aa06cc0b284ca0588cef5831c809f988785f71741dd189895d72b54ee486cd",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32838065",
+      "sha256": "04b09538ff06b04fbfe69f87a9a1f8f56f4b92281666ef99829d3686c3f22698",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32998512",
+      "sha256": "04b326c7838bc35f67e494196c2f5249fdc0e1f3e029993a88d928cd62428781",
+      "labels": [
+        "Mechanism",
+        "Transmission",
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33073717",
+      "sha256": "04c31e3bac3b07bde7d82f454626cea3c1f03d048d6f563dfa2b36bc93b2cbc1",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32344011",
+      "sha256": "04c6451408c9665b69e46aa6398ecf37c40f8ff235684d9499cbab1e15b458a3",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32566603",
+      "sha256": "04c6b7b50dfc516a1247252885b656e19b6f8e8559261761e49edc839616fbe4",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32426111",
+      "sha256": "04d6cefec1f24df08c4e56e11d57e85d450c99e325a738c7c367ced4b1432756",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32231392",
+      "sha256": "04d96a9111d4b34ae8dd226928c1c29e04ac0ca7d4b2836e6e0f017fe435b5b4",
+      "labels": [
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32788840",
+      "sha256": "04da27ad16dedc6ba61aa0da99546416a08843e6547a83694666e80284d2bfb8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32333581",
+      "sha256": "04dbd6e253f78bf510e7dc3d8aaa6012270d9896b07a5860e8713593c3480545",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32902889",
+      "sha256": "04e1c4185112e64e33a969d3ff78dbefa7a2124ff2a8dab252794eac45dfce26",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32838053",
+      "sha256": "04e6fa4076893688a3dcae44f1011fd7275ad4270ee5ab54c1fb4c026b32859c",
+      "labels": [
+        "Prevention",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32657669",
+      "sha256": "04ecc9830e4e57e1b6341bee969eb4966cc4079eb025b7125d2b87c6435b006c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32816590",
+      "sha256": "04ed0ae040bb3c7f39d8f7d2db758aafeab1f97d6e3b76875353c4fd50b0c208",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32653307",
+      "sha256": "04f002c9cac31182a027fed66fd0ec835951238bb550b18078d670d22295e5fc",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32292205",
+      "sha256": "04f0b94c02e919f44a05b6caa0913cc6c5680bea1a7e0915dadee0d047e31826",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33073060",
+      "sha256": "04fd1c308f996b88f4dade9477b2cb27dba18dff88bcaeca216b184a986d2bf4",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32496429",
+      "sha256": "050199317c66f80ce9ec23852cb41fd9382c9b68a26c5f48f1b6ca3fb1e84df8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32393394",
+      "sha256": "05069f941387bd21dff0da2912e8473b637d0e0cc242624cb59135e97a365072",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33051976",
+      "sha256": "05082e9d49ed2ece10aaac6b375080070424a8eda72bb103061e7b4ebc63ae10",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32495148",
+      "sha256": "050d4b5b8180d5887ac31c938b825f4bb2f80cbdb5ea3d4b61f8b1615bf30287",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32433161",
+      "sha256": "05115471516a02c70970d2e88b0d2fa500787f74846bd64db72fa046ad9514f0",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32526275",
+      "sha256": "05168de0bf0c5a36f5bf803029d8403345531fe711c6d93335b4c1ed23d4b74f",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32732237",
+      "sha256": "052694f96e038c9ef027332b9aa6be55471bffaaf8825095df55d9a7fcb8b77f",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32240770",
+      "sha256": "0526cb2aff74a00d5e83ce23bda9292064ec9c9e8f7c7510d327bf7f61cc835a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32769398",
+      "sha256": "05283c1fb88b9857d8de339d14331cef9e6b473078c460a1bc3b2554df108610",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32677533",
+      "sha256": "05387f20ccba287c9ae1473fdaa567fa907571e749c873a74a04fcf79d8c25d0",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32808940",
+      "sha256": "053e5052fa81853b3ba323bcf74b23be127426087e5e35d417268cbc74ca52f5",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33063366",
+      "sha256": "0546a6315ebb63e1d23f7f46996f4f5526e1202b2907253a4b488470013d022f",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32750006",
+      "sha256": "05496e942f24bb986eb76b81e1c434c7e973cbe38e574f003bad005d7491a2ad",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32972300",
+      "sha256": "054a99651c0365c308ae9429a01a5560daac7baa52993c2a0aabf3a9dcc7281c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32339391",
+      "sha256": "054b39fc3dc015019f8cc6f06d1bce138d637db9bbc9183b9e51e4f7857c1667",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32436101",
+      "sha256": "054e19c62d50a1606828db06e08abbadde707118f8adb2c069abe501e5d31e62",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32550056",
+      "sha256": "054e9fa93e61d3a592ee657007b36adbb764dfaad439f538aaeeb4c04e0bf4fc",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32685386",
+      "sha256": "055319653a08a66176cf64ee77722330321028387b36d15c31f204febbb029bf",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32447742",
+      "sha256": "055406944ec7dee2380ebeb3baf474520dc087645c5c3cffc11c03833b4366bf",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32731057",
+      "sha256": "05548c2ea5e8d6ddcdd0bb6ebdd1b755a960d5519860dc51ebca3f6b41e2e804",
+      "labels": [
+        "Diagnosis",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32818263",
+      "sha256": "0556a03947f77c5c33efe9c152a90a0ba899c8e46e518e06d73b84e2b5dc7d0d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32534210",
+      "sha256": "0559d34b71363c1bd061ab50d7449fb37ccae63afcfcdf27ed6e32cb59d21d9e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32918413",
+      "sha256": "055e25f11d160aa0a457771859374f442b4fae19f162090c9c9592384cd4d802",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32649784",
+      "sha256": "05614d2bbef0038fe192a3a741fe79e4bff8d99ede2e5157a4b9be124f082249",
+      "labels": [
+        "Transmission",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32971526",
+      "sha256": "05632ea53a9380f2b13bea59b19acb63b0c45dd4865f5188a7c35df5f84b3b5a",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32584397",
+      "sha256": "0567fa31bb6b857202681ec818c21c20893d6d320f10ec5a105f7d5a7d918e1a",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "33054373",
+      "sha256": "056a19ed705feb2ab70deee08c87e2b1bbf78d96fb0ac48c3d319ac762573f25",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33078425",
+      "sha256": "056ae9987bb59e436610a1f5668509e9bcea05dc46b4bce8b7ec9ff9e31c38fe",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32586323",
+      "sha256": "056b9dd6d95d882bfcfab2a27f603e958e4adaf7981f369406f96b9af87c7c6d",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32376397",
+      "sha256": "056f1f3958bb2a27ed758a3b4b2a8f07f693e324cd3488d0471fe728ba9bec75",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32242947",
+      "sha256": "05735b5e12db69f8410d33955dc6d6f9769278378d67f43ba56968217e7b1c5d",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32354253",
+      "sha256": "05754da44c2ae9f97b27143e6104ce375d86f277d2038a0a2f6b867bddcee726",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32886298",
+      "sha256": "057ec0d5490a39ebcf294b589911ffaaa2a8a38c544ffab46ccb0eeeac4ef644",
+      "labels": [
+        "Prevention",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32729264",
+      "sha256": "0587c8b7db60d7fd5b885f0255aa152cc41071b72eb6c453d1bab06c929dc1ed",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32641901",
+      "sha256": "0588b405bad6f91a5c8d8a5f400eedcceb1b5ca834ec2c3aeccb05711f38c838",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32838373",
+      "sha256": "058bdd85dbc12bfdd357b45db713343728c06f75387681dbade9d60bd5fb3f07",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32558360",
+      "sha256": "05904b74c970663f8f50feec1437b52fc2c32cf9312d8b684c8eebf8020f12cb",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32365891",
+      "sha256": "05915332d7af0e5e60981ff776c304bea2cea2cab97a038d1f0c5dec054c7161",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32679348",
+      "sha256": "0592501c23023592c52fa544c4e627922989a40abb0c47c0954a36983341b1b7",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32416374",
+      "sha256": "0594b119a360c9558dc25529765f308c565b03e3878027c00db353699a761745",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32994342",
+      "sha256": "059954e1d6b7ecf5894bd0d4b2d22e4b159c97db2dc8e450b089d189dbea4177",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32331509",
+      "sha256": "05a46dcc45488ace7257ef0bfc3b7bf16f2d7e0c402d2c44239cfec104712b97",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32198005",
+      "sha256": "05a866e7b17800057391aa94f09750ffd303f18f3bc32de2b925bd002a98de8f",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32853492",
+      "sha256": "05a8e6137f15c97c9f55b3f1767d1969dd6553678b4e48991becca1ec27b7f56",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32732433",
+      "sha256": "05ab65fa8898628a6e5d9ae9c2156a9c9be7bb713fc48e891c3904e9900005bb",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32101510",
+      "sha256": "05af581ff36a29b64b903e0710fb081c09b9bb57bc12ef16d45a3451423540e7",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32555034",
+      "sha256": "05bd528822f198d40aba383ce977fe231e8ee93f1ae2fa773896fb3e26549594",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32862669",
+      "sha256": "05c3896f2a774c26bf6b100cc41862db2881febcb77d58b565e894f1aa0701e8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32387229",
+      "sha256": "05c74c5d11c8610dd7e455bbbc99ff610b1dac5ccb1c6c623db567383e176a72",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32348044",
+      "sha256": "05c848f49792c705aa2f79b49983868a161c1ce2ed1ec10c30e84ae4b1a19bc9",
+      "labels": [
+        "Transmission",
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32706392",
+      "sha256": "05cb36fec6bcf9ce10c526737a0df719125c3ea0441a71bd4c28cef79cd5b129",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32435879",
+      "sha256": "05cfa49962ef30d6c23eebafc4a4559c8b3da87e24a652918627211f4c3c0d3f",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32831933",
+      "sha256": "05d17612f284052a184ae945168c4aec817603e9746e0216d17b462c2da05dcc",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32669319",
+      "sha256": "05d2bc2efdc5fbbc78bf435284926040ad86988eb2529639bf766bd1bc716a1a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32371562",
+      "sha256": "05d718e6b7eb7acf8e45da95880a4bcb719f43faf949135855aabe4c1cc6023e",
+      "labels": [
+        "Prevention",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32380453",
+      "sha256": "05ddffb34914c6e585a1fdab4dde62eaba084fc9d339888a79da461f4f915f91",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32718125",
+      "sha256": "05deead8798f7feb17d01dea7b1be0a015425de833dc1988332f768b7869a685",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32605826",
+      "sha256": "05e091adf327252a7e822d01e6b3a4e67815c0d0324d6a0e36c8fc5a51ba5e80",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32395258",
+      "sha256": "05e7db6771d318ff4ceb1cd430e2a320a2aba05a049e1b20ef812fa13ca807c1",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32641296",
+      "sha256": "05e86c9fb613a99dfa0050c0ed1988ab60ababac90fe90a7dbdca6c09d6639a2",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32525098",
+      "sha256": "05e88388ca0cb5942655abd1e6bd39db8d3c71de646708f3837ec651e1a10873",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32708322",
+      "sha256": "05ead9f9a675f382ebda88044f7c981e48913444c58f43f34fb19abd8c21cb02",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32836504",
+      "sha256": "05eb338c47963502277dc71da40238aee09af5fe9f07ac3a53a365464a32ab37",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32936693",
+      "sha256": "05edbf5d1c5be4b1858689de031a645bc9f2882adf2d92473de1d16b29f37281",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32307322",
+      "sha256": "05f9cc63940e6bbc8573cdac3aabbd261517539ae785b3a57dff621cf81a25f1",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32558631",
+      "sha256": "05fc0cd0e4f437a1f8fc016db1cb04286ceab919f677be58d245ff47bccc2a24",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32934084",
+      "sha256": "05fc48682d44092e02ca2fe9f55b121cc4b1c638c702befe4b8109e0877c05be",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32420523",
+      "sha256": "060040a20c30dc2cd53e999cd24e92f162e2b009d3ca9a983b4fa844f1861dc3",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33070790",
+      "sha256": "0601fdc843f3e12997a756435ca0116367602ca6b7d9177cd28d6f7b07c7d2be",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32946152",
+      "sha256": "0603f507589ebce128d1e289c33f1723bc2f563ae05bd7a3ef77676698b74a37",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32775986",
+      "sha256": "06071f29bd9e57c4b3be72febdeae0ecab6eadda7694630de70b9f3d08893bce",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32799423",
+      "sha256": "06080189a57ff08f30c407f769ac83c01f5dc9fa83a23f70cfcf924a597cd65c",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32833671",
+      "sha256": "060b15caa219f566a744e816e3302b1eb78226529ffe37352b725366b0c2ef37",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32370204",
+      "sha256": "060be4ed855cbad69f1908c21a3c89c0a805136845336c2daa39ba5358634437",
+      "labels": [
+        "Epidemic Forecasting",
+        "Diagnosis",
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32452816",
+      "sha256": "060c9cfd8e238a79d626c68c812ba0dd248465ac916fbd093a5794c170e4be82",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32763951",
+      "sha256": "060fda52b4670d864bca4032c377f3b36869c96c0b708f70d14142ef4b18bd60",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32948856",
+      "sha256": "0614b2fd83e678e17dfc76998eb53976abbf1c9aa512e9f72ddbf3ced5f03542",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32354022",
+      "sha256": "06187b4e552ef0752a6d0fef6f49e66b106d69f75a8cb45f0488cbb87b2ae4e5",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32879099",
+      "sha256": "061917d8e70265987d740875fae85c715f11915ad379dcfd9e77067197de61b6",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32468607",
+      "sha256": "061db7c694028f7c6408d39fe0d33ca947a9839c442cb48777188a07c894df54",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32404630",
+      "sha256": "0621300c64003d6a62d649e1dbe62c653c584804f18ff9e05e8d53331d9ee2b6",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32283146",
+      "sha256": "0629f54a3bd882598ba5d62851d819ba0f9c981324be37ae872ee0cb5f1c1019",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32794002",
+      "sha256": "062b7588e66cb2e83d5f4147a3d6f137ed2f342e543349ffd200e15f4e60a601",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32786343",
+      "sha256": "06370a70a37b808831f5ac3f58b6d76eafd33074a52a5e9875ebbbcde15ed522",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33029755",
+      "sha256": "063c16258a35eefafb0e205c922960f77071284e3e152481ed597b2e2a0dedec",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32372072",
+      "sha256": "063e77be716de2150a8a5fadd8c3a995e1567129afd68c6127d52027ede14029",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32766563",
+      "sha256": "06405f9b20cd07e5e6ed8d49250a82c7af228eb81f1055164956ff74b460ea4d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32779860",
+      "sha256": "064418ff0c40ff3dcc7fd2bc0bf0449413781a047687f91df1b66db10533f4fe",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32557596",
+      "sha256": "0648484fe54e396de7f2f0ca6d22185e160e3c7ec4dc097f877b119f9780cc5d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32310553",
+      "sha256": "0648a041d5e1260bb343d89d59efa4beb87aaaf1f33cd23af0ce28dd056d9ae2",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32764381",
+      "sha256": "0649876d9b56b4989bbdc2fbde7413bc2d2c6d1c1b271f780c7db750fd1d2e0c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32471171",
+      "sha256": "064aa8bfed259b40861c507d5c975c2e1cb0ba68565127766d46abde118bb32a",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32835284",
+      "sha256": "064d6e18ca5a4cdca670196885184ca4f642de0dfcbace86fe50e9baa09a7de6",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32596790",
+      "sha256": "065469b1c0c35ce8c963fbf8cfe035623b74014351d27c44355589f3b6b90a56",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32918747",
+      "sha256": "0654e5074e0635f9d4bb9e3a412cf8c416dd41deef49bff663a0afc958aeea98",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33039937",
+      "sha256": "065cff1a7527ffa8ddf136a0650265cabd07801d36245fd989a73dd9f11f61e1",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32877395",
+      "sha256": "065f00949a5c766eaa7068f2ef7b8a02b67dc2a519fc20364d4ad96e20962ac4",
+      "labels": [
+        "Prevention",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "33029407",
+      "sha256": "06615906f4b8f04f451c39026c25106c5cc0e7d06705cc9123ee462fbda84fe5",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32497323",
+      "sha256": "0662ad43beea2828ffcd14eacd21d9de611798c5fad6cb39a2fddf0fef51e6f5",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32637423",
+      "sha256": "066de4289cf790d66808f53f199af7090fb0ce2fdb20e2cfb0c0a5db1c5196c6",
+      "labels": [
+        "Prevention",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32546365",
+      "sha256": "066df161f7630505b8f06c29fa0f7854d55a7663f77de2e8267ffecf7a903313",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33008392",
+      "sha256": "066fff8f7b2fb7645e0cfe8c14c5ab6db997c4c15307e7417118290a8676b443",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33072712",
+      "sha256": "067b760dc4e5229cbdeeb05dd1f7b70cde2b0d7692c2410317413c60e1abd702",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32573350",
+      "sha256": "068317e0aa176131a00f7d9bf715537883ac9e2ba46e09fbf106cc584112d387",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32250347",
+      "sha256": "0686cac616fc3aebae4d16657b1cb22cbec4a9476da4e3f2e1a47d023e77412f",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32846960",
+      "sha256": "0687031f60a212555224c7280bbd8d07c03278d857661473f0ccd2d247d38f05",
+      "labels": [
+        "Prevention",
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "33079828",
+      "sha256": "068726b41c215d3b7de8d9e75a4588c71d43b5c6050134b905b7b3d4a5d446b0",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32330287",
+      "sha256": "068f33a2c82532abb7169a0594bfee4ecc16e1860b79cbac4444f7ba0f2a9c7a",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32389850",
+      "sha256": "06924d95cdd471b2a2242cd9e790f8a44638bb8acc0bd6c7173e0857ee1f957a",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32844677",
+      "sha256": "0693c5e246f458a84697156f6b8297f75e1d85a680a5bf0191bc66da721572bc",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32659414",
+      "sha256": "0694e1dae7438e68a36b20e541a4ee9a6772f0353f73c147cb5c147a2e4d31c1",
+      "labels": [
+        "Treatment",
+        "Diagnosis",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32324118",
+      "sha256": "06958dca207d24a869c8fe5e51df71b7d78d73db048f0e34a38e6070581e15a0",
+      "labels": [
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32543745",
+      "sha256": "0696d2e32c82c15621f67da3186e9c061b2607ee10534e1074b62ff9a14fb571",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32362244",
+      "sha256": "069907b1a8b5caccfc783ac68c449b782f15670558da636e69809e1f9ef18db5",
+      "labels": [
+        "Prevention",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32536226",
+      "sha256": "069f8f0c7fa18de6df0ae49056556b220c210d71091f8ceeff848927428dd42c",
+      "labels": [
+        "Treatment",
+        "Mechanism",
+        "Transmission",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32568495",
+      "sha256": "06a024b2d483bd7948ce1fced1ddeb7d6ac54a331161002229d4c757f816c52c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32912356",
+      "sha256": "06a47933ceaa4cacd2da9e9f8b720f4f472ad5a5f55ec7476ad258ac25d21934",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32572297",
+      "sha256": "06a58518eb5d2e71e0004e7ae35d1f01af860c3e47f92ad07b8f19b776ef5b34",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32595352",
+      "sha256": "06a96053c1b5d8c316349fd6f98a7503d72c760d6af6e78e3a73b247fc7a64c3",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32645311",
+      "sha256": "06ad9df92e7c391fb6e4212d5a77dea0f37213049eabe1d3f49c3e314cc41319",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32544373",
+      "sha256": "06b4506377aaf817519f980856a66f7240895d3160161ef1a3eb08beee60ba0c",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32198191",
+      "sha256": "06b466917bfcf2d2e3046d0bd7130063e86e4421f5c7c1cee20b39e937446cee",
+      "labels": [
+        "Diagnosis",
+        "Mechanism",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32434403",
+      "sha256": "06b6a95afd4d3134d7ec6e024803fcfd0a558aa5dea08aa13c517f488285a7c8",
+      "labels": [
+        "Diagnosis",
+        "Prevention",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32629791",
+      "sha256": "06bc6be69ebfa089e4deebef672ced173137fcc39898b75574e18660d6468d04",
+      "labels": [
+        "Prevention",
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32891525",
+      "sha256": "06bd802636fbd1faa0415fe69f22e606880d5ab7a7e38a71d1a2ed2af2d35616",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32591166",
+      "sha256": "06c07668f1a76d3c779775ff751ae70221266fc4112f69931c5e3747c135d8de",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32994856",
+      "sha256": "06c0c0156cf98882f0e11e162e68a5daee5a92922c3d035787c2e4be55e54eec",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32909661",
+      "sha256": "06c158f8331ea6ed37d534140bb4b58c1c68a9d41f4b09c42ff626a3bfe96660",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32336467",
+      "sha256": "06c1b23605fb52a47f38fbc53c8eb3c6f951aaa0473c7e579a9b5de5dcf1b9d4",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32926669",
+      "sha256": "06c59968163465fae3cea40395dd36490c7d98e7f0ec5f2b72b0e093d2373368",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32219626",
+      "sha256": "06c6116a6156f75f9a5efef9a82b62d1ad0b69d80b49e11bf98f6d9b5f00cf1c",
+      "labels": [
+        "Diagnosis",
+        "Treatment",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32970030",
+      "sha256": "06ca13af3251fa4fd44ee4216fb54c716c3590779d826f8bd16b60c3f22a4a0f",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32399563",
+      "sha256": "06ca36318f7343382e0bb0415c198aae234c12c625cebd5f186e8055d6862536",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32449939",
+      "sha256": "06cb76298625e9bc638f7d0700962fd4c4e3ef373c8682269ce4a3c1bb4e9286",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32527948",
+      "sha256": "06cd0cadfb33e53a08a46271a99449d72cbba4f5753d037d305509f352049d02",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32974425",
+      "sha256": "06cddd02e92dd8a3584742a5db1ed1582eddc306a73e92a5c4882748d585b1bf",
+      "labels": [
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32471001",
+      "sha256": "06ceb0e77a4a62e5237925a1a94bed3fc34297f7a5538be599f1548fd9080221",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32591388",
+      "sha256": "06d3f52d4715e4afce326aadfd1010f1d484f9f6fec242a2f7e0d27162e2e0db",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32352397",
+      "sha256": "06d87afb6a89e9864fbf46651948974738e9e8da910ea6b07840b9debaa4d68c",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32780754",
+      "sha256": "06da24d75ef108f6cb4c4a678da79c899e05fa3a2fcae8994dc71f30bd71f145",
+      "labels": [
+        "Prevention",
+        "Epidemic Forecasting",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32721410",
+      "sha256": "06dac8d14dad69d9556a6eaa35b19d343b050d4320013a9d4eec71ce6fce062e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32869330",
+      "sha256": "06e044576e1b6ae634878e444d46b5948357467f953696bb6a9fca7730ce05af",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32745693",
+      "sha256": "06e1addda37cfe38cd681a10d67664e3671977ca2b60ff241060c354e4261dfe",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32864784",
+      "sha256": "06e3e5cf8229cf82056ed222bff105659b1404ecac1f074d9e803c8d9ad1613c",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32454128",
+      "sha256": "06f1a8d237fc9e1d5875161d6c6975cf9942d73c8d242fc8298b9511e5f538df",
+      "labels": [
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32855547",
+      "sha256": "06f26345876adc172f0ef31de7bcd7a0144929d1dc3f0a0b8a133cd9f50e193b",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32521191",
+      "sha256": "06f2e9c875be71b4619ab9b6fdc1659ca2b87865689501053a263e59ba106685",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32658837",
+      "sha256": "06f32505821dbcb3d5196808b0dbbc06683a26d0f21d95e9d6364a13dbc55cf6",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32719804",
+      "sha256": "06f694852f0c662929af2b82cf7568378a4a65ad6bd75b8f0d6ce692384b8d01",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32839315",
+      "sha256": "06f6ff0baf4acef52c5f814b414c8766428dcd136f2a5de5850c8bdeb1678bcf",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32951401",
+      "sha256": "06fbea72e40b03e5a3c43d5eab7b69a6ba73e30c55302e96961285d9313093e3",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32822615",
+      "sha256": "06fffa1c520546b3984d8e83613da784615f21f86735ba71d90bd50ad0be3f51",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33069751",
+      "sha256": "0702b7ccf2f4cb7752729f6bc6916311cc8fc46876c7d04967da5c6efe171251",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32681783",
+      "sha256": "0705c55cefb1ee845d10c005f999632d812faa562e7cb74de88b7d62a18aee70",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32981460",
+      "sha256": "0707839699451635e2b8766c8446fa36d7348622f40414c68f0bb168ac7911a1",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32314329",
+      "sha256": "070977f2932ad02837176cf281136e1fc97fe0d88ace0f6e6f553df28a80c2cb",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32864330",
+      "sha256": "07098d3a3997d36d101fa87fef376460baa4c05db3f434827397278cb6d4765e",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32529040",
+      "sha256": "070992070747851ef9d4df64a3ea92fff320fb9f630794e1633420e9e4a45cd8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32917294",
+      "sha256": "070d1d1bd6356e709874df9bab955dd33aa7f7a5b877f949c763fb11e99b65f0",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32864601",
+      "sha256": "07189f3e2323a746500dfad92863a07862911e3465c02bbba8d1eac3e52c312f",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32295324",
+      "sha256": "071ef4dd62e82aa4ec16a1c1f1baa11be340a111651b52a9e496dd28d386c629",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32618746",
+      "sha256": "0722e8597763a98febc195da6f5858f3c2b4114f256639930a289688bec787b6",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32753988",
+      "sha256": "07244b11a8608d55a777bfc73355ceed5c873dad3ef6f97c415b300e4153fe4a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33067384",
+      "sha256": "072ae58efa85bbf9e0ebc2b4780d108e2b4f78f67872b57f4b07fa8628592e99",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32608926",
+      "sha256": "072c28c48baf53fc702554b8bfd7e5eebd02b475e0c3fa8aee2f99393c0ca670",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32880394",
+      "sha256": "072d7c6c4340c998076b6bed786defcdbff25d1feba6363742f7b47e1c2d5230",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32168465",
+      "sha256": "072f91ea4dbc797c87073351700738d2c2a0669237b54d8e0cfe1aca882f4a09",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32283141",
+      "sha256": "07311398c8f2d28ef94b2b016799ac62b23fdc24f10cc24afc17c9f775c1a7d2",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32881266",
+      "sha256": "0732765a48cdeec54456f73ae6a9098633a4e2dc27b615aef8ee599757e64046",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33075859",
+      "sha256": "073297931ae415ff6b6c65a2933aa8006143ae77d523df8c00277815d672e658",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33072461",
+      "sha256": "0732d40b97be37e64bf661a7d11726e26b439ff2dd7943621c10a447e62de09c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32834589",
+      "sha256": "07334f752cf25ff4a9592dbbf5414bcea164337a5ee99f797483ec6b351200ac",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32679910",
+      "sha256": "0743090f189e8036a74fea59aa0ace86919720cb30e4d302a455d0ba6cea0b58",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32406001",
+      "sha256": "074443036f288008238eb2b7fcae5772fbd71591110befe54d6951e634726dcd",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32418288",
+      "sha256": "0746215e62a762102a883f8992fe0c512f7c9067c6e09fcca6bc65258196c016",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "33003375",
+      "sha256": "07486d2df404fdc72efff1c026754c9f99be1ca0319f9b074d30d41945266177",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32186952",
+      "sha256": "074d5fb1434c688d86b148c5e2fc3cce46a02be0c61213eadc4fe9c4dfdcfaf3",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33070960",
+      "sha256": "074ec241a77679a72ccf0532a8135b69e5f77f124e73d9c052f4cd1475023e22",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32953287",
+      "sha256": "07557350e4bd668b4033f6237184b4fbb3a3285e70aaa2709c3fdb13b4017686",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "33032618",
+      "sha256": "0755c0a2384d28f0435a8e1c8036c324085846c9c00bf237295e242852b47d2d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32834885",
+      "sha256": "075788adc896bfde57e1318ba9bc68f1369f4b5c4134054f23ebe6a7755f1b87",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32603991",
+      "sha256": "075995569d71f9796b2d0ba3df729ca9dd16029b05473f78503bbdf403316863",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32419053",
+      "sha256": "075b8f416261da042554934460bda8ab97ce285dd2a344bc2bd2a3043f31bb29",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32363334",
+      "sha256": "075ddb052b5f6c2e2cffbeca5b2a78333eca6d4cd027a48dca681ccbb8ac51fd",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32607405",
+      "sha256": "076243a1ef3a84a73a72ca6a060f4bd3f46f19515d274a8f17f9a4ece786f1c9",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32961453",
+      "sha256": "07635d8ee31b857f2b1072f4051c800869ea2dc3be9643c8473405af99a04335",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32522632",
+      "sha256": "0767d21926c07aee9123e57f7977ae3363e0bf72562d34366b3e11fdf9e758f3",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32516571",
+      "sha256": "0767ec977d318e23c60c88e00ae0eb371063c31b8a6bb1511e1bcf0679290ee8",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32838197",
+      "sha256": "076810cf440b92b9ba95da549fb78330fa85b3f698a70d2697b00d23ecc65a4d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32491199",
+      "sha256": "076a8ea261f275da229ce2e6294a71a30ff5494ca785aeb64e79681942b7529f",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32718128",
+      "sha256": "077306525a78eede31f3900f3e6a7d410548901913d55366f1b3ea23c5becb7e",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32765270",
+      "sha256": "077478f5c79b2f1d946379d703925732aec0cea5a89c9c76c36f0b07b83f4148",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32414126",
+      "sha256": "0777fd7252d3963229e3f62bf8ea1f602891baa93dfd416af8e3043a874fc2dc",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32399450",
+      "sha256": "07782bab88c2cdc77270e05036ae3f2f0db4b4171b6058a4c498ac5b048e442f",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32904353",
+      "sha256": "077b31c7de98ac982a914b61d24156b9c4f19333a714d7e398a272a3cfa85e0d",
+      "labels": [
+        "Prevention",
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32893786",
+      "sha256": "077f7221862dfdc7c2c0c3f597cd9e4a1fa63052bdec13c1f0eac4caac933b1f",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32231171",
+      "sha256": "0782824b3df93f2e7ecee50620c8a0834c65b4e2577c94288912171d3e661caf",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32318891",
+      "sha256": "078290237cb8b00e291a40bbdda55aa5ce8db9a3fb95017084ced52f22e2fe6a",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32780853",
+      "sha256": "0787cf5378bd977b35eca011b28c9f7b5109e143b8a50e7f685110b2510bcc52",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32987103",
+      "sha256": "078b357e703f1dc0779209a487001832b5abd456396985372994f885ab977f6b",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32292248",
+      "sha256": "0791f70723e8c26e7111bd69e17429aa1c20f17feda52cffb1ffb130d69c89a3",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32879115",
+      "sha256": "07938f66d0c3d3ca783d263976746d94492f0338f51336ae9e1758d2a18bb38f",
+      "labels": [
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32340022",
+      "sha256": "079c8f5b805eee71205f9eb93147378d764d21acb11ae288d5469e8f7902e67b",
+      "labels": [
+        "Transmission",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32864030",
+      "sha256": "079eb6dcb6e708250fb28ce1d68359d83128bcbc7e04fbd4741523b1a230ae0c",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32283325",
+      "sha256": "07a025a47d33393b80fd57ea45011c03e4a1561f926cf0989caa97ad79dafabb",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33012349",
+      "sha256": "07a3c9006054c1cc13bfe7efe221871218f3a7eb7c362ec69e44564a457d79d4",
+      "labels": [
+        "Treatment",
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33014354",
+      "sha256": "07a99adc1b805e7bdacc0e044438c5b362705fdfefa42ff588c737a01525944f",
+      "labels": [
+        "Epidemic Forecasting",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33060197",
+      "sha256": "07ac71c78487a904275210d33745fb83a416cca71c946c9b1f44ea87371eafcb",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32683967",
+      "sha256": "07ad9426b3c7b3d5b464783da68554f3660b586d46dca177ed140590dba525f3",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32968680",
+      "sha256": "07af622604fda23580e5d6fe078f4eadc90a01a85d87e0863b60ce4abf0d6b60",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32799566",
+      "sha256": "07b78640f87e256185151b4db347f34f76503dc802232f8188a61df266566a10",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32737005",
+      "sha256": "07c38cc5d7d572fef0a9e201558131872ad5e459dda59013a6015333495fae3a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32586839",
+      "sha256": "07cafbee72840e86de1f798e2a216285ff58aa68ac765bd450cbec2b06d54534",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32613013",
+      "sha256": "07cb5e49bb40984302cd5c2ba04f630476bbe5d836361a112c94610f70dd5226",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32800070",
+      "sha256": "07cf6bf388cbdc074c19511c80e0111e840a1f54a65f7bb04fefeecf8d32fa87",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32229322",
+      "sha256": "07d132c43446c87846b73ec56511bddd90b31cd70a6efed593561a4131f7872a",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32456367",
+      "sha256": "07d17642537b8d9c318ea8345e27f8c4f5266fcf3e3cfeac19054a0ac54f8c91",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33071142",
+      "sha256": "07da497496f83e9dc6071f9847b1a5d02954ae6f96317abf25df5d2b4fbff197",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32967798",
+      "sha256": "07e4fec53bb3abb611efe8874d49328b2dec034e970d4b8b3f5fb85d55fc3773",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32506775",
+      "sha256": "07e6c156c03015d29963593864360fabd372b16e4ecf4b7cdf92cf628a42490a",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32574131",
+      "sha256": "07e8fd08849ac0a6032dc276a31c766564702395f57fe19f7de4a250a3d1f8e4",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32639862",
+      "sha256": "07eba60121dcaab7674ee3db9133ce6869fd70fbb6e6a0e6098223a9f25076fd",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32430964",
+      "sha256": "07ed9aa2b09f1dd8968eedb03d6ef4fdf09dc3b39757dae5eb2c37ef234a5e7b",
+      "labels": [
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32554901",
+      "sha256": "07eeadee68bd6537fff9ca516e0a8edad4ae447738a536ef6ec142be9a02568e",
+      "labels": [
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "33058837",
+      "sha256": "07efbb4af447dd4651d7aed5c71b7c485d52911eda4ae1b18a6a8e60125c9ffa",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32226293",
+      "sha256": "07f36684bd49749ae2f657ac6bb33dabcb623b3743d3eeb0c71f03cc4ecbaafd",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33075138",
+      "sha256": "07f6e38f7b81c01d958057458a96cb1de53cebd3db39fbed292879641ce43ca6",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32100877",
+      "sha256": "07f7c22a5ace9d4551d1100f9bc58de47c0e25977b9da3a467c0b80cbf611354",
+      "labels": [
+        "Transmission",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32615569",
+      "sha256": "07f8aa8cee74f92ce09bceb68d852f380a471e804c8653bea40a435095fb676f",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32778359",
+      "sha256": "080874829812df3b4df7a8154e38b3731e8ee5ef2deffd8df29f503239f3c28e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32965269",
+      "sha256": "080ca27e5d94d1d91775435bfd7a93918854ce7e2d77e6639b0f02420cfe4219",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32466623",
+      "sha256": "081067c95e0547dc538b397d3091cd01022dd87cfaa2aa8f9cbdc3cfd76f8f3f",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32643071",
+      "sha256": "0814b173c5164c14b2df4ccfde9021a99c2a68792ded93cc559c6c786792affb",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32474850",
+      "sha256": "0814da04139db8d159a1662ca929a2986c7d77c126e3d26d6edd01c7d3cdd5ab",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32197787",
+      "sha256": "081c4771a117b890eff290381e5a21a6e801a58de8616dfdd51f0b84970558ab",
+      "labels": [
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32399354",
+      "sha256": "081f9231ca01d5c38bd324216f73ff3ef02ea3926d770bb4f431c4087a0c603b",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32524961",
+      "sha256": "082390e3ea07128ca14dcc5e11383a89b51fbbf2d2ad34046b0cf571ef181d51",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32938298",
+      "sha256": "082586e6ad51a3bc3bbbb25ea322e34613d013e4415da7f08eaef2af215401b8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32652095",
+      "sha256": "082c44540a51ae194a186578f375f49f0676a8b4ae6c463d278e1329f87b156a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32320066",
+      "sha256": "082c847f97476e6ebb5512d7f5bf8ce783f9133757bff2bc9f71504b92ae0829",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32440662",
+      "sha256": "082d5b363af96503c881139235865f1f608d23f2eff3ae57bc9b840b4f336175",
+      "labels": [
+        "Prevention",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32811949",
+      "sha256": "082d9ed8227d79830b69a6c3a17a8b95aa6e332f24bd66364dfd9557fed8979a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32758887",
+      "sha256": "082f8ab0d68e56746904f86f75342ecf8442ce39924d450abf008be53f99f08c",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32815593",
+      "sha256": "08323e8591cbc298e4e4f3485c23388cc599630a42bcf0ec1fc376adeafe12f3",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32356047",
+      "sha256": "08357d2d80e35cd101f7e39d3879e00bce4f1c0f427f819c25aa08ee0f2eefa5",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33010815",
+      "sha256": "083a433d1bd1e4778c46f6b197068f781f2f56ae27cd96cdac24602fce8d27ff",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32874904",
+      "sha256": "083c88e29b54d98ea9defe9620d45220f89f3d788da0f3bfa30886215e7ca510",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32314503",
+      "sha256": "083ca2c0b664f3431faec54b5f226b4195dada207706da6d9aaf016effbdfee4",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32334119",
+      "sha256": "083da09af9542ff7cc4cdd2036e3239e65d72260ce37be60e5a055d47e0e7803",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32864484",
+      "sha256": "083ec2ca551fd5221b751e9dc110cb6fad4f42bb0dc22e1445fe91af004f6e27",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32386019",
+      "sha256": "083fe4061fe3dd4a7d4e941ca7f46522eecac87a02d558e4fb8f7151b36e3549",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32496205",
+      "sha256": "0841143c44433a1c5972459e1581c3ab5c117f7247b61a82b847b51b8ea919be",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32344438",
+      "sha256": "084117298a2af72571cf02e1368d7679696cb0297389515a3ef7c957a90ad6dc",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32335367",
+      "sha256": "08428569174041abf977f9f1ffdca5262f6aefffd0f7d237613701c630bd38b1",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32312365",
+      "sha256": "0844c8693ddf271672143c54b1e731f06d45facf53a7bc60ff21b3bc7fc22c2c",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32837948",
+      "sha256": "084892bc4d16e3757cb040c20cbe37ae62fd0fe617ed2f88ec1434b49cc265af",
+      "labels": [
+        "Prevention",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32621841",
+      "sha256": "08502c76382ff3beb8cb7ac7cc85589784ba5f2cbd448732029a64870e9a9bf2",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32563697",
+      "sha256": "085216a6cdfd320d5877e0f2eef56e0bb44df86a642c911be3001cf447ca53e3",
+      "labels": [
+        "Prevention",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32190290",
+      "sha256": "0852ff272a819a84d6a32f6c42ef379c086373120f4acf91690f94a9007b25dd",
+      "labels": [
+        "Transmission",
+        "Mechanism",
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32919977",
+      "sha256": "0856c8681c130cd41d92880ca372bb5a2359fb1f8a0cf97da4c9d5a90afe8df3",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32728383",
+      "sha256": "08579bc5bf67b939f93030294620a6d1f47235c2ea317e8283af54f883dbeea8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32412013",
+      "sha256": "085b8a4395164b8b01a466a975308306b747910023dfaa8da4ec72ba704baf04",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32633713",
+      "sha256": "085bb2f7dfc808daf1c800ea7981d0e4294e1ba3ef87ec0503e04753fa037e76",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32358890",
+      "sha256": "085ecfa65f646cc3ab796c30dc268ab495c8a6d13367f802a044201c577d3238",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32993136",
+      "sha256": "0862b33665b59dfbe5c2f11f0e6470bb2a0cc6adb59b5ba80e94f554b6bb41d6",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32313660",
+      "sha256": "08667402a82d44f88f03f9c9fc50067fe5f5fda2e08ad8978cf208f2e03464a8",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32267531",
+      "sha256": "086d8a0d59fd8ca1c3a25fa1f42d3077e0e1d4179ddf0910a7e2a97032b7a556",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32770167",
+      "sha256": "0872d5495c08230d38f2390b0ac94cd8e30473a55888b8c155e2744466d2275d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32604457",
+      "sha256": "087b033e6cbe2a8316e15275f180c5e2598cc7f7d7e6b503068267535b0446e7",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32528234",
+      "sha256": "087b6e5eddf85387f7c5db7a939517fac25fceeb70b972e2d76dad243d9beb30",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32834656",
+      "sha256": "087cdabc6fa5d99eaa9d46b0dee7e128781be1051e1445238d36a62189986725",
+      "labels": [
+        "Prevention",
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32870978",
+      "sha256": "087cf4b5e57b419e3e4b4aa87b3cd051fde0bf17637fc395c5a3652244efd576",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32902193",
+      "sha256": "088b29347c1251bfd811a5fd2dbc019fad0c4a058a4b2a31ccab142937aed985",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32398890",
+      "sha256": "088dfc6bdc65fc85023da15a7d20449e817d2c019c8b928d7b434a4f1b599fc5",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32468202",
+      "sha256": "0891b1c5a8edaf69b1dde329c90ad5a4e8d890372a2521dab427fcff0fff76e2",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32782923",
+      "sha256": "0892e7670d791a211ced011d93cb4540916dfc725270d42561c20fdecc6e1a36",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32463239",
+      "sha256": "0893ec0a82ed4068d29b4a47c3ff1ef0ac0798846b193594108e64fec2e808b9",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32679848",
+      "sha256": "089af93844f2d1aab6f4ccfd48f71209134417087c9f7d2e87d68a5a79acdb39",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32713862",
+      "sha256": "089b403a2040c10cc88461950213f2e62958007eb17aa3c173087846f4f898ea",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32769874",
+      "sha256": "089cf8f1b58fcfb61b6639a87046e8bf6decb3ffe359f1c0728f8caa1fbecf0f",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33063791",
+      "sha256": "089efc5e49eb069776930318377e429dc71fa7f482685840fcf7ec626041c27a",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33035337",
+      "sha256": "08a02f5f6dadb35e6c72a61a0aef5eb9e4226a0e0101b719c24299f3f3cfc9d3",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32361161",
+      "sha256": "08a626611c1f2319074e4591c0a4532830f7521b4f9bd2e665970eea65285107",
+      "labels": [
+        "Mechanism",
+        "Transmission",
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32910347",
+      "sha256": "08aab21dde297119d128a8d44177522311a14a78bdc7a0cf48e4c61c066c121b",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32390786",
+      "sha256": "08af2e101517af3dbee6a7526884e0e814a6b1278883c961a4fea1eb46ecc70e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32644224",
+      "sha256": "08b2ef180dcda8221227fa8905ca2dc0b2b3cc1bfc90033bc305a04dd24ee2e6",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32331343",
+      "sha256": "08b7d8a83cfd1e153b359c1800da646b1b8e88daad2e801b1386f28db411677e",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32462970",
+      "sha256": "08b84bcff2a8081ce605ecea63cc3a3b334111555d52122a39500f5a1c3b3a62",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32512291",
+      "sha256": "08ba5fad490bd0f42bee355e2733282a5e9ec23fda069f9e0127018f06cc1d12",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32921197",
+      "sha256": "08baf2ab773bf600b70615eb1b5b9453f29ee43ab2f56709905c28107cad92b7",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32714386",
+      "sha256": "08c1fc65492af9ba2d1948902d7da1ff51c6b476481209035eb34fd8303644ef",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32562351",
+      "sha256": "08c377cc4df6bc5f2c08eb4ec0d7b894b04255e48088c63729d85a0b6e8b04c1",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33030105",
+      "sha256": "08c6a85d217f81afc60104a8ba1f2025ca494976f4caae03bf47645f73ea1da9",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32778354",
+      "sha256": "08cc2e54607d63c40c57ffd6146f43a2698e92cbeb51ee2ee5517564c1833dcc",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33017783",
+      "sha256": "08ccc85678d90d0e7acab058aa7b900f0360c8fdce177636a4bea79f32b730ec",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32498490",
+      "sha256": "08d1f6519ae400967cb12ce571f149504f22f7e1e4c152406d2690b946e9e937",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "33073163",
+      "sha256": "08d2c9e33a7eb49f351ca8b2d41a0bf33ee7cc46ea3f998f86909ff46a7b4cb8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32600742",
+      "sha256": "08d2e51baef46fa85e7df0d3635078bb88073d0ee988de280b91a8435f7ba359",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32932606",
+      "sha256": "08d4731d2caea665172f8d75e72c098ed52894d9534440be87564968c5c8b16c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32516119",
+      "sha256": "08d5f5cbf486155d8290b4269673282283d8cc25191d740e83114ba875248641",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32551770",
+      "sha256": "08d793766dd621cd73a655c7d75f3756b11098d1bd0823f602dc3d5244fecacc",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32803662",
+      "sha256": "08d7ea7b1144750581a5a5df6338ff5e7ec0a80856df96b58ef2b49642f40561",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32434770",
+      "sha256": "08dfac564e53fd7fb4fa718a849a9010364457f6747546f9542282fa48447868",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32268636",
+      "sha256": "08ee5c5109ea7277e21c943adf366649b0c65e2e8b5b4c9c69eae3aba8a6b1b0",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32772788",
+      "sha256": "08f2716b7d2fdf933cb37a61684b8c1b26307292d60aad81ca59ca6bf27099af",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32522207",
+      "sha256": "08f553d33c23b1708f799d9f9436b77cff87ba61eb5ddec119baa6d858a57fb3",
+      "labels": [
+        "Treatment",
+        "Mechanism",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32673191",
+      "sha256": "08f67fa1c89245e3f565162179cb445fc8b60a73443bf18cef187d81491657f2",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32768308",
+      "sha256": "08f89b3a89b8ff358a03aea3da57392dfb694af113294f9c9cdf6599b8ba4e59",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32687061",
+      "sha256": "08fa4f25ff9be99adb48b03e439f578dc7ce93a92fa389ee7dfa20df53a41e0e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32613010",
+      "sha256": "0900301b96c0baf8238d64d4e95bd6539b3e3a29e1ef6e54df1b93e0a61e66ff",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32536710",
+      "sha256": "090257816c2c9e1d4f052e069ec71c8e3156481a665a9483eba719d127d4afaa",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32536953",
+      "sha256": "090401f8248bf38f205f8b877fe8dffcafa24537496c673407134023ce05e944",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32654533",
+      "sha256": "0904f6153275e58d5a636a3417629d665a354608c50a00cd4ff9e3ce0b9d075b",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32507030",
+      "sha256": "0908293f69289b5e0683def2faeb5e282d457dec9b5911af962b08b6062494ca",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32622684",
+      "sha256": "090993065d76dff96f306d2c019623fe526a6566f86b4669b770901575c944e9",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32430481",
+      "sha256": "090c4309ac4e849bbb20dcf42fb094d491b9033ebfcb06e45f28a15c0c2c2e03",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32836912",
+      "sha256": "090d4837d0277b8228469135ba60ca07dc194e16e27ecad74e2a6ed31b0f0d98",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32748481",
+      "sha256": "091670360960be58016ffa3a18a03bd6b2f52d280afe2fd4462d4b266aacd3fb",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32939955",
+      "sha256": "0917449484a3dcb7a54b6dcc672c2b4215aa1193fbddd3b811c52e8d527565fa",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32632356",
+      "sha256": "0918362060b93ff32ce2789182e30f3cb8b3780e6f1eee1a89ec9a1ff32d1cb6",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33031819",
+      "sha256": "091a90f4949a33e0211db2f7529cf312b6152d7118bf53637ea0d9431a30669f",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32837582",
+      "sha256": "091c76ce4b159b56a17f115f6edbf529df79466b991ce262ecd6b8789f0c0d0f",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32491075",
+      "sha256": "09274f11526ea47e1ff3ba1b4b0b6b0b548a848100899a41257d245c9b57ec71",
+      "labels": [
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32925136",
+      "sha256": "09294a80d5993912a8b680b69c73a8e0a5bf3cf8ffdfaaf16ee6c2d2fd2ba2a4",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32562159",
+      "sha256": "092c2b77b6581c95f748ccf16f868af44ad4138b10ae42b92d09aa6e6f49f128",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32646771",
+      "sha256": "09354d6fb16de2bd503aa25b36ef822efb90cd8a70eeae9ed6c3a1d1364c9d3d",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32618658",
+      "sha256": "093724d8f2a074379f7a0ec2c192e47fad141dded046d8c8ba351ee856ec81ce",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32838371",
+      "sha256": "093b33692c7621c891c1463fc3df83e4d19d4ce0666d80f17248e34df8906b25",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32731687",
+      "sha256": "093bcf3903b47dc53b62911fbbbf76fc7d75ed98d97a505b256bebda5261c5fd",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32836886",
+      "sha256": "09488bd238658d02bf3b8fb46c18b6d191846aee353600ebd892b4d6a7a56ddc",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32466867",
+      "sha256": "094c0b868b721e4a5af635b7063fa4eba2b180b1ee34dae158450990a4a8be4d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32169481",
+      "sha256": "094c31f2b3e19d76343047f14e83ba9154ee33064dce93018dc9586f96d7cc73",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33077837",
+      "sha256": "094f08e43998f3d21b265f1ebfa49ac4188604abe8316f4bcccae604dfcfd00d",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32207676",
+      "sha256": "095251093d080dea8b02bb3594918108cea5e081853c086b671d9a024dd6f9dd",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32845460",
+      "sha256": "095483218749e44439cf3a7708a67e283620d7153633bea9e28accfe41d37484",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32626626",
+      "sha256": "0954e673c835d8a1bdc38de22b3d6b7eb2ac638f8dfe364176b6bcb66c0755ef",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32801068",
+      "sha256": "0955413f71a42988a9b7df5df8b9f9b19a0d6850db7fac433d8acdd0b6788a9c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32317557",
+      "sha256": "09592082f18a029c241a9c597e2503b31c55541bf093bf34e3d29374dc0878dc",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32224133",
+      "sha256": "0961364daa0b19f84099daf36fe2e341741bd7a4acd29210bed1abc56ab30e19",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33064667",
+      "sha256": "09677e4609ce5be39baf082ea5213a6368cec793b32eb23b17e30ea11dd8a4f0",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32844290",
+      "sha256": "0967cb8093168fe42d344650c10273f982289bad0f69628a3bc70b5df2b606e9",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32719683",
+      "sha256": "09682a213d5c7750f50e3254b6c7d1b727ed8d6b290a90a3dda6b19f792cb459",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32535455",
+      "sha256": "096c087aa4906d43e1171d79b7670fad9c8c1980289d63d2fc310506368fe458",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32762723",
+      "sha256": "096dc9808219a3636554e03997bd9995162c0f05477ec7780bc984fa1c23db49",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32407003",
+      "sha256": "096eb04bf01fe9e8bae5e7dd37ec0916064d8f964b2aaa5f007aa90a8194c36f",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32437659",
+      "sha256": "096fa08c8a9ad2d596c46ca3a65fe11a51f8b965cc4e3703dcf6c71aa1fa1241",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32639860",
+      "sha256": "0973f589de86bd95d7a660e6d44851878526a2815f2380b7a8ac022156f2da3e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32822917",
+      "sha256": "09761bb3d376755e9681dcaae517cd6735a3060ca8143a719c2bc0b9492fbb8a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32899754",
+      "sha256": "09848e3dc3fc00c8a62ca3f371a88d899df5761d9a9e0559bc444da627379dd8",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32937868",
+      "sha256": "098689086b10c8c5d9eff0c34f58f5bad698503b27e6238ae1b0834930f38b46",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32969400",
+      "sha256": "0988f8f6409363d8d67c4b4565a842a1ed537734a851b680113a3f644ad6e14a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32556807",
+      "sha256": "09896013b56d74f5019d66b3b03915db4a10df26ca40663d59bdc71a05c02e8d",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32713774",
+      "sha256": "098a790304472a20ef66458cf0124a49224819513448b1ac3a39af5b66fe842e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32409504",
+      "sha256": "0991a8f2d746feeb438226a21dedbc054f058115d343dc6bd8fe3521048ce012",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32864235",
+      "sha256": "099482d0366540ce4f27264fc49b331d42434d2be1b9a3ba03071881b3eed8d7",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32795893",
+      "sha256": "099b6866922432c1d0bf97536f8abe7cd4e5128b7469b1a72c61eaccbbb2d781",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33064792",
+      "sha256": "099d2560e6ac6f04af4207e31354e293940e9c25fe4a2de3cf9c3d0d086b0c14",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32747573",
+      "sha256": "09a1ea832d4946c38b3b08b323ca7ff4586b510e2b5049fddf67bdf7142f296d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33040198",
+      "sha256": "09a28fd6483adc1baf78ce6d9bc52b9f2b7dec0110f17ad567217a555abd25ae",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32749549",
+      "sha256": "09a46ad191b8dd9b1051430e8a3b57ff0e52ee987def647c773395287928fc23",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32790095",
+      "sha256": "09a5f3071ad32ddd99b5f46aceb1b883121f2011b68539d726137a755bf7e9d1",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32318729",
+      "sha256": "09a7e19b1959fd87e75ad08051fe69155186c80687833cea5227c651a06097e3",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32995705",
+      "sha256": "09aa8c3b28926ddaeff909e7f8be65ee32e136bc5f7848e557b4796707f000e4",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32692000",
+      "sha256": "09b0786bbfd07009a6b2e7a826b6b361235714d05a383fad7eb0e3ca2f94865d",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32565900",
+      "sha256": "09b26606b4dbaff90d2d4b791fd73654d122e5eaa2ea685b583c007b4f551ea1",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32990119",
+      "sha256": "09b4114e4e09bece1fc084693c6fd400d234a07cb0694ba71dcffe4040015bba",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32565897",
+      "sha256": "09b8e4c2a244f051b16eafdcc7897792009ef2ba3696e720cab7c80387415667",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33073694",
+      "sha256": "09b93d507ad99284fc8ebe827b2f90d41e56a2155cd0a550fc60be15730d963f",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32458574",
+      "sha256": "09bc2f10b60ac6d78c3fe0e9ee1ad32cb80cd5c7fe6b845765a99be0f1fb17b8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32973152",
+      "sha256": "09c0ba95d35716a02dd5da405e0a7ca5bf0f738a9392a7a67033f8f48b56b2f2",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33043101",
+      "sha256": "09c3ba02d506555feee97072b37f81f62ec6b267da726100d96d00258d2e52e3",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32759645",
+      "sha256": "09c779b02b3d63ddaf61f59e40248593fd41ea4187ff178516b0e900e56a896a",
+      "labels": [
+        "Diagnosis",
+        "Mechanism",
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33002740",
+      "sha256": "09c7c92227d15d51e04b82e4e381a097a913ed8a43ec40c4bf4d1e49c12b0f83",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32535508",
+      "sha256": "09ca7b3bb530b7e1314125c2b8fd68389619acf8ebeb6e491dfe1638ca650121",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32412231",
+      "sha256": "09ca9fe02fdc1ca940b8201ce2ab2f0d53a81cd6611a210fc0c18d7c20815cde",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33065131",
+      "sha256": "09cef1c2d65661d69f3244448cb34411f389d06cc70a0d9f7d1ee207c72a8d1d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32907540",
+      "sha256": "09cf5a25130a4fbc1e76efd35e01a8ca8f5a8675670d63d37dff2a875870f878",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32792942",
+      "sha256": "09d2090a88934aaac863f64c88f5ab712e41d5796174f4a1fca7fd282c6ee54b",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32838101",
+      "sha256": "09d27d9fdeb74b9ef4ce175c935c6224258691bb818c8d6aaae47d2cb29272d0",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32983456",
+      "sha256": "09d4ce341e0a05acca57595ae0e6889f0c220cf4aa200d252a84b9a3f8a05b64",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32301746",
+      "sha256": "09d6d70a8152a0c60304a4480b11938f791311fd24dbd03160c8088385fbd719",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32732794",
+      "sha256": "09d8c21739f8c77253c2008947b9fd43fe70256afb95c2ac3b879633fd4c83de",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33062414",
+      "sha256": "09db1ab89498ed45530cc4e868cc8d4c320d0196b8a52938b26d907621c767dc",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32555388",
+      "sha256": "09dc62b402c6a99fc5ce2d3f3c28b75a82133e2c4f70d893c433bf922b8f2c1c",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32419218",
+      "sha256": "09e107779b98de548c217d6052a52acdd51d960c0fa1cb97bc6e5164a7f1cbf9",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32540732",
+      "sha256": "09e163e01c632a0f1e9716ebbbef0c6c1fa19572940b69ea7938842d1bd2f6a9",
+      "labels": [
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32461176",
+      "sha256": "09e2b21c56ee8ce32f887a6ee8f718e499ac29e37cdc7107134f91f07810901d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32728847",
+      "sha256": "09e48abd327e56e91b0b0ad909cd1acf7d9930ae382636b7f92d27b4a53689e9",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32628416",
+      "sha256": "09e49b517896de3814aa72bb5323bcd30b591e9a1b058d2ee5eb8b22887516d1",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33060199",
+      "sha256": "09e62494ce731ac34cdb26ea238c2e0602c0fefa1105223bc9976728b3bab7c6",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32901413",
+      "sha256": "09e7f646bdc4eeafe5638eeac05723f3b010a0ea9bcc598c19552482ebd35b70",
+      "labels": [
+        "Treatment",
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32791668",
+      "sha256": "09ea250fc94585f3b47c437c80a240e6197448ea3cc5b15d876abfa55e74fbb1",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32796139",
+      "sha256": "09ec185ef94a6595b51e3721f28ad1a42732692d300eb0be8f63b3109f5873fc",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33001828",
+      "sha256": "09ecb54d68fa27c82dbdeb8f2b17dc5d119223a644a0fbd14d1f950d8f2c14a7",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32584480",
+      "sha256": "09ed70e50fea7650252cc7db4174a7962d40b6595afe28b01d6d5f8eee29bd9a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33026312",
+      "sha256": "09f122f05f2088468f6e5c0fc513aebbd78bd0186e703d5ad6b95ee3cdf80afb",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32405285",
+      "sha256": "09f1c549f35cb7283e60d15c4430ef4f659c32e043c301f3fc3b7366a3968cfd",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32987033",
+      "sha256": "09f5a5533501e91302c61bdacf10931103c5a451cf2f9af3ea0345c241da497e",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32950458",
+      "sha256": "09f69bc522b6e229f9e126b7bab22aaef608cd7be90267cbfebab893049d5d7d",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32861702",
+      "sha256": "09f7a8dbf5bafc765c3bcd5496f3846a6a92eb1dfe214bf83ac8866cb0bf749b",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33031947",
+      "sha256": "09fa185254485334c3af312dfbed7f38e377e5ada90023c08f9b4ca2b44ee72a",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33031084",
+      "sha256": "09fbf5b7a69394a95ee716d8c1eaa40bca76a3a1cf51c4c86ab08b02694ea487",
+      "labels": [
+        "Diagnosis",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32729392",
+      "sha256": "09fc08fbd9eb77336f45cdb836eb41a30f4f94805f5ff61210c314239488191a",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32757030",
+      "sha256": "09fce70c7a9c1eb857e54984f048a9ce736db5c3591ba7021b8ca5cba2dde69b",
+      "labels": [
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32463076",
+      "sha256": "0a0076aabbe06a638d00dcc6fe4d4b23bf4a1b2cc8ee0a8b9fc42881461920e7",
+      "labels": [
+        "Transmission",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32488866",
+      "sha256": "0a02cfb3d336a39cff974d35e13945e01ccf45349547d8d12f574af1b2bbb50b",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32708872",
+      "sha256": "0a0584ff7511b65ef20a55ee9947516265a241ba9f431c3760a56433a4996259",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33052144",
+      "sha256": "0a05ed39e6ac53fa5596720b254e2c58662301b731443b44aaa65070c4d010d6",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32535188",
+      "sha256": "0a151388260d841d313aabd48f4b6f16e4554646b6f05e54962fed067ea9c1ed",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32489698",
+      "sha256": "0a267e509b8336dd8913dcbc55b418c14d58452d589edc6a1b477dcb12589efb",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32474908",
+      "sha256": "0a280a5077f577575aff488f90c94ca06f32a6c8aaceb70ac2bc6ed29400aefd",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33015402",
+      "sha256": "0a2e662dd0d28dad722f98071c580a2250f4f0a01fba327593eb3fc0d8dac79e",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32941709",
+      "sha256": "0a36ab1044b288e416d88aca4e3eb4e5852444e3b62651200a264a91b59b89e8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32367899",
+      "sha256": "0a3bb1a72eebc1d1b17286fa7b3636164995e24b6edcb0de281e0f8cc0d87183",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32942797",
+      "sha256": "0a3bbb5698af95f1e35f6d27cf52f4f351c646a5a0175d0efa1fa3b1f4a5729e",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32342864",
+      "sha256": "0a3cdf498823d37e7a58ccfd135d53b0cc255a97e4d7fd0ac3bd32490e6fafe1",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32529358",
+      "sha256": "0a3d5a29c5ce2ab5578d347c29a6716cbdf98ec7dadd258a0ef1738ed03b65fe",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33025553",
+      "sha256": "0a3ff98ad078c2e79f4835b25369ad989b83b0d27f729a91e4f49a13bd7550b6",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32763089",
+      "sha256": "0a41b005cdc1afd3d5d3469c7bf42cbed9d1be3d74d1869c31f34c11e2433b58",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32374033",
+      "sha256": "0a4d68a69effc42b94b02fa5f1e730bb79f56e7a725cdcf33116c673343231f2",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32674824",
+      "sha256": "0a4f739013c323686fb862db77d61afae5cfbf20a655bf0c8afa08efb9155aca",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32236385",
+      "sha256": "0a534aa5b4f539fb8f62c2e3d88324f0834c18637171871dcacdad5f70716ef3",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32370606",
+      "sha256": "0a553b0a8c6f3863388e26b19dfc9f67c5389320910fb53f5487deb5c500fcd3",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32518941",
+      "sha256": "0a557a35e6c14417e368abd2ac565017c7a84379a95865c71677dfdf59d4f9fe",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32736569",
+      "sha256": "0a58cdde5f72fdf14fc2f080588011738612e26a2510b177cd84c74394e1b342",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32890666",
+      "sha256": "0a5e5a029f3c66f3cac21b149e9c95c8f6c702b1d0986c4cc87eb79e0ff91fbe",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32942626",
+      "sha256": "0a5f2060d661207d23e59ffbdb7780c90028d044cf06b228fc36575fdfdc813e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32574300",
+      "sha256": "0a7080eafc2ba677de3f1be6743b0e794c7699c1d9c666694c81cbc44c60cc94",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32693991",
+      "sha256": "0a728060710a0343409a225d4034244e6613d07cf250b8f3cb9a6a60f128f0e6",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32390661",
+      "sha256": "0a73c8f666cfa22f80186e3f09821063e383bc41c39f273ed3455e7840f1fa0a",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32210741",
+      "sha256": "0a79a423c96b753e4e21c1de69407d4fad1bc69a11481d83e8ebb49257684061",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32739424",
+      "sha256": "0a7f871ab2c4f9142cf6b6bdf02eb37ed8be9f1bbf43556400577ac6e14d0713",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32699689",
+      "sha256": "0a8215cc0e8873c3aaa18efe1bff472e0a747cbfb1c9960f59cc150d5717930d",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "33013759",
+      "sha256": "0a8699a0be739ce7d6382b2730976805d38991ea4a40e9163db10febfdfb984f",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32788835",
+      "sha256": "0a884d5387309839c69ded2e2ebcc7788a201c8ec4b214fb7cb7e62ebad35a67",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32985380",
+      "sha256": "0a88f4899ad4401c5411fbb9f806a76c9e449f870af07d646bac00634cec553f",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32492117",
+      "sha256": "0a8ac70d51fdfea07c12cd82718db208c54773172f85e5269c36693ff9d75c0c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32578156",
+      "sha256": "0a8b7e9edb02cff7c4b19d9bcf92152e96b92cd498bfd291d42b6050cd8da225",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32237148",
+      "sha256": "0a94c920d62c06738804c45355f31be1afc9fddf8080823e58136c33809f3329",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32978237",
+      "sha256": "0a96edc5ce84145e60c36269f1cb2e4cbf2f46d7c769d192f8f67a0c72557437",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32790028",
+      "sha256": "0aa2f2b48a7bc002974b008b086098adf1c0b0afcf027a5d78ec9488dcbbfad5",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32815513",
+      "sha256": "0aa4e22dc5cb5254eda9b929932a1d1ecf1834f1d30a9bb7417d6f91e2b4b4ce",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32703323",
+      "sha256": "0aa565d55349894b599a1769ab797e0be49ad2c9a02f0f33fc5e2e83c5783821",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32974111",
+      "sha256": "0aac861c37b9f4f2f3f986f49b2dc5a6505945ce175eb9aecd62d9cb0a5160b0",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33024121",
+      "sha256": "0aadae0a14578693330123962f8d2172b2e1aa5cbdba8a9dddbd1c3432bea5e5",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32546589",
+      "sha256": "0ab1c384bb845e9758e41caaadc8ea2b19a5397458c3293aa54e542e62d7ea9c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32364962",
+      "sha256": "0ab1e2ae53573e2628baf616867512eca43b3cb5c6f49681324eb4b3da31966e",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32331919",
+      "sha256": "0ab21910cc9382e819db6e263e04a1f95cbec3d7d9e844431b4b30cb359624ba",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32429121",
+      "sha256": "0ab3279b754f167d57809e858c093cd1f14ce8dbf61a04be9b2dc6e2a888744e",
+      "labels": [
+        "Prevention",
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32754823",
+      "sha256": "0ab48c2eaf685b192ec2f929cc64d1146e1d8e9ae12f03d73711c284579fca89",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32445496",
+      "sha256": "0ab6ed2847fd1021d3a846ca38de20fa604ab3ce61c4daf1163d8118a67df1c7",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32735011",
+      "sha256": "0abd0a8d2e59ff17e59e893fd1e8ea2cddce7f9add472cd54aa61bcee61819cc",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32673978",
+      "sha256": "0abfda7be4c56eaab6247169b8349c6a6fd01a18b07e2dd79121f361aa0a0619",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32694244",
+      "sha256": "0ac15a47caa443f2114ed2b21aba621d7f5257b3ac0a753cd8a79481dabc7988",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32501392",
+      "sha256": "0ac5270ef2d46fd4a3ef5733eb98a2a41f85637ec53b7bad5b2d105690a74ebb",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32638914",
+      "sha256": "0ac7b8e17a060a8e5f5de8595dc9dcc9934949570b666da4b44231a2a214580e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32351040",
+      "sha256": "0ad0b13121b0d7e3fc76c797173d52475562fd2ac2a895b07e6f9a39b5e52eb3",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32656017",
+      "sha256": "0ad2c8f4dc470d5f56ccaead909d662a54a513d8f9a822e2be90cf733f74a2d8",
+      "labels": [
+        "Epidemic Forecasting",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32613916",
+      "sha256": "0ad3896fe412196c6f76abce67d4f9ca37aed6ddc42c5b9e04e199bebfa40532",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32629100",
+      "sha256": "0ad494698b26a166bd04e869a07e4209d7a96fa3f17961002883431b6f6db5e4",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32863832",
+      "sha256": "0ad820959632c9e3054d329a3d31b29780f69b39a86ab65eab0dc8a14c05b127",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32690628",
+      "sha256": "0ad9d7697e310a908667d6cb6b11de5fdbe9aea128d01232ff446cd9531bf576",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32943115",
+      "sha256": "0ada8812d973c12a299437ad81ab3c9dacb473b24ecd7856e94525ed64aa1182",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32950986",
+      "sha256": "0adf0d06f46cc7b2835d0c25e714017d0ca5dd8ba2479aa4cb530ddf5d2a63fb",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33041528",
+      "sha256": "0ae15ad9bcb3f97c0503c823f3d19fa8011c46b4f77edb1598d0d4533a756676",
+      "labels": [
+        "Epidemic Forecasting",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32515369",
+      "sha256": "0ae19ce301dfb7001bb1a7d95b66567fd0b2cdc9fa5e4898254d5311d49fdac5",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32968582",
+      "sha256": "0ae55700e24f1ccf0f8ea712dd70923732e9bd4d7356c0cd54218d93cd3b5ae7",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32884213",
+      "sha256": "0aea0b1f931aa5c68e03dd309b20560e0bbc260a3e60b9b92944162de4f84128",
+      "labels": [
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32723027",
+      "sha256": "0aed666619a83228f2f7dd246d01a2fc7c7ee80b73bf893444e973fe076771e7",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33059541",
+      "sha256": "0af0e1f007a18dcf8f633638d09e8cbd962a6275a4a2a29598acdd0507aaebeb",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32895763",
+      "sha256": "0af2f1b92635b62d97a02daa70fac109c9100cf38f7ab17d3136dcd623057b09",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32459793",
+      "sha256": "0af5ca48022307a436af8e81082bb61c40bc382a646677ca8cffcccbca0d298c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32266867",
+      "sha256": "0af9cabc38cf251a6bef3380c7583943f1c687d030047b24f3db4c33c897159b",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32339092",
+      "sha256": "0afa79bb2291424f7f28158cd2b3a26c4466260916a473bb695cdebb84dfee06",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32250170",
+      "sha256": "0b00ac63c0d03f32b8110a80f188be0912abc3cd8651450212ed573313d91756",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32892197",
+      "sha256": "0b0329196a67c4d98bfefedef5a4c8d46c435392747119f32515de7c96ab4370",
+      "labels": [
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32701937",
+      "sha256": "0b0372b226ef276a5e23d0c3cfa85d46c5d5779221384be6d0b54865d716a4fb",
+      "labels": [
+        "Prevention",
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32374289",
+      "sha256": "0b04e71d6a6aca22e42bcef1d8228175f1fdca3b892eb5c688761e16e8993efc",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32809211",
+      "sha256": "0b066418014ad881436858f439ab4edae9c4fce1dfebb90bdd22660e6a32bc5c",
+      "labels": [
+        "Transmission",
+        "Prevention",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32600991",
+      "sha256": "0b08f5025a7d37544d43a26dbab77d60910c1ae52ce686cad3a744817102ec77",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32528233",
+      "sha256": "0b096a57d056627bd4d04392fb17a0b9d6f4622b0893b2691ddd68b4ad45f7ed",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32549076",
+      "sha256": "0b0b347bdc507707cbaa69726bfa83d0be6e6939b41d084da9fe1c6d0844d351",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33052325",
+      "sha256": "0b15eac43aa0e5caf3106b86ccbef03c5b04d13ad5ca607a781c6d849fdc632d",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32521345",
+      "sha256": "0b1646429e73bb731d85ac8f445b2c12e8008df2b7562f545cee8785c00cd485",
+      "labels": [
+        "Transmission",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32662245",
+      "sha256": "0b18a3f6ae79b40de0eda27918cc3aa038b6cd220662ea051bead7fd0c7650db",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32883744",
+      "sha256": "0b1c4066b5770f4155102669740354932dfb14c405611ee33de26fdf4bac262d",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33070355",
+      "sha256": "0b1f39ea65945f405a5c48792e5bbac4d567bbca715bb7bffd8191c683de5845",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32441380",
+      "sha256": "0b2035612f810e89b5ae19b6d7eba288070fccade2ae13fca5d7990a6f647fed",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32854430",
+      "sha256": "0b21c5a667e0fcef9ea79ef1e55bde9ee5f866b4e227fdd15b69297cc4a10f4b",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33066495",
+      "sha256": "0b23b83d8c8804e0de83848777630eb83feefeaf5b9188c714bfa0001ddc5a41",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32385990",
+      "sha256": "0b2526cc00bf7f02c2db6c0c36741323a185f8e6e0aa1e7313be419b2e979256",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32957305",
+      "sha256": "0b259bf1ebeb7e7f67d6995a538ea840a6baa5e15a1df30bbaea2344990696f2",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32736592",
+      "sha256": "0b2812de81c875102462c3de69e18718637bd62b9db9b81834f2617479c71fbf",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32798098",
+      "sha256": "0b2e9bac73eca39e00d8edca3f403625fbb51001b62fccec83539a57fecdc55c",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32381442",
+      "sha256": "0b2fc664ca2b258e8e7b9200be1fcea8f75c10cdee64f08ecfb3aaba2e753242",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32577056",
+      "sha256": "0b3275d85cda9da1003029aa4a882554b80768fa19c5588c9b7330dcea5eb28e",
+      "labels": [
+        "Mechanism",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32843849",
+      "sha256": "0b338f4686153bb7c9a1a60c6cd9649a1b416f19d9ce6908a988d38652d90731",
+      "labels": [
+        "Diagnosis",
+        "Transmission",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32958120",
+      "sha256": "0b3501e004512a162dba004f47e4ed7e2c22ef2ebb184dbbe8393fb9bc820ab0",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32926172",
+      "sha256": "0b36d85d639d2ad5a0f579d2467e7afb52a20542f9578bc91788344729b28cdb",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32269086",
+      "sha256": "0b38940ac3dce728c1e3d104a4d291d0385476ee010c9d5fecb4d438e5a01894",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32844526",
+      "sha256": "0b39db6153abcb97adda9bd9c6a027f7ca02883556162a27bdc3d9d4fd5ed1c3",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32791207",
+      "sha256": "0b3a8ed8a47e21a89492d828dee27b8a89fb062fdd239748d9be9a6ca9145bf2",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32437926",
+      "sha256": "0b3d66a22a9bc927ee7bb53633bee437089c613cd503bc4cd601852c43c067c1",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33024558",
+      "sha256": "0b40e2ff61271c1a46caa9be2455c4b3cc4b4bdc1b11c25811ee725114635b63",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32982062",
+      "sha256": "0b41af17c0ed8a8c222e6eab92733e5aa3305eae373fd40d4ca8dc5379a20c8e",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32835346",
+      "sha256": "0b442c8a560055fcdd5306209d88ee4c14d388b3880517d0361c89989df53ff9",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33026313",
+      "sha256": "0b495ea68c1e4fb995891ac21dd9d780cbf946c4bc3b16a3846fa7aa312a20fa",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32773660",
+      "sha256": "0b4b93b8b0ead7fcd0af82f9268b22f4291df34ffafe7bb5c60db804be7fcb76",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32983273",
+      "sha256": "0b521d9d5be483f527a5b5a13a7c6b70820fa8ed021b302e4cc70b3722213999",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32903228",
+      "sha256": "0b58af1986f791c1c1b7457fb96c2e377f0662628e4333f7eea8915b11971e62",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32710359",
+      "sha256": "0b5c943b688d53d2b2858497880daefe7ab373f3d440166d986642c3860c38c5",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32668216",
+      "sha256": "0b5e9d1cdf7f09f6f99ba5c517d984b6df27cf5867fb97a9bb76f7928dcfaf86",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32344456",
+      "sha256": "0b639c821eca651f25e229e04379aed16a366f0e58365248e697cde01192ba15",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32596474",
+      "sha256": "0b658292e29b6342295e95fa6e9400cf2fdf224cc40530e25049a75c8f0b1841",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32579906",
+      "sha256": "0b6c9271e4a407923b04d82fd873896566130e2b31d4eec1281c3441b3fe23fd",
+      "labels": [
+        "Prevention",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32661937",
+      "sha256": "0b778f732d1f3b8a20e9044d78af42e5f82713ab10fe1ce6cc72333e312f9499",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32779728",
+      "sha256": "0b77a631bf8457c6029010d08d75d3f57987f3d52138e76f9da07179145216fb",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33006723",
+      "sha256": "0b79750cf6ed4212983e19eeb04f669778bf3b640b0975a145dcbfeb435afd44",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32849658",
+      "sha256": "0b7c996ae689c0eeb7644f5793ac983ae01bc1faba5c238c1057e9e2a0e9d7c4",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32363963",
+      "sha256": "0b88c4fbff01bfb3043a3626268a7bd0266a297bdc1699a3f3487614c4fadd02",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32942705",
+      "sha256": "0b896ae96799de0969909b100b01d976bb4e3f0f80677ddb8401283172002ddd",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32765776",
+      "sha256": "0b8ad55fbadf899d3293af1eac05f359242a40ad7fe876c1265cffac272db9a4",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32532946",
+      "sha256": "0b8e50bbf6e4fbb28eeea56c42a1e1610c0adee37bf5065fdbefabee8e6edc8c",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32860038",
+      "sha256": "0b8e949c7590bccd243ecea466538ba53d8b16f777de3437ee6149e7b20ecbcf",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32659100",
+      "sha256": "0b8f9d57583af58c51997cac6d5f479ceac73b67cccfb3a608d05c4fc5bfc698",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32966040",
+      "sha256": "0b9f174f99b71452349729899ee48dfca5464a0e0dad1572ea21485a36b83a41",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32562512",
+      "sha256": "0ba0cfe73d0182c1376d5a4479ad57a38c7bb5c851bab6cec3d43bf88d2be222",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33026453",
+      "sha256": "0ba2023749a130967a45ff8d13131633175b34e8cac1df27bbe80f8693f45afb",
+      "labels": [
+        "Transmission",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33043231",
+      "sha256": "0ba53c367cff80935e05cf8a5cbdc46ca3bedf17e0a0262e5bd049a39319f81c",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32906143",
+      "sha256": "0ba686235c4b4a4978204c928b5b6e32fed6397e974af7ea4113b8e20dad2f2c",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32835351",
+      "sha256": "0ba6927e68a5921bd6285347dde71d857f93a00851baf6e920922a56eef35dca",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32856955",
+      "sha256": "0baa47158e660272d41c6cda99ee5a0859e4dec145f95a5baeed489332a4b373",
+      "labels": [
+        "Treatment",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32527990",
+      "sha256": "0bacd4f6cc7d8455feb27db615ceef777e08701f2e6975a393e6c7b532d0804a",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32894988",
+      "sha256": "0bb0f4d3beb331304af777a12a3d8a92da43869623a5e1d3233c7d715ab55bcc",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32278764",
+      "sha256": "0bb4f67b625bf828e4f94fec1a0b2455869f5c383544b50354eafbff552c7cdc",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32762737",
+      "sha256": "0bb9ee4312398718da3fd9a09f4968772a20457e747192cdf92fcb5eeb335b8c",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32819035",
+      "sha256": "0bbe762273c572f1db079a10fc615671ecc46ca03227eaef980f80961927f798",
+      "labels": [
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32854169",
+      "sha256": "0bbf5d5b95beae318018ab0d3b7b7a1fa8e464a6fe490124e62715db2ec58372",
+      "labels": [
+        "Prevention",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33004274",
+      "sha256": "0bc34a32600d8c3540786d5a84515ce56707ab796ecb8c0ec9f8e5814f7b08ce",
+      "labels": [
+        "Prevention",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32188819",
+      "sha256": "0bc3e8165eac6d331af03bf330fcbcdc2bc011722dd15d9c45b7a395df8a2789",
+      "labels": [
+        "Transmission",
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33019397",
+      "sha256": "0bc4df4b419c44b4d3817e2f0403e2bdd16709a19e57f3d008eeba07691ce22b",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32733921",
+      "sha256": "0bc63dc131a6a638d98ac399edec37f0df8fa169e3410acd296b65e4993081c3",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32755456",
+      "sha256": "0bcb007e3b0951d7567c7d2754f60203c10fc84ddb0ba7d865f1eb4024a0aeb9",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32853537",
+      "sha256": "0bcb5a73ab36107c047bd6a05fd846aa088da40a2b9a13c8d945cf56c9ef99d8",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "33013395",
+      "sha256": "0bce15aefbaf66c63efe09fc5e40232172f0c6fb5a9d9eebd8d4fea9a84fb3bc",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32807018",
+      "sha256": "0bd24c2a23e8839d3a2151b5d75a9afd8307bb5c872fc48ab4dc841754969e30",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32596354",
+      "sha256": "0bd311560b0da59933c19d833a4d3ad1b6709f97846efcc0fcfdf5ab8e137020",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32333836",
+      "sha256": "0bd71db0658e35dac8e7977c6a155a8388f38bad0fdc1bb739f7e5a5d05a4528",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32825295",
+      "sha256": "0bd72460f41043b7eaca1d4379029e0064151d0624e88c8fbc1e093d77682e9c",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32912388",
+      "sha256": "0bd72de8ee3ddeee406b37776de8fda723e0ba132b719a9cf905382f6184aae1",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33041706",
+      "sha256": "0bd8590db9afbf5f798166bfe96a913a3524b6a6b03db0108bb02aacc2cd91d0",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32472454",
+      "sha256": "0be2827b9a8e2ce46a803f9d0258390841e83dcdb816ecf54dfa5deffacdf902",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32980943",
+      "sha256": "0be2e38bc179ff71bafa1b85c3c28b71bcea550439d0dd85189f4e3d6802575e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32534633",
+      "sha256": "0be488280be61ecaf97b65b14dac4347f92d272639eb378ed0dccd641126e635",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32278811",
+      "sha256": "0be600eb54e55055e1c88e23e0c3a339fcbfe3efb7928e9499a2b9ac57b222e9",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32270980",
+      "sha256": "0bf28bc921f3a1982023bbac4897b06bff5a8ca601fcf795392dd74354e6052e",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32804773",
+      "sha256": "0bf46c3461916aa2e5f2af1f7dcc4b9a33752accc7757a82fc1e437c7a89d151",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32951058",
+      "sha256": "0bf9a93c5dbb0cfe1e9c7412bb2047e3f49c7d08da93f2247d3d6c101a024373",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32294713",
+      "sha256": "0bfb075143af916a48cbce808da4331c1f3744c021d076ff3159f53716e214b8",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32655013",
+      "sha256": "0bfb50c23834ff4fa91fa4ee2b12de8cb0c77b4d2591643bdafea36ed6263f15",
+      "labels": [
+        "Diagnosis",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32711946",
+      "sha256": "0bfe0f5524fb91da2ae82ecdb58f7fdffb9786f078e2cf3d44033adad7e33c26",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32364890",
+      "sha256": "0bffe6fe8368acee93e70133578db74eb776a1b36356b26f193fb9ce69c56da9",
+      "labels": [
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32723442",
+      "sha256": "0c010f6b420b5b90dabb34133dea89d633949e8db98f4590be235baea97c0ff7",
+      "labels": [
+        "Treatment",
+        "Prevention",
+        "Transmission",
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32871847",
+      "sha256": "0c0a35af96b1c8b2ce47ec34f976348d83316b499daae4f94db6853804c5cebe",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32838020",
+      "sha256": "0c0dd796446b3214d27c7078b9cb191516a62b03d73885a73820cc105ad6523a",
+      "labels": [
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32363133",
+      "sha256": "0c115ddafd3c747085526e95abb21610417f3a313bf33e040c39e6dfebfae2d6",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32233563",
+      "sha256": "0c144f88cb3dd36be9b27cbcf948ac0d77aeefedfb703eecdf9a2c225374ad70",
+      "labels": [
+        "Prevention",
+        "Diagnosis",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32680724",
+      "sha256": "0c18dee6b8de3ed67fde731a7050b9a73f5deacdfc245b66aafd6bd1bae17c31",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32632947",
+      "sha256": "0c1b0d9f1dc9ebbdc48ab1b697c89f624c51c97be5ed5ae0fc54860b558ce8ec",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32417246",
+      "sha256": "0c1b3b8048b4da2b01f883432b71a4f4d7cb1b49ea9a78fd9ce20ff73ece4b79",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32842326",
+      "sha256": "0c1f8e97a71879c9064082e70c3cc4c453123bbd0c3d3bf46249b92b52a19569",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32381642",
+      "sha256": "0c218324972bc9855f63cad721232db7a0e6a5baac6e5114520a8dd8f717e900",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "33051841",
+      "sha256": "0c2266020e7f8eda3d1a99a20205980529eb4d9c3f85f9ac004891464643e04c",
+      "labels": [
+        "Mechanism",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "33049751",
+      "sha256": "0c26146767cbbe34e1b351cb042d553e577f0aa3b3961f1c83a5d401a1ae2ccf",
+      "labels": [
+        "Treatment",
+        "Diagnosis",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32491306",
+      "sha256": "0c278f40a74901cfda2d776e5deacbb6866ca4e3c6bed880847cdca9d86764eb",
+      "labels": [
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32322402",
+      "sha256": "0c313d9d392edfbe3e53f90818b5c014362c661a07c26d4d4b6836fca7d6cb2b",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32960473",
+      "sha256": "0c33a243c52c846283b7e9e11d7616b72de89efa7514c582e73d31546c1b71a4",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32554423",
+      "sha256": "0c361a13fe40987b3bc6981fef4885c73878c658832f467133cb056e537faa3b",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32304435",
+      "sha256": "0c36a61e90e5e6d858790590e622ea2b4dd029b3656326a8ddf2917277fba436",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32431287",
+      "sha256": "0c385326c4551329e98915a93e402d91479a39f90c92d47067b933418e9370ba",
+      "labels": [
+        "Prevention",
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32406873",
+      "sha256": "0c3c8d5deeb2663395ab651ffecc85984c381b850a6ea62fb94aab2c6627a42d",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32844132",
+      "sha256": "0c3d3ccab71423ae238750c2200dd8c9a75012fc96b583a7b963ef84d7492eb2",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "33049360",
+      "sha256": "0c3db3f959c4e2218b35eb9da9074754b605e9819da8cb21d5889b2a1921d7d3",
+      "labels": [
+        "Prevention",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32443944",
+      "sha256": "0c3ea1b040db84cc58c064813f84751a132ef844daa381875dd1655aa901cf42",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32501804",
+      "sha256": "0c3ebf89e4ae4991542c17ce8488402029392c59a7e09426c5b9e787d8e5a616",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "33052272",
+      "sha256": "0c4a955ac95b16ac9407045532a02732507cde845764b0b291696265d0821acf",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32498752",
+      "sha256": "0c4b96cfbd39e3671e436edc2f66c4e69870061c5c1720745da9251dc426de36",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32344440",
+      "sha256": "0c4ec9187076629fa3282b9e189b332d4be7d68e59b0ddcab8a6f2ef04e7faf4",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32318865",
+      "sha256": "0c5dcb618fa9372db8c0ae19f4d10f1fcd968ccc038bdae364fc76f11f1c00e8",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32785135",
+      "sha256": "0c5e6c4dd1292001707bec0c79de7ac84f6e4df51344715c5bd255b9b01bcb31",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32491116",
+      "sha256": "0c5f2dddf1161d2a81c35641c9236d343adea7597bc9290918710ad137a86a61",
+      "labels": [
+        "Treatment",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32531754",
+      "sha256": "0c614066cbdcd971ec694fdcb7796268eea5ad893f478de608ad0129c10418f6",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32516281",
+      "sha256": "0c61f871253d304d51543ce600345d30e215b50c1a406e703c14ed7cca85bb34",
+      "labels": [
+        "Case Report"
+      ]
+    },
+    {
+      "pmid": "32981694",
+      "sha256": "0c635004f65f1fdc3e5ebe33025fb3d91c8ca8e4139b31defb1b5107df6aa531",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32801222",
+      "sha256": "0c64e79a3e544672230f07e2bf49bc344fd08198ec5d757ac6aa373c0f57b7e3",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32334160",
+      "sha256": "0c858a2ea7c3face1e767b821fd1cda8fc48dcff080e6b947c9b4f87215f8d60",
+      "labels": [
+        "Epidemic Forecasting"
+      ]
+    },
+    {
+      "pmid": "32850977",
+      "sha256": "0c883d5282babc1aaa18e493d0eb9eec0bcef918143c184f205e4c57aa158619",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32993015",
+      "sha256": "0c8895df41132517b37c60164231ad6dd8ff9872e5baa70cb0091c8610709634",
+      "labels": [
+        "Treatment",
+        "Mechanism"
+      ]
+    },
+    {
+      "pmid": "32955126",
+      "sha256": "0c8aafec4fe4896fed4d761b3505bf157f2d49a3d7346d3666ed91861d000e8a",
+      "labels": [
+        "Mechanism",
+        "Diagnosis"
+      ]
+    },
+    {
+      "pmid": "32626719",
+      "sha256": "0c8dc4106570aba1ffb5de24eefd2a5da3813329106cb810c3cff8de8b72cf88",
+      "labels": [
+        "Prevention",
+        "Epidemic Forecasting",
+        "Transmission"
+      ]
+    },
+    {
+      "pmid": "32748797",
+      "sha256": "0c8f0ba78eb6d39cd18a97544e17ce8b56f845b353a4df6837a202b8038f44df",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32653775",
+      "sha256": "0c92033de09d6427bdf9a0b169cc80a9880944ade89f6e53c7d76e8df28ffb25",
+      "labels": [
+        "Prevention"
+      ]
+    },
+    {
+      "pmid": "32495580",
+      "sha256": "0c92d3aa924ecfa30093a460e92edee30516ea9a9835e8b0e682c066a0d9550d",
+      "labels": [
+        "Treatment"
+      ]
+    },
+    {
+      "pmid": "32776726",
+      "sha256": "0c97d9acb7766c6be57393146a912d74ce55bbb72b8ee0539a7eb773577ce9ae",
+      "labels": [
+        "Prevention"
+      ]
+    }
+  ]
+}

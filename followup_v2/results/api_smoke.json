@@ -1,0 +1,114 @@
+[
+  {
+    "check": "health",
+    "status": 200
+  },
+  {
+    "check": "invalid",
+    "status": 422
+  },
+  {
+    "check": "busy",
+    "status": 429
+  },
+  {
+    "check": "actual_finetuned_inference",
+    "pmid": "32687681",
+    "status": 200,
+    "response": {
+      "version": "v2",
+      "variant": "lora_seed17",
+      "selected_epoch": 1,
+      "topics": [
+        "Treatment",
+        "Diagnosis",
+        "Mechanism"
+      ],
+      "scores": {
+        "Treatment": 0.6339324116706848,
+        "Diagnosis": 0.5987534523010254,
+        "Prevention": 0.21130961179733276,
+        "Mechanism": 0.5715323090553284,
+        "Transmission": 0.06060038506984711,
+        "Epidemic Forecasting": 0.0006527705118060112,
+        "Case Report": 0.0037269776221364737
+      },
+      "input_tokens": 235,
+      "truncated": false,
+      "threshold_margin": 0.08939961493015292,
+      "review_reasons": [],
+      "latency_seconds": 2.1502207909943536,
+      "limitations": [
+        "Scores are not calibrated probabilities.",
+        "Review reasons are heuristics, not quality guarantees.",
+        "COVID-19 literature task; other domains unvalidated."
+      ]
+    }
+  },
+  {
+    "check": "actual_finetuned_inference",
+    "pmid": "32706827",
+    "status": 200,
+    "response": {
+      "version": "v2",
+      "variant": "lora_seed17",
+      "selected_epoch": 1,
+      "topics": [
+        "Diagnosis"
+      ],
+      "scores": {
+        "Treatment": 0.03682396933436394,
+        "Diagnosis": 0.9647632837295532,
+        "Prevention": 0.031119033694267273,
+        "Mechanism": 0.031395070254802704,
+        "Transmission": 0.011836533434689045,
+        "Epidemic Forecasting": 0.0023587930481880903,
+        "Case Report": 0.005459062289446592
+      },
+      "input_tokens": 346,
+      "truncated": true,
+      "threshold_margin": 0.13816346656531098,
+      "review_reasons": [
+        "input_truncated"
+      ],
+      "latency_seconds": 0.928059249999933,
+      "limitations": [
+        "Scores are not calibrated probabilities.",
+        "Review reasons are heuristics, not quality guarantees.",
+        "COVID-19 literature task; other domains unvalidated."
+      ]
+    }
+  },
+  {
+    "check": "actual_finetuned_inference",
+    "pmid": "32757827",
+    "status": 200,
+    "response": {
+      "version": "v2",
+      "variant": "lora_seed17",
+      "selected_epoch": 1,
+      "topics": [
+        "Case Report"
+      ],
+      "scores": {
+        "Treatment": 0.00640483433380723,
+        "Diagnosis": 0.01016355399042368,
+        "Prevention": 0.011751626618206501,
+        "Mechanism": 0.024018434807658195,
+        "Transmission": 0.005340385250747204,
+        "Epidemic Forecasting": 0.0027484544552862644,
+        "Case Report": 0.9900903701782227
+      },
+      "input_tokens": 143,
+      "truncated": false,
+      "threshold_margin": 0.14465961474925282,
+      "review_reasons": [],
+      "latency_seconds": 1.062363125034608,
+      "limitations": [
+        "Scores are not calibrated probabilities.",
+        "Review reasons are heuristics, not quality guarantees.",
+        "COVID-19 literature task; other domains unvalidated."
+      ]
+    }
+  }
+]

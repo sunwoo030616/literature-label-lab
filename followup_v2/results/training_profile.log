@@ -1,0 +1,20 @@
+W1104 12:23:09.026000 79934 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 29565.60it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{'batch': 2, 'forward': 1.0761362500488758, 'backward': 1.4326220829971135, 'optimizer': 0.9947365840198472, 'total': 3.5034949170658365, 'allocated_mb': 1250.74169921875, 'driver_mb': 2162.703125}
+{'batch': 2, 'forward': 0.2798579999944195, 'backward': 0.7779769590124488, 'optimizer': 1.2538948750589043, 'total': 2.3117298340657726, 'allocated_mb': 1250.74169921875, 'driver_mb': 3184.703125}
+{'batch': 2, 'forward': 0.4049467499135062, 'backward': 1.0168666670797393, 'optimizer': 0.9823235829826444, 'total': 2.40413699997589, 'allocated_mb': 1250.74169921875, 'driver_mb': 3186.703125}

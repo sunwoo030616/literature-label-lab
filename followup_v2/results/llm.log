@@ -1,0 +1,57 @@
+LLM 1 /40 6.87 json True
+LLM 2 /40 7.24 json True
+LLM 3 /40 4.85 json True
+LLM 4 /40 4.34 json True
+LLM 5 /40 2.18 json True
+LLM 6 /40 6.25 json True
+LLM 7 /40 5.82 json True
+LLM 8 /40 6.32 json True
+LLM 9 /40 6.5 json True
+LLM 10 /40 5.96 json True
+LLM 11 /40 5.18 json True
+LLM 12 /40 7.66 json True
+LLM 13 /40 5.65 json True
+LLM 14 /40 18.43 json True
+LLM 15 /40 8.04 json True
+LLM 16 /40 7.69 json True
+LLM 17 /40 16.09 json True
+LLM 18 /40 8.48 json True
+LLM 19 /40 12.34 json True
+LLM 20 /40 4.57 json True
+LLM 21 /40 10.25 json True
+LLM 22 /40 8.18 json True
+LLM 23 /40 12.11 json True
+LLM 24 /40 7.76 json True
+LLM 25 /40 16.1 json True
+LLM 26 /40 12.35 json True
+LLM 27 /40 10.74 json True
+LLM 28 /40 7.4 json True
+LLM 29 /40 15.78 json True
+LLM 30 /40 6.29 json True
+LLM 31 /40 11.66 json True
+LLM 32 /40 7.03 json True
+LLM 33 /40 11.65 json True
+LLM 34 /40 49.56 json True
+LLM 35 /40 12.6 json True
+LLM 36 /40 6.4 json True
+LLM 37 /40 15.62 json True
+LLM 38 /40 9.76 json True
+LLM 39 /40 8.46 json True
+LLM 40 /40 6.91 json True
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:1192: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+LLM COMPLETE [('llm_raw_topics', 0.29266409266409266), ('llm_verified_topics', 0.2952380952380952), ('frozen_classifier_same40', 0.522962962962963), ('finetuned_classifier_same40', 0.6331473603025327)]
