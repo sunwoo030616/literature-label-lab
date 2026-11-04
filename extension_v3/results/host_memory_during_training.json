@@ -1,0 +1,24 @@
+{
+  "total_gib": 16.0,
+  "available_gib": 1.725067138671875,
+  "used_percent": 89.2,
+  "swap_used_gib": 27.9620361328125,
+  "project_processes": [
+    {
+      "pid": 86644,
+      "rss_gib": 0.0012054443359375,
+      "name": "python3.12"
+    },
+    {
+      "pid": 99938,
+      "rss_gib": 0.0080413818359375,
+      "name": "python3.12"
+    },
+    {
+      "pid": 99944,
+      "rss_gib": 0.0033111572265625,
+      "name": "python3.12"
+    }
+  ],
+  "scope": "Host snapshot during long-input training; desktop apps and other jobs included, not isolated model/GPU memory."
+}

@@ -1,0 +1,8 @@
+{
+  "observed_seconds": 10.026587457978167,
+  "available_gib": 1.373931884765625,
+  "swap_used_gib": 27.6170654296875,
+  "swap_in_mib_during_window": 1065.84375,
+  "swap_out_mib_during_window": 2.796875,
+  "scope": "Host-wide10-second observation; does not attribute contention to one process or establish a controlled model latency."
+}

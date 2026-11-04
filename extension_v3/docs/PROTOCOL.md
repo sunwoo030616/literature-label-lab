@@ -56,3 +56,13 @@ lambda0은 graph가 곱해지지 않아 같은 seed의 attention-only 목적함�
 ## 학습 방식이 맞는 uniform head 대조 추가
 
 LoRA512가 학습 중이고 bag 특성 추출·학습·평가가 시작되기 전에 추가했다. 평균 LR 대조는 head optimizer/규제가 달라 attention의 효과만 분리하기 어렵다. 따라서 같은 AttentionHead에서 query를0으로 고정한 균등 비중 head를 추가한다. 같은 초기 classifier·BCE·dropout·AdamW·30epoch·threshold/epoch 선택 예산을 쓰며 graph penalty는0이다. 유효 chunk의 비중은 정확히1/n이다. seed17/42/73 모두 비교한다. 최종 비교는5개 조건×3학습 부분표본이며, uniform head 대비 attention의 차이와 평균 LR 참고값을 구분한다. Query가 optimizer step 후에도0이고 classifier는 갱신되는지 자동 검사한다.
+
+## 긴 입력 실행의 메모리 대응 재시작
+
+첫 LoRA512 실행은 batch250/1000까지 진행했지만50배치 구간 시간이69→74→92→208→320초로 악화됐다. 호스트 swap 입출력과 가용 메모리를 기록했다. 아직512의 tune/test 결과는 없었다. 이 미완료 시도는 dynamic_padding_incomplete.log로 보존하고 성공 모델로 세지 않는다. 데이터4,000편·effective16·physical4/accum4·1epoch·750step schedule/250실행은 유지한다. 재시작에서는 padding을512로 고정하고25optimizer step마다 MPS synchronize/empty_cache를 호출한다. padded 영역이 늘어 dropout RNG/연산 순서는 달라질 수 있다. 단순한 길이 하나만의 인과 비교로 해석하지 않는다. 추가 단계의 시간 anchor는 초기값을 유지한다.
+
+근거로 참고한 PyTorch MPS 이슈: https://github.com/pytorch/pytorch/issues/201378 및 https://github.com/pytorch/pytorch/issues/181213 . 서로 다른 workload의 보고이며 이 Mac에서 같은 bug가 원인이라고 증명한 것은 아니다. torch.mps.current_allocated_memory와 driver memory는 측정 범위가 다르다: https://docs.pytorch.org/docs/stable/generated/torch.mps.current_allocated_memory . 캐시 정리는 학습 데이터나 목적함수를 바꾸기 위한 것이 아니라 로컬 실행을 완료하기 위한 대응이다.
+
+## 최종 내부 감사의 불확실성 — 결과를 보기 전 고정
+
+새 최종 표본에서 fixed seed17의 다음6개 차이에 문헌 단위 paired bootstrap1,000회/percentile95% 구간을 기록한다: 튜닝 frozen−최초 frozen, last2−최초 frozen, LoRA256−튜닝 full TF-IDF, LoRA512−LoRA256, 학습 attention−uniform head, 실제 관계−무작위 관계. 최종 표본 점수로 비교 대상을 고르지 않는다. 모델/설정 선택·외부 도메인의 불확실성을 포함하지 않으며 다중 비교 보정 없는 서술적 구간이다.

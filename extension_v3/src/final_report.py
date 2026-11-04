@@ -93,10 +93,13 @@ def main():
     rows += allres
     agg = []
     for group in ["bag_mean", "uniform_attention", "attention", "label_graph", "random_graph"]:
-        for split in ["test", "audit"]:
+        for split in (["test", "audit", confirmation_split] if confirmation else ["test", "audit"]):
             rr = [
-                r for r in bags if r["variant"].startswith(group + "_seed") and r["split"] == split
+                r
+                for r in bags + confirmation
+                if r["variant"].startswith(group + "_seed") and r["split"] == split
             ]
+            assert len(rr) == 3
             agg.append(
                 {
                     "variant": group + "_3seed_mean",
@@ -162,7 +165,7 @@ def main():
     fig, axs = plt.subplots(1, 2, figsize=(9, 2.8))
     groups = ["bag_mean", "uniform_attention", "attention", "label_graph", "random_graph"]
     labels = ["Bag mean LR", "Uniform head", "Attention", "Label graph", "Random graph"]
-    for ax, split in zip(axs, ["test", "audit"]):
+    for ax, split in zip(axs, ["test", confirmation_split]):
         rr = [
             next(r for r in agg if r["variant"] == n + "_3seed_mean" and r["split"] == split)
             for n in groups
@@ -176,7 +179,10 @@ def main():
         )
         ax.set_ylim(0, 1)
         ax.tick_params(axis="x", labelsize=8)
-        ax.set_title(split + " | mean +/- sample SD")
+        ax.set_title(
+            ("new internal audit" if split == "final_internal_audit1000" else split)
+            + " | mean +/- sample SD"
+        )
         ax.set_ylabel("Macro-F1")
     fig.tight_layout()
     fig.savefig(figdir / "bags.png")
@@ -225,7 +231,7 @@ def main():
         "final_internal_audit1000은 모든 모델·프롬프트를 고정한 뒤 선택한 새 내부1,000편이다. 이 결과로 재튜닝하지 않았으며 모델/정책 해시를 선택 전에 보존했다. V1 3seed 평균과 V2 seed17 한 번의 결과를 섞어 비교하지 않는다. test2,488편은 V1부터 재사용한 개발 평가다. audit1,000편은 V2에서 처음 분리한 내부 확인 표본이며 V3에서는 다시 사용했다. V3를 완전히 새로운 맹검 외부 검증으로 주장하지 않는다.",
         "",
         "## 3. 최종 일회 내부 감사 및 실제 미세조정",
-        "V2: 마지막2개 block seed17, 모든 층 LoRA seed17/42. V3: LoRA max512 seed17 추가. partial은 원본 마지막2개 block을, LoRA는 모든층에 추가한 query/value 저랭크 가중치를 task BCE로 업데이트했다. partial3epoch/LoRA1epoch 예산 안에서 tune600으로 checkpoint와 threshold를 선택했고, calibration/test/audit로 고르지 않았다. V2의 처음/마지막 block 가중치 변화는 verification.json에 있다. partial은3epoch/eager/attention dropout.1, LoRA는1epoch/SDPA/attention dropout0이므로 학습량과 구조가 함께 다른 비교다. LoRA256과 LoRA512는 이 설정을 맞췄다. V3 max512는 읽는 길이와 계산 비용이 함께 증가한다. 하나의 추가 seed 결과이므로 일반적인 우열을 증명하지 않는다.",
+        "V2: 마지막2개 block seed17, 모든 층 LoRA seed17/42. V3: LoRA max512 seed17 추가. partial은 원본 마지막2개 block을, LoRA는 모든층에 추가한 query/value 저랭크 가중치를 task BCE로 업데이트했다. partial3epoch/LoRA1epoch 예산 안에서 tune600으로 checkpoint와 threshold를 선택했고, calibration/test/audit로 고르지 않았다. V2의 처음/마지막 block 가중치 변화는 verification.json에 있다. partial은3epoch/eager/attention dropout.1, LoRA는1epoch/SDPA/attention dropout0이므로 학습량과 구조가 함께 다른 비교다. LoRA256과 LoRA512는 epoch·LR schedule·attention/dropout을 맞췄으나 physical batch와 padding·cache 관리는 다르다. 512 미완료 시도는 보존하고 fixed512 padding/25optimizer step마다 MPS cache 정리를 적용해 재시작했다. 이때 dropout RNG·연산 순서와 호스트 부하도 달라질 수 있다. V3 max512는 읽는 길이와 계산 비용이 함께 증가한다. 하나의 추가 seed 결과이므로 일반적인 우열을 증명하지 않는다.",
         "",
         "## 4. 논문 공부에서 더 확장한 문헌 bag 실험",
         "문헌을 최대4개 token window의 bag으로 표현했다. frozen encoder로 각 조각을 벡터화한 뒤 bag mean LR, 같은 학습 조건의 균등 head, 주제별 attention, 실제 관계 규제, 무작위 관계 규제를 비교했다. 균등 head와 학습 attention은 query의 학습 여부만 다르게 두고 optimizer·dropout·epoch 선택을 맞췄다. 평균 LR과 attention의 차이를 attention 하나의 효과로 해석하지 않는다. 각 조건을3개 학습 부분표본에서 반복했다. 관계 규제는 classifier weight를 가깝게 하는 후속 구성이고, T-MDML의 distance metric/triplet 학습 재현은 아니다.",
@@ -285,6 +291,23 @@ def main():
         "- probability calibration: https://proceedings.mlr.press/v70/guo17a.html",
         "- T-MDML AAAI2025: 사용자가 제공한 Multi-label_AAAI.pdf 원문.",
     ]
+    uncertainty_path = V3 / "results/final_audit_uncertainty.json"
+    if uncertainty_path.exists():
+        uncertainty = read(uncertainty_path)
+        lines += [
+            "",
+            "## 최종 내부 감사의 고정 비교와 불확실성",
+            "| 미리 정한 비교 | Macro-F1 차이 | 문헌 paired bootstrap95% 구간 |",
+            "|---|---:|---|",
+        ]
+        for r in uncertainty["comparisons"]:
+            lo, hi = r["paired_document_bootstrap_ci95"]
+            lines.append(
+                f"| {r['comparison']} | {r['delta_macro_f1']:.4f} | [{lo:.4f}, {hi:.4f}] |"
+            )
+        lines += [
+            f"라벨별 support: {uncertainty['label_support']}. 문헌 재표집만의 불확실성이며 모델/설정 선택·도메인 변화는 포함하지 않는다. 다중 비교 보정 없는 서술적 구간이고 전반적 우월성의 검정으로 해석하지 않는다."
+        ]
     if llm_analysis:
         lines += [
             "",

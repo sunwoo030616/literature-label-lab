@@ -52,7 +52,7 @@ class AttentionHead(nn.Module):
         return logits, attention
 
 
-def make_bags(rows, tok, model, device):
+def make_bags(rows, tok, model, device, profile_path=None):
     allchunks = []
     mapping = []
     texts = []
@@ -66,6 +66,7 @@ def make_bags(rows, tok, model, device):
         texts.append([tok.decode(c) for c in chosen])
     embeddings = []
     start = time.perf_counter()
+    max_driver_mb_observed = 0
     with torch.inference_mode():
         for i in range(0, len(allchunks), 32):
             x = tok.pad(
@@ -76,6 +77,10 @@ def make_bags(rows, tok, model, device):
             h = model(**x).last_hidden_state
             m = x["attention_mask"].unsqueeze(-1)
             embeddings.append(((h * m).sum(1) / m.sum(1).clamp(min=1)).cpu().numpy())
+            if device == "mps":
+                max_driver_mb_observed = max(
+                    max_driver_mb_observed, torch.mps.driver_allocated_memory() / 2**20
+                )
             if i % 512 == 0:
                 print(
                     "bag chunks",
@@ -86,12 +91,29 @@ def make_bags(rows, tok, model, device):
                     round(time.perf_counter() - start, 1),
                     flush=True,
                 )
+    embedding_loop_seconds = time.perf_counter() - start
     e = np.concatenate(embeddings)
     out = np.zeros((len(rows), 4, 768), np.float32)
     mask = np.zeros((len(rows), 4), bool)
     for i, (start, count) in enumerate(mapping):
         out[i, :count] = e[start : start + count]
         mask[i, :count] = True
+    if profile_path is not None:
+        profile_path.write_text(
+            json.dumps(
+                {
+                    "device": device,
+                    "documents": len(rows),
+                    "windows": len(allchunks),
+                    "batch": 32,
+                    "max_window_tokens": 128,
+                    "embedding_loop_seconds": embedding_loop_seconds,
+                    "max_driver_mb_observed_after_batches": max_driver_mb_observed,
+                    "note": "Driver memory includes allocator caches; sampled after each batch, not a true instantaneous peak. Host desktop load is not controlled. Tokenization and feature compression are outside the timed embedding loop.",
+                },
+                indent=2,
+            )
+        )
     return out, mask, texts
 
 
@@ -174,7 +196,13 @@ def main():
         model = AutoModel.from_pretrained(ROOT / "models/biomedbert", local_files_only=True).eval()
         device = "mps" if torch.backends.mps.is_available() else "cpu"
         model.to(device)
-        bags, mask, texts = make_bags(allrows, tok, model, device)
+        encoding_start = time.perf_counter()
+        bags, mask, texts = make_bags(
+            allrows, tok, model, device, V3 / "results/bag_encoding_profile.json"
+        )
+        profile = json.loads((V3 / "results/bag_encoding_profile.json").read_text())
+        profile["tokenization_and_embedding_seconds"] = time.perf_counter() - encoding_start
+        (V3 / "results/bag_encoding_profile.json").write_text(json.dumps(profile, indent=2))
         np.savez_compressed(cache, bags=bags, mask=mask)
         cache_manifest.write_text(json.dumps(provenance, indent=2))
         dump("bag_windows.json", texts)

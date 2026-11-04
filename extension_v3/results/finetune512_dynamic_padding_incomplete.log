@@ -1,0 +1,23 @@
+TRAINING DEVICE mps
+W1104 14:34:04.209000 99938 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 34978.90it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+lora512_seed17 epoch 1 batch 50 loss 0.75615 elapsed 69.3
+lora512_seed17 epoch 1 batch 100 loss 0.69176 elapsed 142.9
+lora512_seed17 epoch 1 batch 150 loss 0.60645 elapsed 234.9
+lora512_seed17 epoch 1 batch 200 loss 0.55509 elapsed 443.4
+lora512_seed17 epoch 1 batch 250 loss 0.51468 elapsed 763.2

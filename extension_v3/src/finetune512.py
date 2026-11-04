@@ -79,7 +79,10 @@ def tokens(rows, tok, maxlen=512):
 
 def batch_tokens(enc, ids, tok, device):
     return tok.pad(
-        [{k: enc[k][int(i)] for k in enc.keys()} for i in ids], padding=True, return_tensors="pt"
+        [{k: enc[k][int(i)] for k in enc.keys()} for i in ids],
+        padding="max_length",
+        max_length=512,
+        return_tensors="pt",
     ).to(device)
 
 
@@ -169,6 +172,16 @@ def train_one(mode, seed, trainenc, devenc, y, tune, tok, device):
                 scheduler.step()
                 opt.zero_grad(set_to_none=True)
                 global_step += 1
+                if device == "mps" and global_step % 25 == 0:
+                    torch.mps.synchronize()
+                    torch.mps.empty_cache()
+                    print(
+                        "MPS cache release",
+                        global_step,
+                        "driver_mb",
+                        round(torch.mps.driver_allocated_memory() / 2**20, 1),
+                        flush=True,
+                    )
             if (step + 1) % 50 == 0:
                 print(
                     name,
@@ -206,6 +219,8 @@ def train_one(mode, seed, trainenc, devenc, y, tune, tok, device):
                 "tune_macro_f1": best,
                 "trainable_parameters": nparams,
                 "physical_batch": physical_batch,
+                "padding_strategy": "fixed512",
+                "mps_cache_release_every_optimizer_steps": 25,
                 "gradient_accumulation": accum,
                 "effective_batch": 16,
                 "max_length": 512,

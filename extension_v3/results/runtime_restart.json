@@ -1,0 +1,9 @@
+{
+  "pid": 99938,
+  "parent_pid": 86644,
+  "action": "terminate only this incomplete training subprocess after verifying exact script path",
+  "reason": "Severe host swap and worsening per50batch time; no512 validation/test results exist. Retry fixed512padding and periodic MPS cache release, preserve data/epoch/effectivebatch/LR schedule. Backend issue is hypothesis, not a demonstrated root cause.",
+  "monotonic_seconds": 663191.968378833,
+  "sigterm_followed_by_kernel_exit_cleanup": true,
+  "confirmed_exit": true
+}
