@@ -23,3 +23,5 @@ extension_extras.log
 *.sqlite3-wal
 
 v3_pipeline_retry.log
+
+v3_pipeline_resume.log

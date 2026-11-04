@@ -52,6 +52,13 @@ class AttentionHead(nn.Module):
         return logits, attention
 
 
+def bert_chunk(content_ids, tok):
+    """Pinned single-sequence BERT layout; tested against tokenizer-native encoding."""
+    assert len(content_ids) <= 126
+    assert tok.cls_token_id is not None and tok.sep_token_id is not None
+    return [tok.cls_token_id] + list(content_ids) + [tok.sep_token_id]
+
+
 def make_bags(rows, tok, model, device, profile_path=None):
     allchunks = []
     mapping = []
@@ -62,7 +69,7 @@ def make_bags(rows, tok, model, device, profile_path=None):
         selected = np.linspace(0, len(chunks) - 1, min(4, len(chunks)), dtype=int)
         mapping.append((len(allchunks), len(selected)))
         chosen = [chunks[i] for i in selected]
-        allchunks.extend([tok.build_inputs_with_special_tokens(c) for c in chosen])
+        allchunks.extend([bert_chunk(c, tok) for c in chosen])
         texts.append([tok.decode(c) for c in chosen])
     embeddings = []
     start = time.perf_counter()
@@ -214,6 +221,15 @@ def main():
         gc.collect()
         if device == "mps":
             torch.mps.empty_cache()
+    dump(
+        "bag_feature_provenance.json",
+        {
+            **provenance,
+            "shape": list(bags.shape),
+            "valid_windows": int(mask.sum()),
+            "dtype": str(bags.dtype),
+        },
+    )
     xs = {}
     ms = {}
     start = 0

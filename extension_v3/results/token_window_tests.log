@@ -1,0 +1,7 @@
+test_full_window_and_padding_mask (__main__.TokenWindowTests.test_full_window_and_padding_mask) ... ok
+test_native_single_sequence_layout (__main__.TokenWindowTests.test_native_single_sequence_layout) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.022s
+
+OK

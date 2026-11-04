@@ -1,0 +1,29 @@
+W1104 15:45:46.104000 14768 kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 35370.22it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Traceback (most recent call last):
+  File "/Users/filledu/Documents/ChatGPT/선우/literature-label-lab/extension_v3/src/bag_model.py", line 342, in <module>
+    main()
+  File "/Users/filledu/Documents/ChatGPT/선우/literature-label-lab/extension_v3/src/bag_model.py", line 204, in main
+    bags, mask, texts = make_bags(
+                        ^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/literature-label-lab/extension_v3/src/bag_model.py", line 65, in make_bags
+    allchunks.extend([tok.build_inputs_with_special_tokens(c) for c in chosen])
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/filledu/Documents/ChatGPT/선우/kkbb-ddook-ddak-back/.venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py", line 1335, in __getattr__
+    raise AttributeError(f"{self.__class__.__name__} has no attribute {key}")
+AttributeError: BertTokenizer has no attribute build_inputs_with_special_tokens
