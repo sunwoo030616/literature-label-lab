@@ -1,0 +1,7 @@
+graph tuned 17 feature_graph 15 2
+graph tuned 17 random_neighbors 30 2
+graph tuned 42 feature_graph 5 2
+graph tuned 42 random_neighbors 5 2
+graph tuned 73 feature_graph 5 0.5
+graph tuned 73 random_neighbors 15 0.5
+GRAPH COMPLETE [(17, 'feature_graph', 0.7494487364429625), (17, 'random_neighbors', 0.7466473186748279), (42, 'feature_graph', 0.7538503188955107), (42, 'random_neighbors', 0.7366588193546147), (73, 'feature_graph', 0.7381836719736106), (73, 'random_neighbors', 0.7439488647890515)]

@@ -1,0 +1,91 @@
+{
+  "exact_match_fixed_by_relation": 158,
+  "exact_match_broken_by_relation": 100,
+  "documents_with_changed_labels": 472,
+  "per_label_counts": {
+    "Treatment": {
+      "biomedbert": {
+        "tp": 744,
+        "fp": 114,
+        "fn": 285
+      },
+      "relation": {
+        "tp": 819,
+        "fp": 173,
+        "fn": 210
+      }
+    },
+    "Diagnosis": {
+      "biomedbert": {
+        "tp": 526,
+        "fp": 134,
+        "fn": 193
+      },
+      "relation": {
+        "tp": 540,
+        "fp": 148,
+        "fn": 179
+      }
+    },
+    "Prevention": {
+      "biomedbert": {
+        "tp": 807,
+        "fp": 120,
+        "fn": 117
+      },
+      "relation": {
+        "tp": 824,
+        "fp": 126,
+        "fn": 100
+      }
+    },
+    "Mechanism": {
+      "biomedbert": {
+        "tp": 458,
+        "fp": 91,
+        "fn": 105
+      },
+      "relation": {
+        "tp": 451,
+        "fp": 59,
+        "fn": 112
+      }
+    },
+    "Transmission": {
+      "biomedbert": {
+        "tp": 44,
+        "fp": 30,
+        "fn": 84
+      },
+      "relation": {
+        "tp": 45,
+        "fp": 30,
+        "fn": 83
+      }
+    },
+    "Epidemic Forecasting": {
+      "biomedbert": {
+        "tp": 32,
+        "fp": 20,
+        "fn": 9
+      },
+      "relation": {
+        "tp": 32,
+        "fp": 29,
+        "fn": 9
+      }
+    },
+    "Case Report": {
+      "biomedbert": {
+        "tp": 158,
+        "fp": 11,
+        "fn": 37
+      },
+      "relation": {
+        "tp": 170,
+        "fp": 19,
+        "fn": 25
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "device": "mps",
+  "elapsed_seconds": 391.0511213330319,
+  "samples": 8488,
+  "dimension": 768,
+  "max_length": 256,
+  "pooling": "attention-mask mean, frozen encoder",
+  "cache_used": false,
+  "model_weights_sha256": "d513412d396cecec5f67936ac871b4aaf1178dfb5193776e790fd2b28bba240c",
+  "torch": "2.15.0",
+  "transformers": "5.22.1",
+  "sklearn": "1.9.1",
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "model_revision": "d673b8835373c6fa116d6d8006b33d48734e305d"
+}

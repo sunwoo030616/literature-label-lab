@@ -1,0 +1,203 @@
+[
+  {
+    "check": "health",
+    "status": 200
+  },
+  {
+    "check": "invalid_input",
+    "status": 422
+  },
+  {
+    "check": "controlled_busy",
+    "status": 429
+  },
+  {
+    "check": "actual_inference",
+    "pmid": "34336157",
+    "status": 200,
+    "gold": [
+      "Treatment"
+    ],
+    "response": {
+      "predicted_topics": [
+        "Treatment",
+        "Diagnosis"
+      ],
+      "scores": {
+        "Treatment": 1.0,
+        "Diagnosis": 0.6495275294186051,
+        "Prevention": 0.0,
+        "Mechanism": 0.45926132700074707,
+        "Transmission": 0.0,
+        "Epidemic Forecasting": 0.0,
+        "Case Report": 0.0
+      },
+      "review_recommended": false,
+      "review_policy_calibration_target_met": true,
+      "relation_strength": 2,
+      "neighbors": [
+        {
+          "pmid": "32582302",
+          "title": "Lack of Association Between Genetic Variants at ACE2 and TMPRSS2 Genes Involved in SARS-CoV-2 Infection and Human Quantitative Phenotypes.",
+          "labels": [
+            "Mechanism"
+          ],
+          "cosine_similarity": 0.9925004243850708,
+          "annotation_source": "official training annotations"
+        },
+        {
+          "pmid": "32708264",
+          "title": "Clinico-Biological Features and Clonal Hematopoiesis in Patients with Severe COVID-19.",
+          "labels": [
+            "Diagnosis",
+            "Treatment"
+          ],
+          "cosine_similarity": 0.9923237562179565,
+          "annotation_source": "official training annotations"
+        },
+        {
+          "pmid": "32768696",
+          "title": "Simultaneous circulation of COVID-19 and flu in Italy: Potential combined effects on the risk of death?",
+          "labels": [
+            "Prevention",
+            "Treatment"
+          ],
+          "cosine_similarity": 0.9922873973846436,
+          "annotation_source": "official training annotations"
+        }
+      ],
+      "elapsed_seconds": 0.9774793330579996,
+      "limitations": [
+        "Scores are not calibrated probabilities.",
+        "Neighbors are similarities, not evidence explaining predictions.",
+        "Trained for COVID-19 literature; unrelated text may receive incorrect labels.",
+        "Input is truncated to 256 tokens.",
+        "Human review is recommended; this is not medical guidance."
+      ]
+    }
+  },
+  {
+    "check": "actual_inference",
+    "pmid": "34131026",
+    "status": 200,
+    "gold": [
+      "Prevention"
+    ],
+    "response": {
+      "predicted_topics": [
+        "Prevention"
+      ],
+      "scores": {
+        "Treatment": 0.0,
+        "Diagnosis": 0.0,
+        "Prevention": 1.0,
+        "Mechanism": 0.0,
+        "Transmission": 0.03165327860493371,
+        "Epidemic Forecasting": 0.048513917541356776,
+        "Case Report": 0.044955922299437644
+      },
+      "review_recommended": false,
+      "review_policy_calibration_target_met": true,
+      "relation_strength": 2,
+      "neighbors": [
+        {
+          "pmid": "32678672",
+          "title": "The Effectiveness of Virtual Training on the MiniMed 670G System in People with Type 1 Diabetes During the COVID-19 Pandemic.",
+          "labels": [
+            "Prevention"
+          ],
+          "cosine_similarity": 0.9910045862197876,
+          "annotation_source": "official training annotations"
+        },
+        {
+          "pmid": "32930389",
+          "title": "Stemming the Tide of COVID-19 Infections in Massachusetts Nursing Homes.",
+          "labels": [
+            "Prevention"
+          ],
+          "cosine_similarity": 0.9896968603134155,
+          "annotation_source": "official training annotations"
+        },
+        {
+          "pmid": "32530813",
+          "title": "The Story of #GetMePPE and GetUsPPE.org to Mobilize Health Care Response to COVID-19 : Rapidly Deploying Digital Tools for Better Health Care.",
+          "labels": [
+            "Prevention"
+          ],
+          "cosine_similarity": 0.9894446134567261,
+          "annotation_source": "official training annotations"
+        }
+      ],
+      "elapsed_seconds": 0.08106779202353209,
+      "limitations": [
+        "Scores are not calibrated probabilities.",
+        "Neighbors are similarities, not evidence explaining predictions.",
+        "Trained for COVID-19 literature; unrelated text may receive incorrect labels.",
+        "Input is truncated to 256 tokens.",
+        "Human review is recommended; this is not medical guidance."
+      ]
+    }
+  },
+  {
+    "check": "actual_inference",
+    "pmid": "33566839",
+    "status": 200,
+    "gold": [
+      "Prevention"
+    ],
+    "response": {
+      "predicted_topics": [
+        "Prevention"
+      ],
+      "scores": {
+        "Treatment": 0.0,
+        "Diagnosis": 0.0,
+        "Prevention": 1.0,
+        "Mechanism": 0.0,
+        "Transmission": 0.08555622266721649,
+        "Epidemic Forecasting": 0.10265865572675714,
+        "Case Report": 0.02869697360911578
+      },
+      "review_recommended": false,
+      "review_policy_calibration_target_met": true,
+      "relation_strength": 2,
+      "neighbors": [
+        {
+          "pmid": "32834921",
+          "title": "Beyond just \"flattening the curve\": Optimal control of epidemics with purely non-pharmaceutical interventions.",
+          "labels": [
+            "Prevention"
+          ],
+          "cosine_similarity": 0.9926812648773193,
+          "annotation_source": "official training annotations"
+        },
+        {
+          "pmid": "32962383",
+          "title": "Mathematical modeling and cellular automata simulation of infectious disease dynamics: Applications to the understanding of herd immunity.",
+          "labels": [
+            "Prevention"
+          ],
+          "cosine_similarity": 0.9925383925437927,
+          "annotation_source": "official training annotations"
+        },
+        {
+          "pmid": "33057438",
+          "title": "A model-based evaluation of the efficacy of COVID-19 social distancing, testing and hospital triage policies.",
+          "labels": [
+            "Prevention"
+          ],
+          "cosine_similarity": 0.9920327067375183,
+          "annotation_source": "official training annotations"
+        }
+      ],
+      "elapsed_seconds": 0.09321683400776237,
+      "limitations": [
+        "Scores are not calibrated probabilities.",
+        "Neighbors are similarities, not evidence explaining predictions.",
+        "Trained for COVID-19 literature; unrelated text may receive incorrect labels.",
+        "Input is truncated to 256 tokens.",
+        "Human review is recommended; this is not medical guidance."
+      ]
+    }
+  }
+]

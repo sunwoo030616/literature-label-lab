@@ -1,0 +1,11 @@
+numpy
+scipy
+scikit-learn
+transformers
+torch
+fastapi
+uvicorn
+joblib
+matplotlib
+psutil
+reportlab

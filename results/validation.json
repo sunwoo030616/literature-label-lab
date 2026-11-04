@@ -1,0 +1,12 @@
+{
+  "integrity_tests_passed": 5,
+  "api_smoke_checks_passed": 6,
+  "main_conditions": 24,
+  "graph_conditions": 6,
+  "paid_api_used": false,
+  "original_project_sources_modified": false,
+  "split_integrity_passed": true,
+  "graph_result_integrity_passed": true,
+  "portfolio_pdf_pages": 3,
+  "portfolio_render_visually_checked": true
+}

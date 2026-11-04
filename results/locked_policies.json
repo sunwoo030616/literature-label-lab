@@ -1,0 +1,6194 @@
+[
+  {
+    "seed": 17,
+    "method": "tfidf",
+    "alpha": 0,
+    "thresholds": [
+      0.5000000000000001,
+      0.30000000000000004,
+      0.40000000000000013,
+      0.30000000000000004,
+      0.15000000000000002,
+      0.1,
+      0.20000000000000004
+    ],
+    "tune_macro_f1": 0.803271281596791,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.0,
+        "coverage": 1.0,
+        "sample_f1": 0.8547499999999999
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8547499999999999
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.935,
+          "sample_f1": 0.8645276292335117
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.875,
+          "sample_f1": 0.8863809523809524
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.8375,
+          "sample_f1": 0.8977114427860697
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.7725,
+          "sample_f1": 0.9176914778856526
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.7275,
+          "sample_f1": 0.9240549828178694
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.6825,
+          "sample_f1": 0.9283272283272284
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.6075,
+          "sample_f1": 0.933196159122085
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.4575,
+          "sample_f1": 0.937704918032787
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.0075,
+          "sample_f1": 0.8888888888888888
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.860093896713615,
+      "macro_f1": 0.7982213435759311,
+      "hamming_loss": 0.053214285714285714,
+      "subset_accuracy": 0.7225,
+      "macro_ap": 0.8843941656212829,
+      "multi_topic_recall": 0.7896678966789668,
+      "predicted_labels_mean": 1.31,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.9344262295081968,
+          "recall": 0.7808219178082192,
+          "f1": 0.8507462686567164,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.8144329896907216,
+          "recall": 0.8315789473684211,
+          "f1": 0.8229166666666666,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8609625668449198,
+          "recall": 0.9640718562874252,
+          "f1": 0.9096045197740112,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8591549295774648,
+          "recall": 0.9104477611940298,
+          "f1": 0.8840579710144928,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.8571428571428571,
+          "recall": 0.375,
+          "f1": 0.5217391304347826,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.8181818181818182,
+          "recall": 0.6923076923076923,
+          "f1": 0.75,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9655172413793104,
+          "recall": 0.7567567567567568,
+          "f1": 0.8484848484848485,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "method": "biomedbert",
+    "alpha": 0,
+    "thresholds": [
+      0.7500000000000002,
+      0.5000000000000001,
+      0.7500000000000002,
+      0.3500000000000001,
+      0.40000000000000013,
+      0.3500000000000001,
+      0.6500000000000001
+    ],
+    "tune_macro_f1": 0.7762705509949591,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.2,
+        "coverage": 0.7925,
+        "sample_f1": 0.858254468980021
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8163333333333332
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9875,
+          "sample_f1": 0.8194092827004218
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9775,
+          "sample_f1": 0.8209718670076727
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9675,
+          "sample_f1": 0.8242894056847544
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.96,
+          "sample_f1": 0.8260416666666665
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9525,
+          "sample_f1": 0.8255468066491688
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.945,
+          "sample_f1": 0.8250440917107584
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.9275,
+          "sample_f1": 0.8294699011680144
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.92,
+          "sample_f1": 0.8307971014492752
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.915,
+          "sample_f1": 0.8353369763205828
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.905,
+          "sample_f1": 0.8376611418047882
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.9,
+          "sample_f1": 0.837685185185185
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.9,
+          "sample_f1": 0.837685185185185
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8925,
+          "sample_f1": 0.8391223155929038
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.88,
+          "sample_f1": 0.8392045454545454
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.8675,
+          "sample_f1": 0.8416906820365033
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.855,
+          "sample_f1": 0.84093567251462
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.8425,
+          "sample_f1": 0.844114737883284
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.825,
+          "sample_f1": 0.8488888888888889
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.815,
+          "sample_f1": 0.8496932515337423
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.7925,
+          "sample_f1": 0.858254468980021
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.7825,
+          "sample_f1": 0.8638977635782746
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.7775,
+          "sample_f1": 0.865166130760986
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.76,
+          "sample_f1": 0.8686403508771928
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.7175,
+          "sample_f1": 0.8809523809523809
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.18,
+          "sample_f1": 0.7407407407407408
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.175,
+          "sample_f1": 0.7333333333333333
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.165,
+          "sample_f1": 0.7373737373737373
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.165,
+          "sample_f1": 0.7373737373737373
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.1525,
+          "sample_f1": 0.7595628415300546
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.15,
+          "sample_f1": 0.7611111111111111
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.15,
+          "sample_f1": 0.7611111111111111
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.145,
+          "sample_f1": 0.7614942528735633
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.145,
+          "sample_f1": 0.7614942528735633
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.1225,
+          "sample_f1": 0.7653061224489796
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.828436018957346,
+      "macro_f1": 0.7450246257017642,
+      "hamming_loss": 0.06464285714285714,
+      "subset_accuracy": 0.6675,
+      "macro_ap": 0.8158901863710123,
+      "multi_topic_recall": 0.7453874538745388,
+      "predicted_labels_mean": 1.285,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8769230769230769,
+          "recall": 0.7808219178082192,
+          "f1": 0.8260869565217391,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7894736842105263,
+          "recall": 0.7894736842105263,
+          "f1": 0.7894736842105263,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8994082840236687,
+          "recall": 0.9101796407185628,
+          "f1": 0.9047619047619048,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8055555555555556,
+          "recall": 0.8656716417910447,
+          "f1": 0.8345323741007195,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.42857142857142855,
+          "recall": 0.375,
+          "f1": 0.4,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.875,
+          "recall": 0.5384615384615384,
+          "f1": 0.6666666666666666,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9615384615384616,
+          "recall": 0.6756756756756757,
+          "f1": 0.7936507936507936,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "method": "relation",
+    "alpha": 2,
+    "thresholds": [
+      0.7500000000000002,
+      0.5000000000000001,
+      0.7000000000000002,
+      0.7000000000000002,
+      0.40000000000000013,
+      0.25000000000000006,
+      0.40000000000000013
+    ],
+    "tune_macro_f1": 0.777319251027053,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.05,
+        "coverage": 0.9375,
+        "sample_f1": 0.8512888888888888
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8320833333333333
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.99,
+          "sample_f1": 0.8362794612794612
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.98,
+          "sample_f1": 0.8376700680272108
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9575,
+          "sample_f1": 0.8460400348128807
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.95,
+          "sample_f1": 0.8483333333333334
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9375,
+          "sample_f1": 0.8512888888888888
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.93,
+          "sample_f1": 0.8554659498207884
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.915,
+          "sample_f1": 0.8590163934426229
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.9075,
+          "sample_f1": 0.8647382920110193
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.8975,
+          "sample_f1": 0.8669452181987002
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.88,
+          "sample_f1": 0.8756628787878786
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.86,
+          "sample_f1": 0.8830426356589147
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.845,
+          "sample_f1": 0.8858974358974357
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8225,
+          "sample_f1": 0.8884498480243161
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.8125,
+          "sample_f1": 0.8896410256410257
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.7725,
+          "sample_f1": 0.8947141316073354
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.75,
+          "sample_f1": 0.8966666666666666
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.7325,
+          "sample_f1": 0.9021615472127419
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.7225,
+          "sample_f1": 0.9066897347174163
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.7075,
+          "sample_f1": 0.9106007067137809
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.64,
+          "sample_f1": 0.9037760416666667
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.405,
+          "sample_f1": 0.8728395061728396
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.37,
+          "sample_f1": 0.8788288288288288
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.355,
+          "sample_f1": 0.8842723004694836
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.34,
+          "sample_f1": 0.8975490196078431
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.13,
+          "sample_f1": 0.8999999999999999
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0075,
+          "sample_f1": 0.7777777777777777
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.005,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.005,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8414179104477612,
+      "macro_f1": 0.7628332915229697,
+      "hamming_loss": 0.060714285714285714,
+      "subset_accuracy": 0.6925,
+      "macro_ap": 0.7696891806790755,
+      "multi_topic_recall": 0.7822878228782287,
+      "predicted_labels_mean": 1.3275,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8541666666666666,
+          "recall": 0.8424657534246576,
+          "f1": 0.8482758620689655,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7777777777777778,
+          "recall": 0.8105263157894737,
+          "f1": 0.7938144329896907,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.9171597633136095,
+          "recall": 0.9281437125748503,
+          "f1": 0.9226190476190477,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8181818181818182,
+          "recall": 0.8059701492537313,
+          "f1": 0.8120300751879699,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.42857142857142855,
+          "recall": 0.375,
+          "f1": 0.4,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.8888888888888888,
+          "recall": 0.6153846153846154,
+          "f1": 0.7272727272727273,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9333333333333333,
+          "recall": 0.7567567567567568,
+          "f1": 0.835820895522388,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "method": "shuffled_0",
+    "alpha": 0,
+    "thresholds": [
+      0.7500000000000002,
+      0.5000000000000001,
+      0.7500000000000002,
+      0.3500000000000001,
+      0.40000000000000013,
+      0.3500000000000001,
+      0.6500000000000001
+    ],
+    "tune_macro_f1": 0.7762705509949591,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.2,
+        "coverage": 0.7925,
+        "sample_f1": 0.858254468980021
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8163333333333332
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9875,
+          "sample_f1": 0.8194092827004218
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9775,
+          "sample_f1": 0.8209718670076727
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9675,
+          "sample_f1": 0.8242894056847544
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.96,
+          "sample_f1": 0.8260416666666665
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9525,
+          "sample_f1": 0.8255468066491688
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.945,
+          "sample_f1": 0.8250440917107584
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.9275,
+          "sample_f1": 0.8294699011680144
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.92,
+          "sample_f1": 0.8307971014492752
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.915,
+          "sample_f1": 0.8353369763205828
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.905,
+          "sample_f1": 0.8376611418047882
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.9,
+          "sample_f1": 0.837685185185185
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.9,
+          "sample_f1": 0.837685185185185
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8925,
+          "sample_f1": 0.8391223155929038
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.88,
+          "sample_f1": 0.8392045454545454
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.8675,
+          "sample_f1": 0.8416906820365033
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.855,
+          "sample_f1": 0.84093567251462
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.8425,
+          "sample_f1": 0.844114737883284
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.825,
+          "sample_f1": 0.8488888888888889
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.815,
+          "sample_f1": 0.8496932515337423
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.7925,
+          "sample_f1": 0.858254468980021
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.7825,
+          "sample_f1": 0.8638977635782746
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.7775,
+          "sample_f1": 0.865166130760986
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.76,
+          "sample_f1": 0.8686403508771928
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.7175,
+          "sample_f1": 0.8809523809523809
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.18,
+          "sample_f1": 0.7407407407407408
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.175,
+          "sample_f1": 0.7333333333333333
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.165,
+          "sample_f1": 0.7373737373737373
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.165,
+          "sample_f1": 0.7373737373737373
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.1525,
+          "sample_f1": 0.7595628415300546
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.15,
+          "sample_f1": 0.7611111111111111
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.15,
+          "sample_f1": 0.7611111111111111
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.145,
+          "sample_f1": 0.7614942528735633
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.145,
+          "sample_f1": 0.7614942528735633
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.1225,
+          "sample_f1": 0.7653061224489796
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.828436018957346,
+      "macro_f1": 0.7450246257017642,
+      "hamming_loss": 0.06464285714285714,
+      "subset_accuracy": 0.6675,
+      "macro_ap": 0.8158901863710123,
+      "multi_topic_recall": 0.7453874538745388,
+      "predicted_labels_mean": 1.285,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8769230769230769,
+          "recall": 0.7808219178082192,
+          "f1": 0.8260869565217391,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7894736842105263,
+          "recall": 0.7894736842105263,
+          "f1": 0.7894736842105263,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8994082840236687,
+          "recall": 0.9101796407185628,
+          "f1": 0.9047619047619048,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8055555555555556,
+          "recall": 0.8656716417910447,
+          "f1": 0.8345323741007195,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.42857142857142855,
+          "recall": 0.375,
+          "f1": 0.4,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.875,
+          "recall": 0.5384615384615384,
+          "f1": 0.6666666666666666,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9615384615384616,
+          "recall": 0.6756756756756757,
+          "f1": 0.7936507936507936,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "method": "shuffled_1",
+    "alpha": 0,
+    "thresholds": [
+      0.7500000000000002,
+      0.5000000000000001,
+      0.7500000000000002,
+      0.3500000000000001,
+      0.40000000000000013,
+      0.3500000000000001,
+      0.6500000000000001
+    ],
+    "tune_macro_f1": 0.7762705509949591,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.2,
+        "coverage": 0.7925,
+        "sample_f1": 0.858254468980021
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8163333333333332
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9875,
+          "sample_f1": 0.8194092827004218
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9775,
+          "sample_f1": 0.8209718670076727
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9675,
+          "sample_f1": 0.8242894056847544
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.96,
+          "sample_f1": 0.8260416666666665
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9525,
+          "sample_f1": 0.8255468066491688
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.945,
+          "sample_f1": 0.8250440917107584
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.9275,
+          "sample_f1": 0.8294699011680144
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.92,
+          "sample_f1": 0.8307971014492752
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.915,
+          "sample_f1": 0.8353369763205828
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.905,
+          "sample_f1": 0.8376611418047882
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.9,
+          "sample_f1": 0.837685185185185
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.9,
+          "sample_f1": 0.837685185185185
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8925,
+          "sample_f1": 0.8391223155929038
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.88,
+          "sample_f1": 0.8392045454545454
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.8675,
+          "sample_f1": 0.8416906820365033
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.855,
+          "sample_f1": 0.84093567251462
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.8425,
+          "sample_f1": 0.844114737883284
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.825,
+          "sample_f1": 0.8488888888888889
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.815,
+          "sample_f1": 0.8496932515337423
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.7925,
+          "sample_f1": 0.858254468980021
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.7825,
+          "sample_f1": 0.8638977635782746
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.7775,
+          "sample_f1": 0.865166130760986
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.76,
+          "sample_f1": 0.8686403508771928
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.7175,
+          "sample_f1": 0.8809523809523809
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.18,
+          "sample_f1": 0.7407407407407408
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.175,
+          "sample_f1": 0.7333333333333333
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.165,
+          "sample_f1": 0.7373737373737373
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.165,
+          "sample_f1": 0.7373737373737373
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.1525,
+          "sample_f1": 0.7595628415300546
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.15,
+          "sample_f1": 0.7611111111111111
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.15,
+          "sample_f1": 0.7611111111111111
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.145,
+          "sample_f1": 0.7614942528735633
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.145,
+          "sample_f1": 0.7614942528735633
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.1225,
+          "sample_f1": 0.7653061224489796
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.828436018957346,
+      "macro_f1": 0.7450246257017642,
+      "hamming_loss": 0.06464285714285714,
+      "subset_accuracy": 0.6675,
+      "macro_ap": 0.8158901863710123,
+      "multi_topic_recall": 0.7453874538745388,
+      "predicted_labels_mean": 1.285,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8769230769230769,
+          "recall": 0.7808219178082192,
+          "f1": 0.8260869565217391,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7894736842105263,
+          "recall": 0.7894736842105263,
+          "f1": 0.7894736842105263,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8994082840236687,
+          "recall": 0.9101796407185628,
+          "f1": 0.9047619047619048,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8055555555555556,
+          "recall": 0.8656716417910447,
+          "f1": 0.8345323741007195,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.42857142857142855,
+          "recall": 0.375,
+          "f1": 0.4,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.875,
+          "recall": 0.5384615384615384,
+          "f1": 0.6666666666666666,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9615384615384616,
+          "recall": 0.6756756756756757,
+          "f1": 0.7936507936507936,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "method": "shuffled_2",
+    "alpha": 0.25,
+    "thresholds": [
+      0.7500000000000002,
+      0.40000000000000013,
+      0.7000000000000002,
+      0.3500000000000001,
+      0.3500000000000001,
+      0.3500000000000001,
+      0.6500000000000001
+    ],
+    "tune_macro_f1": 0.7789604992088547,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.11,
+        "coverage": 0.8725,
+        "sample_f1": 0.8527220630372494
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8141666666666667
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9925,
+          "sample_f1": 0.8160369437447523
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9825,
+          "sample_f1": 0.8171331636980492
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9725,
+          "sample_f1": 0.8212510711225365
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.96,
+          "sample_f1": 0.8247395833333333
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.945,
+          "sample_f1": 0.8272486772486772
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.9325,
+          "sample_f1": 0.835656836461126
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.9225,
+          "sample_f1": 0.8383920505871726
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.9125,
+          "sample_f1": 0.8426484018264838
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.9025,
+          "sample_f1": 0.8464450600184672
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8925,
+          "sample_f1": 0.8475256769374416
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.8725,
+          "sample_f1": 0.8527220630372494
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.855,
+          "sample_f1": 0.8570175438596492
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.85,
+          "sample_f1": 0.8581372549019607
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.8475,
+          "sample_f1": 0.8577187807276302
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.845,
+          "sample_f1": 0.8572978303747534
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.835,
+          "sample_f1": 0.8595808383233534
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.83,
+          "sample_f1": 0.8587349397590363
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.8175,
+          "sample_f1": 0.8622833843017328
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.8075,
+          "sample_f1": 0.8657378740970072
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.7975,
+          "sample_f1": 0.8688610240334377
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.79,
+          "sample_f1": 0.8718354430379747
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.77,
+          "sample_f1": 0.871969696969697
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.755,
+          "sample_f1": 0.8771523178807946
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.725,
+          "sample_f1": 0.882183908045977
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.5025,
+          "sample_f1": 0.8771144278606964
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.485,
+          "sample_f1": 0.877147766323024
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.47,
+          "sample_f1": 0.8856382978723404
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.4475,
+          "sample_f1": 0.898510242085661
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.42,
+          "sample_f1": 0.9136904761904762
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.105,
+          "sample_f1": 0.8412698412698412
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0775,
+          "sample_f1": 0.8064516129032258
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.075,
+          "sample_f1": 0.8111111111111111
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.07,
+          "sample_f1": 0.8095238095238094
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.025,
+          "sample_f1": 0.8333333333333333
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0125,
+          "sample_f1": 0.7999999999999999
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8240827845719662,
+      "macro_f1": 0.7440721662131965,
+      "hamming_loss": 0.06678571428571428,
+      "subset_accuracy": 0.655,
+      "macro_ap": 0.7741426508711593,
+      "multi_topic_recall": 0.7453874538745388,
+      "predicted_labels_mean": 1.305,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8769230769230769,
+          "recall": 0.7808219178082192,
+          "f1": 0.8260869565217391,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.76,
+          "recall": 0.8,
+          "f1": 0.7794871794871795,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8994082840236687,
+          "recall": 0.9101796407185628,
+          "f1": 0.9047619047619048,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8028169014084507,
+          "recall": 0.8507462686567164,
+          "f1": 0.8260869565217391,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.3888888888888889,
+          "recall": 0.4375,
+          "f1": 0.4117647058823529,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.875,
+          "recall": 0.5384615384615384,
+          "f1": 0.6666666666666666,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9615384615384616,
+          "recall": 0.6756756756756757,
+          "f1": 0.7936507936507936,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "method": "shuffled_3",
+    "alpha": 0,
+    "thresholds": [
+      0.7500000000000002,
+      0.5000000000000001,
+      0.7500000000000002,
+      0.3500000000000001,
+      0.40000000000000013,
+      0.3500000000000001,
+      0.6500000000000001
+    ],
+    "tune_macro_f1": 0.7762705509949591,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.2,
+        "coverage": 0.7925,
+        "sample_f1": 0.858254468980021
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8163333333333332
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9875,
+          "sample_f1": 0.8194092827004218
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9775,
+          "sample_f1": 0.8209718670076727
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9675,
+          "sample_f1": 0.8242894056847544
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.96,
+          "sample_f1": 0.8260416666666665
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9525,
+          "sample_f1": 0.8255468066491688
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.945,
+          "sample_f1": 0.8250440917107584
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.9275,
+          "sample_f1": 0.8294699011680144
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.92,
+          "sample_f1": 0.8307971014492752
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.915,
+          "sample_f1": 0.8353369763205828
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.905,
+          "sample_f1": 0.8376611418047882
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.9,
+          "sample_f1": 0.837685185185185
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.9,
+          "sample_f1": 0.837685185185185
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8925,
+          "sample_f1": 0.8391223155929038
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.88,
+          "sample_f1": 0.8392045454545454
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.8675,
+          "sample_f1": 0.8416906820365033
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.855,
+          "sample_f1": 0.84093567251462
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.8425,
+          "sample_f1": 0.844114737883284
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.825,
+          "sample_f1": 0.8488888888888889
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.815,
+          "sample_f1": 0.8496932515337423
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.7925,
+          "sample_f1": 0.858254468980021
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.7825,
+          "sample_f1": 0.8638977635782746
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.7775,
+          "sample_f1": 0.865166130760986
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.76,
+          "sample_f1": 0.8686403508771928
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.7175,
+          "sample_f1": 0.8809523809523809
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.18,
+          "sample_f1": 0.7407407407407408
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.175,
+          "sample_f1": 0.7333333333333333
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.165,
+          "sample_f1": 0.7373737373737373
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.165,
+          "sample_f1": 0.7373737373737373
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.1525,
+          "sample_f1": 0.7595628415300546
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.15,
+          "sample_f1": 0.7611111111111111
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.15,
+          "sample_f1": 0.7611111111111111
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.145,
+          "sample_f1": 0.7614942528735633
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.145,
+          "sample_f1": 0.7614942528735633
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.1225,
+          "sample_f1": 0.7653061224489796
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.828436018957346,
+      "macro_f1": 0.7450246257017642,
+      "hamming_loss": 0.06464285714285714,
+      "subset_accuracy": 0.6675,
+      "macro_ap": 0.8158901863710123,
+      "multi_topic_recall": 0.7453874538745388,
+      "predicted_labels_mean": 1.285,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8769230769230769,
+          "recall": 0.7808219178082192,
+          "f1": 0.8260869565217391,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7894736842105263,
+          "recall": 0.7894736842105263,
+          "f1": 0.7894736842105263,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8994082840236687,
+          "recall": 0.9101796407185628,
+          "f1": 0.9047619047619048,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8055555555555556,
+          "recall": 0.8656716417910447,
+          "f1": 0.8345323741007195,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.42857142857142855,
+          "recall": 0.375,
+          "f1": 0.4,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.875,
+          "recall": 0.5384615384615384,
+          "f1": 0.6666666666666666,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9615384615384616,
+          "recall": 0.6756756756756757,
+          "f1": 0.7936507936507936,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "method": "shuffled_4",
+    "alpha": 0,
+    "thresholds": [
+      0.7500000000000002,
+      0.5000000000000001,
+      0.7500000000000002,
+      0.3500000000000001,
+      0.40000000000000013,
+      0.3500000000000001,
+      0.6500000000000001
+    ],
+    "tune_macro_f1": 0.7762705509949591,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.2,
+        "coverage": 0.7925,
+        "sample_f1": 0.858254468980021
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8163333333333332
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9875,
+          "sample_f1": 0.8194092827004218
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9775,
+          "sample_f1": 0.8209718670076727
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9675,
+          "sample_f1": 0.8242894056847544
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.96,
+          "sample_f1": 0.8260416666666665
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9525,
+          "sample_f1": 0.8255468066491688
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.945,
+          "sample_f1": 0.8250440917107584
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.9275,
+          "sample_f1": 0.8294699011680144
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.92,
+          "sample_f1": 0.8307971014492752
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.915,
+          "sample_f1": 0.8353369763205828
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.905,
+          "sample_f1": 0.8376611418047882
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.9,
+          "sample_f1": 0.837685185185185
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.9,
+          "sample_f1": 0.837685185185185
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8925,
+          "sample_f1": 0.8391223155929038
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.88,
+          "sample_f1": 0.8392045454545454
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.8675,
+          "sample_f1": 0.8416906820365033
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.855,
+          "sample_f1": 0.84093567251462
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.8425,
+          "sample_f1": 0.844114737883284
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.825,
+          "sample_f1": 0.8488888888888889
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.815,
+          "sample_f1": 0.8496932515337423
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.7925,
+          "sample_f1": 0.858254468980021
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.7825,
+          "sample_f1": 0.8638977635782746
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.7775,
+          "sample_f1": 0.865166130760986
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.76,
+          "sample_f1": 0.8686403508771928
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.7175,
+          "sample_f1": 0.8809523809523809
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.18,
+          "sample_f1": 0.7407407407407408
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.175,
+          "sample_f1": 0.7333333333333333
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.165,
+          "sample_f1": 0.7373737373737373
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.165,
+          "sample_f1": 0.7373737373737373
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.1525,
+          "sample_f1": 0.7595628415300546
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.15,
+          "sample_f1": 0.7611111111111111
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.15,
+          "sample_f1": 0.7611111111111111
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.145,
+          "sample_f1": 0.7614942528735633
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.145,
+          "sample_f1": 0.7614942528735633
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.1225,
+          "sample_f1": 0.7653061224489796
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.828436018957346,
+      "macro_f1": 0.7450246257017642,
+      "hamming_loss": 0.06464285714285714,
+      "subset_accuracy": 0.6675,
+      "macro_ap": 0.8158901863710123,
+      "multi_topic_recall": 0.7453874538745388,
+      "predicted_labels_mean": 1.285,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8769230769230769,
+          "recall": 0.7808219178082192,
+          "f1": 0.8260869565217391,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7894736842105263,
+          "recall": 0.7894736842105263,
+          "f1": 0.7894736842105263,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8994082840236687,
+          "recall": 0.9101796407185628,
+          "f1": 0.9047619047619048,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8055555555555556,
+          "recall": 0.8656716417910447,
+          "f1": 0.8345323741007195,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.42857142857142855,
+          "recall": 0.375,
+          "f1": 0.4,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.875,
+          "recall": 0.5384615384615384,
+          "f1": 0.6666666666666666,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9615384615384616,
+          "recall": 0.6756756756756757,
+          "f1": 0.7936507936507936,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "method": "tfidf",
+    "alpha": 0,
+    "thresholds": [
+      0.4500000000000001,
+      0.30000000000000004,
+      0.40000000000000013,
+      0.30000000000000004,
+      0.15000000000000002,
+      0.1,
+      0.20000000000000004
+    ],
+    "tune_macro_f1": 0.8069756284019792,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.0,
+        "coverage": 1.0,
+        "sample_f1": 0.8501666666666666
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8501666666666666
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9325,
+          "sample_f1": 0.8690795352993743
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.875,
+          "sample_f1": 0.8873333333333333
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.825,
+          "sample_f1": 0.9007070707070706
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.7675,
+          "sample_f1": 0.9171552660152008
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.7125,
+          "sample_f1": 0.9224561403508771
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.675,
+          "sample_f1": 0.9292592592592592
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.6125,
+          "sample_f1": 0.9356462585034014
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.455,
+          "sample_f1": 0.9556776556776557
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.01,
+          "sample_f1": 0.9166666666666666
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8558139534883721,
+      "macro_f1": 0.7816090757718592,
+      "hamming_loss": 0.055357142857142855,
+      "subset_accuracy": 0.72,
+      "macro_ap": 0.8739790650076565,
+      "multi_topic_recall": 0.8044280442804428,
+      "predicted_labels_mean": 1.335,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.9153846153846154,
+          "recall": 0.815068493150685,
+          "f1": 0.8623188405797102,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.8144329896907216,
+          "recall": 0.8315789473684211,
+          "f1": 0.8229166666666666,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8556149732620321,
+          "recall": 0.9580838323353293,
+          "f1": 0.903954802259887,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8695652173913043,
+          "recall": 0.8955223880597015,
+          "f1": 0.8823529411764706,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.6,
+          "recall": 0.375,
+          "f1": 0.46153846153846156,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.75,
+          "recall": 0.6923076923076923,
+          "f1": 0.72,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9310344827586207,
+          "recall": 0.7297297297297297,
+          "f1": 0.8181818181818182,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "method": "biomedbert",
+    "alpha": 0,
+    "thresholds": [
+      0.8000000000000003,
+      0.5000000000000001,
+      0.40000000000000013,
+      0.5500000000000002,
+      0.5500000000000002,
+      0.15000000000000002,
+      0.3500000000000001
+    ],
+    "tune_macro_f1": 0.765289186434657,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.08,
+        "coverage": 0.8975,
+        "sample_f1": 0.8507892293407614
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8194166666666667
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.99,
+          "sample_f1": 0.8234848484848484
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9775,
+          "sample_f1": 0.8271099744245524
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.955,
+          "sample_f1": 0.8296684118673647
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.9425,
+          "sample_f1": 0.8353669319186561
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.935,
+          "sample_f1": 0.8380570409982173
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.92,
+          "sample_f1": 0.8431159420289854
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.9075,
+          "sample_f1": 0.8492194674012855
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.8975,
+          "sample_f1": 0.8507892293407614
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.8825,
+          "sample_f1": 0.853918791312559
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8625,
+          "sample_f1": 0.8544927536231883
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.855,
+          "sample_f1": 0.8551656920077974
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.8375,
+          "sample_f1": 0.8561194029850746
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.805,
+          "sample_f1": 0.863768115942029
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.765,
+          "sample_f1": 0.8697167755991285
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.025,
+          "sample_f1": 0.9133333333333333
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.025,
+          "sample_f1": 0.9133333333333333
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.02,
+          "sample_f1": 0.9333333333333333
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.015,
+          "sample_f1": 0.9444444444444443
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8171641791044776,
+      "macro_f1": 0.7544010222235947,
+      "hamming_loss": 0.07,
+      "subset_accuracy": 0.6525,
+      "macro_ap": 0.8250456084733723,
+      "multi_topic_recall": 0.7232472324723247,
+      "predicted_labels_mean": 1.3275,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8484848484848485,
+          "recall": 0.7671232876712328,
+          "f1": 0.8057553956834532,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7551020408163265,
+          "recall": 0.7789473684210526,
+          "f1": 0.7668393782383419,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8486486486486486,
+          "recall": 0.9401197604790419,
+          "f1": 0.8920454545454546,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8333333333333334,
+          "recall": 0.746268656716418,
+          "f1": 0.7874015748031497,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.6,
+          "recall": 0.375,
+          "f1": 0.46153846153846156,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7692307692307693,
+          "f1": 0.7142857142857143,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9354838709677419,
+          "recall": 0.7837837837837838,
+          "f1": 0.8529411764705882,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "method": "relation",
+    "alpha": 2,
+    "thresholds": [
+      0.6000000000000002,
+      0.8000000000000003,
+      0.6000000000000002,
+      0.6000000000000002,
+      0.5500000000000002,
+      0.15000000000000002,
+      0.3500000000000001
+    ],
+    "tune_macro_f1": 0.7767648018480874,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.03,
+        "coverage": 0.9425,
+        "sample_f1": 0.8516357206012379
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8338333333333334
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9825,
+          "sample_f1": 0.8419847328244274
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.965,
+          "sample_f1": 0.8481865284974093
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9425,
+          "sample_f1": 0.8516357206012379
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.9275,
+          "sample_f1": 0.8515723270440253
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9025,
+          "sample_f1": 0.8580794090489381
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.8875,
+          "sample_f1": 0.8655399061032865
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.87,
+          "sample_f1": 0.8704980842911878
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.85,
+          "sample_f1": 0.8708823529411766
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.825,
+          "sample_f1": 0.875050505050505
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.805,
+          "sample_f1": 0.8755693581780538
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.555,
+          "sample_f1": 0.8345345345345344
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.5,
+          "sample_f1": 0.8413333333333333
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.4675,
+          "sample_f1": 0.8614973262032085
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.4125,
+          "sample_f1": 0.8806060606060607
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.385,
+          "sample_f1": 0.8850649350649351
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.0275,
+          "sample_f1": 0.8151515151515152
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.0275,
+          "sample_f1": 0.8151515151515152
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.0275,
+          "sample_f1": 0.8151515151515152
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0275,
+          "sample_f1": 0.8151515151515152
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0275,
+          "sample_f1": 0.8151515151515152
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0275,
+          "sample_f1": 0.8151515151515152
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0225,
+          "sample_f1": 0.8666666666666667
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0225,
+          "sample_f1": 0.8666666666666667
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0225,
+          "sample_f1": 0.8666666666666667
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.02,
+          "sample_f1": 0.85
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.02,
+          "sample_f1": 0.85
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.015,
+          "sample_f1": 0.8555555555555555
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0125,
+          "sample_f1": 0.8266666666666665
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0125,
+          "sample_f1": 0.8266666666666665
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0125,
+          "sample_f1": 0.8266666666666665
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0125,
+          "sample_f1": 0.8266666666666665
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.01,
+          "sample_f1": 0.8666666666666667
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.01,
+          "sample_f1": 0.8666666666666667
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.01,
+          "sample_f1": 0.8666666666666667
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.01,
+          "sample_f1": 0.8666666666666667
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8337924701561065,
+      "macro_f1": 0.7651026454087367,
+      "hamming_loss": 0.06464285714285714,
+      "subset_accuracy": 0.6925,
+      "macro_ap": 0.7772653871814683,
+      "multi_topic_recall": 0.7859778597785978,
+      "predicted_labels_mean": 1.37,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8129032258064516,
+          "recall": 0.863013698630137,
+          "f1": 0.8372093023255814,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.8160919540229885,
+          "recall": 0.7473684210526316,
+          "f1": 0.7802197802197802,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8666666666666667,
+          "recall": 0.9341317365269461,
+          "f1": 0.899135446685879,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.84375,
+          "recall": 0.8059701492537313,
+          "f1": 0.8244274809160306,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.5833333333333334,
+          "recall": 0.4375,
+          "f1": 0.5,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.5555555555555556,
+          "recall": 0.7692307692307693,
+          "f1": 0.6451612903225806,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9375,
+          "recall": 0.8108108108108109,
+          "f1": 0.8695652173913043,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "method": "shuffled_0",
+    "alpha": 0.25,
+    "thresholds": [
+      0.7500000000000002,
+      0.5000000000000001,
+      0.40000000000000013,
+      0.5500000000000002,
+      0.5500000000000002,
+      0.3500000000000001,
+      0.5000000000000001
+    ],
+    "tune_macro_f1": 0.7663430730907936,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.08,
+        "coverage": 0.9,
+        "sample_f1": 0.8513888888888889
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8210833333333332
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.985,
+          "sample_f1": 0.8241116751269035
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9775,
+          "sample_f1": 0.8258312020460358
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.97,
+          "sample_f1": 0.8279209621993128
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.9525,
+          "sample_f1": 0.8327209098862641
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.935,
+          "sample_f1": 0.8380570409982173
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.9175,
+          "sample_f1": 0.8451407811080837
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.905,
+          "sample_f1": 0.8485267034990792
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.9,
+          "sample_f1": 0.8513888888888889
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.8875,
+          "sample_f1": 0.8530516431924884
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8775,
+          "sample_f1": 0.8557454890788224
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.8675,
+          "sample_f1": 0.8569644572526417
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.8575,
+          "sample_f1": 0.857240038872692
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8375,
+          "sample_f1": 0.8607960199004976
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.8275,
+          "sample_f1": 0.862134944612286
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.81,
+          "sample_f1": 0.8684156378600824
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.7925,
+          "sample_f1": 0.8676130389064142
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.7225,
+          "sample_f1": 0.8588235294117648
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.7075,
+          "sample_f1": 0.8570082449941107
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.67,
+          "sample_f1": 0.8665422885572139
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.63,
+          "sample_f1": 0.869973544973545
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.6225,
+          "sample_f1": 0.8717536813922356
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.6175,
+          "sample_f1": 0.8715249662618083
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.6075,
+          "sample_f1": 0.8762688614540467
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.595,
+          "sample_f1": 0.8806722689075631
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.5075,
+          "sample_f1": 0.8830870279146142
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.49,
+          "sample_f1": 0.8831632653061224
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.4475,
+          "sample_f1": 0.888826815642458
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.43,
+          "sample_f1": 0.8932170542635659
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.4175,
+          "sample_f1": 0.9049900199600798
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.4075,
+          "sample_f1": 0.9067484662576688
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.395,
+          "sample_f1": 0.9206751054852321
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.3875,
+          "sample_f1": 0.9277419354838711
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.3375,
+          "sample_f1": 0.9404938271604938
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.31,
+          "sample_f1": 0.9486559139784946
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.255,
+          "sample_f1": 0.9637254901960784
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8190298507462687,
+      "macro_f1": 0.7641469216422171,
+      "hamming_loss": 0.06928571428571428,
+      "subset_accuracy": 0.6525,
+      "macro_ap": 0.7931410766527354,
+      "multi_topic_recall": 0.7269372693726938,
+      "predicted_labels_mean": 1.3275,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8321167883211679,
+          "recall": 0.7808219178082192,
+          "f1": 0.8056537102473498,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7551020408163265,
+          "recall": 0.7789473684210526,
+          "f1": 0.7668393782383419,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8486486486486486,
+          "recall": 0.9401197604790419,
+          "f1": 0.8920454545454546,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8333333333333334,
+          "recall": 0.746268656716418,
+          "f1": 0.7874015748031497,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.6,
+          "recall": 0.375,
+          "f1": 0.46153846153846156,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.9,
+          "recall": 0.6923076923076923,
+          "f1": 0.782608695652174,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9354838709677419,
+          "recall": 0.7837837837837838,
+          "f1": 0.8529411764705882,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "method": "shuffled_1",
+    "alpha": 0.25,
+    "thresholds": [
+      0.8000000000000003,
+      0.7000000000000002,
+      0.40000000000000013,
+      0.5500000000000002,
+      0.5500000000000002,
+      0.15000000000000002,
+      0.7500000000000002
+    ],
+    "tune_macro_f1": 0.765670913033318,
+    "review_policy": {
+      "target_met": false,
+      "selected": {
+        "margin": 0.0,
+        "coverage": 1.0,
+        "sample_f1": 0.8056666666666666
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8056666666666666
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9825,
+          "sample_f1": 0.8082273112807464
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.97,
+          "sample_f1": 0.811254295532646
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9475,
+          "sample_f1": 0.8146877748460861
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.9325,
+          "sample_f1": 0.8210902591599643
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.925,
+          "sample_f1": 0.8205405405405406
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.9125,
+          "sample_f1": 0.8258447488584476
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.9,
+          "sample_f1": 0.8271296296296295
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.88,
+          "sample_f1": 0.8293560606060605
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.86,
+          "sample_f1": 0.8341085271317827
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8075,
+          "sample_f1": 0.8315789473684211
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.5575,
+          "sample_f1": 0.7748878923766817
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.5175,
+          "sample_f1": 0.7801932367149759
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.4775,
+          "sample_f1": 0.7916230366492146
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.455,
+          "sample_f1": 0.8051282051282052
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.4225,
+          "sample_f1": 0.8236686390532544
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.0275,
+          "sample_f1": 0.8757575757575757
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.0275,
+          "sample_f1": 0.8757575757575757
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.0275,
+          "sample_f1": 0.8757575757575757
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0275,
+          "sample_f1": 0.8757575757575757
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0275,
+          "sample_f1": 0.8757575757575757
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.025,
+          "sample_f1": 0.8633333333333333
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.02,
+          "sample_f1": 0.9333333333333333
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8132701421800947,
+      "macro_f1": 0.7423103414703818,
+      "hamming_loss": 0.07035714285714285,
+      "subset_accuracy": 0.6475,
+      "macro_ap": 0.7996191204882113,
+      "multi_topic_recall": 0.7158671586715867,
+      "predicted_labels_mean": 1.285,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8484848484848485,
+          "recall": 0.7671232876712328,
+          "f1": 0.8057553956834532,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7888888888888889,
+          "recall": 0.7473684210526316,
+          "f1": 0.7675675675675676,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8626373626373627,
+          "recall": 0.9401197604790419,
+          "f1": 0.8997134670487106,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.847457627118644,
+          "recall": 0.746268656716418,
+          "f1": 0.7936507936507936,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.6363636363636364,
+          "recall": 0.4375,
+          "f1": 0.5185185185185185,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.625,
+          "recall": 0.7692307692307693,
+          "f1": 0.6896551724137931,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9166666666666666,
+          "recall": 0.5945945945945946,
+          "f1": 0.7213114754098361,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "method": "shuffled_2",
+    "alpha": 0.5,
+    "thresholds": [
+      0.8000000000000003,
+      0.7000000000000002,
+      0.40000000000000013,
+      0.6500000000000001,
+      0.5000000000000001,
+      0.20000000000000004,
+      0.3500000000000001
+    ],
+    "tune_macro_f1": 0.7694545142261539,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.07,
+        "coverage": 0.895,
+        "sample_f1": 0.85
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8224166666666668
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.985,
+          "sample_f1": 0.828595600676819
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9825,
+          "sample_f1": 0.8290076335877862
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.97,
+          "sample_f1": 0.8306701030927836
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.95,
+          "sample_f1": 0.8341228070175439
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9325,
+          "sample_f1": 0.8368185880250223
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.92,
+          "sample_f1": 0.846376811594203
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.895,
+          "sample_f1": 0.85
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.885,
+          "sample_f1": 0.8516007532956686
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.87,
+          "sample_f1": 0.8505747126436781
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.85,
+          "sample_f1": 0.8520588235294118
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.8075,
+          "sample_f1": 0.8504643962848298
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.6875,
+          "sample_f1": 0.8467878787878789
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.6725,
+          "sample_f1": 0.8483271375464685
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.6625,
+          "sample_f1": 0.8542138364779874
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.6375,
+          "sample_f1": 0.8674509803921568
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.6275,
+          "sample_f1": 0.8721115537848606
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.6075,
+          "sample_f1": 0.8809327846364883
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.5775,
+          "sample_f1": 0.8965367965367964
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.535,
+          "sample_f1": 0.9070093457943925
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.4025,
+          "sample_f1": 0.9076604554865424
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.015,
+          "sample_f1": 0.9111111111111111
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.015,
+          "sample_f1": 0.9111111111111111
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.015,
+          "sample_f1": 0.9111111111111111
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.015,
+          "sample_f1": 0.9111111111111111
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.015,
+          "sample_f1": 0.9111111111111111
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.015,
+          "sample_f1": 0.9111111111111111
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8195488721804511,
+      "macro_f1": 0.7627837733720277,
+      "hamming_loss": 0.06857142857142857,
+      "subset_accuracy": 0.6625,
+      "macro_ap": 0.7849157306213205,
+      "multi_topic_recall": 0.7121771217712177,
+      "predicted_labels_mean": 1.3075,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8484848484848485,
+          "recall": 0.7671232876712328,
+          "f1": 0.8057553956834532,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7659574468085106,
+          "recall": 0.7578947368421053,
+          "f1": 0.7619047619047619,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8532608695652174,
+          "recall": 0.9401197604790419,
+          "f1": 0.8945868945868946,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8888888888888888,
+          "recall": 0.7164179104477612,
+          "f1": 0.7933884297520661,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.5833333333333334,
+          "recall": 0.4375,
+          "f1": 0.5,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7692307692307693,
+          "f1": 0.7142857142857143,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9375,
+          "recall": 0.8108108108108109,
+          "f1": 0.8695652173913043,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "method": "shuffled_3",
+    "alpha": 0,
+    "thresholds": [
+      0.8000000000000003,
+      0.5000000000000001,
+      0.40000000000000013,
+      0.5500000000000002,
+      0.5500000000000002,
+      0.15000000000000002,
+      0.3500000000000001
+    ],
+    "tune_macro_f1": 0.765289186434657,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.08,
+        "coverage": 0.8975,
+        "sample_f1": 0.8507892293407614
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8194166666666667
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.99,
+          "sample_f1": 0.8234848484848484
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9775,
+          "sample_f1": 0.8271099744245524
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.955,
+          "sample_f1": 0.8296684118673647
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.9425,
+          "sample_f1": 0.8353669319186561
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.935,
+          "sample_f1": 0.8380570409982173
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.92,
+          "sample_f1": 0.8431159420289854
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.9075,
+          "sample_f1": 0.8492194674012855
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.8975,
+          "sample_f1": 0.8507892293407614
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.8825,
+          "sample_f1": 0.853918791312559
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8625,
+          "sample_f1": 0.8544927536231883
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.855,
+          "sample_f1": 0.8551656920077974
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.8375,
+          "sample_f1": 0.8561194029850746
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.805,
+          "sample_f1": 0.863768115942029
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.765,
+          "sample_f1": 0.8697167755991285
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.025,
+          "sample_f1": 0.9133333333333333
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.025,
+          "sample_f1": 0.9133333333333333
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.02,
+          "sample_f1": 0.9333333333333333
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.015,
+          "sample_f1": 0.9444444444444443
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8171641791044776,
+      "macro_f1": 0.7544010222235947,
+      "hamming_loss": 0.07,
+      "subset_accuracy": 0.6525,
+      "macro_ap": 0.8250456084733723,
+      "multi_topic_recall": 0.7232472324723247,
+      "predicted_labels_mean": 1.3275,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8484848484848485,
+          "recall": 0.7671232876712328,
+          "f1": 0.8057553956834532,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7551020408163265,
+          "recall": 0.7789473684210526,
+          "f1": 0.7668393782383419,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8486486486486486,
+          "recall": 0.9401197604790419,
+          "f1": 0.8920454545454546,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8333333333333334,
+          "recall": 0.746268656716418,
+          "f1": 0.7874015748031497,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.6,
+          "recall": 0.375,
+          "f1": 0.46153846153846156,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7692307692307693,
+          "f1": 0.7142857142857143,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9354838709677419,
+          "recall": 0.7837837837837838,
+          "f1": 0.8529411764705882,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "method": "shuffled_4",
+    "alpha": 0.25,
+    "thresholds": [
+      0.8000000000000003,
+      0.6000000000000002,
+      0.4500000000000001,
+      0.6000000000000002,
+      0.5000000000000001,
+      0.15000000000000002,
+      0.3500000000000001
+    ],
+    "tune_macro_f1": 0.7661537407695725,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.08,
+        "coverage": 0.8875,
+        "sample_f1": 0.8529577464788735
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8175833333333334
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9875,
+          "sample_f1": 0.8233755274261604
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9675,
+          "sample_f1": 0.8309216192937123
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9425,
+          "sample_f1": 0.8374889478337753
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.9275,
+          "sample_f1": 0.8404312668463613
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.92,
+          "sample_f1": 0.8427536231884057
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.915,
+          "sample_f1": 0.8455373406193077
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.905,
+          "sample_f1": 0.8447513812154697
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.8875,
+          "sample_f1": 0.8529577464788735
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.8775,
+          "sample_f1": 0.8560303893637228
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.86,
+          "sample_f1": 0.8575581395348837
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.8425,
+          "sample_f1": 0.8601384767556874
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.8225,
+          "sample_f1": 0.859270516717325
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.755,
+          "sample_f1": 0.8571743929359824
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.6975,
+          "sample_f1": 0.8639187574671445
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.3525,
+          "sample_f1": 0.8465721040189126
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.025,
+          "sample_f1": 0.9133333333333333
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.025,
+          "sample_f1": 0.9133333333333333
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0225,
+          "sample_f1": 0.9407407407407408
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.02,
+          "sample_f1": 0.9333333333333333
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.02,
+          "sample_f1": 0.9333333333333333
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.02,
+          "sample_f1": 0.9333333333333333
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.02,
+          "sample_f1": 0.9333333333333333
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.01,
+          "sample_f1": 0.9166666666666666
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8215297450424929,
+      "macro_f1": 0.760610922084451,
+      "hamming_loss": 0.0675,
+      "subset_accuracy": 0.655,
+      "macro_ap": 0.7864111477853314,
+      "multi_topic_recall": 0.7158671586715867,
+      "predicted_labels_mean": 1.295,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8484848484848485,
+          "recall": 0.7671232876712328,
+          "f1": 0.8057553956834532,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.782608695652174,
+          "recall": 0.7578947368421053,
+          "f1": 0.7700534759358288,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8715083798882681,
+          "recall": 0.9341317365269461,
+          "f1": 0.9017341040462428,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.875,
+          "recall": 0.7313432835820896,
+          "f1": 0.7967479674796748,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.5384615384615384,
+          "recall": 0.4375,
+          "f1": 0.4827586206896552,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7692307692307693,
+          "f1": 0.7142857142857143,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9354838709677419,
+          "recall": 0.7837837837837838,
+          "f1": 0.8529411764705882,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 73,
+    "method": "tfidf",
+    "alpha": 0,
+    "thresholds": [
+      0.4500000000000001,
+      0.3500000000000001,
+      0.40000000000000013,
+      0.30000000000000004,
+      0.15000000000000002,
+      0.1,
+      0.20000000000000004
+    ],
+    "tune_macro_f1": 0.8045145218502342,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.0,
+        "coverage": 1.0,
+        "sample_f1": 0.85375
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.85375
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.94,
+          "sample_f1": 0.8684397163120566
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.875,
+          "sample_f1": 0.8920952380952382
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.835,
+          "sample_f1": 0.8999001996007983
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.7975,
+          "sample_f1": 0.9140020898641587
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.755,
+          "sample_f1": 0.9168874172185429
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.695,
+          "sample_f1": 0.9284172661870504
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.625,
+          "sample_f1": 0.9390666666666666
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.47,
+          "sample_f1": 0.9570921985815602
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.0125,
+          "sample_f1": 0.8666666666666666
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8628192999053926,
+      "macro_f1": 0.8068734203865419,
+      "hamming_loss": 0.05178571428571429,
+      "subset_accuracy": 0.745,
+      "macro_ap": 0.8791561741620891,
+      "multi_topic_recall": 0.7896678966789668,
+      "predicted_labels_mean": 1.29,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.9083969465648855,
+          "recall": 0.815068493150685,
+          "f1": 0.8592057761732852,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.8690476190476191,
+          "recall": 0.7684210526315789,
+          "f1": 0.8156424581005587,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.8641304347826086,
+          "recall": 0.9520958083832335,
+          "f1": 0.905982905982906,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8840579710144928,
+          "recall": 0.9104477611940298,
+          "f1": 0.8970588235294118,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.8571428571428571,
+          "recall": 0.375,
+          "f1": 0.5217391304347826,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.8333333333333334,
+          "recall": 0.7692307692307693,
+          "f1": 0.8,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.9655172413793104,
+          "recall": 0.7567567567567568,
+          "f1": 0.8484848484848485,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 73,
+    "method": "biomedbert",
+    "alpha": 0,
+    "thresholds": [
+      0.6500000000000001,
+      0.6500000000000001,
+      0.8000000000000003,
+      0.7500000000000002,
+      0.25000000000000006,
+      0.6000000000000002,
+      0.20000000000000004
+    ],
+    "tune_macro_f1": 0.7650192349443264,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.13,
+        "coverage": 0.8275,
+        "sample_f1": 0.8550855991943606
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8151666666666667
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.985,
+          "sample_f1": 0.8166666666666667
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9675,
+          "sample_f1": 0.8203273040482344
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.955,
+          "sample_f1": 0.824956369982548
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.945,
+          "sample_f1": 0.8231040564373897
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.94,
+          "sample_f1": 0.8257092198581562
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.925,
+          "sample_f1": 0.8288288288288289
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.92,
+          "sample_f1": 0.8288043478260869
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.895,
+          "sample_f1": 0.8389199255121043
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.885,
+          "sample_f1": 0.8386064030131827
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8725,
+          "sample_f1": 0.8401146131805158
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.865,
+          "sample_f1": 0.8411368015414258
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.85,
+          "sample_f1": 0.845686274509804
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8275,
+          "sample_f1": 0.8550855991943606
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.815,
+          "sample_f1": 0.8554192229038855
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.8025,
+          "sample_f1": 0.8573208722741432
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.785,
+          "sample_f1": 0.8583864118895966
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.75,
+          "sample_f1": 0.8691111111111112
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.735,
+          "sample_f1": 0.8709750566893426
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.6975,
+          "sample_f1": 0.8731182795698924
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0575,
+          "sample_f1": 0.8942028985507247
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0575,
+          "sample_f1": 0.8942028985507247
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8286252354048964,
+      "macro_f1": 0.7596511870744748,
+      "hamming_loss": 0.065,
+      "subset_accuracy": 0.6625,
+      "macro_ap": 0.8138678544587149,
+      "multi_topic_recall": 0.7527675276752768,
+      "predicted_labels_mean": 1.3025,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8439716312056738,
+          "recall": 0.815068493150685,
+          "f1": 0.8292682926829268,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.76,
+          "recall": 0.8,
+          "f1": 0.7794871794871795,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.9202453987730062,
+          "recall": 0.8982035928143712,
+          "f1": 0.9090909090909091,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.847457627118644,
+          "recall": 0.746268656716418,
+          "f1": 0.7936507936507936,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.5,
+          "recall": 0.5625,
+          "f1": 0.5294117647058824,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 1.0,
+          "recall": 0.46153846153846156,
+          "f1": 0.631578947368421,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.8823529411764706,
+          "recall": 0.8108108108108109,
+          "f1": 0.8450704225352113,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 73,
+    "method": "relation",
+    "alpha": 2,
+    "thresholds": [
+      0.6000000000000002,
+      0.5000000000000001,
+      0.7500000000000002,
+      0.6000000000000002,
+      0.5000000000000001,
+      0.15000000000000002,
+      0.25000000000000006
+    ],
+    "tune_macro_f1": 0.7778673997144162,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.04,
+        "coverage": 0.945,
+        "sample_f1": 0.8507054673721341
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8334999999999999
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.99,
+          "sample_f1": 0.8368686868686868
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.97,
+          "sample_f1": 0.8399484536082473
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.96,
+          "sample_f1": 0.8413194444444444
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.945,
+          "sample_f1": 0.8507054673721341
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.925,
+          "sample_f1": 0.8573873873873874
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.905,
+          "sample_f1": 0.8625230202578269
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.8875,
+          "sample_f1": 0.8692018779342725
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.865,
+          "sample_f1": 0.8715799614643547
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.8275,
+          "sample_f1": 0.8793554884189325
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.785,
+          "sample_f1": 0.8845010615711253
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.54,
+          "sample_f1": 0.8506172839506172
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.485,
+          "sample_f1": 0.8501718213058419
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.455,
+          "sample_f1": 0.8512820512820513
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.425,
+          "sample_f1": 0.8633333333333334
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.4025,
+          "sample_f1": 0.8701863354037267
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.025,
+          "sample_f1": 0.86
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.025,
+          "sample_f1": 0.86
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.0225,
+          "sample_f1": 0.8814814814814815
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0225,
+          "sample_f1": 0.8814814814814815
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0225,
+          "sample_f1": 0.8814814814814815
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0225,
+          "sample_f1": 0.8814814814814815
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0225,
+          "sample_f1": 0.8814814814814815
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.02,
+          "sample_f1": 0.8916666666666666
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8359020852221215,
+      "macro_f1": 0.7554961679142368,
+      "hamming_loss": 0.06464285714285714,
+      "subset_accuracy": 0.6775,
+      "macro_ap": 0.7695071408776882,
+      "multi_topic_recall": 0.8118081180811808,
+      "predicted_labels_mean": 1.405,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8258064516129032,
+          "recall": 0.8767123287671232,
+          "f1": 0.8504983388704319,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7222222222222222,
+          "recall": 0.8210526315789474,
+          "f1": 0.7684729064039408,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.9107142857142857,
+          "recall": 0.9161676646706587,
+          "f1": 0.9134328358208955,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8115942028985508,
+          "recall": 0.835820895522388,
+          "f1": 0.8235294117647058,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.5,
+          "recall": 0.375,
+          "f1": 0.42857142857142855,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.6,
+          "recall": 0.6923076923076923,
+          "f1": 0.6428571428571429,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.8857142857142857,
+          "recall": 0.8378378378378378,
+          "f1": 0.8611111111111112,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 73,
+    "method": "shuffled_0",
+    "alpha": 0,
+    "thresholds": [
+      0.6500000000000001,
+      0.6500000000000001,
+      0.8000000000000003,
+      0.7500000000000002,
+      0.25000000000000006,
+      0.6000000000000002,
+      0.20000000000000004
+    ],
+    "tune_macro_f1": 0.7650192349443264,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.13,
+        "coverage": 0.8275,
+        "sample_f1": 0.8550855991943606
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8151666666666667
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.985,
+          "sample_f1": 0.8166666666666667
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9675,
+          "sample_f1": 0.8203273040482344
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.955,
+          "sample_f1": 0.824956369982548
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.945,
+          "sample_f1": 0.8231040564373897
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.94,
+          "sample_f1": 0.8257092198581562
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.925,
+          "sample_f1": 0.8288288288288289
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.92,
+          "sample_f1": 0.8288043478260869
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.895,
+          "sample_f1": 0.8389199255121043
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.885,
+          "sample_f1": 0.8386064030131827
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8725,
+          "sample_f1": 0.8401146131805158
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.865,
+          "sample_f1": 0.8411368015414258
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.85,
+          "sample_f1": 0.845686274509804
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8275,
+          "sample_f1": 0.8550855991943606
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.815,
+          "sample_f1": 0.8554192229038855
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.8025,
+          "sample_f1": 0.8573208722741432
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.785,
+          "sample_f1": 0.8583864118895966
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.75,
+          "sample_f1": 0.8691111111111112
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.735,
+          "sample_f1": 0.8709750566893426
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.6975,
+          "sample_f1": 0.8731182795698924
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0575,
+          "sample_f1": 0.8942028985507247
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0575,
+          "sample_f1": 0.8942028985507247
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8286252354048964,
+      "macro_f1": 0.7596511870744748,
+      "hamming_loss": 0.065,
+      "subset_accuracy": 0.6625,
+      "macro_ap": 0.8138678544587149,
+      "multi_topic_recall": 0.7527675276752768,
+      "predicted_labels_mean": 1.3025,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8439716312056738,
+          "recall": 0.815068493150685,
+          "f1": 0.8292682926829268,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.76,
+          "recall": 0.8,
+          "f1": 0.7794871794871795,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.9202453987730062,
+          "recall": 0.8982035928143712,
+          "f1": 0.9090909090909091,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.847457627118644,
+          "recall": 0.746268656716418,
+          "f1": 0.7936507936507936,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.5,
+          "recall": 0.5625,
+          "f1": 0.5294117647058824,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 1.0,
+          "recall": 0.46153846153846156,
+          "f1": 0.631578947368421,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.8823529411764706,
+          "recall": 0.8108108108108109,
+          "f1": 0.8450704225352113,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 73,
+    "method": "shuffled_1",
+    "alpha": 0,
+    "thresholds": [
+      0.6500000000000001,
+      0.6500000000000001,
+      0.8000000000000003,
+      0.7500000000000002,
+      0.25000000000000006,
+      0.6000000000000002,
+      0.20000000000000004
+    ],
+    "tune_macro_f1": 0.7650192349443264,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.13,
+        "coverage": 0.8275,
+        "sample_f1": 0.8550855991943606
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8151666666666667
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.985,
+          "sample_f1": 0.8166666666666667
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9675,
+          "sample_f1": 0.8203273040482344
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.955,
+          "sample_f1": 0.824956369982548
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.945,
+          "sample_f1": 0.8231040564373897
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.94,
+          "sample_f1": 0.8257092198581562
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.925,
+          "sample_f1": 0.8288288288288289
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.92,
+          "sample_f1": 0.8288043478260869
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.895,
+          "sample_f1": 0.8389199255121043
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.885,
+          "sample_f1": 0.8386064030131827
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8725,
+          "sample_f1": 0.8401146131805158
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.865,
+          "sample_f1": 0.8411368015414258
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.85,
+          "sample_f1": 0.845686274509804
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8275,
+          "sample_f1": 0.8550855991943606
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.815,
+          "sample_f1": 0.8554192229038855
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.8025,
+          "sample_f1": 0.8573208722741432
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.785,
+          "sample_f1": 0.8583864118895966
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.75,
+          "sample_f1": 0.8691111111111112
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.735,
+          "sample_f1": 0.8709750566893426
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.6975,
+          "sample_f1": 0.8731182795698924
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0575,
+          "sample_f1": 0.8942028985507247
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0575,
+          "sample_f1": 0.8942028985507247
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8286252354048964,
+      "macro_f1": 0.7596511870744748,
+      "hamming_loss": 0.065,
+      "subset_accuracy": 0.6625,
+      "macro_ap": 0.8138678544587149,
+      "multi_topic_recall": 0.7527675276752768,
+      "predicted_labels_mean": 1.3025,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8439716312056738,
+          "recall": 0.815068493150685,
+          "f1": 0.8292682926829268,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.76,
+          "recall": 0.8,
+          "f1": 0.7794871794871795,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.9202453987730062,
+          "recall": 0.8982035928143712,
+          "f1": 0.9090909090909091,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.847457627118644,
+          "recall": 0.746268656716418,
+          "f1": 0.7936507936507936,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.5,
+          "recall": 0.5625,
+          "f1": 0.5294117647058824,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 1.0,
+          "recall": 0.46153846153846156,
+          "f1": 0.631578947368421,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.8823529411764706,
+          "recall": 0.8108108108108109,
+          "f1": 0.8450704225352113,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 73,
+    "method": "shuffled_2",
+    "alpha": 0.5,
+    "thresholds": [
+      0.6500000000000001,
+      0.8000000000000003,
+      0.8000000000000003,
+      0.5500000000000002,
+      0.4500000000000001,
+      0.20000000000000004,
+      0.15000000000000002
+    ],
+    "tune_macro_f1": 0.7674134020061345,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.08,
+        "coverage": 0.88,
+        "sample_f1": 0.8535984848484849
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8143333333333334
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9775,
+          "sample_f1": 0.8246376811594202
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9675,
+          "sample_f1": 0.827993109388458
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9475,
+          "sample_f1": 0.8327176781002639
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.9225,
+          "sample_f1": 0.8408310749774164
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.91,
+          "sample_f1": 0.8437728937728938
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.9,
+          "sample_f1": 0.8448148148148148
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.895,
+          "sample_f1": 0.8476722532588455
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.88,
+          "sample_f1": 0.8535984848484849
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.8525,
+          "sample_f1": 0.8588465298142718
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8275,
+          "sample_f1": 0.8627391742195367
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.735,
+          "sample_f1": 0.8552154195011338
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.56,
+          "sample_f1": 0.8444940476190476
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.48,
+          "sample_f1": 0.8552083333333332
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.415,
+          "sample_f1": 0.8939759036144579
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.3425,
+          "sample_f1": 0.9311435523114355
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.015,
+          "sample_f1": 0.6499999999999999
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.015,
+          "sample_f1": 0.6499999999999999
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.0125,
+          "sample_f1": 0.5799999999999998
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0075,
+          "sample_f1": 0.611111111111111
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8267419962335216,
+      "macro_f1": 0.7492324097513448,
+      "hamming_loss": 0.06571428571428571,
+      "subset_accuracy": 0.66,
+      "macro_ap": 0.7736519157148241,
+      "multi_topic_recall": 0.7453874538745388,
+      "predicted_labels_mean": 1.3025,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8428571428571429,
+          "recall": 0.8082191780821918,
+          "f1": 0.8251748251748252,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7684210526315789,
+          "recall": 0.7684210526315789,
+          "f1": 0.7684210526315789,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.9259259259259259,
+          "recall": 0.8982035928143712,
+          "f1": 0.9118541033434651,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8125,
+          "recall": 0.7761194029850746,
+          "f1": 0.7938931297709924,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.5,
+          "recall": 0.375,
+          "f1": 0.42857142857142855,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6153846153846154,
+          "f1": 0.64,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.8888888888888888,
+          "recall": 0.8648648648648649,
+          "f1": 0.8767123287671232,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 73,
+    "method": "shuffled_3",
+    "alpha": 0,
+    "thresholds": [
+      0.6500000000000001,
+      0.6500000000000001,
+      0.8000000000000003,
+      0.7500000000000002,
+      0.25000000000000006,
+      0.6000000000000002,
+      0.20000000000000004
+    ],
+    "tune_macro_f1": 0.7650192349443264,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.13,
+        "coverage": 0.8275,
+        "sample_f1": 0.8550855991943606
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8151666666666667
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.985,
+          "sample_f1": 0.8166666666666667
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9675,
+          "sample_f1": 0.8203273040482344
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.955,
+          "sample_f1": 0.824956369982548
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.945,
+          "sample_f1": 0.8231040564373897
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.94,
+          "sample_f1": 0.8257092198581562
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.925,
+          "sample_f1": 0.8288288288288289
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.92,
+          "sample_f1": 0.8288043478260869
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.895,
+          "sample_f1": 0.8389199255121043
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.885,
+          "sample_f1": 0.8386064030131827
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8725,
+          "sample_f1": 0.8401146131805158
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.865,
+          "sample_f1": 0.8411368015414258
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.85,
+          "sample_f1": 0.845686274509804
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8275,
+          "sample_f1": 0.8550855991943606
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.815,
+          "sample_f1": 0.8554192229038855
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.8025,
+          "sample_f1": 0.8573208722741432
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.785,
+          "sample_f1": 0.8583864118895966
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.75,
+          "sample_f1": 0.8691111111111112
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.735,
+          "sample_f1": 0.8709750566893426
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.6975,
+          "sample_f1": 0.8731182795698924
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0575,
+          "sample_f1": 0.8942028985507247
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0575,
+          "sample_f1": 0.8942028985507247
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.055,
+          "sample_f1": 0.9166666666666665
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0025,
+          "sample_f1": 0.6666666666666666
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8286252354048964,
+      "macro_f1": 0.7596511870744748,
+      "hamming_loss": 0.065,
+      "subset_accuracy": 0.6625,
+      "macro_ap": 0.8138678544587149,
+      "multi_topic_recall": 0.7527675276752768,
+      "predicted_labels_mean": 1.3025,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8439716312056738,
+          "recall": 0.815068493150685,
+          "f1": 0.8292682926829268,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.76,
+          "recall": 0.8,
+          "f1": 0.7794871794871795,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.9202453987730062,
+          "recall": 0.8982035928143712,
+          "f1": 0.9090909090909091,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.847457627118644,
+          "recall": 0.746268656716418,
+          "f1": 0.7936507936507936,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.5,
+          "recall": 0.5625,
+          "f1": 0.5294117647058824,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 1.0,
+          "recall": 0.46153846153846156,
+          "f1": 0.631578947368421,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.8823529411764706,
+          "recall": 0.8108108108108109,
+          "f1": 0.8450704225352113,
+          "support": 37
+        }
+      }
+    }
+  },
+  {
+    "seed": 73,
+    "method": "shuffled_4",
+    "alpha": 0.5,
+    "thresholds": [
+      0.7000000000000002,
+      0.4500000000000001,
+      0.7500000000000002,
+      0.5500000000000002,
+      0.30000000000000004,
+      0.6000000000000002,
+      0.20000000000000004
+    ],
+    "tune_macro_f1": 0.7664865675984308,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.11,
+        "coverage": 0.8825,
+        "sample_f1": 0.8512747875354107
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8169166666666666
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9925,
+          "sample_f1": 0.817632241813602
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.985,
+          "sample_f1": 0.822165820642978
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.97,
+          "sample_f1": 0.8262886597938145
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.955,
+          "sample_f1": 0.8331588132635253
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.945,
+          "sample_f1": 0.8371252204585538
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.935,
+          "sample_f1": 0.8389483065953653
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.925,
+          "sample_f1": 0.8417117117117116
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.905,
+          "sample_f1": 0.8461325966850829
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.895,
+          "sample_f1": 0.8458100558659216
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8875,
+          "sample_f1": 0.847887323943662
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.8825,
+          "sample_f1": 0.8512747875354107
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.8775,
+          "sample_f1": 0.8542260208926876
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.8575,
+          "sample_f1": 0.856754130223518
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.8425,
+          "sample_f1": 0.8650840751730958
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.82,
+          "sample_f1": 0.8695121951219513
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.795,
+          "sample_f1": 0.8729559748427673
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.7625,
+          "sample_f1": 0.8790163934426231
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.715,
+          "sample_f1": 0.8872960372960373
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.6425,
+          "sample_f1": 0.9044098573281453
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.25,
+          "sample_f1": 0.8563333333333334
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.06,
+          "sample_f1": 0.8916666666666666
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0575,
+          "sample_f1": 0.9130434782608695
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0525,
+          "sample_f1": 0.9365079365079364
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0525,
+          "sample_f1": 0.9365079365079364
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.05,
+          "sample_f1": 0.9333333333333332
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.015,
+          "sample_f1": 0.8333333333333334
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.015,
+          "sample_f1": 0.8333333333333334
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.01,
+          "sample_f1": 0.75
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.005,
+          "sample_f1": 0.5
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.005,
+          "sample_f1": 0.5
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    },
+    "calibration": {
+      "micro_f1": 0.8246268656716418,
+      "macro_f1": 0.7590221329042807,
+      "hamming_loss": 0.06714285714285714,
+      "subset_accuracy": 0.6575,
+      "macro_ap": 0.7787697995267618,
+      "multi_topic_recall": 0.7527675276752768,
+      "predicted_labels_mean": 1.3275,
+      "per_label": {
+        "Treatment": {
+          "precision": 0.8518518518518519,
+          "recall": 0.7876712328767124,
+          "f1": 0.8185053380782918,
+          "support": 146
+        },
+        "Diagnosis": {
+          "precision": 0.7222222222222222,
+          "recall": 0.8210526315789474,
+          "f1": 0.7684729064039408,
+          "support": 95
+        },
+        "Prevention": {
+          "precision": 0.9101796407185628,
+          "recall": 0.9101796407185628,
+          "f1": 0.9101796407185628,
+          "support": 167
+        },
+        "Mechanism": {
+          "precision": 0.8125,
+          "recall": 0.7761194029850746,
+          "f1": 0.7938931297709924,
+          "support": 67
+        },
+        "Transmission": {
+          "precision": 0.5294117647058824,
+          "recall": 0.5625,
+          "f1": 0.5454545454545454,
+          "support": 16
+        },
+        "Epidemic Forecasting": {
+          "precision": 1.0,
+          "recall": 0.46153846153846156,
+          "f1": 0.631578947368421,
+          "support": 13
+        },
+        "Case Report": {
+          "precision": 0.8823529411764706,
+          "recall": 0.8108108108108109,
+          "f1": 0.8450704225352113,
+          "support": 37
+        }
+      }
+    }
+  }
+]

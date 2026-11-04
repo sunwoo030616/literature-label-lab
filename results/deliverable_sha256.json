@@ -1,0 +1,15 @@
+{
+  "docs/PROTOCOL.md": "e0b5c3662efe8d26feda54059ab24b8201b7c6e03639455659cc6af2ebfd16d5",
+  "docs/GRAPH_PROTOCOL.md": "fd0319b6fb44de2aea17a62edb5607e68dd63851d573112b3814fe1be81743ff",
+  "src/analyze_errors.py": "ede9a6bc73b49ccbe67fc88f94b5333a8c49004fc9944b18e39fa4c88c376672",
+  "src/api.py": "f93a0d80478602467fd4060ad3f540df6d0cc17cae6bb34fc1896eda22f3c14b",
+  "src/download.py": "14a2fa4e24460456a8c7b393c0335879693dbe97ecb0d984d120a52aa6eef20e",
+  "src/experiment.py": "aeb728c763642ab6f5b83d1e01ff22a2a30f19f8b0ba979e14d80a1e860e46e8",
+  "src/graph_experiment.py": "aacb990a47de109c1206e27db73d41b34e4bbf988b461e28a40a57126b6b67ab",
+  "src/make_report.py": "4698237a58d782fc3b16efe97a1fc4b78dc74308b9004ac524466bd1bde820e3",
+  "src/smoke_api.py": "bdc4d5077841204f82b062ce03ec5da15824e995daa54d913fdb7a9bd207d372",
+  "src/test_integrity.py": "d5022345775b87b7b845d0757a000f7af7c1fe539ef339b7a78c4f375f3e99a0",
+  "src/verify_results.py": "7ca1fe7e5faa00bdebbc837e7731fce48046e6a88d45f6ebf6bf448da7442078",
+  "output/portfolio.pdf": "870c674180025d0c4435587c42803aff15c7916f9ac7113f81aeaec8ed8cc71d",
+  "docs/REPORT.md": "c1673117913bd297254fc2fce0e4d5a9fd7589d8616df315327738af42a8fe68"
+}

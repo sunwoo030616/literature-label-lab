@@ -1,0 +1,15 @@
+data/raw/
+models/
+data/*.npz
+__pycache__/
+.venv/
+.cache/
+.deps/
+src/psutil
+followup_v2/data/
+followup_v2/models/
+extension_v3/data/
+extension_v3/models/
+WORK_STATE.json
+PIPELINE_STATE.json
+followup_pipeline.log

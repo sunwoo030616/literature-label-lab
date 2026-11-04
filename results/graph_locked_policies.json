@@ -1,0 +1,1238 @@
+[
+  {
+    "seed": 17,
+    "method": "feature_graph",
+    "alpha": 2,
+    "thresholds": [
+      0.7500000000000002,
+      0.6000000000000002,
+      0.7000000000000002,
+      0.7500000000000002,
+      0.40000000000000013,
+      0.4500000000000001,
+      0.7500000000000002
+    ],
+    "tune_macro_f1": 0.7845727534981456,
+    "k": 15,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.18,
+        "coverage": 0.84,
+        "sample_f1": 0.8560515873015873
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8183333333333332
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.995,
+          "sample_f1": 0.819932998324958
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.985,
+          "sample_f1": 0.8219966159052454
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.975,
+          "sample_f1": 0.8227350427350427
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.9725,
+          "sample_f1": 0.8248500428449015
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9625,
+          "sample_f1": 0.8282251082251082
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.945,
+          "sample_f1": 0.8299823633156966
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.9375,
+          "sample_f1": 0.8335111111111112
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.925,
+          "sample_f1": 0.8340540540540541
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.92,
+          "sample_f1": 0.8358695652173914
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.91,
+          "sample_f1": 0.8409340659340659
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.8975,
+          "sample_f1": 0.8402042711234912
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.89,
+          "sample_f1": 0.8416666666666667
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.88,
+          "sample_f1": 0.8455492424242425
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.875,
+          "sample_f1": 0.8465714285714284
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.8625,
+          "sample_f1": 0.8472463768115942
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.8575,
+          "sample_f1": 0.8473275024295432
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.85,
+          "sample_f1": 0.8499019607843138
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.84,
+          "sample_f1": 0.8560515873015873
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.83,
+          "sample_f1": 0.8593373493975904
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.82,
+          "sample_f1": 0.8596544715447155
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.815,
+          "sample_f1": 0.8609406952965234
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.8025,
+          "sample_f1": 0.8610591900311526
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.7875,
+          "sample_f1": 0.8637037037037039
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.78,
+          "sample_f1": 0.8655982905982907
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.4575,
+          "sample_f1": 0.8415300546448088
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.4525,
+          "sample_f1": 0.8397790055248618
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.435,
+          "sample_f1": 0.8524904214559386
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.43,
+          "sample_f1": 0.8507751937984495
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.4275,
+          "sample_f1": 0.8499025341130603
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.1025,
+          "sample_f1": 0.589430894308943
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.1025,
+          "sample_f1": 0.589430894308943
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.1025,
+          "sample_f1": 0.589430894308943
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0975,
+          "sample_f1": 0.5940170940170939
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0975,
+          "sample_f1": 0.5940170940170939
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0925,
+          "sample_f1": 0.6261261261261261
+        }
+      ]
+    }
+  },
+  {
+    "seed": 17,
+    "method": "random_neighbors",
+    "alpha": 2,
+    "thresholds": [
+      0.6000000000000002,
+      0.4500000000000001,
+      0.7500000000000002,
+      0.5000000000000001,
+      0.3500000000000001,
+      0.25000000000000006,
+      0.3500000000000001
+    ],
+    "tune_macro_f1": 0.7781636641150013,
+    "k": 30,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.1,
+        "coverage": 0.9075,
+        "sample_f1": 0.8505050505050505
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8249166666666667
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9825,
+          "sample_f1": 0.8268871925360475
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.975,
+          "sample_f1": 0.8272649572649572
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.97,
+          "sample_f1": 0.82946735395189
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.9625,
+          "sample_f1": 0.8290043290043289
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9575,
+          "sample_f1": 0.8333333333333334
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.945,
+          "sample_f1": 0.834832451499118
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.93,
+          "sample_f1": 0.8384408602150537
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.9225,
+          "sample_f1": 0.8420957542908762
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.915,
+          "sample_f1": 0.8462659380692168
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.9075,
+          "sample_f1": 0.8505050505050505
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.905,
+          "sample_f1": 0.8528545119705341
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.89,
+          "sample_f1": 0.8612359550561799
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.89,
+          "sample_f1": 0.8612359550561799
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.88,
+          "sample_f1": 0.8639204545454546
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.87,
+          "sample_f1": 0.8633141762452106
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.855,
+          "sample_f1": 0.8644249512670565
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.8425,
+          "sample_f1": 0.870326409495549
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.815,
+          "sample_f1": 0.875357873210634
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.7975,
+          "sample_f1": 0.8763845350052248
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.7825,
+          "sample_f1": 0.879339723109691
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.715,
+          "sample_f1": 0.8735431235431235
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.6475,
+          "sample_f1": 0.8745173745173745
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.375,
+          "sample_f1": 0.8457777777777777
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.35,
+          "sample_f1": 0.8514285714285714
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.335,
+          "sample_f1": 0.8572139303482587
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    }
+  },
+  {
+    "seed": 42,
+    "method": "feature_graph",
+    "alpha": 2,
+    "thresholds": [
+      0.7500000000000002,
+      0.5000000000000001,
+      0.7500000000000002,
+      0.5500000000000002,
+      0.5000000000000001,
+      0.8000000000000003,
+      0.6000000000000002
+    ],
+    "tune_macro_f1": 0.7747403093980709,
+    "k": 5,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.11,
+        "coverage": 0.845,
+        "sample_f1": 0.8532544378698225
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8129166666666667
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.9825,
+          "sample_f1": 0.8146734520780321
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9725,
+          "sample_f1": 0.8187660668380463
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9575,
+          "sample_f1": 0.8189730200174065
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.9425,
+          "sample_f1": 0.8262599469496021
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9325,
+          "sample_f1": 0.8310991957104558
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.915,
+          "sample_f1": 0.831511839708561
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.9,
+          "sample_f1": 0.8362037037037038
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.875,
+          "sample_f1": 0.8397142857142856
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.86,
+          "sample_f1": 0.8441860465116279
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8525,
+          "sample_f1": 0.8496578690127078
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.845,
+          "sample_f1": 0.8532544378698225
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.8325,
+          "sample_f1": 0.8575575575575576
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.82,
+          "sample_f1": 0.8604674796747968
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.81,
+          "sample_f1": 0.8669753086419754
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.7975,
+          "sample_f1": 0.8686520376175549
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.7925,
+          "sample_f1": 0.8720294426919033
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.775,
+          "sample_f1": 0.8745161290322582
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.73,
+          "sample_f1": 0.8765981735159818
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.7275,
+          "sample_f1": 0.8761741122565866
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.6925,
+          "sample_f1": 0.8789410348977136
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.675,
+          "sample_f1": 0.8832098765432099
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.665,
+          "sample_f1": 0.8852130325814537
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.6525,
+          "sample_f1": 0.8842911877394636
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.645,
+          "sample_f1": 0.8868217054263566
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.1525,
+          "sample_f1": 0.7404371584699453
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.15,
+          "sample_f1": 0.7416666666666666
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.15,
+          "sample_f1": 0.7416666666666666
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.1475,
+          "sample_f1": 0.7542372881355931
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.1425,
+          "sample_f1": 0.7690058479532162
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.1375,
+          "sample_f1": 0.7848484848484848
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.135,
+          "sample_f1": 0.7808641975308641
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.1325,
+          "sample_f1": 0.7767295597484276
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.1325,
+          "sample_f1": 0.7767295597484276
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.1275,
+          "sample_f1": 0.7875816993464052
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.125,
+          "sample_f1": 0.7833333333333333
+        }
+      ]
+    }
+  },
+  {
+    "seed": 42,
+    "method": "random_neighbors",
+    "alpha": 2,
+    "thresholds": [
+      0.6500000000000001,
+      0.4500000000000001,
+      0.7000000000000002,
+      0.5500000000000002,
+      0.5500000000000002,
+      0.15000000000000002,
+      0.4500000000000001
+    ],
+    "tune_macro_f1": 0.7762463655195423,
+    "k": 5,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.08,
+        "coverage": 0.8775,
+        "sample_f1": 0.8548907882241216
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8144166666666667
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.99,
+          "sample_f1": 0.8154882154882155
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.9725,
+          "sample_f1": 0.8183376178234791
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9475,
+          "sample_f1": 0.8290237467018471
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.9225,
+          "sample_f1": 0.8383920505871726
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9075,
+          "sample_f1": 0.8393939393939394
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.9025,
+          "sample_f1": 0.8440443213296399
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.89,
+          "sample_f1": 0.8493445692883895
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.8775,
+          "sample_f1": 0.8548907882241216
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.8575,
+          "sample_f1": 0.8618075801749272
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.8075,
+          "sample_f1": 0.8573787409700723
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.7675,
+          "sample_f1": 0.8662323561346364
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.7325,
+          "sample_f1": 0.8763367463026167
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.48,
+          "sample_f1": 0.8390624999999999
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.4475,
+          "sample_f1": 0.8348230912476723
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.42,
+          "sample_f1": 0.8488095238095238
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.025,
+          "sample_f1": 0.9133333333333333
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.025,
+          "sample_f1": 0.9133333333333333
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.025,
+          "sample_f1": 0.9133333333333333
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.025,
+          "sample_f1": 0.9133333333333333
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.02,
+          "sample_f1": 0.9333333333333333
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.015,
+          "sample_f1": 0.9111111111111111
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.015,
+          "sample_f1": 0.9111111111111111
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0125,
+          "sample_f1": 0.8933333333333333
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.01,
+          "sample_f1": 0.8666666666666667
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    }
+  },
+  {
+    "seed": 73,
+    "method": "feature_graph",
+    "alpha": 0.5,
+    "thresholds": [
+      0.7500000000000002,
+      0.20000000000000004,
+      0.7500000000000002,
+      0.7500000000000002,
+      0.5000000000000001,
+      0.15000000000000002,
+      0.20000000000000004
+    ],
+    "tune_macro_f1": 0.7703379832485596,
+    "k": 5,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.08,
+        "coverage": 0.88,
+        "sample_f1": 0.8522727272727273
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.8165833333333333
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.985,
+          "sample_f1": 0.8210659898477157
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.97,
+          "sample_f1": 0.8238831615120276
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.955,
+          "sample_f1": 0.8298429319371727
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.94,
+          "sample_f1": 0.8342198581560283
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9325,
+          "sample_f1": 0.839142091152815
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.9175,
+          "sample_f1": 0.8392370572207084
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.8975,
+          "sample_f1": 0.8458681522748376
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.88,
+          "sample_f1": 0.8522727272727273
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.86,
+          "sample_f1": 0.8548449612403103
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.835,
+          "sample_f1": 0.8574850299401199
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.795,
+          "sample_f1": 0.8603773584905661
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.6525,
+          "sample_f1": 0.8472541507024265
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.4775,
+          "sample_f1": 0.818499127399651
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.435,
+          "sample_f1": 0.8448275862068966
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.3625,
+          "sample_f1": 0.8703448275862068
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.0025,
+          "sample_f1": 1.0
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.0025,
+          "sample_f1": 1.0
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    }
+  },
+  {
+    "seed": 73,
+    "method": "random_neighbors",
+    "alpha": 0.5,
+    "thresholds": [
+      0.6500000000000001,
+      0.7000000000000002,
+      0.7500000000000002,
+      0.7500000000000002,
+      0.30000000000000004,
+      0.1,
+      0.20000000000000004
+    ],
+    "tune_macro_f1": 0.7712446852528558,
+    "k": 15,
+    "review_policy": {
+      "target_met": true,
+      "selected": {
+        "margin": 0.07,
+        "coverage": 0.8725,
+        "sample_f1": 0.8500477554918816
+      },
+      "calibration_curve": [
+        {
+          "margin": 0.0,
+          "coverage": 1.0,
+          "sample_f1": 0.81675
+        },
+        {
+          "margin": 0.01,
+          "coverage": 0.99,
+          "sample_f1": 0.8195286195286194
+        },
+        {
+          "margin": 0.02,
+          "coverage": 0.97,
+          "sample_f1": 0.8244845360824742
+        },
+        {
+          "margin": 0.03,
+          "coverage": 0.9475,
+          "sample_f1": 0.8331574318381706
+        },
+        {
+          "margin": 0.04,
+          "coverage": 0.945,
+          "sample_f1": 0.8335978835978837
+        },
+        {
+          "margin": 0.05,
+          "coverage": 0.9275,
+          "sample_f1": 0.8398921832884098
+        },
+        {
+          "margin": 0.06,
+          "coverage": 0.8975,
+          "sample_f1": 0.8440111420612814
+        },
+        {
+          "margin": 0.07,
+          "coverage": 0.8725,
+          "sample_f1": 0.8500477554918816
+        },
+        {
+          "margin": 0.08,
+          "coverage": 0.82,
+          "sample_f1": 0.8552845528455285
+        },
+        {
+          "margin": 0.09,
+          "coverage": 0.705,
+          "sample_f1": 0.8578014184397162
+        },
+        {
+          "margin": 0.1,
+          "coverage": 0.3975,
+          "sample_f1": 0.8406708595387842
+        },
+        {
+          "margin": 0.11,
+          "coverage": 0.0225,
+          "sample_f1": 0.8814814814814815
+        },
+        {
+          "margin": 0.12,
+          "coverage": 0.02,
+          "sample_f1": 0.9083333333333333
+        },
+        {
+          "margin": 0.13,
+          "coverage": 0.02,
+          "sample_f1": 0.9083333333333333
+        },
+        {
+          "margin": 0.14,
+          "coverage": 0.0175,
+          "sample_f1": 0.9238095238095239
+        },
+        {
+          "margin": 0.15,
+          "coverage": 0.015,
+          "sample_f1": 0.9111111111111111
+        },
+        {
+          "margin": 0.16,
+          "coverage": 0.015,
+          "sample_f1": 0.9111111111111111
+        },
+        {
+          "margin": 0.17,
+          "coverage": 0.0125,
+          "sample_f1": 0.8933333333333333
+        },
+        {
+          "margin": 0.18,
+          "coverage": 0.005,
+          "sample_f1": 0.8333333333333333
+        },
+        {
+          "margin": 0.19,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.2,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.21,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.22,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.23,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.24,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.25,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.26,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.27,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.28,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.29,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.3,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.31,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.32,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.33,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.34,
+          "coverage": 0.0,
+          "sample_f1": null
+        },
+        {
+          "margin": 0.35,
+          "coverage": 0.0,
+          "sample_f1": null
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,368 @@
+[
+  {
+    "seed": 17,
+    "method": "feature_graph",
+    "k": 15,
+    "alpha": 2,
+    "micro_f1": 0.8106370543541789,
+    "macro_f1": 0.7494487364429625,
+    "hamming_loss": 0.07441433164905834,
+    "subset_accuracy": 0.6294212218649518,
+    "macro_ap": 0.7755501577305989,
+    "multi_topic_recall": 0.7099090473910962,
+    "predicted_labels_mean": 1.3042604501607717,
+    "per_label": {
+      "Treatment": {
+        "precision": 0.8630751964085297,
+        "recall": 0.7473275024295433,
+        "f1": 0.8010416666666667,
+        "support": 1029
+      },
+      "Diagnosis": {
+        "precision": 0.8113207547169812,
+        "recall": 0.717663421418637,
+        "f1": 0.7616236162361624,
+        "support": 719
+      },
+      "Prevention": {
+        "precision": 0.8705882352941177,
+        "recall": 0.8809523809523809,
+        "f1": 0.8757396449704142,
+        "support": 924
+      },
+      "Mechanism": {
+        "precision": 0.9059304703476483,
+        "recall": 0.7868561278863233,
+        "f1": 0.8422053231939164,
+        "support": 563
+      },
+      "Transmission": {
+        "precision": 0.5921052631578947,
+        "recall": 0.3515625,
+        "f1": 0.4411764705882353,
+        "support": 128
+      },
+      "Epidemic Forecasting": {
+        "precision": 0.6,
+        "recall": 0.7317073170731707,
+        "f1": 0.6593406593406593,
+        "support": 41
+      },
+      "Case Report": {
+        "precision": 0.9345238095238095,
+        "recall": 0.8051282051282052,
+        "f1": 0.8650137741046832,
+        "support": 195
+      }
+    },
+    "review": {
+      "coverage": 0.7789389067524116,
+      "sample_f1": 0.8435758513931888
+    }
+  },
+  {
+    "seed": 17,
+    "method": "random_neighbors",
+    "k": 30,
+    "alpha": 2,
+    "micro_f1": 0.8102314947127751,
+    "macro_f1": 0.7466473186748279,
+    "hamming_loss": 0.07625172255397336,
+    "subset_accuracy": 0.6169614147909968,
+    "macro_ap": 0.7930881365961896,
+    "multi_topic_recall": 0.7271421732886548,
+    "predicted_labels_mean": 1.3661575562700965,
+    "per_label": {
+      "Treatment": {
+        "precision": 0.8443743427970557,
+        "recall": 0.7803692905733722,
+        "f1": 0.8111111111111111,
+        "support": 1029
+      },
+      "Diagnosis": {
+        "precision": 0.7860326894502229,
+        "recall": 0.7357440890125174,
+        "f1": 0.7600574712643678,
+        "support": 719
+      },
+      "Prevention": {
+        "precision": 0.8713513513513513,
+        "recall": 0.8722943722943723,
+        "f1": 0.8718226068144943,
+        "support": 924
+      },
+      "Mechanism": {
+        "precision": 0.8656429942418427,
+        "recall": 0.8010657193605684,
+        "f1": 0.8321033210332104,
+        "support": 563
+      },
+      "Transmission": {
+        "precision": 0.5875,
+        "recall": 0.3671875,
+        "f1": 0.4519230769230769,
+        "support": 128
+      },
+      "Epidemic Forecasting": {
+        "precision": 0.5245901639344263,
+        "recall": 0.7804878048780488,
+        "f1": 0.6274509803921569,
+        "support": 41
+      },
+      "Case Report": {
+        "precision": 0.8882978723404256,
+        "recall": 0.8564102564102564,
+        "f1": 0.8720626631853786,
+        "support": 195
+      }
+    },
+    "review": {
+      "coverage": 0.8762057877813505,
+      "sample_f1": 0.831680865006553
+    }
+  },
+  {
+    "seed": 42,
+    "method": "feature_graph",
+    "k": 5,
+    "alpha": 2,
+    "micro_f1": 0.8185751370060571,
+    "macro_f1": 0.7538503188955107,
+    "hamming_loss": 0.07223242994947175,
+    "subset_accuracy": 0.635048231511254,
+    "macro_ap": 0.7821816237708896,
+    "multi_topic_recall": 0.7357587362374342,
+    "predicted_labels_mean": 1.3404340836012862,
+    "per_label": {
+      "Treatment": {
+        "precision": 0.8560606060606061,
+        "recall": 0.7687074829931972,
+        "f1": 0.8100358422939068,
+        "support": 1029
+      },
+      "Diagnosis": {
+        "precision": 0.8028776978417266,
+        "recall": 0.7760778859527121,
+        "f1": 0.7892503536067893,
+        "support": 719
+      },
+      "Prevention": {
+        "precision": 0.8909899888765295,
+        "recall": 0.8668831168831169,
+        "f1": 0.8787712561711465,
+        "support": 924
+      },
+      "Mechanism": {
+        "precision": 0.8518518518518519,
+        "recall": 0.8170515097690941,
+        "f1": 0.8340888485947416,
+        "support": 563
+      },
+      "Transmission": {
+        "precision": 0.6376811594202898,
+        "recall": 0.34375,
+        "f1": 0.4467005076142132,
+        "support": 128
+      },
+      "Epidemic Forecasting": {
+        "precision": 0.7931034482758621,
+        "recall": 0.5609756097560976,
+        "f1": 0.6571428571428571,
+        "support": 41
+      },
+      "Case Report": {
+        "precision": 0.8994413407821229,
+        "recall": 0.8256410256410256,
+        "f1": 0.8609625668449198,
+        "support": 195
+      }
+    },
+    "review": {
+      "coverage": 0.8605305466237942,
+      "sample_f1": 0.8312960120993751
+    }
+  },
+  {
+    "seed": 42,
+    "method": "random_neighbors",
+    "k": 5,
+    "alpha": 2,
+    "micro_f1": 0.812971127862324,
+    "macro_f1": 0.7366588193546147,
+    "hamming_loss": 0.07550528249885163,
+    "subset_accuracy": 0.6185691318327974,
+    "macro_ap": 0.7983148014087132,
+    "multi_topic_recall": 0.7367161321206319,
+    "predicted_labels_mean": 1.3794212218649518,
+    "per_label": {
+      "Treatment": {
+        "precision": 0.8411703239289446,
+        "recall": 0.782312925170068,
+        "f1": 0.81067472306143,
+        "support": 1029
+      },
+      "Diagnosis": {
+        "precision": 0.788515406162465,
+        "recall": 0.7830319888734353,
+        "f1": 0.7857641311933008,
+        "support": 719
+      },
+      "Prevention": {
+        "precision": 0.8755458515283843,
+        "recall": 0.8679653679653679,
+        "f1": 0.8717391304347826,
+        "support": 924
+      },
+      "Mechanism": {
+        "precision": 0.855787476280835,
+        "recall": 0.8010657193605684,
+        "f1": 0.8275229357798165,
+        "support": 563
+      },
+      "Transmission": {
+        "precision": 0.6166666666666667,
+        "recall": 0.2890625,
+        "f1": 0.39361702127659576,
+        "support": 128
+      },
+      "Epidemic Forecasting": {
+        "precision": 0.4594594594594595,
+        "recall": 0.8292682926829268,
+        "f1": 0.591304347826087,
+        "support": 41
+      },
+      "Case Report": {
+        "precision": 0.9021739130434783,
+        "recall": 0.8512820512820513,
+        "f1": 0.8759894459102903,
+        "support": 195
+      }
+    },
+    "review": {
+      "coverage": 0.8737942122186495,
+      "sample_f1": 0.8208371665133395
+    }
+  },
+  {
+    "seed": 73,
+    "method": "feature_graph",
+    "k": 5,
+    "alpha": 0.5,
+    "micro_f1": 0.805851441556597,
+    "macro_f1": 0.7381836719736106,
+    "hamming_loss": 0.07849104271933854,
+    "subset_accuracy": 0.5964630225080386,
+    "macro_ap": 0.8026659299831163,
+    "multi_topic_recall": 0.7190043082814744,
+    "predicted_labels_mean": 1.3834405144694535,
+    "per_label": {
+      "Treatment": {
+        "precision": 0.8555678059536935,
+        "recall": 0.7541302235179786,
+        "f1": 0.8016528925619835,
+        "support": 1029
+      },
+      "Diagnosis": {
+        "precision": 0.732484076433121,
+        "recall": 0.799721835883171,
+        "f1": 0.7646276595744681,
+        "support": 719
+      },
+      "Prevention": {
+        "precision": 0.8787878787878788,
+        "recall": 0.8787878787878788,
+        "f1": 0.8787878787878788,
+        "support": 924
+      },
+      "Mechanism": {
+        "precision": 0.9041394335511983,
+        "recall": 0.7371225577264654,
+        "f1": 0.812133072407045,
+        "support": 563
+      },
+      "Transmission": {
+        "precision": 0.6024096385542169,
+        "recall": 0.390625,
+        "f1": 0.47393364928909953,
+        "support": 128
+      },
+      "Epidemic Forecasting": {
+        "precision": 0.4444444444444444,
+        "recall": 0.7804878048780488,
+        "f1": 0.5663716814159292,
+        "support": 41
+      },
+      "Case Report": {
+        "precision": 0.8349056603773585,
+        "recall": 0.9076923076923077,
+        "f1": 0.8697788697788698,
+        "support": 195
+      }
+    },
+    "review": {
+      "coverage": 0.8488745980707395,
+      "sample_f1": 0.8255208333333334
+    }
+  },
+  {
+    "seed": 73,
+    "method": "random_neighbors",
+    "k": 15,
+    "alpha": 0.5,
+    "micro_f1": 0.8062751871042027,
+    "macro_f1": 0.7439488647890515,
+    "hamming_loss": 0.07728525493798806,
+    "subset_accuracy": 0.604903536977492,
+    "macro_ap": 0.8084820345281107,
+    "multi_topic_recall": 0.70416467209191,
+    "predicted_labels_mean": 1.3460610932475885,
+    "per_label": {
+      "Treatment": {
+        "precision": 0.8412698412698413,
+        "recall": 0.7725947521865889,
+        "f1": 0.8054711246200608,
+        "support": 1029
+      },
+      "Diagnosis": {
+        "precision": 0.8289902280130294,
+        "recall": 0.7079276773296245,
+        "f1": 0.7636909227306826,
+        "support": 719
+      },
+      "Prevention": {
+        "precision": 0.8786565547128927,
+        "recall": 0.8777056277056277,
+        "f1": 0.8781808337845154,
+        "support": 924
+      },
+      "Mechanism": {
+        "precision": 0.9015317286652079,
+        "recall": 0.7317939609236235,
+        "f1": 0.807843137254902,
+        "support": 563
+      },
+      "Transmission": {
+        "precision": 0.5357142857142857,
+        "recall": 0.46875,
+        "f1": 0.5,
+        "support": 128
+      },
+      "Epidemic Forecasting": {
+        "precision": 0.43023255813953487,
+        "recall": 0.9024390243902439,
+        "f1": 0.5826771653543307,
+        "support": 41
+      },
+      "Case Report": {
+        "precision": 0.8349056603773585,
+        "recall": 0.9076923076923077,
+        "f1": 0.8697788697788698,
+        "support": 195
+      }
+    },
+    "review": {
+      "coverage": 0.8565112540192926,
+      "sample_f1": 0.8207101517284531
+    }
+  }
+]

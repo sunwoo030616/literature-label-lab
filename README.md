@@ -1,0 +1,79 @@
+# Biomedical Literature Label Lab
+
+개별연구에서 공부한 **라벨 상관관계**를 실제 문헌 분류 실험과 로컬 백엔드로 확장하는 프로젝트입니다. T-MDML 전체 재현이 아니며 성능 향상을 전제하지 않습니다.
+
+## 연구 질문
+
+같은 문헌 임베딩과 같은 분류기에서, 학습 데이터로만 추정한 주제 간 관계를 추가하면 드문 주제 및 다중 주제 문헌을 더 잘 분류하는가? 무작위 관계보다 일관되게 나은가? 자동처리를 보류하면 어떤 문헌을 얼마나 검토해야 하는가?
+
+## 실행
+
+Python 3.11+ 가상환경에 `pip install -r requirements.txt`. 현재 워크스페이스의 기존 `.venv`로 실행했으며 실제 버전은 `results/encoding.json`에 남깁니다. 외부 유료 API를 호출하지 않습니다. 모델·데이터 다운로드에는 인터넷이 필요합니다.
+
+```bash
+python src/download.py
+python src/test_integrity.py
+python -u src/experiment.py > results/run.log 2>&1
+python src/graph_experiment.py
+python src/analyze_errors.py
+python src/make_report.py
+PYTHONPATH=src uvicorn api:app --host 127.0.0.1 --port 8767
+```
+
+- `/docs`: 자동 생성 API 명세
+- `POST /classify`: 제목·초록을 입력해 복수 주제, 검토 보류 여부, 관련 훈련 문헌 반환
+- `GET /health`: 준비 상태
+- 임베딩 추출은 로컬 Mac GPU(MPS)를 우선하고 CPU로도 실행 가능합니다.
+- API의 기본 모델은 테스트 점수로 고르지 않은 seed17 모델입니다.
+- 모델 가중치·데이터·임베딩·학습된 분류기는 `.gitignore`에 포함합니다. 결과·재현 코드·데이터 ID/해시는 보존합니다.
+
+## 결과 읽기
+
+- `docs/PROTOCOL.md`: 테스트 평가 전 고정한 실험 설계
+- `results/locked_policies.json`: 테스트 평가 전에 선택·저장한 threshold/alpha/검토 정책
+- `results/data_audit.json`, `split_manifest.json`: 원본 해시, 제외 수, 실제 평가 문헌 ID
+- `results/test_results.json`: 3개 학습 부분표본 × 8개 비교 조건 전체 결과
+- `results/paired_bootstrap.json`: seed17 관계 보정 vs 기본 모델의 문헌 단위 paired bootstrap
+- `results/errors.json`: 기본 모델과 관계 보정의 테스트 오분류 비교
+- `results/batch_benchmark.json`: 동등한 문헌 32개에 대한 batch 1/4/8 측정
+- `docs/REPORT.md`: 해석 및 한계
+- `docs/EXPLAIN.md`: 직접 설명할 수 있도록 쓴 해설
+- `output/portfolio.pdf`: 기존 포트폴리오에 추가할 실험 요약
+
+## 기존 논문과 이번 구현의 차이
+
+원논문 T-MDML은 multi-instance multi-label 입력에서 특징·라벨 공간으로 관계를 추정하고 전역/라벨별 거리 행렬을 triplet 목적함수로 학습합니다. 이번 구현은 **문헌 한 편을 frozen encoder의 평균 벡터 하나로 표현한 multi-label 분류**입니다. Bag, triplet metric learning, 논문의 graph-based label manifold를 구현했다고 주장하지 않습니다.
+
+학습 라벨 행렬에서 중심화된 조건부 관계 `C[i,j] = P(label_j | label_i) - P(label_j)`를 계산하고 대각선을 0으로 둡니다. 독립 분류 점수 `p`를 `clip(p + alpha * (p-prior) @ C, 0, 1)`로 보정합니다. 이는 시험할 가설을 단순하게 분리한 후처리 실험이며 새로운 알고리즘의 독창성을 주장하지 않습니다. alpha=0도 허용하며 그 경우 관계 보정을 사용하지 않습니다.
+
+확장 개발은 **무작위 관계 대조·학습 표본 안정성·검토 보류 평가·배치 성능 측정·API 연결**입니다. 아래 점수는 확률 교정을 거치지 않았으므로 calibrated confidence나 의학적 근거로 해석하면 안 됩니다.
+
+## 출처
+
+- 공식 데이터: https://ftp.ncbi.nlm.nih.gov/pub/lu/LitCovid/biocreative/
+- NCBI 과제 설명 및 공식 평가 스크립트: https://github.com/ncbi/biocreative_litcovid
+- 모델(MIT): https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract
+- 모델 설명: https://arxiv.org/abs/2007.15779
+- 선행 논문: Kim, Kan, Yi. *T-MDML: Triplet-based Multiple Distance Metric Learning for Multi-Instance Multi-Label Classification with Label Correlation*. AAAI 2025, 17850–17857. 사용자가 제공한 원문.
+
+본 프로젝트는 의료 판단 도구가 아닙니다. COVID-19 문헌 주제 분류 범위의 연구 프로토타입입니다. 다른 도메인에 대한 정확성은 검증하지 않았습니다.
+
+## 현재 워크스페이스 실행 환경
+
+이 결과를 만든 Python은 `../kkbb-ddook-ddak-back/.venv/bin/python`입니다. 기존 깨비뚝딱 소스·환경을 수정하지 않았습니다. PDF/메모리 측정 라이브러리는 본 프로젝트의 `.deps`에 별도 설치했습니다. 일반적인 새 환경에서는 위 requirements를 설치하면 됩니다.
+
+```bash
+PYTHONPATH=.deps ../kkbb-ddook-ddak-back/.venv/bin/python src/verify_results.py
+PYTHONPATH=.deps ../kkbb-ddook-ddak-back/.venv/bin/python src/smoke_api.py
+```
+
+## 특징 이웃 그래프 추가 실험
+
+`docs/GRAPH_PROTOCOL.md`는 주 테스트 결과 생성 전에 등록한 추가 계획입니다. 원논문의 특징/라벨 공간 결합에서 착안하여 train 문헌 이웃의 라벨 전파 → 관계 추정 → 점수 보정을 별도로 비교합니다. 원논문의 triplet metric 학습과 동일하지 않습니다.
+
+```bash
+python src/graph_experiment.py > results/graph_run.log 2>&1
+python src/make_report.py
+```
+
+`graph_locked_policies.json`을 저장한 뒤 `graph_test_results.json`을 생성합니다. 실제 이웃과 무작위 이웃을 각각 3개 학습 부분표본에서 비교합니다.

@@ -1,0 +1,65 @@
+W1104 11:15:49.792000 65471 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 25295.99it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Users/filledu/Documents/ChatGPT/선우/literature-label-lab/models/biomedbert
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+encoded 0 / 8488 seconds 2.3
+encoded 256 / 8488 seconds 13.6
+encoded 512 / 8488 seconds 27.1
+encoded 768 / 8488 seconds 40.0
+encoded 1024 / 8488 seconds 53.2
+encoded 1280 / 8488 seconds 66.0
+encoded 1536 / 8488 seconds 80.9
+encoded 1792 / 8488 seconds 96.3
+encoded 2048 / 8488 seconds 109.6
+encoded 2304 / 8488 seconds 123.8
+encoded 2560 / 8488 seconds 138.4
+encoded 2816 / 8488 seconds 155.3
+encoded 3072 / 8488 seconds 168.8
+encoded 3328 / 8488 seconds 183.2
+encoded 3584 / 8488 seconds 197.4
+encoded 3840 / 8488 seconds 211.8
+encoded 4096 / 8488 seconds 221.8
+encoded 4352 / 8488 seconds 230.4
+encoded 4608 / 8488 seconds 239.0
+encoded 4864 / 8488 seconds 247.5
+encoded 5120 / 8488 seconds 256.2
+encoded 5376 / 8488 seconds 265.1
+encoded 5632 / 8488 seconds 273.7
+encoded 5888 / 8488 seconds 282.2
+encoded 6144 / 8488 seconds 290.8
+encoded 6400 / 8488 seconds 299.3
+encoded 6656 / 8488 seconds 308.2
+encoded 6912 / 8488 seconds 317.0
+encoded 7168 / 8488 seconds 326.5
+encoded 7424 / 8488 seconds 335.9
+encoded 7680 / 8488 seconds 349.1
+encoded 7936 / 8488 seconds 362.3
+encoded 8192 / 8488 seconds 372.9
+encoded 8448 / 8488 seconds 386.9
+tuned seed 17
+tuned seed 42
+tuned seed 73
+encoded 0 / 2 seconds 4.4
+encoded 0 / 32 seconds 0.2
+encoded 0 / 32 seconds 0.1
+encoded 0 / 32 seconds 0.0
+encoded 0 / 32 seconds 0.3
+encoded 0 / 32 seconds 0.3
+encoded 0 / 32 seconds 0.3
+encoded 0 / 32 seconds 0.5
+encoded 0 / 32 seconds 0.5
+encoded 0 / 32 seconds 0.5
+COMPLETE [{"seed": 17, "method": "tfidf", "macro_f1": 0.7715590880198155, "alpha": 0}, {"seed": 17, "method": "biomedbert", "macro_f1": 0.7484392128660203, "alpha": 0}, {"seed": 17, "method": "relation", "macro_f1": 0.7506191372430463, "alpha": 2}, {"seed": 42, "method": "tfidf", "macro_f1": 0.7877965554087493, "alpha": 0}, {"seed": 42, "method": "biomedbert", "macro_f1": 0.7312703475730599, "alpha": 0}, {"seed": 42, "method": "relation", "macro_f1": 0.7458310932192808, "alpha": 2}, {"seed": 73, "method": "tfidf", "macro_f1": 0.7773853770011898, "alpha": 0}, {"seed": 73, "method": "biomedbert", "macro_f1": 0.7588917643192309, "alpha": 0}, {"seed": 73, "method": "relation", "macro_f1": 0.753157671130675, "alpha": 2}]

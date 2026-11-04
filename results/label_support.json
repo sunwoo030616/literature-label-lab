@@ -1,0 +1,29 @@
+{
+  "train": {
+    "Treatment": 1737,
+    "Diagnosis": 1216,
+    "Prevention": 2243,
+    "Mechanism": 882,
+    "Transmission": 230,
+    "Epidemic Forecasting": 115,
+    "Case Report": 390
+  },
+  "dev": {
+    "Treatment": 345,
+    "Diagnosis": 226,
+    "Prevention": 437,
+    "Mechanism": 175,
+    "Transmission": 47,
+    "Epidemic Forecasting": 27,
+    "Case Report": 86
+  },
+  "test": {
+    "Treatment": 1029,
+    "Diagnosis": 719,
+    "Prevention": 924,
+    "Mechanism": 563,
+    "Transmission": 128,
+    "Epidemic Forecasting": 41,
+    "Case Report": 195
+  }
+}
