@@ -107,7 +107,7 @@ def main():
         "MPS의 SDPA dropout 미지원 오류를 보존하고 eager attention으로 재시작했다. 실패 실행을 성공 학습으로 세지 않았다. partial은3epoch/eager/attention dropout.1, LoRA는1epoch/SDPA/attention dropout0을 사용하므로 학습량과 층 수만의 순수 비교가 아니다. 원래 masked-LM head가 남긴 unexpected key는 mean-pooled encoder로 다른 task를 만들 때 사용하지 않는 출력 head이며, 실제 encoder 가중치는 사전학습 상태로 적재했다.",
         "",
         "## 5. 생성형 LLM을 덧붙인 실제 검증",
-        f"무료 로컬 {llm['model']}. calibration400 중 문헌 해시로 미리 고정한40편에 zero-shot 주제·원문 인용을 요청했다. 분류기 예측을 보여주지 않았다. JSON 유효율 {llm['valid_json_rate']:.1%}, 출력 인용의 원문 일치율 {llm['verbatim_evidence_rate']:.1%}, 지연 중앙값 {llm['median_seconds']:.2f}초/p95 {llm['p95_seconds']:.2f}초.",
+        f"무료 로컬 {llm['model']}. calibration400 중 문헌 해시로 미리 고정한40편에 zero-shot 주제·원문 인용을 요청했다. 분류기 예측을 보여주지 않았다. JSON 유효율 {llm['valid_json_rate']:.1%}, 출력 인용의 인용 규칙 통과율 {llm['verbatim_evidence_rate']:.1%}, 지연 중앙값 {llm['median_seconds']:.2f}초/p95 {llm['p95_seconds']:.2f}초.",
         "| 방식 | 같은40편 Macro-F1 | Micro-F1 |",
         "|---|---:|---:|",
     ]
@@ -115,7 +115,7 @@ def main():
         lines.append(f"| {r['variant']} | {r['macro_f1']:.4f} | {r['micro_f1']:.4f} |")
     lines += [
         "",
-        "이40편은 개발용 calibration의 일부라 최종 테스트 성능으로 쓰지 않는다. 정답 라벨이 전혀 없는 주제는 Macro-F1 해석에 영향을 주므로 support도 raw JSON에서 확인한다. invalid/empty 출력은 all-negative로 평가했다. 인용 원문 일치는 의미적 entailment나 모델 설명의 충실성을 보장하지 않는다. JSON parsing만 통과한 출력과 근거 검증 후 출력을 구분했다.",
+        "이40편은 개발용 calibration의 일부라 최종 테스트 성능으로 쓰지 않는다. Transmission·Epidemic Forecasting 정답이0개라 전체7라벨 Macro-F1은 이 두 라벨의0점을 포함하며 같은40편 조건끼리 비교한다. invalid/empty 출력은 all-negative로 평가했다. 원래 JSON의 verbatim_evidence_rate는 알려진 라벨·15~240자·원문 및 모델 입력과의 정확 일치라는 복합 인용 규칙의 통과율이다. 순수한 원문 substring 비율과 다르며, 길이 위반을 사실적 환각으로 부르지 않는다. 인용 원문 일치는 의미적 entailment나 모델 설명의 충실성을 보장하지 않는다. JSON parsing만 통과한 출력과 근거 검증 후 출력을 구분했다.",
         "",
         "## 6. 원인별로 말할 수 있는 범위",
         "- 규제: 같은 표현에서 train/tune 간격이 줄고 후속 평가가 개선됐다. 분류기 과적합이 최초 결과에 영향을 줬다는 직접 근거다.",

@@ -68,6 +68,10 @@ def main():
         if (V3 / "results/adapter_exports.json").exists()
         else []
     )
+    llm_analysis_path = V3 / "results/llm_failure_analysis.json"
+    if not llm_analysis_path.exists():
+        llm_analysis_path = V3 / "results/llm_zero_failure_analysis.json"
+    llm_analysis = read(llm_analysis_path) if llm_analysis_path.exists() else {}
     cal = read(V3 / "results/calibration_results.json")
     old = read(ROOT / "results/test_results.json")
     grid = read(V2 / "results/classifier_grid.json")
@@ -88,7 +92,7 @@ def main():
             rows.append({"variant": "V1_" + r["method"], "split": "test", **r})
     rows += allres
     agg = []
-    for group in ["bag_mean", "attention", "label_graph", "random_graph"]:
+    for group in ["bag_mean", "uniform_attention", "attention", "label_graph", "random_graph"]:
         for split in ["test", "audit"]:
             rr = [
                 r for r in bags if r["variant"].startswith(group + "_seed") and r["split"] == split
@@ -156,8 +160,8 @@ def main():
     fig.savefig(figdir / "finetuning.png")
     plt.close(fig)
     fig, axs = plt.subplots(1, 2, figsize=(9, 2.8))
-    groups = ["bag_mean", "attention", "label_graph", "random_graph"]
-    labels = ["Bag mean", "Attention", "Label graph", "Random graph"]
+    groups = ["bag_mean", "uniform_attention", "attention", "label_graph", "random_graph"]
+    labels = ["Bag mean LR", "Uniform head", "Attention", "Label graph", "Random graph"]
     for ax, split in zip(axs, ["test", "audit"]):
         rr = [
             next(r for r in agg if r["variant"] == n + "_3seed_mean" and r["split"] == split)
@@ -168,7 +172,7 @@ def main():
             [r["macro_f1"] for r in rr],
             yerr=[r["std"] for r in rr],
             capsize=4,
-            color=["#9099aa", "#286bdf", "#ed7b24", "#39a69b"],
+            color=["#9099aa", "#778599", "#286bdf", "#ed7b24", "#39a69b"],
         )
         ax.set_ylim(0, 1)
         ax.tick_params(axis="x", labelsize=8)
@@ -192,7 +196,7 @@ def main():
     )
     ax.set_ylim(0, 1)
     ax.set_ylabel("Macro-F1")
-    ax.set_title("Same 40 predetermined development documents; NOT final test")
+    ax.set_title("Same 40 development papers; two topics have zero positives; NOT final test")
     fig.tight_layout()
     fig.savefig(figdir / "llm.png")
     plt.close(fig)
@@ -224,11 +228,11 @@ def main():
         "V2: 마지막2개 block seed17, 모든 층 LoRA seed17/42. V3: LoRA max512 seed17 추가. partial은 원본 마지막2개 block을, LoRA는 모든층에 추가한 query/value 저랭크 가중치를 task BCE로 업데이트했다. partial3epoch/LoRA1epoch 예산 안에서 tune600으로 checkpoint와 threshold를 선택했고, calibration/test/audit로 고르지 않았다. V2의 처음/마지막 block 가중치 변화는 verification.json에 있다. partial은3epoch/eager/attention dropout.1, LoRA는1epoch/SDPA/attention dropout0이므로 학습량과 구조가 함께 다른 비교다. LoRA256과 LoRA512는 이 설정을 맞췄다. V3 max512는 읽는 길이와 계산 비용이 함께 증가한다. 하나의 추가 seed 결과이므로 일반적인 우열을 증명하지 않는다.",
         "",
         "## 4. 논문 공부에서 더 확장한 문헌 bag 실험",
-        "문헌을 최대4개 token window의 bag으로 표현했다. frozen encoder로 각 조각을 벡터화한 뒤 bag mean, 주제별 attention, 실제 관계 규제, 무작위 관계 규제를 비교했다. 각 조건을3개 학습 부분표본에서 반복했다. 관계 규제는 classifier weight를 가깝게 하는 후속 구성이고, T-MDML의 distance metric/triplet 학습 재현은 아니다.",
+        "문헌을 최대4개 token window의 bag으로 표현했다. frozen encoder로 각 조각을 벡터화한 뒤 bag mean LR, 같은 학습 조건의 균등 head, 주제별 attention, 실제 관계 규제, 무작위 관계 규제를 비교했다. 균등 head와 학습 attention은 query의 학습 여부만 다르게 두고 optimizer·dropout·epoch 선택을 맞췄다. 평균 LR과 attention의 차이를 attention 하나의 효과로 해석하지 않는다. 각 조건을3개 학습 부분표본에서 반복했다. 관계 규제는 classifier weight를 가깝게 하는 후속 구성이고, T-MDML의 distance metric/triplet 학습 재현은 아니다.",
         "라벨별 attention은 어떤 조각에 비중을 주었는지 살펴보는 도구다. 정답 근거나 인과적 설명을 보장하지 않는다. 4개보다 많은 window는 균등 선택하여 원문 전체를 항상 읽지는 않는다. 검증 선택 조건이 많아져 선택 과적합 가능성도 남긴다.",
         "",
         "## 5. 생성형 LLM의 실제 효과",
-        f"무료 Qwen3-4B-4bit를 로컬 MLX로 실행했다. 고정40편에서 JSON 유효율 {llm['valid_json_rate']:.1%}, 원문 인용 일치율 {llm['verbatim_evidence_rate']:.1%}, 지연 중앙값 {llm['median_seconds']:.2f}초, p95 {llm['p95_seconds']:.2f}초.",
+        f"무료 Qwen3-4B-4bit를 로컬 MLX로 실행했다. 고정40편에서 JSON 유효율 {llm['valid_json_rate']:.1%}, 인용 규칙 통과율 {llm['verbatim_evidence_rate']:.1%}, 지연 중앙값 {llm['median_seconds']:.2f}초, p95 {llm['p95_seconds']:.2f}초.",
     ]
     for r in llm["conditions"]:
         lines.append(
@@ -237,7 +241,7 @@ def main():
     if fewshot:
         lines += [
             "",
-            f"train-only 예시 {fewshot['training_examples']}개를 고정한 추가 in-context 대조: JSON {fewshot['valid_json_rate']:.1%}, 인용 일치 {fewshot['verbatim_evidence_rate']:.1%}, 지연 중앙값 {fewshot['median_seconds']:.2f}초. 같은40편이고 재시도/오류를 본 뒤 예시 선택을 하지 않았다. Qwen 가중치 미세조정은 아니다.",
+            f"train-only 예시 {fewshot['training_examples']}개를 고정한 추가 in-context 대조: JSON {fewshot['valid_json_rate']:.1%}, 인용 규칙 통과 {fewshot['verbatim_evidence_rate']:.1%}, 지연 중앙값 {fewshot['median_seconds']:.2f}초. 같은40편이고 재시도/오류를 본 뒤 예시 선택을 하지 않았다. Qwen 가중치 미세조정은 아니다.",
         ]
         for r in fewshot["conditions"]:
             lines.append(
@@ -281,6 +285,19 @@ def main():
         "- probability calibration: https://proceedings.mlr.press/v70/guo17a.html",
         "- T-MDML AAAI2025: 사용자가 제공한 Multi-label_AAAI.pdf 원문.",
     ]
+    if llm_analysis:
+        lines += [
+            "",
+            "## LLM 실패를 지표별로 분리",
+            "인용 규칙 통과율은 알려진 라벨·15~240자·원문 및 모델에 보인 입력과의 정확 일치를 모두 검사한다. 원래 JSON의 verbatim_evidence_rate 필드는 이 복합 규칙의 통과율이며, 순수한 원문 substring 비율과 구분한다. 불일치는 사실적 환각과 같은 뜻이 아니다.",
+        ]
+        for condition, item in llm_analysis.items():
+            lines += [
+                f"- {condition}: 원문 substring 자체의 일치 {item['pure_original_substring_rate']:.1%}; 전체 인용 규칙 통과 {item['full_quote_rule_pass_count']}/{item['items']}. 길이/비일치 사유(중복 가능) {item['invalid_reason_counts_nonexclusive']}. 필터가 제거한 맞는 라벨 {item['filter_removed_true_label_predictions']}개 / 오탐 {item['filter_removed_false_label_predictions']}개."
+            ]
+        lines += [
+            "이40편에는 Transmission·Epidemic Forecasting 정답이0개였다. 전체7라벨 Macro-F1은 이 두 라벨의 F1=0을 포함한다. 모든 조건에 동일한 규칙을 적용했으며, Micro-F1·라벨별 support도 함께 보고한다. 다른 분할의 F1과 직접 비교하지 않는다."
+        ]
     if mechanisms:
         lines += [
             "",
@@ -457,7 +474,7 @@ def main():
         para(
             42,
             y,
-            "<b>대조 설계</b>  같은 chunk 표현에서 단순 평균 / 주제별 attention / 실제 라벨 관계 규제 / 무작위 관계 규제를3개 학습 부분표본으로 비교했다.",
+            "<b>대조 설계</b>  같은 chunk 표현에서 평균 LR / 균등 비중 head / 학습 attention / 실제·무작위 관계 규제를3개 학습 부분표본으로 비교했다.",
         )
         - 12
     )
@@ -489,7 +506,7 @@ def main():
         para(
             42,
             y,
-            f"<b>무료 로컬 LLM</b>  고정40편의 개발 실험. JSON 유효율 {llm['valid_json_rate']:.1%}, 원문 인용 일치율 {llm['verbatim_evidence_rate']:.1%}. 인용 일치가 의미적 정답을 증명하지는 않는다.",
+            f"<b>무료 로컬 LLM</b>  고정40편의 개발 실험. JSON 유효율 {llm['valid_json_rate']:.1%}, 인용 규칙 통과율 {llm['verbatim_evidence_rate']:.1%}. 인용 일치가 의미적 정답을 증명하지는 않는다.",
         )
         - 10
     )

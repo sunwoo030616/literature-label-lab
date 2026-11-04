@@ -36,6 +36,13 @@ class AttentionHead(nn.Module):
         self.bias = nn.Parameter(torch.zeros(7))
         self.dropout = nn.Dropout(0.1)
 
+    def make_uniform(self):
+        """Matched control: same classifier/training, but no learned chunk weighting."""
+        with torch.no_grad():
+            self.query.zero_()
+        self.query.requires_grad_(False)
+        return self
+
     def forward(self, x, mask):
         scores = torch.einsum("bkd,ld->blk", x, self.query) / np.sqrt(x.shape[-1])
         scores = scores.masked_fill(~mask[:, None, :], -1e4)
@@ -100,9 +107,11 @@ def predict(model, x, mask):
     return np.concatenate(pp), np.concatenate(att)
 
 
-def train_head(x, mask, y, xd, md, yd, graph, lam, seed):
+def train_head(x, mask, y, xd, md, yd, graph, lam, seed, uniform=False):
     torch.manual_seed(seed)
     model = AttentionHead()
+    if uniform:
+        model.make_uniform()
     opt = torch.optim.AdamW(model.parameters(), lr=1e-3, weight_decay=0.01)
     history = []
     best = -1
@@ -200,6 +209,7 @@ def main():
             "attention": np.zeros_like(g),
             "label_graph": g,
             "random_graph": g[np.ix_(perm, perm)],
+            "uniform_attention": np.zeros_like(g),
         }
         zero_fit = None
         # Shared bag features and train-only scaler; each condition has a matched lambda selection budget.
@@ -207,8 +217,9 @@ def main():
             best = None
             bestmodel = None
             histories = []
-            for lam in ([0] if name == "attention" else [0, 0.01, 0.1]):
-                if lam == 0 and zero_fit is not None:
+            uniform = name == "uniform_attention"
+            for lam in ([0] if name in ["attention", "uniform_attention"] else [0, 0.01, 0.1]):
+                if lam == 0 and zero_fit is not None and not uniform:
                     # With zero penalty this is exactly the same seeded objective.
                     # Reuse it rather than repeating an identical training run.
                     model, policy, history = zero_fit
@@ -223,8 +234,9 @@ def main():
                         torch.tensor(graph, dtype=torch.float32),
                         lam,
                         seed,
+                        uniform=uniform,
                     )
-                    if lam == 0:
+                    if lam == 0 and not uniform:
                         zero_fit = (model, policy, history)
                 histories.append({"lambda": lam, "history": history})
                 if best is None or policy["tune_macro_f1"] > best["tune_macro_f1"] + 1e-12:

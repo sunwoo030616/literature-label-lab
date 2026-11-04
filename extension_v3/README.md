@@ -36,3 +36,5 @@ Qwen은 기존 로컬 snapshot을 읽기 전용 사용합니다. LoRA classifier
 - `src/export_adapters.py`: base model이 별도로 필요한 adapter+head safetensors export와 tensor round-trip 확인.
 - `src/final_audit.py`: 모든 정책을 고정한 뒤 겹치지 않는 새 내부1,000편을 일회 확인.
 - 실행 환경 버전은 `../followup_v2/requirements-observed.txt`에 보존. GPU 작업은 순차 실행.
+
+평균 LR과 attention 사이에는 optimizer 차이도 있으므로, 같은 BCE/AdamW/dropout/epoch 선택을 유지하고 문단 비중만 고정하는 uniform head를 추가했습니다. 현재 bag 비교는 평균 LR / 균등 head / 학습 attention / 실제 관계 / 무작위 관계의5조건×3학습 부분표본입니다. 원논문 수식과 구현의 구분은 docs/PAPER_TO_IMPLEMENTATION.md에 있습니다. 인용 규칙 실패의 길이·원문 불일치 구분은 analyze_llm.py로 기록합니다.

@@ -52,3 +52,7 @@ V2가 입력 길이 진단 중인 시점에 추가 정의했다. attention_seed1
 최종 선택 모델에서 라벨별 attention entropy(유효 window 수의 log로 정규화), query norm, graph penalty와 eval-mode train BCE의 비율을 기록한다. lambda0 선택 여부를 그대로 보고한다. 이는 학습 후의 서술 진단이며 작은 penalty/균등 attention만으로 성능 차이의 인과적 원인을 단정하지 않는다. 이 진단을 보고 새 lambda를 추가하지 않는다.
 
 lambda0은 graph가 곱해지지 않아 같은 seed의 attention-only 목적함수와 정확히 같다. 동일한 학습을 반복해 시간을 쓰지 않고 seed당 한 번 학습한 zero-penalty 결과를 실제/무작위 관계 후보에서도 재사용한다. nonzero lambda의 학습과 후보 선택 규칙은 동일하다.
+
+## 학습 방식이 맞는 uniform head 대조 추가
+
+LoRA512가 학습 중이고 bag 특성 추출·학습·평가가 시작되기 전에 추가했다. 평균 LR 대조는 head optimizer/규제가 달라 attention의 효과만 분리하기 어렵다. 따라서 같은 AttentionHead에서 query를0으로 고정한 균등 비중 head를 추가한다. 같은 초기 classifier·BCE·dropout·AdamW·30epoch·threshold/epoch 선택 예산을 쓰며 graph penalty는0이다. 유효 chunk의 비중은 정확히1/n이다. seed17/42/73 모두 비교한다. 최종 비교는5개 조건×3학습 부분표본이며, uniform head 대비 attention의 차이와 평균 LR 참고값을 구분한다. Query가 optimizer step 후에도0이고 classifier는 갱신되는지 자동 검사한다.

@@ -1,0 +1,178 @@
+{
+  "zero_shot": {
+    "documents": 40,
+    "items": 43,
+    "exact_substring_in_original_count": 37,
+    "pure_original_substring_rate": 0.8604651162790697,
+    "full_quote_rule_pass_count": 34,
+    "full_quote_rule_definition": "known label, string length15..240, exact original substring AND exact model-visible substring",
+    "invalid_reason_counts_nonexclusive": {
+      "quote_length_outside_15_240": 5,
+      "not_verbatim_in_original": 6
+    },
+    "filter_removed_true_label_predictions": 2,
+    "filter_removed_false_label_predictions": 7,
+    "per_label": {
+      "Treatment": {
+        "gold_support": 15,
+        "raw_predicted": 22,
+        "raw_true_positive": 12,
+        "raw_false_positive": 10,
+        "raw_false_negative": 3
+      },
+      "Diagnosis": {
+        "gold_support": 13,
+        "raw_predicted": 2,
+        "raw_true_positive": 2,
+        "raw_false_positive": 0,
+        "raw_false_negative": 11
+      },
+      "Prevention": {
+        "gold_support": 14,
+        "raw_predicted": 1,
+        "raw_true_positive": 1,
+        "raw_false_positive": 0,
+        "raw_false_negative": 13
+      },
+      "Mechanism": {
+        "gold_support": 4,
+        "raw_predicted": 3,
+        "raw_true_positive": 1,
+        "raw_false_positive": 2,
+        "raw_false_negative": 3
+      },
+      "Transmission": {
+        "gold_support": 0,
+        "raw_predicted": 5,
+        "raw_true_positive": 0,
+        "raw_false_positive": 5,
+        "raw_false_negative": 0
+      },
+      "Epidemic Forecasting": {
+        "gold_support": 0,
+        "raw_predicted": 2,
+        "raw_true_positive": 0,
+        "raw_false_positive": 2,
+        "raw_false_negative": 0
+      },
+      "Case Report": {
+        "gold_support": 6,
+        "raw_predicted": 8,
+        "raw_true_positive": 5,
+        "raw_false_positive": 3,
+        "raw_false_negative": 1
+      }
+    },
+    "topics_with_no_positive_examples": [
+      "Transmission",
+      "Epidemic Forecasting"
+    ],
+    "invalid_examples": [
+      {
+        "pmid": "32955773",
+        "label": "Transmission",
+        "evidence": "The gastroenterologists are facing multiple challenges in the safe practice of medicine because of patient's inability to visit physicians' offices, endoscopy centers and the threat of potential virus spread through gastrointestinal secretions by endoscopies in emergent cases.",
+        "reasons": [
+          "quote_length_outside_15_240",
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "32890525",
+        "label": "Treatment",
+        "evidence": "telemedicine was rapidly implemented for initial consultations and radiation treatment planning",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "32755212",
+        "label": "Mechanism",
+        "evidence": "The conclusion states that MIS-C associated with COVID-19 is characterized predominantly by cardiovascular abnormalities, although solid visceral organ, gallbladder, and bowel abnormalities as well as ascites are also seen, reflecting a multisystemic inflammatory process.",
+        "reasons": [
+          "quote_length_outside_15_240",
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Diagnosis"
+        ]
+      },
+      {
+        "pmid": "32731215",
+        "label": "Case Report",
+        "evidence": "We describe the characteristics, presentation, and outcomes of adult ESKD patients on chronic PD hospitalized with CO-VID-19.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Case Report"
+        ]
+      },
+      {
+        "pmid": "32871886",
+        "label": "Treatment",
+        "evidence": "The duration of wearing protective glasses may be a protective factor of dry eye symptoms.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "32301206",
+        "label": "Treatment",
+        "evidence": "We are determined to use our hard-earned skills in some way, to help in what is the biggest global emergency of our lifetime.",
+        "reasons": [
+          "not_verbatim_in_original"
+        ],
+        "gold": [
+          "Prevention"
+        ]
+      },
+      {
+        "pmid": "33040189",
+        "label": "Treatment",
+        "evidence": "However, data on cancer patients with SARS-CoV-2 infection remains scarce. METHODS: We conducted a retrospective study on 223 cancer patients with SARS-CoV-2 from 26 hospitals in Hubei, China. An individualized nomogram was constructed based on multivariate Cox analysis. Considering the convenience of the nomogram application, an online tool was also created. The predictive performance and clinical application of nomogram were verified by C-index, calibration curve and decision curve analysis (DCA).",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Treatment",
+          "Diagnosis"
+        ]
+      },
+      {
+        "pmid": "33040189",
+        "label": "Epidemic Forecasting",
+        "evidence": "However, data on cancer patients with SARS-CoV-2 infection remains scarce. METHODS: We conducted a retrospective study on 223 cancer patients with SARS-CoV-2 from 26 hospitals in Hubei, China. An individualized nomogram was constructed based on multivariate Cox analysis. Considering the convenience of the nomogram application, an online tool was also created. The predictive performance and clinical application of nomogram were verified by C-index, calibration curve and decision curve analysis (DCA).",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Treatment",
+          "Diagnosis"
+        ]
+      },
+      {
+        "pmid": "33040189",
+        "label": "Case Report",
+        "evidence": "However, data on cancer patients with SARS-CoV-2 infection remains scarce. METHODS: We conducted a retrospective study on 223 cancer patients with SARS-CoV-2 from 26 hospitals in Hubei, China. An individualized nomogram was constructed based on multivariate Cox analysis. Considering the convenience of the nomogram application, an online tool was also created. The predictive performance and clinical application of nomogram were verified by C-index, calibration curve and decision curve analysis (DCA).",
+        "reasons": [
+          "quote_length_outside_15_240"
+        ],
+        "gold": [
+          "Treatment",
+          "Diagnosis"
+        ]
+      }
+    ],
+    "note": "String occurrence does not establish semantic support. Length violations are not automatically fabricated quotations. Full-rule rate was named verbatim_evidence_rate in the original output; preserve that field and use this decomposition to interpret it."
+  }
+}

@@ -36,6 +36,21 @@ class BagInvariants(unittest.TestCase):
         _, weights = self.model(self.x, self.mask)
         torch.testing.assert_close(weights[2, :, 0], torch.ones(7))
 
+    def test_uniform_control_stays_uniform_after_training_step(self):
+        model = AttentionHead(d=12).make_uniform().train()
+        before = model.classifier.detach().clone()
+        opt = torch.optim.AdamW(model.parameters(), lr=0.01)
+        logits, _ = model(self.x, self.mask)
+        logits.square().mean().backward()
+        opt.step()
+        self.assertFalse(model.query.requires_grad)
+        self.assertTrue(torch.equal(model.query, torch.zeros_like(model.query)))
+        self.assertFalse(torch.equal(before, model.classifier))
+        model.eval()
+        _, weights = model(self.x, self.mask)
+        expected = self.mask.float() / self.mask.sum(1)[:, None]
+        torch.testing.assert_close(weights, expected[:, None, :].expand_as(weights))
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

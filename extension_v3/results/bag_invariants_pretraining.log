@@ -1,0 +1,9 @@
+test_bag_permutation_equivariance (__main__.BagInvariants.test_bag_permutation_equivariance) ... ok
+test_one_chunk_has_unit_attention (__main__.BagInvariants.test_one_chunk_has_unit_attention) ... ok
+test_padding_cannot_change_predictions (__main__.BagInvariants.test_padding_cannot_change_predictions) ... ok
+test_uniform_control_stays_uniform_after_training_step (__main__.BagInvariants.test_uniform_control_stays_uniform_after_training_step) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.990s
+
+OK

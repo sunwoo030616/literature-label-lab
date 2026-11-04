@@ -43,7 +43,7 @@ def main():
         if name.startswith("random_graph"):
             perm = np.random.default_rng(991).permutation(7)
             graph = graph[np.ix_(perm, perm)]
-        if name.startswith("attention"):
+        if name.startswith("attention") or name.startswith("uniform_attention"):
             graph = np.zeros_like(graph)
         weights = head.classifier.detach().numpy()
         reg = float(
