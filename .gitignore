@@ -25,3 +25,5 @@ extension_extras.log
 v3_pipeline_retry.log
 
 v3_pipeline_resume.log
+
+extension_v4/data/

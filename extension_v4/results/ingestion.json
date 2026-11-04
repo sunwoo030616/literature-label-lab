@@ -1,0 +1,138 @@
+{
+  "first_pass": [
+    {
+      "source": "train.csv",
+      "source_sha256": "be328a1a29c7641b6bdb0d1303c354464359fd24b611e1217ad039cf51c1118f",
+      "rows_seen": 24960,
+      "inserted": 24929,
+      "skipped": 31,
+      "quarantined": 0,
+      "seconds": 4.287817167
+    },
+    {
+      "source": "dev.csv",
+      "source_sha256": "e1d6300fc97bf0156024bb53c88ae8e881fd12c0858170dd085d2a58b3d65ba9",
+      "rows_seen": 6239,
+      "inserted": 6228,
+      "skipped": 11,
+      "quarantined": 0,
+      "seconds": 1.2098991249999997
+    },
+    {
+      "source": "test.csv",
+      "source_sha256": "d0b2a0d28e550c13584c7fffb1c8d507fd7c6cad0d75a11230f766e6c633164b",
+      "rows_seen": 2500,
+      "inserted": 2488,
+      "skipped": 1,
+      "quarantined": 11,
+      "seconds": 0.6542189579999995
+    }
+  ],
+  "replay": [
+    {
+      "source": "train.csv",
+      "source_sha256": "be328a1a29c7641b6bdb0d1303c354464359fd24b611e1217ad039cf51c1118f",
+      "rows_seen": 24960,
+      "inserted": 0,
+      "skipped": 24960,
+      "quarantined": 0,
+      "seconds": 0.9184343339999996
+    },
+    {
+      "source": "dev.csv",
+      "source_sha256": "e1d6300fc97bf0156024bb53c88ae8e881fd12c0858170dd085d2a58b3d65ba9",
+      "rows_seen": 6239,
+      "inserted": 0,
+      "skipped": 6239,
+      "quarantined": 0,
+      "seconds": 0.23932325
+    },
+    {
+      "source": "test.csv",
+      "source_sha256": "d0b2a0d28e550c13584c7fffb1c8d507fd7c6cad0d75a11230f766e6c633164b",
+      "rows_seen": 2500,
+      "inserted": 0,
+      "skipped": 2489,
+      "quarantined": 11,
+      "seconds": 0.08909379200000078
+    }
+  ],
+  "unique_documents": 33645,
+  "fts_documents": 33645,
+  "pmid_query_plan": [
+    [
+      3,
+      0,
+      39,
+      "SEARCH documents USING INDEX sqlite_autoindex_documents_1 (pmid=?)"
+    ]
+  ],
+  "search_examples": {
+    "tissue factor thrombosis": [
+      {
+        "pmid": "32532805",
+        "title": "Thrombotic complications of COVID-19 may reflect an upregulation of endothelial tissue factor expression that is contingent on activation of endosomal NADPH oxidase."
+      },
+      {
+        "pmid": "32668058",
+        "title": "Hypofibrinolytic state and high thrombin generation may play a major role in SARS-COV2 associated thrombosis."
+      },
+      {
+        "pmid": "32762443",
+        "title": "Endothelial Dysfunction and Thrombosis in Patients With COVID-19-Brief Report."
+      },
+      {
+        "pmid": "32678428",
+        "title": "Platelet activation and platelet-monocyte aggregate formation trigger tissue factor expression in patients with severe COVID-19."
+      },
+      {
+        "pmid": "33740855",
+        "title": "Acute infections, venous thrombosis, and recommended thromboprophylaxis."
+      }
+    ],
+    "vaccine antibody response": [
+      {
+        "pmid": "32991231",
+        "title": "Neutralizing antibody response elicited by SARS-CoV-2 receptor-binding domain."
+      },
+      {
+        "pmid": "34346750",
+        "title": "Differential Antibody Response to mRNA COVID-19 Vaccines in Healthy Subjects."
+      },
+      {
+        "pmid": "34376569",
+        "title": "Two doses of the SARS-CoV-2 BNT162b2 vaccine enhances antibody responses to variants in individuals with prior SARS-CoV-2 infection."
+      },
+      {
+        "pmid": "32647131",
+        "title": "Self-amplifying RNA SARS-CoV-2 lipid nanoparticle vaccine candidate induces high neutralizing antibody titers in mice."
+      },
+      {
+        "pmid": "33062618",
+        "title": "Immunoglobulin G2 Antibody as a Potential Target for COVID-19 Vaccine."
+      }
+    ],
+    "PCR diagnosis": [
+      {
+        "pmid": "33038445",
+        "title": "The Additional Contribution of Second Nasopharyngeal PCR to COVID-19 Diagnosis in Patients with Negative Initial Test."
+      },
+      {
+        "pmid": "32335089",
+        "title": "Highly sensitive detection of SARS-CoV-2 RNA by multiplex rRT-PCR for molecular diagnosis of COVID-19 by clinical laboratories."
+      },
+      {
+        "pmid": "32785885",
+        "title": "Diagnosis of COVID-19 using multiple antibody assays in two cases with negative PCR results from nasopharyngeal swabs."
+      },
+      {
+        "pmid": "32670990",
+        "title": "False-Negative Nasopharyngeal Swab RT-PCR Assays in Typical COVID-19: Role of Ultra-low-dose Chest CT and Bronchoscopy in Diagnosis."
+      },
+      {
+        "pmid": "32685374",
+        "title": "More reliability of suspicious symptoms plus chest CT-scan than RT_PCR test for the diagnosis of COVID-19 in an 18-days-old neonate."
+      }
+    ]
+  }
+}
