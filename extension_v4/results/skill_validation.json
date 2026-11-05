@@ -1,0 +1,7 @@
+{
+  "frontmatter_validator": "passed",
+  "offline_audit_helper": "passed",
+  "new_question_helper": "actual local Qwen + MCP round trips in skill_question_strict.json",
+  "existing_output_overwrite_rejected": true,
+  "overwrite_exit_code": 2
+}

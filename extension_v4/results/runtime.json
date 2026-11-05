@@ -1,0 +1,19 @@
+{
+  "versions": {
+    "mcp": "2.3.0",
+    "torch": "2.15.0",
+    "transformers": "5.22.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "mlx": "0.32.4",
+    "mlx-lm": "0.32.2",
+    "huggingface-hub": "1.33.0",
+    "pydantic": "2.14.2"
+  },
+  "paid_api_calls": 0,
+  "generative_model": "mlx-community/Qwen3-4B-4bit",
+  "new_dense_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "new_model_download": "pinned revision, local inference",
+  "notes": "Initial 36 QA runs, six original agent tasks, six Korean rewrites; soft/strict replays and Skill end-to-end probes saved separately."
+}

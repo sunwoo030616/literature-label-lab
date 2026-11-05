@@ -1,0 +1,206 @@
+[
+  {
+    "id": "q07-korean",
+    "query": "코로나 입원 환자에게 스타틴이 도움이 되었는지 9개 연구 3449명을 분석한 논문",
+    "target_pmid": "32882643",
+    "original_rank": null,
+    "raw_output": "{\"tool\":\"search_documents\",\"arguments\":{\"query\":\"corona hospital patients statin benefit\",\"limit\":3}}",
+    "seconds": 2.9179373750230297,
+    "prompt_version": "planner-v1",
+    "prompt_sha256": "e87d7a2d8983f9546fd7c565d4090a808510d576eea77f534415149ac5ed2424",
+    "input_tokens": 159,
+    "max_output_tokens": 160,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "plan": {
+      "tool": "search_documents",
+      "arguments": {
+        "query": "corona hospital patients statin benefit",
+        "limit": 3
+      }
+    },
+    "retrieved": [
+      "32882643",
+      "32957539",
+      "32592657",
+      "32946859",
+      "32870376",
+      "33060704",
+      "32570882",
+      "32909838",
+      "32674818",
+      "32965455"
+    ],
+    "rewritten_rank": 1
+  },
+  {
+    "id": "q09-korean",
+    "query": "후난성 네 기관의 101명 환자에서 흉부 CT 소견과 중증도를 비교한 연구",
+    "target_pmid": "32125873",
+    "original_rank": null,
+    "raw_output": "{\"tool\":\"search_documents\",\"arguments\":{\"query\":\"hunan, 101 patients, chest CT, severity\",\"limit\":3}}",
+    "seconds": 5.421657124999911,
+    "prompt_version": "planner-v1",
+    "prompt_sha256": "825a6ba2965780aafb10510c005bb576c4efcaa1bede7cedfd9a700eed9c8e1d",
+    "input_tokens": 152,
+    "max_output_tokens": 160,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "plan": {
+      "tool": "search_documents",
+      "arguments": {
+        "query": "hunan, 101 patients, chest CT, severity",
+        "limit": 3
+      }
+    },
+    "retrieved": [
+      "32125873",
+      "32386011",
+      "32787937",
+      "33015110",
+      "32155105",
+      "33032267",
+      "32825060",
+      "33039235",
+      "32364962",
+      "32728966"
+    ],
+    "rewritten_rank": 1
+  },
+  {
+    "id": "q11-korean",
+    "query": "감염 후 배뇨 곤란과 팔다리 감각 저하를 보인 28세 여성 횡단성 척수염 증례",
+    "target_pmid": "32926676",
+    "original_rank": null,
+    "raw_output": "{\"tool\":\"search_documents\",\"arguments\":{\"query\":\"post-infection urinary retention, peripheral sensory loss, 28-year-old female, transverse myelitis\",\"limit\":3}}",
+    "seconds": 3.6879936669720337,
+    "prompt_version": "planner-v1",
+    "prompt_sha256": "2639be4d4a676f34acb685d79d9448ac0cf7cb908c482ef9a40be75f8e59252b",
+    "input_tokens": 156,
+    "max_output_tokens": 160,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "plan": {
+      "tool": "search_documents",
+      "arguments": {
+        "query": "post-infection urinary retention, peripheral sensory loss, 28-year-old female, transverse myelitis",
+        "limit": 3
+      }
+    },
+    "retrieved": [
+      "34226258",
+      "32926676",
+      "32784242",
+      "34370410",
+      "32843475",
+      "32926682",
+      "32685076",
+      "32772172",
+      "32835294",
+      "32922857"
+    ],
+    "rewritten_rank": 2
+  },
+  {
+    "id": "q13-korean",
+    "query": "여름 정오의 태양 자외선으로 바이러스 63퍼센트를 비활성화하는 데 걸리는 시간 연구",
+    "target_pmid": "34285313",
+    "original_rank": null,
+    "raw_output": "{\"tool\":\"search_documents\",\"arguments\":{\"query\":\"summer midday sun uv radiation inactivating virus 63 percent\",\"limit\":3}}",
+    "seconds": 2.4818918749224395,
+    "prompt_version": "planner-v1",
+    "prompt_sha256": "d781f0fa0a19a14fe525a419bab67d3e16df39cabcb783f78f9e3e52638f359d",
+    "input_tokens": 154,
+    "max_output_tokens": 160,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "plan": {
+      "tool": "search_documents",
+      "arguments": {
+        "query": "summer midday sun uv radiation inactivating virus 63 percent",
+        "limit": 3
+      }
+    },
+    "retrieved": [
+      "34285313",
+      "32861186",
+      "33075169",
+      "32502327",
+      "32547908",
+      "33051302",
+      "32674164",
+      "32890523",
+      "32798217",
+      "33017611"
+    ],
+    "rewritten_rank": 1
+  },
+  {
+    "id": "q15-korean",
+    "query": "입원 환자 238명에서 증상 시작 이후 시간에 따른 항체 검사와 핵산 검사를 비교한 연구",
+    "target_pmid": "32425648",
+    "original_rank": null,
+    "raw_output": "{\"tool\":\"search_documents\",\"arguments\":{\"query\":\"inpatient 238 antibody testing time course rt-pcr comparison\",\"limit\":3}}",
+    "seconds": 2.2526810410199687,
+    "prompt_version": "planner-v1",
+    "prompt_sha256": "972f8ce4c90bcfc156970d88ed51f94032c8aeb6a6e6cb53af1b493dc23e1c76",
+    "input_tokens": 152,
+    "max_output_tokens": 160,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "plan": {
+      "tool": "search_documents",
+      "arguments": {
+        "query": "inpatient 238 antibody testing time course rt-pcr comparison",
+        "limit": 3
+      }
+    },
+    "retrieved": [
+      "32964068",
+      "32425648",
+      "32891640",
+      "32941461",
+      "32763446",
+      "33063824",
+      "34219921",
+      "32917746",
+      "34216468",
+      "32701763"
+    ],
+    "rewritten_rank": 2
+  },
+  {
+    "id": "q17-korean",
+    "query": "폐의 탄성이 다른 두 환자를 유량 조절 밸브로 한 인공호흡기에 연결한 실험",
+    "target_pmid": "32639236",
+    "original_rank": null,
+    "raw_output": "{\"tool\":\"search_documents\",\"arguments\":{\"query\":\"lung elasticity, flow control valve, artificial respiration\",\"limit\":3}}",
+    "seconds": 2.252774332999252,
+    "prompt_version": "planner-v1",
+    "prompt_sha256": "81d0890cc7f01830a21292e6335a9b63fff6ef5e39168ab9e01f451e584f5241",
+    "input_tokens": 149,
+    "max_output_tokens": 160,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "plan": {
+      "tool": "search_documents",
+      "arguments": {
+        "query": "lung elasticity, flow control valve, artificial respiration",
+        "limit": 3
+      }
+    },
+    "retrieved": [
+      "32835141",
+      "33012834",
+      "33025322",
+      "32510155",
+      "34203316",
+      "32671348",
+      "34226764",
+      "32835140",
+      "32740069",
+      "32639236"
+    ],
+    "rewritten_rank": 10
+  }
+]

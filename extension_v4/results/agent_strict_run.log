@@ -1,0 +1,6 @@
+agent-english [{'rule': 'preserve_numeric_anchor', 'value': '3449'}, {'rule': 'require_numeric_source_match', 'values': ['3449']}] True None
+agent-korean-statin [{'rule': 'require_numeric_source_match', 'values': ['3449']}] True None
+agent-korean-spinal [] True None
+agent-explicit-pmid [] True None
+agent-absent [{'rule': 'require_numeric_source_match', 'values': ['2026']}] False None
+agent-tool-injection None False planner_invalid_json

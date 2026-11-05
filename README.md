@@ -11,8 +11,15 @@
 | V1 | 최초 baseline·라벨 관계 대조·검색 API | 완료. 아래 최초 실행 기록 및 [원본 보고서](docs/REPORT.md) |
 | V2 | 저성능 원인 진단·partial/LoRA 미세조정·Qwen 인용 비교 | 완료. [보고서](followup_v2/docs/REPORT.md) / [쉬운 설명](followup_v2/docs/EXPLAIN.md) |
 | V3 | 긴 문헌 LoRA·chunk bag·관계 규제·검토 이력·최종 내부 감사 | 완료. [결과 해설](extension_v3/docs/RESULTS_WALKTHROUGH.md) / [전체 보고서](extension_v3/docs/REPORT.md) / [포폴 추가본](extension_v3/output/portfolio_followup.pdf) |
+| V4 | 33,645문헌 검색·무료 RAG 근거 검증·MCP·프로젝트 Skill | 완료. [쉬운 결과 해설](extension_v4/docs/RESULTS_WALKTHROUGH.md) / [재현](extension_v4/docs/REPRODUCE.md) / [포폴 추가본](extension_v4/output/pdf/rag_evidence_portfolio.pdf) |
 
 V1의 결과·보고서·모델은 해시로 보존합니다. 후속 버전은 최초 실패를 지우지 않고 별도로 비교합니다. 저장소에는 코드·정책·측정 결과를 올리고 원본 데이터·학습 가중치·SQLite·로컬 환경은 포함하지 않습니다. 생성형 Qwen의 in-context 예시와 BiomedBERT의 실제 가중치 미세조정을 구분합니다.
+
+## V4 검색·LLM 확장 결과
+
+동결한 질의 46개에서 5개 검색 방법을 비교했습니다. 개발 기준으로 BM25를 선택했고, 혼합 검색은 paraphrase Hit@5를 5/14→9/14로 높였지만 전체 MRR은 개선하지 못했습니다. 한국어 원질의 6개는 전부 top10 실패했으며, 같은 질의의 사후 LLM 재작성 진단에서는 6/6을 찾았습니다.
+
+무료 로컬 Qwen의 36회 비교에서 기본/근거 우선 프롬프트의 정확 인용은 각각 6/8, 7/8이었습니다. 생략부호 복구, 숫자 누락·OR 검색의 출처 불일치, 무관하지만 정확한 인용을 별도로 분석했습니다. 실제 MCP stdio 서버/클라이언트, 제한된 LLM 도구 선택과 [프로젝트 Skill](.agents/skills/literature-evidence-audit/SKILL.md)을 제공합니다. 인용 존재와 의미적 정답을 구분하며 사후 개선을 새 blind 성능으로 표시하지 않습니다.
 
 ## V1 최초 실험 기록
 

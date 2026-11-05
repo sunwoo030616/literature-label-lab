@@ -1,0 +1,5 @@
+{
+  "locked_at_utc": "2026-11-05T03:12:00.990368+00:00",
+  "tasks_sha256": "99d71b3418ef255674bb4c1e3b718a5d2964572bdc27d5847f1665c7cbb80421",
+  "scope": "Before local planner or answer generation"
+}

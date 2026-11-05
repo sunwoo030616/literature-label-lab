@@ -1,0 +1,23 @@
+[11/05/26 12:29:33] INFO     Tool 'search_documents' rejected      server.py:450
+                             arguments: ['limit']                               
+                    INFO     Tool 'get_document' rejected          server.py:450
+                             arguments: ['pmid']                                
+                    INFO     Tool 'execute_sql' failed: 'Unknown   server.py:453
+                             tool: execute_sql'                                 
+{
+  "checks": {
+    "initialized": true,
+    "expected_tools": true,
+    "real_corpus": true,
+    "search_returns_documents": true,
+    "id_lookup_matches": true,
+    "valid_quote_accepted": true,
+    "invented_quote_rejected": true,
+    "missing_document_handled": true,
+    "invalid_limit_rejected": true,
+    "invalid_pmid_rejected": true,
+    "unknown_write_tool_rejected": true,
+    "scope_resource": true
+  },
+  "passed": true
+}

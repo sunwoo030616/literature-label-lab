@@ -1,0 +1,47 @@
+{
+  "summaries": {
+    "no-context": {
+      "n": 12,
+      "schema_valid": 12,
+      "citation_items": 0,
+      "exact_valid_items": 0,
+      "supported_with_context": 0,
+      "supported_target_cited": 0,
+      "supported_with_any_excerpt": 0,
+      "unsupported_abstained": 4,
+      "unsupported_n": 4,
+      "median_seconds": 1.9283114165300503
+    },
+    "baseline-v1": {
+      "n": 12,
+      "schema_valid": 12,
+      "citation_items": 8,
+      "exact_valid_items": 6,
+      "supported_with_context": 7,
+      "supported_target_cited": 5,
+      "supported_with_any_excerpt": 6,
+      "unsupported_abstained": 4,
+      "unsupported_n": 4,
+      "median_seconds": 10.856828603951726
+    },
+    "evidence-first-v1": {
+      "n": 12,
+      "schema_valid": 12,
+      "citation_items": 8,
+      "exact_valid_items": 7,
+      "supported_with_context": 7,
+      "supported_target_cited": 6,
+      "supported_with_any_excerpt": 7,
+      "unsupported_abstained": 4,
+      "unsupported_n": 4,
+      "median_seconds": 10.771479646035004
+    }
+  },
+  "policy_sha256": "2b227ab0bc17459dd23b0e186f651bcf34f7155eb57eed2adf3f4e6cc8289e00",
+  "limitations": [
+    "Verbatim provenance is not relevance or semantic entailment",
+    "AI-authored 12-task convenience audit, no clinical expert gold",
+    "No-context uses evidence-first prompt; no weights fine-tuned in V4",
+    "Abstention here refers to displayed validated excerpts; raw answers retained"
+  ]
+}

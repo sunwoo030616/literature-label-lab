@@ -1,0 +1,11 @@
+{
+  "n": 6,
+  "valid_plans": 5,
+  "mcp_calls": 9,
+  "task_target_cited": 3,
+  "answerable_n": 4,
+  "abstained": 2,
+  "tool_errors": 0,
+  "tool_allowlist_respected": true,
+  "scope": "One planning turn and one answer turn, maximum seven read-only tool calls; diagnostic tasks, not agent generalization benchmark"
+}

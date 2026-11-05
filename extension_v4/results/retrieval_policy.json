@@ -1,0 +1,15 @@
+{
+  "selected_method": "bm25",
+  "selection": "dev English MRR@10; predefined tie order",
+  "dev_mrr10": {
+    "bm25_raw": 0.5,
+    "bm25": 0.5,
+    "tfidf": 0.35300925925925924,
+    "dense": 0.45982142857142855,
+    "hybrid": 0.4361111111111111
+  },
+  "rrf_k": 60,
+  "rrf_depth": 50,
+  "corpus_documents": 33645,
+  "evaluation_lock_sha256": "27c7788e3eceb2db630b370337b63a9ee12977db36f7eae1c732b66f09467807"
+}

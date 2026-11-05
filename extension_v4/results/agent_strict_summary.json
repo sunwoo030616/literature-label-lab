@@ -1,0 +1,9 @@
+{
+  "n": 6,
+  "strict": true,
+  "changed_plans": 3,
+  "original_target_cited": 3,
+  "guarded_target_cited": 4,
+  "answerable_n": 4,
+  "scope": "Post-hoc diagnostic replay of saved planner outputs on same tasks; unchanged plans reuse original answers; not fresh blinded agent benchmark"
+}

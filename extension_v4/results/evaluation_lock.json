@@ -1,0 +1,10 @@
+{
+  "locked_at_utc": "2026-11-05T03:07:24.986816+00:00",
+  "scope": "before any V4 ranking or LLM runs",
+  "sha256": {
+    "evaluation/queries.json": "da63f66e421f2c2043f70a5af07d7e6f2d294f2fae8c86d77c61232158786160",
+    "evaluation/qa_tasks.json": "10a76cfc2278c3d0cfd9202b77e7cf7f64abc5192650f47e267f45916f03d263",
+    "prompts/registry.json": "658fb66eb2f8d6b7a8f20f1cb9c699d297a259aca1228a173cdcd973df9de9b6",
+    "docs/PROTOCOL.md": "749f93a7e8bbcb7ca8834940fb1c11bffa9d4c533de35dd3a314efeffded709b"
+  }
+}

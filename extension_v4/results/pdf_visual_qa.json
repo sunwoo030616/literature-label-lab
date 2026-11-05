@@ -1,0 +1,11 @@
+{
+  "pdf": "extension_v4/output/pdf/rag_evidence_portfolio.pdf",
+  "pages": 3,
+  "rendered": "pdftoppm scale-to 1200",
+  "visually_inspected_pages": [
+    1,
+    2,
+    3
+  ],
+  "findings": "No clipped text, overlaps, missing Korean glyphs or chart label collisions in final rendering."
+}

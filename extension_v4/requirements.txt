@@ -1,0 +1,10 @@
+# Versions measured in this run. Local Qwen runner requires Apple Silicon MLX.
+mcp==2.3.0
+pydantic==2.14.2
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+torch==2.15.0
+transformers==5.22.1
+huggingface-hub==1.33.0
+mlx-lm==0.32.2; sys_platform == 'darwin' and platform_machine == 'arm64'

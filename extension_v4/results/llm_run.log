@@ -1,0 +1,74 @@
+qa01 no-context abstained 2.0
+qa01 baseline-v1 grounded_excerpts 9.11
+qa01 evidence-first-v1 grounded_excerpts 10.52
+qa02 baseline-v1 grounded_excerpts 12.57
+qa02 evidence-first-v1 grounded_excerpts 11.53
+qa02 no-context abstained 1.5
+qa03 evidence-first-v1 grounded_excerpts 8.02
+qa03 no-context abstained 1.48
+qa03 baseline-v1 grounded_excerpts 7.31
+qa04 no-context abstained 1.6
+qa04 baseline-v1 grounded_excerpts 7.47
+qa04 evidence-first-v1 grounded_excerpts 8.57
+qa05 baseline-v1 grounded_excerpts 9.93
+qa05 evidence-first-v1 grounded_excerpts 10.5
+qa05 no-context abstained 1.66
+qa06 evidence-first-v1 abstained 10.72
+qa06 no-context abstained 3.21
+qa06 baseline-v1 abstained 13.86
+qa07 no-context abstained 3.14
+qa07 baseline-v1 grounded_excerpts 13.53
+qa07 evidence-first-v1 grounded_excerpts 19.11
+qa08 baseline-v1 abstained 12.94
+qa08 evidence-first-v1 grounded_excerpts 12.69
+qa08 no-context abstained 2.06
+qa09 evidence-first-v1 abstained 14.38
+qa09 no-context abstained 1.86
+qa09 baseline-v1 abstained 11.41
+qa10 no-context abstained 1.84
+qa10 baseline-v1 abstained 14.69
+qa10 evidence-first-v1 abstained 11.71
+qa11 baseline-v1 abstained 10.31
+qa11 evidence-first-v1 abstained 8.87
+qa11 no-context abstained 3.31
+qa12 evidence-first-v1 abstained 10.82
+qa12 no-context abstained 2.68
+qa12 baseline-v1 abstained 6.79
+{
+  "no-context": {
+    "n": 12,
+    "schema_valid": 12,
+    "citation_items": 0,
+    "exact_valid_items": 0,
+    "supported_with_context": 0,
+    "supported_target_cited": 0,
+    "supported_with_any_excerpt": 0,
+    "unsupported_abstained": 4,
+    "unsupported_n": 4,
+    "median_seconds": 1.9283114165300503
+  },
+  "baseline-v1": {
+    "n": 12,
+    "schema_valid": 12,
+    "citation_items": 8,
+    "exact_valid_items": 6,
+    "supported_with_context": 7,
+    "supported_target_cited": 5,
+    "supported_with_any_excerpt": 6,
+    "unsupported_abstained": 4,
+    "unsupported_n": 4,
+    "median_seconds": 10.856828603951726
+  },
+  "evidence-first-v1": {
+    "n": 12,
+    "schema_valid": 12,
+    "citation_items": 8,
+    "exact_valid_items": 7,
+    "supported_with_context": 7,
+    "supported_target_cited": 6,
+    "supported_with_any_excerpt": 7,
+    "unsupported_abstained": 4,
+    "unsupported_n": 4,
+    "median_seconds": 10.771479646035004
+  }
+}
