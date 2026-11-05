@@ -47,3 +47,27 @@ python .agents/skills/literature-evidence-audit/scripts/run_audit.py --question 
 ```
 
 질의 helper는 출력 파일이 이미 있으면 실패하여 기존 기록을 덮어쓰지 않는다.
+
+## 실패 뒤 추가한 옵션과 사후 진단
+
+```sh
+python extension_v4/src/analyze_quote_recovery.py
+python extension_v4/src/evaluate_rewrite.py
+python extension_v4/src/evaluate_agent_guard.py
+python extension_v4/src/agent.py --question 'Find the study with 9 studies and 3449 patients on statins and COVID-19. How many patients were included?' --preserve-identifiers --repair-edge-ellipsis --output /tmp/new-guarded-question.json
+```
+
+`--preserve-identifiers`는 명시한 단일 PMID에 조회를 묶고, 검색어에 빠진 3자리 이상 숫자 식별자를 보존한다. 이름·작은 수·질문 의미 전체를 보존하는 보장은 아니다. `--repair-edge-ellipsis`는 앞뒤 생략부호만 제거한 문장의 유일한 정확 원문 매치를 회수한다. 중간 생략과 유사도 복구는 하지 않는다. 초기 평가 원출력을 덮어쓰지 않는 별도 옵션이다. Skill helper에도 같은 옵션을 넘길 수 있다.
+
+사후 진단 스크립트는 이미 관찰한 질의·원출력을 재사용하므로 새 blind 평가가 아니다. 원래 프로토콜 결과와 별도 파일로 저장한다.
+
+```sh
+python extension_v4/src/evaluate_agent_guard.py --strict
+python .agents/skills/literature-evidence-audit/scripts/run_audit.py --question 'Find the study with 9 studies and 3449 patients on statins and COVID-19. How many patients were included?' --require-numeric-anchors --repair-edge-ellipsis --output /tmp/new-strict-source-question.json
+```
+
+`--require-numeric-anchors`는 숫자를 검색어에 붙이는 것에 더해, 원문 후보에 그 숫자 토큰이 반드시 있도록 SQL 조건을 적용한다. 쉼표를 제거한 숫자 전체 토큰으로 비교하며, `13449`를 `3449`와 같다고 보지 않는다. lexical 검색에서만 지원한다. soft guard와 strict source 진단 결과는 각각 `agent_guard_*`, `agent_strict_*`에 보존한다.
+
+전체 보존 해시 검사(`verify_v4.py`와 Skill의 기본 audit)는 Git에서 제외된 V1–V3 모델·배열도 로컬에 있어야 한다. 이 워크스페이스에서는 모두 확인했다. 새 clone에 이전 모델이 없으면 선행 단계의 재현이 필요하며, 파일 부재를 보존 검증 성공으로 처리하지 않는다. V4의 개별 검색·LLM·MCP 실행은 각 V4 입력만 있으면 가능하다.
+
+포폴 PDF 재생성에는 별도로 ReportLab 5.1.0, Matplotlib 3.11.2와 이 Mac의 Arial Unicode 글꼴이 사용됐다. 본 워크스페이스에서는 `.deps`를 PYTHONPATH에 추가해 `make_portfolio.py`를 실행했다. PDF 3페이지를 PNG로 렌더링해 모두 시각 검토했다.

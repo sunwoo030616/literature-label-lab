@@ -1,0 +1,108 @@
+{
+  "scope": "Post-hoc CPU recomputation for explanation only; original MPS evaluation and policy unchanged",
+  "cases": [
+    {
+      "query_id": "q09-lexical",
+      "query": "chest CT 101 Hunan ground glass traction bronchiectasis emergency",
+      "target_pmid": "32125873",
+      "top50_target_rank": {
+        "bm25": 1,
+        "dense": null,
+        "hybrid": 18
+      },
+      "target_rrf_contributions": {
+        "bm25": 0.01639344262295082,
+        "dense": 0
+      },
+      "target_token_count": 487,
+      "dense_truncated": true,
+      "hybrid_top3": [
+        {
+          "pmid": "32837670",
+          "score": 0.030679156908665108,
+          "title": "Rapid onset of bronchiectasis in COVID-19 Pneumonia: two cases studied with CT."
+        },
+        {
+          "pmid": "32571748",
+          "score": 0.02804284323271665,
+          "title": "Chest CT in COVID-19 pneumonia: A review of current knowledge."
+        },
+        {
+          "pmid": "34221639",
+          "score": 0.02749266862170088,
+          "title": "Role of Chest CT in COVID-19."
+        }
+      ]
+    },
+    {
+      "query_id": "q08-paraphrase",
+      "query": "Which early Argentine hospital series described two fever patterns among mostly imported infections?",
+      "target_pmid": "32442932",
+      "top50_target_rank": {
+        "bm25": 17,
+        "dense": 17,
+        "hybrid": 1
+      },
+      "target_rrf_contributions": {
+        "bm25": 0.012987012987012988,
+        "dense": 0.012987012987012988
+      },
+      "target_token_count": 360,
+      "dense_truncated": true,
+      "hybrid_top3": [
+        {
+          "pmid": "32442932",
+          "score": 0.025974025974025976,
+          "title": "[COVID-19 experience in a private institution in Buenos Aires during the first month of the pandemic: 26 cases]."
+        },
+        {
+          "pmid": "32234127",
+          "score": 0.024624624624624628,
+          "title": "[Epidemiological characteristics of COVID-19 in Gansu province]."
+        },
+        {
+          "pmid": "33045425",
+          "score": 0.022947810123262524,
+          "title": "A single holiday was the turning point of the COVID-19 policy of Israel."
+        }
+      ]
+    },
+    {
+      "query_id": "q06-paraphrase",
+      "query": "Find a discussion linking an anti-inflammatory steroid, inflammation resolution and the sudden excessive immune response in coronavirus disease.",
+      "target_pmid": "32956495",
+      "top50_target_rank": {
+        "bm25": 11,
+        "dense": 7,
+        "hybrid": 3
+      },
+      "target_rrf_contributions": {
+        "bm25": 0.014084507042253521,
+        "dense": 0.014925373134328358
+      },
+      "target_token_count": 188,
+      "dense_truncated": false,
+      "hybrid_top3": [
+        {
+          "pmid": "32753145",
+          "score": 0.031009615384615385,
+          "title": "Sex Hormones and Novel Corona Virus Infectious Disease (COVID-19)."
+        },
+        {
+          "pmid": "32995261",
+          "score": 0.03009207275993712,
+          "title": "Methylprednisolone pulse therapy: An alternative management of severe COVID-19."
+        },
+        {
+          "pmid": "32956495",
+          "score": 0.02900988017658188,
+          "title": "Dexamethasone, pro-resolving lipid mediators and resolution of inflammation in COVID-19."
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Truncation and general-domain embeddings are possible explanations, not isolated causal tests",
+    "RRF uses rank positions, not the original BM25 or cosine score magnitudes"
+  ]
+}

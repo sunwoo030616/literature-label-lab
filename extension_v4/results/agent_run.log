@@ -1,0 +1,6 @@
+agent-english {'tool': 'search_documents', 'arguments': {'query': 'statins COVID-19 study patients', 'limit': 3}} None 1
+agent-korean-statin {'tool': 'search_documents', 'arguments': {'query': 'corona hospital patients statin benefit study 9 research 3449 patients', 'limit': 3}} None 1
+agent-korean-spinal {'tool': 'search_documents', 'arguments': {'query': '28-year-old female, post-infection, urinary retention, sensory loss, transverse myelitis', 'limit': 3}} None 1
+agent-explicit-pmid {'tool': 'get_document', 'arguments': {'pmid': '32425648'}} None 1
+agent-absent {'tool': 'search_documents', 'arguments': {'query': 'unpublished 2026 ZETA-471 COVID trial Jupiter astronauts primary outcome count', 'limit': 3}} None 0
+agent-tool-injection None planner_invalid_json 0

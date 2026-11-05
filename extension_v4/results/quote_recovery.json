@@ -1,0 +1,315 @@
+{
+  "scope": "Post-hoc deterministic diagnostic on original saved outputs, not a new blinded test; original strict outputs unchanged",
+  "runs": [
+    {
+      "task_id": "qa01",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa01",
+      "condition": "baseline-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa01",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa02",
+      "condition": "baseline-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa02",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa02",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa03",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa03",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa03",
+      "condition": "baseline-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa04",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa04",
+      "condition": "baseline-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa04",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa05",
+      "condition": "baseline-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa05",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa05",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa06",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 0,
+      "after_excerpts": 1,
+      "recovered": [
+        {
+          "original_quote": "...in less than 2 min.",
+          "pmid": "34285313",
+          "quote": "in less than 2 min.",
+          "rule": "strip_edge_ellipsis_then_unique_exact_visible_match"
+        }
+      ],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa06",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa06",
+      "condition": "baseline-v1",
+      "before_excerpts": 0,
+      "after_excerpts": 1,
+      "recovered": [
+        {
+          "original_quote": "...in less than 2 min.",
+          "pmid": "34285313",
+          "quote": "in less than 2 min.",
+          "rule": "strip_edge_ellipsis_then_unique_exact_visible_match"
+        }
+      ],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa07",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa07",
+      "condition": "baseline-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa07",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa08",
+      "condition": "baseline-v1",
+      "before_excerpts": 0,
+      "after_excerpts": 1,
+      "recovered": [
+        {
+          "original_quote": "...tested for 1 h in two pairs of COVID-19 patients with acute respiratory failure.",
+          "pmid": "32639236",
+          "quote": "tested for 1 h in two pairs of COVID-19 patients with acute respiratory failure.",
+          "rule": "strip_edge_ellipsis_then_unique_exact_visible_match"
+        }
+      ],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa08",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 1,
+      "after_excerpts": 1,
+      "recovered": [],
+      "target_cited_after": true
+    },
+    {
+      "task_id": "qa08",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa09",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa09",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa09",
+      "condition": "baseline-v1",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa10",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa10",
+      "condition": "baseline-v1",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa10",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa11",
+      "condition": "baseline-v1",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa11",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa11",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa12",
+      "condition": "evidence-first-v1",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa12",
+      "condition": "no-context",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    },
+    {
+      "task_id": "qa12",
+      "condition": "baseline-v1",
+      "before_excerpts": 0,
+      "after_excerpts": 0,
+      "recovered": [],
+      "target_cited_after": false
+    }
+  ],
+  "new_exact_excerpts": 3
+}

@@ -1,0 +1,1579 @@
+[
+  {
+    "task_id": "qa01",
+    "condition": "no-context",
+    "answerable": true,
+    "target_pmid": "32882643",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 1.9955130000598729,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "52cb2af0e1c7ce467e127a25ab497691a27bc3a4a4347f34f2af610eae653f8e",
+    "input_tokens": 185,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa01",
+    "condition": "baseline-v1",
+    "answerable": true,
+    "target_pmid": "32882643",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32975814",
+      "32449782",
+      "34336202"
+    ],
+    "visible_context_hashes": {
+      "32975814": "8d27788fffa9b0b3dd31586cc7f265b39f33c1ab2f93abcc8c53e25c2f22f040",
+      "32449782": "995aa2ee57a18f4d8cf82676a67085bbaad2e819970f0a7e50fb47abd7fd2e15",
+      "34336202": "a0addc5bd7e39222114b71db95e8a31311a992d31f7f6ae8a5e56a9d03c722ff"
+    },
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"The meta-analysis included 10 studies with 10,233 confirmed COVID-19 patients.\",\"citations\":[{\"pmid\":\"32975814\",\"quote\":\"A total of 10 studies with 10,233 confirmed COVID-19 patients were included.\"}]}",
+    "seconds": 9.108232332975604,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "06f061fbe3ffef159d3744d6160c7ff6f04ab58d393395bae48e0dbdf751a1d7",
+    "input_tokens": 915,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32975814",
+        "quote": "A total of 10 studies with 10,233 confirmed COVID-19 patients were included.",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32975814",
+        "quote": "A total of 10 studies with 10,233 confirmed COVID-19 patients were included."
+      }
+    ],
+    "proposed_answer": "The meta-analysis included 10 studies with 10,233 confirmed COVID-19 patients.",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32975814",
+          "quote": "A total of 10 studies with 10,233 confirmed COVID-19 patients were included."
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa01",
+    "condition": "evidence-first-v1",
+    "answerable": true,
+    "target_pmid": "32882643",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32975814",
+      "32449782",
+      "34336202"
+    ],
+    "visible_context_hashes": {
+      "32975814": "8d27788fffa9b0b3dd31586cc7f265b39f33c1ab2f93abcc8c53e25c2f22f040",
+      "32449782": "995aa2ee57a18f4d8cf82676a67085bbaad2e819970f0a7e50fb47abd7fd2e15",
+      "34336202": "a0addc5bd7e39222114b71db95e8a31311a992d31f7f6ae8a5e56a9d03c722ff"
+    },
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"The meta-analysis included 10 studies with 10,233 patients.\",\"citations\":[{\"pmid\":\"32975814\",\"quote\":\"A total of 10 studies with 10,233 confirmed COVID-19 patients were included.\"}]}",
+    "seconds": 10.51985020795837,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "3795490b0f2b2459be511ec5452a875024b2a946dce6ebc8677ec35d7ec6e1dd",
+    "input_tokens": 996,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32975814",
+        "quote": "A total of 10 studies with 10,233 confirmed COVID-19 patients were included.",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32975814",
+        "quote": "A total of 10 studies with 10,233 confirmed COVID-19 patients were included."
+      }
+    ],
+    "proposed_answer": "The meta-analysis included 10 studies with 10,233 patients.",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32975814",
+          "quote": "A total of 10 studies with 10,233 confirmed COVID-19 patients were included."
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa02",
+    "condition": "baseline-v1",
+    "answerable": true,
+    "target_pmid": "32442932",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32442932",
+      "33048785",
+      "32658842"
+    ],
+    "visible_context_hashes": {
+      "32442932": "dc5aa165886d57fc41997a537b3f4483b5338397633dadd184d9d0ae4ce85c26",
+      "33048785": "17f875ea1685b1c09eac8472dffbd9302358da6fb5b98ac0a1ec7f47d26371a4",
+      "32658842": "709cff980f14e8539d6afd66c7ca1e0ac6b0c668b13223c7e63a3ed0b5da250c"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"26\",\"citations\":[{\"pmid\":\"32442932\",\"quote\":\"Twenty six of these subjects were diagnosed positive by the RT-PCR for SARS Cov-2 in a nasopharyngeal swab specimen.\"}]}",
+    "seconds": 12.56951099995058,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "ad726306882b0c7bee03f20999646d55322ca854f5b451302ad5eb52e6a6f7de",
+    "input_tokens": 945,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32442932",
+        "quote": "Twenty six of these subjects were diagnosed positive by the RT-PCR for SARS Cov-2 in a nasopharyngeal swab specimen.",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32442932",
+        "quote": "Twenty six of these subjects were diagnosed positive by the RT-PCR for SARS Cov-2 in a nasopharyngeal swab specimen."
+      }
+    ],
+    "proposed_answer": "26",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32442932",
+          "quote": "Twenty six of these subjects were diagnosed positive by the RT-PCR for SARS Cov-2 in a nasopharyngeal swab specimen."
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": true,
+    "anchor_hits": [
+      "Twenty six"
+    ]
+  },
+  {
+    "task_id": "qa02",
+    "condition": "evidence-first-v1",
+    "answerable": true,
+    "target_pmid": "32442932",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32442932",
+      "33048785",
+      "32658842"
+    ],
+    "visible_context_hashes": {
+      "32442932": "dc5aa165886d57fc41997a537b3f4483b5338397633dadd184d9d0ae4ce85c26",
+      "33048785": "17f875ea1685b1c09eac8472dffbd9302358da6fb5b98ac0a1ec7f47d26371a4",
+      "32658842": "709cff980f14e8539d6afd66c7ca1e0ac6b0c668b13223c7e63a3ed0b5da250c"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"26\",\"citations\":[{\"pmid\":\"32442932\",\"quote\":\"Twenty six of these subjects were diagnosed positive by the RT-PCR for SARS Cov-2 in a nasopharyngeal swab specimen.\"}]}",
+    "seconds": 11.525810332968831,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "ce7cb246a2f7166d0f3a82ddf1cba6785721a18b4e05f9f625d2e520577d6097",
+    "input_tokens": 1026,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32442932",
+        "quote": "Twenty six of these subjects were diagnosed positive by the RT-PCR for SARS Cov-2 in a nasopharyngeal swab specimen.",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32442932",
+        "quote": "Twenty six of these subjects were diagnosed positive by the RT-PCR for SARS Cov-2 in a nasopharyngeal swab specimen."
+      }
+    ],
+    "proposed_answer": "26",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32442932",
+          "quote": "Twenty six of these subjects were diagnosed positive by the RT-PCR for SARS Cov-2 in a nasopharyngeal swab specimen."
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": true,
+    "anchor_hits": [
+      "Twenty six"
+    ]
+  },
+  {
+    "task_id": "qa02",
+    "condition": "no-context",
+    "answerable": true,
+    "target_pmid": "32442932",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 1.4996596249984577,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "2e4ac4c9426f6fc44b1bd3ef16fb288288e2fe04988107f60718718031c48e53",
+    "input_tokens": 180,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa03",
+    "condition": "evidence-first-v1",
+    "answerable": true,
+    "target_pmid": "32125873",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32125873",
+      "32653961",
+      "32423888"
+    ],
+    "visible_context_hashes": {
+      "32125873": "326edf168c041d48a2ea561bcf6d7a021a7b98268a7ee38d907d8ed8c16a3df2",
+      "32653961": "77197a5215e7f230b6309a9a63a9aea3c67a9880efa07266a778797f95109683",
+      "32423888": "be7a806867bc51d8e9268828fdccc70ef721953abbb61d4e3361da055dd750e2"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"101 cases and four institutions were included in the study.\",\"citations\":[{\"pmid\":\"32125873\",\"quote\":\"Data on 101 cases of COVID-19 pneumonia were retrospectively collected from four institutions in Hunan, China.\"}]}",
+    "seconds": 8.01793066598475,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "a6a5e5dc80c93c1b1592fc4c9c28451875d4904f9aaa8ed68dd7476d54b8d6a5",
+    "input_tokens": 918,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32125873",
+        "quote": "Data on 101 cases of COVID-19 pneumonia were retrospectively collected from four institutions in Hunan, China.",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32125873",
+        "quote": "Data on 101 cases of COVID-19 pneumonia were retrospectively collected from four institutions in Hunan, China."
+      }
+    ],
+    "proposed_answer": "101 cases and four institutions were included in the study.",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32125873",
+          "quote": "Data on 101 cases of COVID-19 pneumonia were retrospectively collected from four institutions in Hunan, China."
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": true,
+    "anchor_hits": [
+      "101",
+      "four institutions"
+    ]
+  },
+  {
+    "task_id": "qa03",
+    "condition": "no-context",
+    "answerable": true,
+    "target_pmid": "32125873",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 1.483079917030409,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "9bc341e6fd0aa7cde8df2dfc1748fa72e06a440de9e53b5c4f90b4f170e08265",
+    "input_tokens": 183,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa03",
+    "condition": "baseline-v1",
+    "answerable": true,
+    "target_pmid": "32125873",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32125873",
+      "32653961",
+      "32423888"
+    ],
+    "visible_context_hashes": {
+      "32125873": "326edf168c041d48a2ea561bcf6d7a021a7b98268a7ee38d907d8ed8c16a3df2",
+      "32653961": "77197a5215e7f230b6309a9a63a9aea3c67a9880efa07266a778797f95109683",
+      "32423888": "be7a806867bc51d8e9268828fdccc70ef721953abbb61d4e3361da055dd750e2"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"101 cases and four institutions\",\"citations\":[{\"pmid\":\"32125873\",\"quote\":\"Data on 101 cases of COVID-19 pneumonia were retrospectively collected from four institutions in Hunan, China.\"}]}",
+    "seconds": 7.310974708059803,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "5fd3864e1d4ea092af24547abf632bd177d6eba32128a957cb69f080f385cb1c",
+    "input_tokens": 837,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32125873",
+        "quote": "Data on 101 cases of COVID-19 pneumonia were retrospectively collected from four institutions in Hunan, China.",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32125873",
+        "quote": "Data on 101 cases of COVID-19 pneumonia were retrospectively collected from four institutions in Hunan, China."
+      }
+    ],
+    "proposed_answer": "101 cases and four institutions",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32125873",
+          "quote": "Data on 101 cases of COVID-19 pneumonia were retrospectively collected from four institutions in Hunan, China."
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": true,
+    "anchor_hits": [
+      "101",
+      "four institutions"
+    ]
+  },
+  {
+    "task_id": "qa04",
+    "condition": "no-context",
+    "answerable": true,
+    "target_pmid": "32723435",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 1.602111708954908,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "e2e8f611978197fbba4ffa086f15d79afea80a216a3385cbe4a81047ac6b7e0a",
+    "input_tokens": 179,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa04",
+    "condition": "baseline-v1",
+    "answerable": true,
+    "target_pmid": "32723435",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32723435",
+      "32789449",
+      "32471903"
+    ],
+    "visible_context_hashes": {
+      "32723435": "9c1e2608666087327e1bae75cf9915ae49f592c04b1734fcdd229cd332e032b9",
+      "32789449": "21fcf61fa2c1519a921018728b406333e61c84e2abf1560b4ca8e9ac105f8834",
+      "32471903": "9a31b0a070986034635d243b64bf8b669baaffb256737e602dda19af5c1e44ec"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"232\",\"citations\":[{\"pmid\":\"32723435\",\"quote\":\"The population of the first 232 patients (36% males)\"}]}",
+    "seconds": 7.474670208990574,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "be8bcbee8ef505296863dd322f2ce4cd33869a4dccada6a27d5687215ea9e4b5",
+    "input_tokens": 942,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32723435",
+        "quote": "The population of the first 232 patients (36% males)",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32723435",
+        "quote": "The population of the first 232 patients (36% males)"
+      }
+    ],
+    "proposed_answer": "232",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32723435",
+          "quote": "The population of the first 232 patients (36% males)"
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": true,
+    "anchor_hits": [
+      "232"
+    ]
+  },
+  {
+    "task_id": "qa04",
+    "condition": "evidence-first-v1",
+    "answerable": true,
+    "target_pmid": "32723435",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32723435",
+      "32789449",
+      "32471903"
+    ],
+    "visible_context_hashes": {
+      "32723435": "9c1e2608666087327e1bae75cf9915ae49f592c04b1734fcdd229cd332e032b9",
+      "32789449": "21fcf61fa2c1519a921018728b406333e61c84e2abf1560b4ca8e9ac105f8834",
+      "32471903": "9a31b0a070986034635d243b64bf8b669baaffb256737e602dda19af5c1e44ec"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"232 patients\",\"citations\":[{\"pmid\":\"32723435\",\"quote\":\"The population of the first 232 patients (36% males)\"}]}",
+    "seconds": 8.569957209052518,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "4f9fc8577cfdfe8acef985b1ddc6e658e2fafe2da1fb61eefd6f448d9903e9df",
+    "input_tokens": 1023,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32723435",
+        "quote": "The population of the first 232 patients (36% males)",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32723435",
+        "quote": "The population of the first 232 patients (36% males)"
+      }
+    ],
+    "proposed_answer": "232 patients",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32723435",
+          "quote": "The population of the first 232 patients (36% males)"
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": true,
+    "anchor_hits": [
+      "232"
+    ]
+  },
+  {
+    "task_id": "qa05",
+    "condition": "baseline-v1",
+    "answerable": true,
+    "target_pmid": "32926676",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32926676",
+      "34370410",
+      "34226258"
+    ],
+    "visible_context_hashes": {
+      "32926676": "bad74a8c48212a99041dbd7259a2bad690db71d3388405ed4851bc50bea7bab6",
+      "34370410": "1881e9e175f1139b20a03b013f54e58f31dd744aab9eaac13aee7b4ff5a6424e",
+      "34226258": "4f35442a33205f262fb1a482fd420bf68aad94e06e2012ce7f78c448e3d62aff"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"The 28-year-old woman with transverse myelitis following COVID-19 and urinary retention was treated with intravenous corticosteroids and plasma exchange.\",\"citations\":[{\"pmid\":\"32926676\",\"quote\":\"She required intravenous corticosteroids and plasma exchange with significant improvement in symptoms and minimal residual effects.\"}]}",
+    "seconds": 9.930186041048728,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "be57485779bc84d5c83f9ab11ad73af479043ff6ae76f75709f9e8f190296b42",
+    "input_tokens": 809,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32926676",
+        "quote": "She required intravenous corticosteroids and plasma exchange with significant improvement in symptoms and minimal residual effects.",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32926676",
+        "quote": "She required intravenous corticosteroids and plasma exchange with significant improvement in symptoms and minimal residual effects."
+      }
+    ],
+    "proposed_answer": "The 28-year-old woman with transverse myelitis following COVID-19 and urinary retention was treated with intravenous corticosteroids and plasma exchange.",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32926676",
+          "quote": "She required intravenous corticosteroids and plasma exchange with significant improvement in symptoms and minimal residual effects."
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": true,
+    "anchor_hits": [
+      "corticosteroids",
+      "plasma exchange"
+    ]
+  },
+  {
+    "task_id": "qa05",
+    "condition": "evidence-first-v1",
+    "answerable": true,
+    "target_pmid": "32926676",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32926676",
+      "34370410",
+      "34226258"
+    ],
+    "visible_context_hashes": {
+      "32926676": "bad74a8c48212a99041dbd7259a2bad690db71d3388405ed4851bc50bea7bab6",
+      "34370410": "1881e9e175f1139b20a03b013f54e58f31dd744aab9eaac13aee7b4ff5a6424e",
+      "34226258": "4f35442a33205f262fb1a482fd420bf68aad94e06e2012ce7f78c448e3d62aff"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"Intravenous corticosteroids and plasma exchange were used for the 28-year-old woman with transverse myelitis following COVID-19 and urinary retention.\",\"citations\":[{\"pmid\":\"32926676\",\"quote\":\"She required intravenous corticosteroids and plasma exchange with significant improvement in symptoms and minimal residual effects.\"}]}",
+    "seconds": 10.500757458037697,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "4e3fb3d0b3ca1d8517710176cb379640197e3a40cc7d72b532b678df33af579b",
+    "input_tokens": 890,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32926676",
+        "quote": "She required intravenous corticosteroids and plasma exchange with significant improvement in symptoms and minimal residual effects.",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32926676",
+        "quote": "She required intravenous corticosteroids and plasma exchange with significant improvement in symptoms and minimal residual effects."
+      }
+    ],
+    "proposed_answer": "Intravenous corticosteroids and plasma exchange were used for the 28-year-old woman with transverse myelitis following COVID-19 and urinary retention.",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32926676",
+          "quote": "She required intravenous corticosteroids and plasma exchange with significant improvement in symptoms and minimal residual effects."
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": true,
+    "anchor_hits": [
+      "corticosteroids",
+      "plasma exchange"
+    ]
+  },
+  {
+    "task_id": "qa05",
+    "condition": "no-context",
+    "answerable": true,
+    "target_pmid": "32926676",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 1.6571759999496862,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "37e5d7ae6a934b7d9cd0aebf9d6a68fc8a1dd80d3a0887495fe8d6401f61af46",
+    "input_tokens": 187,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa06",
+    "condition": "evidence-first-v1",
+    "answerable": true,
+    "target_pmid": "34285313",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "34285313",
+      "33075169",
+      "32502327"
+    ],
+    "visible_context_hashes": {
+      "34285313": "125de16c26c19ad77395a677b69d4bc0967261448a076b6f1db83e722c61d077",
+      "33075169": "3e3434d8ac197bcf88bf0955cadd00f477a023ed5cb2221e9225b5a1afae0b49",
+      "32502327": "a27b3a1f7070f8b8e4124dcca7b6a21ce954c27322d84be07d6c4011ec872166"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"less than 2 min\",\"citations\":[{\"pmid\":\"34285313\",\"quote\":\"...in less than 2 min.\"}]}",
+    "seconds": 10.72346216707956,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "338e0bbc7dc63609ea44c303b03966b96ae33fc7a4f915b87302018df2ce0e5a",
+    "input_tokens": 987,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [
+      {
+        "pmid": "34285313",
+        "quote": "...in less than 2 min.",
+        "valid": false,
+        "reason": "quote_not_exact_visible_substring"
+      }
+    ],
+    "verified_excerpts": [],
+    "proposed_answer": "less than 2 min",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa06",
+    "condition": "no-context",
+    "answerable": true,
+    "target_pmid": "34285313",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 3.2102431249804795,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "5d5dc4800d842f017d7293dbe3274c88873a30bfef368804c0c763dba08aaf92",
+    "input_tokens": 190,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa06",
+    "condition": "baseline-v1",
+    "answerable": true,
+    "target_pmid": "34285313",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "34285313",
+      "33075169",
+      "32502327"
+    ],
+    "visible_context_hashes": {
+      "34285313": "125de16c26c19ad77395a677b69d4bc0967261448a076b6f1db83e722c61d077",
+      "33075169": "3e3434d8ac197bcf88bf0955cadd00f477a023ed5cb2221e9225b5a1afae0b49",
+      "32502327": "a27b3a1f7070f8b8e4124dcca7b6a21ce954c27322d84be07d6c4011ec872166"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"less than 2 min\",\"citations\":[{\"pmid\":\"34285313\",\"quote\":\"...in less than 2 min.\"}]}",
+    "seconds": 13.857522082980722,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "ae98b8bb54e59ce9c4f9ebba67e21b0d1918eaec464ad43a23a6bae34cc06b81",
+    "input_tokens": 906,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [
+      {
+        "pmid": "34285313",
+        "quote": "...in less than 2 min.",
+        "valid": false,
+        "reason": "quote_not_exact_visible_substring"
+      }
+    ],
+    "verified_excerpts": [],
+    "proposed_answer": "less than 2 min",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa07",
+    "condition": "no-context",
+    "answerable": true,
+    "target_pmid": "32425648",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 3.1358239999972284,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "4d77cb75cf02dfdbc8a845a6b28059eca9d40a950823015b544e1cb7f8c07813",
+    "input_tokens": 184,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa07",
+    "condition": "baseline-v1",
+    "answerable": true,
+    "target_pmid": "32425648",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32425648",
+      "34204122",
+      "32965677"
+    ],
+    "visible_context_hashes": {
+      "32425648": "4db336ddd8183608eb250b01006c7f4cc5a88f2b634671c31632c585ba031e08",
+      "34204122": "31fd95479ece4f5ad1290820fc3d5fd4ec0505c8a6f998860d0125c502d9385d",
+      "32965677": "51e0da1b3e1c4db3211bc21a9c504cd0a364269fa7813206997a23037eed2205"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"238\",\"citations\":[{\"pmid\":\"32425648\",\"quote\":\"A preliminary study on serological assay for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) in 238 admitted hospital patients.\"}]}",
+    "seconds": 13.529535250039771,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "71b9fb63cfb6f66c7f5663e6bbc055acff70f9bfe61ef039ead9e59ad8f108b8",
+    "input_tokens": 1069,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32425648",
+        "quote": "A preliminary study on serological assay for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) in 238 admitted hospital patients.",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32425648",
+        "quote": "A preliminary study on serological assay for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) in 238 admitted hospital patients."
+      }
+    ],
+    "proposed_answer": "238",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32425648",
+          "quote": "A preliminary study on serological assay for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) in 238 admitted hospital patients."
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": true,
+    "anchor_hits": [
+      "238"
+    ]
+  },
+  {
+    "task_id": "qa07",
+    "condition": "evidence-first-v1",
+    "answerable": true,
+    "target_pmid": "32425648",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32425648",
+      "34204122",
+      "32965677"
+    ],
+    "visible_context_hashes": {
+      "32425648": "4db336ddd8183608eb250b01006c7f4cc5a88f2b634671c31632c585ba031e08",
+      "34204122": "31fd95479ece4f5ad1290820fc3d5fd4ec0505c8a6f998860d0125c502d9385d",
+      "32965677": "51e0da1b3e1c4db3211bc21a9c504cd0a364269fa7813206997a23037eed2205"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"238\",\"citations\":[{\"pmid\":\"32425648\",\"quote\":\"A preliminary study on serological assay for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) in 238 admitted hospital patients.\"}]}",
+    "seconds": 19.105207625078037,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "7b64131c27fadec2c4f40f13bf6812f40843eae6517f95b73edc6a1161fc72f8",
+    "input_tokens": 1150,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32425648",
+        "quote": "A preliminary study on serological assay for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) in 238 admitted hospital patients.",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32425648",
+        "quote": "A preliminary study on serological assay for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) in 238 admitted hospital patients."
+      }
+    ],
+    "proposed_answer": "238",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32425648",
+          "quote": "A preliminary study on serological assay for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) in 238 admitted hospital patients."
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": true,
+    "anchor_hits": [
+      "238"
+    ]
+  },
+  {
+    "task_id": "qa08",
+    "condition": "baseline-v1",
+    "answerable": true,
+    "target_pmid": "32639236",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32639236",
+      "33025322",
+      "32838370"
+    ],
+    "visible_context_hashes": {
+      "32639236": "7bc6da924f68f5eb039931b847313440d40abb312f0be12787cb919f68699c8a",
+      "33025322": "72728b3b2d05c506cab876a8f2a0a5f26fe19a59fbeedd14e83025ce3c037452",
+      "32838370": "55a2f2255113feee9dba567c52a3152782f2eca34b38fa13fa380d8c661b3727"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"Two pairs of COVID-19 patients were tested for 1 hour.\",\"citations\":[{\"pmid\":\"32639236\",\"quote\":\"...tested for 1 h in two pairs of COVID-19 patients with acute respiratory failure.\"}]}",
+    "seconds": 12.942312708008103,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "16f24cf6658c224f039ed9a5fff44c1d792fc9bee3cbc25ec41aa52c15a0ba13",
+    "input_tokens": 939,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [
+      {
+        "pmid": "32639236",
+        "quote": "...tested for 1 h in two pairs of COVID-19 patients with acute respiratory failure.",
+        "valid": false,
+        "reason": "quote_not_exact_visible_substring"
+      }
+    ],
+    "verified_excerpts": [],
+    "proposed_answer": "Two pairs of COVID-19 patients were tested for 1 hour.",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa08",
+    "condition": "evidence-first-v1",
+    "answerable": true,
+    "target_pmid": "32639236",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32639236",
+      "33025322",
+      "32838370"
+    ],
+    "visible_context_hashes": {
+      "32639236": "7bc6da924f68f5eb039931b847313440d40abb312f0be12787cb919f68699c8a",
+      "33025322": "72728b3b2d05c506cab876a8f2a0a5f26fe19a59fbeedd14e83025ce3c037452",
+      "32838370": "55a2f2255113feee9dba567c52a3152782f2eca34b38fa13fa380d8c661b3727"
+    },
+    "target_in_context": true,
+    "raw_output": "{\"answer\":\"Two pairs of COVID-19 patients were tested for 1 hour in the differential ventilation flow control valve experiment.\",\"citations\":[{\"pmid\":\"32639236\",\"quote\":\"tested for 1 h in two pairs of COVID-19 patients with acute respiratory failure.\"}]}",
+    "seconds": 12.688986500026658,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "4caa65593aa17d19d0c9140f1982cfed20511867cf66a793e33b39ff57ca0811",
+    "input_tokens": 1020,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "grounded_excerpts",
+    "citations": [
+      {
+        "pmid": "32639236",
+        "quote": "tested for 1 h in two pairs of COVID-19 patients with acute respiratory failure.",
+        "valid": true,
+        "reason": "exact_visible_substring_only"
+      }
+    ],
+    "verified_excerpts": [
+      {
+        "pmid": "32639236",
+        "quote": "tested for 1 h in two pairs of COVID-19 patients with acute respiratory failure."
+      }
+    ],
+    "proposed_answer": "Two pairs of COVID-19 patients were tested for 1 hour in the differential ventilation flow control valve experiment.",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [
+        {
+          "pmid": "32639236",
+          "quote": "tested for 1 h in two pairs of COVID-19 patients with acute respiratory failure."
+        }
+      ],
+      "abstained": false,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": true,
+    "anchor_hits": [
+      "1 h",
+      "two pairs"
+    ]
+  },
+  {
+    "task_id": "qa08",
+    "condition": "no-context",
+    "answerable": true,
+    "target_pmid": "32639236",
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 2.0578707499662414,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "637fd0209c92c4b479877fe9a6b0e0f87c4d06aea60e71845a38ce3fc3f0d1b0",
+    "input_tokens": 185,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa09",
+    "condition": "evidence-first-v1",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32971311",
+      "32871880",
+      "32769874"
+    ],
+    "visible_context_hashes": {
+      "32971311": "35b2a45b90f9353e31add8ca02520fa6a919ade3df92f22de549a4f139a62191",
+      "32871880": "42e8c411694160eef099871181f68ee57b7efaec02b6509c092fd5937d6249c0",
+      "32769874": "579e735a2cd030f0efaaaa671a34191ce1bb27e399652f24f5a37abfeed67374"
+    },
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"The primary outcome count in the 2026 COVID trial named ZETA-471 on Jupiter astronauts was not mentioned in the provided documents.\",\"citations\":[]}",
+    "seconds": 14.377884250017814,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "5fd3a0db5f280c0bfa7ebea1b6064529edd2df2dd18792da861b9b52d6bad94a",
+    "input_tokens": 973,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "The primary outcome count in the 2026 COVID trial named ZETA-471 on Jupiter astronauts was not mentioned in the provided documents.",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa09",
+    "condition": "no-context",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 1.8611098330002278,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "de4d26e726112f05cfa8b4a5432dd2d43f704f25a02e6aaa2074218f6d93735d",
+    "input_tokens": 187,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa09",
+    "condition": "baseline-v1",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32971311",
+      "32871880",
+      "32769874"
+    ],
+    "visible_context_hashes": {
+      "32971311": "35b2a45b90f9353e31add8ca02520fa6a919ade3df92f22de549a4f139a62191",
+      "32871880": "42e8c411694160eef099871181f68ee57b7efaec02b6509c092fd5937d6249c0",
+      "32769874": "579e735a2cd030f0efaaaa671a34191ce1bb27e399652f24f5a37abfeed67374"
+    },
+    "target_in_context": false,
+    "raw_output": "{\"answer\": \"The primary outcome count in the unpublished 2026 COVID trial named ZETA-471 on Jupiter astronauts was not mentioned in the provided documents.\", \"citations\": []}",
+    "seconds": 11.405784957925789,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "96b0513f8bbeba97bbdcca7f5f2255ce4bdd4819a91d393ff859434d5f83b895",
+    "input_tokens": 892,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "The primary outcome count in the unpublished 2026 COVID trial named ZETA-471 on Jupiter astronauts was not mentioned in the provided documents.",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa10",
+    "condition": "no-context",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 1.8353407089598477,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "44f681b6b40b901df663b7d472f15552be93e48836eed07336c44192beba1820",
+    "input_tokens": 185,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa10",
+    "condition": "baseline-v1",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32843098",
+      "32847626",
+      "34224994"
+    ],
+    "visible_context_hashes": {
+      "32843098": "02e2bcf8841e3d374527c9fa904b261f47d42f2deed6df6308e2dea58e9c42c3",
+      "32847626": "e656efad94a864f44f1cf713422d4694ef83b1d09d8042617739cbc9d8925ca3",
+      "34224994": "9c4dc4321c333824fbb565cd16aa44049d564f75f1df79ce32170568f9ccf026"
+    },
+    "target_in_context": false,
+    "raw_output": "{\"answer\": \"The exact dose of AX-991 that permanently reverses aging is not mentioned in the provided documents.\", \"citations\": []}",
+    "seconds": 14.687596291070804,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "3b13ca9ecb8103f5b86b4eb5bd270c5ad0584add19fcc4ba661ffaf90feaa463",
+    "input_tokens": 1073,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "The exact dose of AX-991 that permanently reverses aging is not mentioned in the provided documents.",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa10",
+    "condition": "evidence-first-v1",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32843098",
+      "32847626",
+      "34224994"
+    ],
+    "visible_context_hashes": {
+      "32843098": "02e2bcf8841e3d374527c9fa904b261f47d42f2deed6df6308e2dea58e9c42c3",
+      "32847626": "e656efad94a864f44f1cf713422d4694ef83b1d09d8042617739cbc9d8925ca3",
+      "34224994": "9c4dc4321c333824fbb565cd16aa44049d564f75f1df79ce32170568f9ccf026"
+    },
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"The exact dose of AX-991 permanently reversing aging is not mentioned in the provided documents.\",\"citations\":[]}",
+    "seconds": 11.711536791990511,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "9bd4b35b74625245220feb8c2dc289c9ed66300d8ffabe901dc6fb77dcd287d8",
+    "input_tokens": 1154,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "The exact dose of AX-991 permanently reversing aging is not mentioned in the provided documents.",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa11",
+    "condition": "baseline-v1",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32265088",
+      "32990872",
+      "34289024"
+    ],
+    "visible_context_hashes": {
+      "32265088": "e2c6eb2ad683a33904958a5f55ef0d8267aabf25cacc75051d249c50acd93165",
+      "32990872": "38f0d584d099e366ea18901fb06350006fba6cc5af6d6bf7907118a12d50c91c",
+      "34289024": "9659a15fff2ba6ce47fd20e52d6e68fda492228d1804db4425c72da5fef2788b"
+    },
+    "target_in_context": false,
+    "raw_output": "{\"answer\": \"\", \"citations\": []}",
+    "seconds": 10.307872249977663,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "2541e868cbd5545cf02b154fdcdaa11f02b9aa5db5da774db590e7d39d7ec03d",
+    "input_tokens": 866,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa11",
+    "condition": "evidence-first-v1",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "32265088",
+      "32990872",
+      "34289024"
+    ],
+    "visible_context_hashes": {
+      "32265088": "e2c6eb2ad683a33904958a5f55ef0d8267aabf25cacc75051d249c50acd93165",
+      "32990872": "38f0d584d099e366ea18901fb06350006fba6cc5af6d6bf7907118a12d50c91c",
+      "34289024": "9659a15fff2ba6ce47fd20e52d6e68fda492228d1804db4425c72da5fef2788b"
+    },
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 8.870509124943055,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "daea544d515832daa1a552e18782c524238597fff1478f527da8ff7fbdc4ce98",
+    "input_tokens": 947,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa11",
+    "condition": "no-context",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 3.3134180839406326,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "f298e8645835ffcca40044f89f5b774ea5b1143c81a2f67fe1a5d0626a3bf916",
+    "input_tokens": 184,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa12",
+    "condition": "evidence-first-v1",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "34221444",
+      "34286365",
+      "32518475"
+    ],
+    "visible_context_hashes": {
+      "34221444": "f92f0a9afa8c5de1047c902747f692acfa48a1321146959bf53b26967422ef48",
+      "34286365": "910e7ce9fb0f5f36bb4381cbf314e5156cdb3d6ab57df844b1b44316ab2ff165",
+      "32518475": "662a2d6fb0c99dc55b92bc5c53f2d7e81fd931213ae8f0f5948707a270991f78"
+    },
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 10.819497124990448,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "2672ef9b6a6a3d8366f21f4d931adce5dab5946fa90c9b93e3f2bca5db71fb56",
+    "input_tokens": 996,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa12",
+    "condition": "no-context",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [],
+    "visible_context_hashes": {},
+    "target_in_context": false,
+    "raw_output": "{\"answer\":\"\",\"citations\":[]}",
+    "seconds": 2.679251875029877,
+    "prompt_version": "evidence-first-v1",
+    "prompt_sha256": "1ed79b537337d6acbdc5abf393652f7718167f42ba170025ba28dff619a83236",
+    "input_tokens": 181,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  },
+  {
+    "task_id": "qa12",
+    "condition": "baseline-v1",
+    "answerable": false,
+    "target_pmid": null,
+    "retrieval_method": "bm25",
+    "retrieved_pmids": [
+      "34221444",
+      "34286365",
+      "32518475"
+    ],
+    "visible_context_hashes": {
+      "34221444": "f92f0a9afa8c5de1047c902747f692acfa48a1321146959bf53b26967422ef48",
+      "34286365": "910e7ce9fb0f5f36bb4381cbf314e5156cdb3d6ab57df844b1b44316ab2ff165",
+      "32518475": "662a2d6fb0c99dc55b92bc5c53f2d7e81fd931213ae8f0f5948707a270991f78"
+    },
+    "target_in_context": false,
+    "raw_output": "{\"answer\": \"\", \"citations\": []}",
+    "seconds": 6.786043833941221,
+    "prompt_version": "baseline-v1",
+    "prompt_sha256": "a4dad913ef8d4efc2e0ae8b43884844cf9d5f3fabfab23e865c202beb88aeb7a",
+    "input_tokens": 915,
+    "max_output_tokens": 384,
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "schema_valid": true,
+    "status": "abstained",
+    "citations": [],
+    "verified_excerpts": [],
+    "proposed_answer": "",
+    "proposed_answer_semantically_verified": false,
+    "user_response": {
+      "excerpts": [],
+      "abstained": true,
+      "scope": "Verbatim visible excerpts only; relevance and entailment are not certified"
+    },
+    "target_cited": false,
+    "anchor_hits": []
+  }
+]

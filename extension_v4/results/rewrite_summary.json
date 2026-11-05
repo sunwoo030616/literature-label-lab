@@ -1,0 +1,9 @@
+{
+  "n": 6,
+  "original_hit10": 0,
+  "rewritten_hit10": 6,
+  "rewritten_hit5": 5,
+  "mean_generation_seconds": 3.169155902656106,
+  "scope": "Post-hoc repeated six Korean probes, not a fresh holdout",
+  "diagnostic_protocol_sha256": "129ca89d229bc79d01d6663be31eda61583e54a97c90c9bcf038bf4bed6ff3bd"
+}

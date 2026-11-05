@@ -1,0 +1,6 @@
+q07-korean {'tool': 'search_documents', 'arguments': {'query': 'corona hospital patients statin benefit', 'limit': 3}} 1
+q09-korean {'tool': 'search_documents', 'arguments': {'query': 'hunan, 101 patients, chest CT, severity', 'limit': 3}} 1
+q11-korean {'tool': 'search_documents', 'arguments': {'query': 'post-infection urinary retention, peripheral sensory loss, 28-year-old female, transverse myelitis', 'limit': 3}} 2
+q13-korean {'tool': 'search_documents', 'arguments': {'query': 'summer midday sun uv radiation inactivating virus 63 percent', 'limit': 3}} 1
+q15-korean {'tool': 'search_documents', 'arguments': {'query': 'inpatient 238 antibody testing time course rt-pcr comparison', 'limit': 3}} 2
+q17-korean {'tool': 'search_documents', 'arguments': {'query': 'lung elasticity, flow control valve, artificial respiration', 'limit': 3}} 10

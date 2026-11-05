@@ -1,0 +1,6 @@
+agent-english [{'rule': 'preserve_numeric_anchor', 'value': '3449'}] False None
+agent-korean-statin [] True None
+agent-korean-spinal [] True None
+agent-explicit-pmid [] True None
+agent-absent [] False None
+agent-tool-injection None False planner_invalid_json

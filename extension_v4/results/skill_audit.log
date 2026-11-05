@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": {
+    "evaluation_inputs_unchanged": true,
+    "query_groups_disjoint": true,
+    "retrieval_coverage": true,
+    "retrieval_ranks_recomputed": true,
+    "retrieval_metrics_recomputed": true,
+    "policy_selected_only_from_dev": true,
+    "query_target_hashes_match": true,
+    "database_read_only": true,
+    "llm_conditions_complete": true,
+    "llm_quotes_revalidated_visible_context": true,
+    "llm_task_and_policy_metadata": true,
+    "llm_summaries_recomputed": true,
+    "agent_plans_bounds_and_citations": true,
+    "mcp_protocol_smoke": true,
+    "v1_preserved": true,
+    "v3_frozen_models_and_policies_preserved": true,
+    "quote_recovery_recomputed": true,
+    "agent_guard_recomputed": true,
+    "agent_strict_recomputed": true,
+    "rewrite_summary_recomputed": true,
+    "skill_full_path_source_binding": true,
+    "skill_full_path_quotes_valid": true
+  },
+  "v1_preserved_files": 46,
+  "v3_preserved_files": 63,
+  "retrieval_rows": 230,
+  "llm_runs": 36,
+  "agent_runs": 6
+}

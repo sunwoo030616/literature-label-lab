@@ -1,0 +1,79 @@
+[
+  {
+    "query": "Find a discussion linking an anti-inflammatory steroid, inflammation resolution and the sudden excessive immune response in coronavirus disease.",
+    "id": "q06-paraphrase",
+    "bm25": null,
+    "hybrid": 3,
+    "dense": 7
+  },
+  {
+    "query": "Buenos Aires private institution 26 cases fever March 2020",
+    "id": "q08-lexical",
+    "bm25": 1,
+    "hybrid": 2,
+    "dense": 6
+  },
+  {
+    "query": "Which early Argentine hospital series described two fever patterns among mostly imported infections?",
+    "id": "q08-paraphrase",
+    "bm25": null,
+    "hybrid": 1,
+    "dense": null
+  },
+  {
+    "query": "chest CT 101 Hunan ground glass traction bronchiectasis emergency",
+    "id": "q09-lexical",
+    "bm25": 1,
+    "hybrid": null,
+    "dense": null
+  },
+  {
+    "query": "acute transverse myelitis 28 female plasma exchange urinary retention",
+    "id": "q11-lexical",
+    "bm25": 1,
+    "hybrid": 2,
+    "dense": 2
+  },
+  {
+    "query": "Find the sunlight study estimating how quickly summer noon exposure disables nearly two thirds of airborne virus particles.",
+    "id": "q13-paraphrase",
+    "bm25": null,
+    "hybrid": 5,
+    "dense": 5
+  },
+  {
+    "query": "serological ELISA IgM IgG N protein 238 hospital patients 11 days",
+    "id": "q15-lexical",
+    "bm25": 1,
+    "hybrid": null,
+    "dense": null
+  },
+  {
+    "query": "psychopharmacology COVID psychotropics pharmacokinetic interactions organ systems",
+    "id": "q16-lexical",
+    "bm25": 1,
+    "hybrid": 2,
+    "dense": 8
+  },
+  {
+    "query": "What review warns that infection related organ changes and experimental antiviral treatments can alter psychiatric medicine safety?",
+    "id": "q16-paraphrase",
+    "bm25": 2,
+    "hybrid": 1,
+    "dense": 3
+  },
+  {
+    "query": "Find an early overview combining breathing support, circulation monitoring and nutrition for intensive care before specific vaccines were available.",
+    "id": "q18-paraphrase",
+    "bm25": 8,
+    "hybrid": 2,
+    "dense": null
+  },
+  {
+    "query": "radiographic 240 patients chest X ray symptom onset negative 25 percent",
+    "id": "q19-lexical",
+    "bm25": 1,
+    "hybrid": 4,
+    "dense": null
+  }
+]
