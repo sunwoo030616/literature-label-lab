@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature evidence audit"
+  short_description: "Audit LitCovid retrieval metrics and local LLM quotations"
+  default_prompt: "Use $literature-evidence-audit to verify the latest V4 results and explain failed retrieval or evidence checks."
