@@ -1,0 +1,14 @@
+[
+ {"id":"qa01","question":"In the meta-analysis of statins and COVID-19 in-hospital outcomes, how many studies and patients were included?","target_pmid":"32882643","answerable":true,"anchors":["9 studies","3449"]},
+ {"id":"qa02","question":"How many positive cases were described in the private Buenos Aires institution during March 2020?","target_pmid":"32442932","answerable":true,"anchors":["Twenty six","26"]},
+ {"id":"qa03","question":"How many cases and institutions were included in the Hunan multicenter chest CT study of COVID-19 pneumonia?","target_pmid":"32125873","answerable":true,"anchors":["101","four institutions"]},
+ {"id":"qa04","question":"How many patients were included in the first CONTROL-19 Italian rheumatology registry report?","target_pmid":"32723435","answerable":true,"anchors":["232"]},
+ {"id":"qa05","question":"Which treatments were used for the 28-year-old woman with transverse myelitis following COVID-19 and urinary retention?","target_pmid":"32926676","answerable":true,"anchors":["corticosteroids","plasma exchange"]},
+ {"id":"qa06","question":"According to the Solar UV-B/A inactivation paper, how long did summer noon solar radiation need to inactivate 63% of virions?","target_pmid":"34285313","answerable":true,"anchors":["less than 2 min"]},
+ {"id":"qa07","question":"How many admitted hospital patients were screened in the preliminary SARS-CoV-2 serological ELISA N protein study?","target_pmid":"32425648","answerable":true,"anchors":["238"]},
+ {"id":"qa08","question":"In the differential ventilation flow control valve experiment, how many pairs of COVID-19 patients were tested and for how long?","target_pmid":"32639236","answerable":true,"anchors":["1 h","two pairs"]},
+ {"id":"qa09","question":"What was the primary outcome count in the unpublished 2026 COVID trial named ZETA-471 on Jupiter astronauts?","target_pmid":null,"answerable":false,"anchors":[]},
+ {"id":"qa10","question":"What exact dose of AX-991 permanently reverses aging according to the 2026 randomized COVID trial?","target_pmid":null,"answerable":false,"anchors":[]},
+ {"id":"qa11","question":"What is the password printed in the private supplementary table SECRET-2026 of the CONTROL-19 report?","target_pmid":null,"answerable":false,"anchors":[]},
+ {"id":"qa12","question":"Which national team won the 2026 football World Cup final and what was the final score?","target_pmid":null,"answerable":false,"anchors":[]}
+]

@@ -1,0 +1,420 @@
+{
+  "author": "AI assistant, manually paraphrased from source abstracts; no independent expert judgments",
+  "selection": "20 smallest SHA256(v4-known-item-20261105 + PMID)",
+  "queries": [
+    {
+      "id": "q00-lexical",
+      "source_group": 0,
+      "split": "dev",
+      "kind": "lexical",
+      "query": "Ramazzini occupational infection prevention employer government responsibilities",
+      "target_pmid": "32433100",
+      "target_content_hash": "a4479338023d5de0dab98cd2b876ee80df9d5cf2b2f9c715840f755723cb4480"
+    },
+    {
+      "id": "q00-paraphrase",
+      "source_group": 0,
+      "split": "dev",
+      "kind": "paraphrase",
+      "query": "Which statement asks public authorities and businesses to protect workers exposed to infected people?",
+      "target_pmid": "32433100",
+      "target_content_hash": "a4479338023d5de0dab98cd2b876ee80df9d5cf2b2f9c715840f755723cb4480"
+    },
+    {
+      "id": "q01-lexical",
+      "source_group": 1,
+      "split": "dev",
+      "kind": "lexical",
+      "query": "ACE2 angiotensin receptor blockers inhibitors susceptibility evidence",
+      "target_pmid": "32341442",
+      "target_content_hash": "2df06ceb73b02592a08cded67d2f1cc7895f0a7dbdbe9e48bd728155c5142119"
+    },
+    {
+      "id": "q01-paraphrase",
+      "source_group": 1,
+      "split": "dev",
+      "kind": "paraphrase",
+      "query": "Should medicines for blood pressure be stopped because they may raise the coronavirus entry receptor?",
+      "target_pmid": "32341442",
+      "target_content_hash": "2df06ceb73b02592a08cded67d2f1cc7895f0a7dbdbe9e48bd728155c5142119"
+    },
+    {
+      "id": "q02-lexical",
+      "source_group": 2,
+      "split": "dev",
+      "kind": "lexical",
+      "query": "radiopharmaceutical access availability 35 countries nuclear medicine supply",
+      "target_pmid": "32646881",
+      "target_content_hash": "c929b17fb3845bec67e140eaa0d6fdfe787978ecaf19c7a6e10873b285c2996f"
+    },
+    {
+      "id": "q02-paraphrase",
+      "source_group": 2,
+      "split": "dev",
+      "kind": "paraphrase",
+      "query": "What international survey describes shortages of radioactive medicines and dependence on a single supplier?",
+      "target_pmid": "32646881",
+      "target_content_hash": "c929b17fb3845bec67e140eaa0d6fdfe787978ecaf19c7a6e10873b285c2996f"
+    },
+    {
+      "id": "q03-lexical",
+      "source_group": 3,
+      "split": "dev",
+      "kind": "lexical",
+      "query": "agranulocytosis COVID recovery TBO filgrastim thrombocytosis",
+      "target_pmid": "32874794",
+      "target_content_hash": "d6e9590b018494e2441b7451567537e4d87cf0761ed1834ca8095c5b48cf3d23"
+    },
+    {
+      "id": "q03-paraphrase",
+      "source_group": 3,
+      "split": "dev",
+      "kind": "paraphrase",
+      "query": "Find the case of a man whose neutrophils disappeared after recovering from coronavirus and returned after growth factor treatment.",
+      "target_pmid": "32874794",
+      "target_content_hash": "d6e9590b018494e2441b7451567537e4d87cf0761ed1834ca8095c5b48cf3d23"
+    },
+    {
+      "id": "q04-lexical",
+      "source_group": 4,
+      "split": "dev",
+      "kind": "lexical",
+      "query": "plasminogen tPA inflammation efferocytosis M2 macrophages",
+      "target_pmid": "32861744",
+      "target_content_hash": "ae78c696fcecbf8a96d2eb52588413a855cbcc55c1c943056fba5169b42422ae"
+    },
+    {
+      "id": "q04-paraphrase",
+      "source_group": 4,
+      "split": "dev",
+      "kind": "paraphrase",
+      "query": "Which review examines clot dissolving enzymes in immune signaling and clearance of dead cells?",
+      "target_pmid": "32861744",
+      "target_content_hash": "ae78c696fcecbf8a96d2eb52588413a855cbcc55c1c943056fba5169b42422ae"
+    },
+    {
+      "id": "q05-lexical",
+      "source_group": 5,
+      "split": "dev",
+      "kind": "lexical",
+      "query": "neurosurgical residency New York census 72 operations resident deployment",
+      "target_pmid": "32688039",
+      "target_content_hash": "9df9662dcaf59f59602cd7dc0c451a455c51457f2fe0298eb19a6249c53d412f"
+    },
+    {
+      "id": "q05-paraphrase",
+      "source_group": 5,
+      "split": "dev",
+      "kind": "paraphrase",
+      "query": "How did a surgical training program in the outbreak epicenter measure lost procedures and trainee sick days?",
+      "target_pmid": "32688039",
+      "target_content_hash": "9df9662dcaf59f59602cd7dc0c451a455c51457f2fe0298eb19a6249c53d412f"
+    },
+    {
+      "id": "q06-lexical",
+      "source_group": 6,
+      "split": "test",
+      "kind": "lexical",
+      "query": "dexamethasone pro resolving lipid mediators cytokine storms",
+      "target_pmid": "32956495",
+      "target_content_hash": "14e1b9e9e748ae600bc06fcddd2c19e6be48b740f8fbed44827e326f1bce7118"
+    },
+    {
+      "id": "q06-paraphrase",
+      "source_group": 6,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "Find a discussion linking an anti-inflammatory steroid, inflammation resolution and the sudden excessive immune response in coronavirus disease.",
+      "target_pmid": "32956495",
+      "target_content_hash": "14e1b9e9e748ae600bc06fcddd2c19e6be48b740f8fbed44827e326f1bce7118"
+    },
+    {
+      "id": "q07-lexical",
+      "source_group": 7,
+      "split": "test",
+      "kind": "lexical",
+      "query": "statin meta analysis 9 studies 3449 in hospital mortality",
+      "target_pmid": "32882643",
+      "target_content_hash": "796c096df593a497308ae851e8bccf98fe0aececacdbd701826ffdade9967354"
+    },
+    {
+      "id": "q07-paraphrase",
+      "source_group": 7,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "Did pooled evidence show that cholesterol lowering medicines helped people hospitalized with coronavirus infection?",
+      "target_pmid": "32882643",
+      "target_content_hash": "796c096df593a497308ae851e8bccf98fe0aececacdbd701826ffdade9967354"
+    },
+    {
+      "id": "q07-korean",
+      "source_group": 7,
+      "split": "test",
+      "kind": "korean",
+      "query": "코로나 입원 환자에게 스타틴이 도움이 되었는지 9개 연구 3449명을 분석한 논문",
+      "target_pmid": "32882643",
+      "target_content_hash": "796c096df593a497308ae851e8bccf98fe0aececacdbd701826ffdade9967354"
+    },
+    {
+      "id": "q08-lexical",
+      "source_group": 8,
+      "split": "test",
+      "kind": "lexical",
+      "query": "Buenos Aires private institution 26 cases fever March 2020",
+      "target_pmid": "32442932",
+      "target_content_hash": "ad84481da9aab7dee7373c8911faed2a1a75b97ad08c7ae831507b8ac3bb022b"
+    },
+    {
+      "id": "q08-paraphrase",
+      "source_group": 8,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "Which early Argentine hospital series described two fever patterns among mostly imported infections?",
+      "target_pmid": "32442932",
+      "target_content_hash": "ad84481da9aab7dee7373c8911faed2a1a75b97ad08c7ae831507b8ac3bb022b"
+    },
+    {
+      "id": "q09-lexical",
+      "source_group": 9,
+      "split": "test",
+      "kind": "lexical",
+      "query": "chest CT 101 Hunan ground glass traction bronchiectasis emergency",
+      "target_pmid": "32125873",
+      "target_content_hash": "a3f78d0924fe537b41593ba49ccb041268f48abec7e3a0146bd0db2ce362cf27"
+    },
+    {
+      "id": "q09-paraphrase",
+      "source_group": 9,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "What four-center study connects lung scan abnormalities with mild versus severe illness in one hundred and one patients?",
+      "target_pmid": "32125873",
+      "target_content_hash": "a3f78d0924fe537b41593ba49ccb041268f48abec7e3a0146bd0db2ce362cf27"
+    },
+    {
+      "id": "q09-korean",
+      "source_group": 9,
+      "split": "test",
+      "kind": "korean",
+      "query": "후난성 네 기관의 101명 환자에서 흉부 CT 소견과 중증도를 비교한 연구",
+      "target_pmid": "32125873",
+      "target_content_hash": "a3f78d0924fe537b41593ba49ccb041268f48abec7e3a0146bd0db2ce362cf27"
+    },
+    {
+      "id": "q10-lexical",
+      "source_group": 10,
+      "split": "test",
+      "kind": "lexical",
+      "query": "CONTROL 19 Italian rheumatology registry 232 immunomodulatory",
+      "target_pmid": "32723435",
+      "target_content_hash": "774f1f973f22b3e7975a1c738549016feccb51dcf37b1bfb5dcbe983e666de9c"
+    },
+    {
+      "id": "q10-paraphrase",
+      "source_group": 10,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "What did the first Italian surveillance results say about outcomes for people with autoimmune joint disorders taking immune modifying drugs?",
+      "target_pmid": "32723435",
+      "target_content_hash": "774f1f973f22b3e7975a1c738549016feccb51dcf37b1bfb5dcbe983e666de9c"
+    },
+    {
+      "id": "q11-lexical",
+      "source_group": 11,
+      "split": "test",
+      "kind": "lexical",
+      "query": "acute transverse myelitis 28 female plasma exchange urinary retention",
+      "target_pmid": "32926676",
+      "target_content_hash": "9a7c084d9c5a9e1caf7c3b02c32840aadc4dbe822416183b13e317c17057c0a2"
+    },
+    {
+      "id": "q11-paraphrase",
+      "source_group": 11,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "Find the young woman with trouble urinating and symmetric limb numbness after infection who improved with steroids and blood plasma replacement.",
+      "target_pmid": "32926676",
+      "target_content_hash": "9a7c084d9c5a9e1caf7c3b02c32840aadc4dbe822416183b13e317c17057c0a2"
+    },
+    {
+      "id": "q11-korean",
+      "source_group": 11,
+      "split": "test",
+      "kind": "korean",
+      "query": "감염 후 배뇨 곤란과 팔다리 감각 저하를 보인 28세 여성 횡단성 척수염 증례",
+      "target_pmid": "32926676",
+      "target_content_hash": "9a7c084d9c5a9e1caf7c3b02c32840aadc4dbe822416183b13e317c17057c0a2"
+    },
+    {
+      "id": "q12-lexical",
+      "source_group": 12,
+      "split": "test",
+      "kind": "lexical",
+      "query": "spike N terminal domain S1 NTD ganglioside druggable pockets",
+      "target_pmid": "34208755",
+      "target_content_hash": "bf83feb091d2436c9606df707c756ab9d317b8e2fde05461317e23099c012bc1"
+    },
+    {
+      "id": "q12-paraphrase",
+      "source_group": 12,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "Which perspective proposes a viral surface protein region outside the receptor binding domain as a small molecule attachment blocking target?",
+      "target_pmid": "34208755",
+      "target_content_hash": "bf83feb091d2436c9606df707c756ab9d317b8e2fde05461317e23099c012bc1"
+    },
+    {
+      "id": "q13-lexical",
+      "source_group": 13,
+      "split": "test",
+      "kind": "lexical",
+      "query": "solar UV B A inactivation 63 percent two minutes Solar Pump",
+      "target_pmid": "34285313",
+      "target_content_hash": "9734790bce0150caca7e9e95e2f3ef0759650a384856f0b0d618d984904cf38d"
+    },
+    {
+      "id": "q13-paraphrase",
+      "source_group": 13,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "Find the sunlight study estimating how quickly summer noon exposure disables nearly two thirds of airborne virus particles.",
+      "target_pmid": "34285313",
+      "target_content_hash": "9734790bce0150caca7e9e95e2f3ef0759650a384856f0b0d618d984904cf38d"
+    },
+    {
+      "id": "q13-korean",
+      "source_group": 13,
+      "split": "test",
+      "kind": "korean",
+      "query": "여름 정오의 태양 자외선으로 바이러스 63퍼센트를 비활성화하는 데 걸리는 시간 연구",
+      "target_pmid": "34285313",
+      "target_content_hash": "9734790bce0150caca7e9e95e2f3ef0759650a384856f0b0d618d984904cf38d"
+    },
+    {
+      "id": "q14-lexical",
+      "source_group": 14,
+      "split": "test",
+      "kind": "lexical",
+      "query": "maternal child health services low middle income disasters systematic review twenty",
+      "target_pmid": "34209238",
+      "target_content_hash": "d01290409781dc99e1d1887eeb9a8786095b5b8f6db01af4c92aa7acb03a6ae1"
+    },
+    {
+      "id": "q14-paraphrase",
+      "source_group": 14,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "Which evidence synthesis describes disrupted access to care for mothers and children during infectious outbreaks and disasters in poorer countries?",
+      "target_pmid": "34209238",
+      "target_content_hash": "d01290409781dc99e1d1887eeb9a8786095b5b8f6db01af4c92aa7acb03a6ae1"
+    },
+    {
+      "id": "q15-lexical",
+      "source_group": 15,
+      "split": "test",
+      "kind": "lexical",
+      "query": "serological ELISA IgM IgG N protein 238 hospital patients 11 days",
+      "target_pmid": "32425648",
+      "target_content_hash": "50c2c4939544af750e0737e9c556bcaed15ab6ca122fd6296edf58c7a7fb9f6f"
+    },
+    {
+      "id": "q15-paraphrase",
+      "source_group": 15,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "Which hospital study compared blood antibody detection with throat swab RNA tests and found their usefulness changed with time since symptoms began?",
+      "target_pmid": "32425648",
+      "target_content_hash": "50c2c4939544af750e0737e9c556bcaed15ab6ca122fd6296edf58c7a7fb9f6f"
+    },
+    {
+      "id": "q15-korean",
+      "source_group": 15,
+      "split": "test",
+      "kind": "korean",
+      "query": "입원 환자 238명에서 증상 시작 이후 시간에 따른 항체 검사와 핵산 검사를 비교한 연구",
+      "target_pmid": "32425648",
+      "target_content_hash": "50c2c4939544af750e0737e9c556bcaed15ab6ca122fd6296edf58c7a7fb9f6f"
+    },
+    {
+      "id": "q16-lexical",
+      "source_group": 16,
+      "split": "test",
+      "kind": "lexical",
+      "query": "psychopharmacology COVID psychotropics pharmacokinetic interactions organ systems",
+      "target_pmid": "32425246",
+      "target_content_hash": "f915b62503aca8f9a4b73c50e4eff96234c369d51be870e14126a8074e8de69a"
+    },
+    {
+      "id": "q16-paraphrase",
+      "source_group": 16,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "What review warns that infection related organ changes and experimental antiviral treatments can alter psychiatric medicine safety?",
+      "target_pmid": "32425246",
+      "target_content_hash": "f915b62503aca8f9a4b73c50e4eff96234c369d51be870e14126a8074e8de69a"
+    },
+    {
+      "id": "q17-lexical",
+      "source_group": 17,
+      "split": "test",
+      "kind": "lexical",
+      "query": "differential ventilation flow control valves two pairs lung compliance",
+      "target_pmid": "32639236",
+      "target_content_hash": "6e9cb748d66162d524afa286245c8be060967606761002624d2be026df49ab54"
+    },
+    {
+      "id": "q17-paraphrase",
+      "source_group": 17,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "Can one breathing machine support two people with different lung stiffness using separate valves, and what small experiment tested this?",
+      "target_pmid": "32639236",
+      "target_content_hash": "6e9cb748d66162d524afa286245c8be060967606761002624d2be026df49ab54"
+    },
+    {
+      "id": "q17-korean",
+      "source_group": 17,
+      "split": "test",
+      "kind": "korean",
+      "query": "폐의 탄성이 다른 두 환자를 유량 조절 밸브로 한 인공호흡기에 연결한 실험",
+      "target_pmid": "32639236",
+      "target_content_hash": "6e9cb748d66162d524afa286245c8be060967606761002624d2be026df49ab54"
+    },
+    {
+      "id": "q18-lexical",
+      "source_group": 18,
+      "split": "test",
+      "kind": "lexical",
+      "query": "critically ill ICU therapeutic strategies respiratory circulation nutrition",
+      "target_pmid": "32307593",
+      "target_content_hash": "7cc2b29d427b9248a3219601f7c4265d4c3ea2641bf793f27c07106d305e96e2"
+    },
+    {
+      "id": "q18-paraphrase",
+      "source_group": 18,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "Find an early overview combining breathing support, circulation monitoring and nutrition for intensive care before specific vaccines were available.",
+      "target_pmid": "32307593",
+      "target_content_hash": "7cc2b29d427b9248a3219601f7c4265d4c3ea2641bf793f27c07106d305e96e2"
+    },
+    {
+      "id": "q19-lexical",
+      "source_group": 19,
+      "split": "test",
+      "kind": "lexical",
+      "query": "radiographic 240 patients chest X ray symptom onset negative 25 percent",
+      "target_pmid": "32474630",
+      "target_content_hash": "658b5b3d011449d68babc3b364549ce8d514140abbd6e2d08a07c69b26a162ff"
+    },
+    {
+      "id": "q19-paraphrase",
+      "source_group": 19,
+      "split": "test",
+      "kind": "paraphrase",
+      "query": "Which study of two hundred and forty infected people reports how ordinary lung X ray abnormalities change with days after symptoms?",
+      "target_pmid": "32474630",
+      "target_content_hash": "658b5b3d011449d68babc3b364549ce8d514140abbd6e2d08a07c69b26a162ff"
+    }
+  ]
+}
