@@ -10,7 +10,7 @@ import sqlite3
 from statistics import median
 
 from evaluate_plans import VERSIONS, build_cases
-from knowledge_base import DEFAULT_DB, V5, connect, search, snapshot, words
+from knowledge_base import DEFAULT_DB, V5, connect, lookup_title, search, snapshot, words
 from science_agent import Facet, connect_server, review
 
 
@@ -61,8 +61,14 @@ async def score(path, db_path, allow_partial):
                     baseline = any(r["pmid"] == target for r in search(
                         db, case["question"][:250], limit=3
                     )["candidates"])
+                title_hit = None
+                if case["kind"].endswith("_title"):
+                    title = db.execute("SELECT title FROM papers WHERE pmid=?", (target,)).fetchone()[0]
+                    direct = lookup_title(db, title)
+                    title_hit = direct["status"] == "resolved" and direct["candidates"][0]["pmid"] == target
                 row = dict(id=case["id"], kind=case["kind"], requested_facets=case["requested_facets"],
-                           target=target, source_scope=case["source_scope"], baseline_hit=baseline, methods={})
+                           target=target, source_scope=case["source_scope"], baseline_hit=baseline,
+                           exact_title_hit=title_hit, methods={})
                 for version in VERSIONS:
                     generated = results[case["id"], version]
                     plan = generated.get("plan")
@@ -104,6 +110,8 @@ async def score(path, db_path, allow_partial):
         summary[name] = dict(n=len(group), scoped_n=sum(r["source_scope"] for r in group),
                              baseline_n=sum(r["baseline_hit"] is not None for r in group),
                              baseline_hits=sum(r["baseline_hit"] is True for r in group),
+                             exact_title_n=sum(r["exact_title_hit"] is not None for r in group),
+                             exact_title_hits=sum(r["exact_title_hit"] is True for r in group),
                              v2_gains=sum(not a and b for a, b in paired),
                              v2_regressions=sum(a and not b for a, b in paired), versions=by_version)
     return dict(checkpoint_fingerprint=fingerprint, planned_snapshot=json.loads(raw_manifest)["snapshot"],

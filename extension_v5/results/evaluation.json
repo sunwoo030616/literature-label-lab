@@ -1,10 +1,11 @@
 {
+  "snapshot": "75be87a4305df6c5c4bb67f1d6540ff500eb5a40680473b26220455495dbf7d0",
   "corpus": {
     "papers": 33688,
     "passages": 135415,
     "failures": 0,
     "examples": [],
-    "seconds": 0.4921
+    "seconds": 0.9058
   },
   "protocol": {
     "protocol_sha256": "be723b40beb4791fe5cbbfdcad02d6296b86e467255c794116b5f5f5e5b2ddd6",
@@ -115,7 +116,7 @@
       "arbitrary_write_tool_rejected": true
     },
     "mcp_calls": 32,
-    "mcp_median_ms": 20.5275
+    "mcp_median_ms": 42.542
   },
   "unscoped_retrieval": {
     "total": 46,

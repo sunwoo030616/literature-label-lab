@@ -7,7 +7,7 @@
 
 ## V5 과학문헌 지식베이스와 탐색 에이전트
 
-LitCovid **PMID 33,688건**의 제목과 초록을 정제해 **135,415개 근거 구간**으로 색인했습니다. 각 구간을 원본 CSV·레코드·문헌 버전과 연결했고, 명시적 소제목이 있는 9,985편은 방법·결과 등으로 구분했습니다. 여러 질문을 소질문별로 검색하고 실제 MCP 도구로 인용의 출처와 위치를 다시 확인합니다. [실행·검증 안내](extension_v5/docs/REPRODUCE.md) · [평가 결과](extension_v5/results/evaluation.json)
+LitCovid **PMID 33,688건**의 제목과 초록을 정제해 **135,415개 근거 구간**으로 색인했습니다. 각 구간을 원본 CSV·레코드·문헌 버전과 연결했고, 명시적 소제목이 있는 9,985편은 방법·결과 등으로 구분했습니다. 여러 질문을 소질문별로 검색하고 실제 MCP 도구로 인용의 출처와 위치를 다시 확인합니다. [실행·검증 안내](extension_v5/docs/REPRODUCE.md) · [평가 결과](extension_v5/results/evaluation.json) · [질의 계획 145문항 비교](extension_v5/results/planner_comparison.json)
 
 ## 개발 단계별로 보기
 

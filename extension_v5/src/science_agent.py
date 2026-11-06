@@ -14,7 +14,7 @@ from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, model_validator
 
-from knowledge_base import DEFAULT_DB, SECTIONS, V5, normalize_doi
+from knowledge_base import DEFAULT_DB, SECTIONS, V5, normalize, normalize_doi, words
 
 MAX_FACETS = 3
 MAX_PASSAGES = 3
@@ -74,9 +74,15 @@ def plan_question(llm, question):
     if not 1 <= len(question) <= 1500:
         raise ValueError("Question must be 1–1500 characters")
     scope = explicit_scope(question)
-    generated = llm.generate("science-facets-v1", {"question": question})
+    # Keep model choice separate from the immutable user-supplied identifier.
+    version = "science-facets-v1" if any(scope.values()) else "science-facets-v2"
+    generated = llm.generate(version, {"question": question})
     topics = Topics.validate_json(generated["raw_output"])
-    return [Facet(**topic.model_dump(), **scope) for topic in topics], generated
+    unique = {}
+    for topic in topics:
+        key = tuple(sorted(set(words(topic.query))))
+        unique.setdefault(key, Facet(**topic.model_dump(), **scope))
+    return list(unique.values()), generated
 
 
 def local_model():
@@ -145,15 +151,35 @@ async def review(session, facets, limit=MAX_PASSAGES):
     return result(status)
 
 
+async def review_title(session, title):
+    response = await session.call_tool("resolve_title", {"title": title})
+    if response.is_error or not isinstance(response.structured_content, dict):
+        raise RuntimeError("MCP call failed: resolve_title")
+    lookup = response.structured_content
+    if lookup["status"] != "resolved":
+        return {**lookup, "facets": []}
+    match = lookup["candidates"][0]
+    packet = await review(session, [Facet(label="Exact title match", query=title, pmid=match["pmid"])])
+    if packet["snapshot"] != lookup["snapshot"] or packet["status"] == "snapshot_changed":
+        return {"status": "snapshot_changed", "facets": []}
+    return {**packet, "title_match": match}
+
+
 async def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", type=Path, default=DEFAULT_DB)
     request = parser.add_mutually_exclusive_group(required=True)
     request.add_argument("--question")
+    request.add_argument("--title", help="Resolve a known title with no model call")
     request.add_argument("--facets", type=Path)
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
-    if args.facets:
+    if args.title is not None:
+        args.title = normalize(args.title).rstrip(". ")
+        if not 1 <= len(args.title) <= 250:
+            parser.error("Title must be 1–250 characters")
+        planner = None
+    elif args.facets:
         try:
             facets = Facets.validate_json(args.facets.read_text(encoding="utf-8"))
         except (ValueError, OSError) as exc:
@@ -169,7 +195,10 @@ async def main():
             parser.error(str(exc))
     async with connect_server(args.db) as session:
         try:
-            result = await review(session, facets)
+            if args.title is not None:
+                result = await review_title(session, args.title)
+            else:
+                result = await review(session, facets)
         except RuntimeError as exc:
             parser.error(str(exc))
     if planner:

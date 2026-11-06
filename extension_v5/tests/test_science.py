@@ -5,7 +5,7 @@ import csv
 import pytest
 
 from knowledge_base import build, connect, passage_spans, search, verify
-from science_agent import Facet, connect_server, plan_question, review
+from science_agent import Facet, connect_server, plan_question, review, review_title
 
 HEADERS = ("pmid", "title", "abstract", "doi", "journal", "pub_type", "label")
 
@@ -79,11 +79,16 @@ def test_explicit_source_binding_and_model_plan_validation():
         raw = '[{"label":"Cohort","query":"hospital cohort size"}]'
 
         def generate(self, version, payload):
-            return {"raw_output": self.raw}
+            return {"raw_output": self.raw, "prompt_version": version}
 
     planner = FakePlanner()
-    facets, _ = plan_question(planner, "PMID 123에서 코호트 수를 찾아줘")
-    assert facets[0].pmid == "123"
+    facets, run = plan_question(planner, "PMID 123에서 코호트 수를 찾아줘")
+    assert facets[0].pmid == "123" and run["prompt_version"] == "science-facets-v1"
+    _, run = plan_question(planner, "코호트 수를 찾아줘")
+    assert run["prompt_version"] == "science-facets-v2"
+    planner.raw = '[{"label":"Cohort","query":"cohort size"},{"label":"Size","query":"size cohort"}]'
+    facets, _ = plan_question(planner, "코호트 수를 찾아줘")
+    assert len(facets) == 1
     with pytest.raises(ValueError, match="multiple source"):
         plan_question(planner, "Compare PMID 123 and PMID 456")
     planner.raw = '[{"label":"Cohort","query":"hospital","pmid":"999"}]'
@@ -95,6 +100,7 @@ def test_real_stdio_agent_keeps_available_and_missing_facets_separate(tmp_path):
     path = source(tmp_path / "litcovid.csv", [
         ("11", "Cohort report", "Observed 417 patients in the final analysis.", ""),
         ("12", "Other paper", "Observed 417 patients in the final analysis.", ""),
+        ("13", "Other paper", "Observed 819 patients in another analysis.", ""),
     ])
     destination = tmp_path / "science.sqlite3"
     build(destination, [path])
@@ -102,7 +108,7 @@ def test_real_stdio_agent_keeps_available_and_missing_facets_separate(tmp_path):
     async def run():
         async with connect_server(destination) as session:
             listed = await session.list_tools()
-            assert {tool.name for tool in listed.tools} == {"search_evidence", "verify_passage"}
+            assert {tool.name for tool in listed.tools} == {"resolve_title", "search_evidence", "verify_passage"}
             response = await review(session, [
                 Facet(label="Cohort", query="417 patients", pmid="11", require_all=True),
                 Facet(label="Missing", query="417 patients", pmid="99"),
@@ -113,6 +119,12 @@ def test_real_stdio_agent_keeps_available_and_missing_facets_separate(tmp_path):
                 "verified_candidates", "source_not_found", "no_matching_passage",
             ]
             assert [item["pmid"] for item in response["facets"][0]["evidence"]] == ["11"]
+            exact = await review_title(session, "cohort report.")
+            assert exact["title_match"]["pmid"] == "11"
+            assert (await review_title(session, "Nonexistent paper"))["status"] == "title_not_found"
+            ambiguous = await review_title(session, "Other paper")
+            assert ambiguous["status"] == "ambiguous_title"
+            assert {r["pmid"] for r in ambiguous["candidates"]} == {"12", "13"}
 
     asyncio.run(run())
 

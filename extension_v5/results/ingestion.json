@@ -1,7 +1,7 @@
 {
-  "snapshot": "a065b0d2886fe137f6d1a544358a0d7178dad6026a18e50fae414bcdb665626d",
+  "snapshot": "75be87a4305df6c5c4bb67f1d6540ff500eb5a40680473b26220455495dbf7d0",
   "normalization": "nfc-space-v1",
-  "index_version": "document-passage-kb-v6",
+  "index_version": "document-passage-kb-v7",
   "sources": [
     {
       "source": "train.csv",
@@ -34,7 +34,7 @@
   "papers": 33688,
   "passages": 135415,
   "ambiguous_dois": 25,
-  "database_bytes": 192438272,
+  "database_bytes": 196743168,
   "structured_papers": 9985,
   "section_counts": {
     "background": 7292,
@@ -45,5 +45,5 @@
     "results": 19069,
     "unstructured": 78330
   },
-  "seconds": 9.2512
+  "seconds": 24.763
 }

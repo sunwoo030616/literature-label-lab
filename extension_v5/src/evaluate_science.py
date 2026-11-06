@@ -12,7 +12,7 @@ import sqlite3
 from statistics import median
 import time
 
-from knowledge_base import DEFAULT_DB, V5, connect, file_hash, search, verify, words
+from knowledge_base import DEFAULT_DB, V5, connect, file_hash, search, snapshot, verify, words
 from science_agent import Facet, connect_server, review
 
 PROTOCOL = V5 / "evaluation/protocol.json"
@@ -186,11 +186,13 @@ async def main():
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     with closing(sqlite3.connect(args.v4_db.resolve().as_uri() + "?mode=ro", uri=True)) as v4_db, closing(connect(args.db)) as v5_db:
+        identity = snapshot(v5_db)
         corpus = verify_corpus(v5_db)
         protocol = await protocol_checks(args.db, v4_db)
         retrieval = retrieval_baseline(v4_db, v5_db)
         late = late_passage_probe(v4_db, v5_db)
-    result = dict(corpus=corpus, protocol=protocol, unscoped_retrieval=retrieval, late_passage_probe=late)
+    result = dict(snapshot=identity, corpus=corpus, protocol=protocol,
+                  unscoped_retrieval=retrieval, late_passage_probe=late)
     args.output.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps(dict(corpus=corpus, protocol=protocol, unscoped_retrieval={
         k: v for k, v in retrieval.items() if k != "rows"

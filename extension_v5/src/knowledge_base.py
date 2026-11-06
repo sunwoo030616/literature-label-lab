@@ -17,7 +17,7 @@ import unicodedata
 V5 = Path(__file__).resolve().parents[1]
 DEFAULT_DB = V5 / "data/science.sqlite3"
 NORMALIZATION = "nfc-space-v1"
-INDEX_VERSION = "document-passage-kb-v6"
+INDEX_VERSION = "document-passage-kb-v7"
 SCHEMA = """
 CREATE TABLE sources (
     name TEXT PRIMARY KEY, sha256 TEXT NOT NULL
@@ -30,6 +30,7 @@ CREATE TABLE papers (
 );
 CREATE INDEX papers_content_key ON papers(content_key);
 CREATE INDEX papers_doi ON papers(doi) WHERE doi <> '';
+CREATE INDEX papers_title ON papers(rtrim(title, '. ') COLLATE NOCASE);
 CREATE TABLE passages (
     id INTEGER PRIMARY KEY, pmid TEXT NOT NULL REFERENCES papers(pmid),
     start INTEGER NOT NULL, end INTEGER NOT NULL, text TEXT NOT NULL,
@@ -275,6 +276,20 @@ def resolve(db, pmid="", doi=""):
     if len(rows) > 1:
         return "ambiguous_doi", ""
     return "resolved", rows[0][0]
+
+
+def lookup_title(db, title):
+    title = normalize(title).rstrip(". ")
+    if not 1 <= len(title) <= 250:
+        raise ValueError("Invalid title length")
+    rows = db.execute(
+        """SELECT pmid, title, doi, journal FROM papers
+        WHERE rtrim(title, '. ') = ? COLLATE NOCASE ORDER BY pmid LIMIT 6""",
+        (title,),
+    ).fetchall()
+    status = "resolved" if len(rows) == 1 else "ambiguous_title" if rows else "title_not_found"
+    return dict(snapshot=snapshot(db), status=status, candidates=[dict(row) for row in rows[:5]],
+                has_more=len(rows) > 5)
 
 
 def words(text):

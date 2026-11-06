@@ -9,7 +9,7 @@ from mcp.server import MCPServer
 from mcp.types import ToolAnnotations
 from pydantic import Field
 
-from knowledge_base import DEFAULT_DB, connect, search, verify
+from knowledge_base import DEFAULT_DB, connect, lookup_title, search, verify
 
 Hash = Annotated[str, Field(pattern=r"^[0-9a-f]{64}$")]
 Section = Literal["", "unstructured", "background", "objective", "methods", "results", "conclusion", "limitations"]
@@ -25,6 +25,12 @@ def create_server(db_path):
     read_only = ToolAnnotations(
         readOnlyHint=True, destructiveHint=False, idempotentHint=True, openWorldHint=False
     )
+
+    @server.tool(annotations=read_only, structured_output=True)
+    def resolve_title(title: Annotated[str, Field(min_length=1, max_length=250)]) -> dict[str, Any]:
+        """Resolve an explicit paper title or list ambiguous exact matches."""
+        with closing(connect(db_path)) as db:
+            return lookup_title(db, title)
 
     @server.tool(annotations=read_only, structured_output=True)
     def search_evidence(
