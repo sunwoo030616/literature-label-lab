@@ -1,0 +1,39 @@
+{
+  "snapshot": "210c7992c5691516124dc697ff2b6d213eb4b250a94798ef02ededfad45092df",
+  "normalization": "nfc-space-v1",
+  "index_version": "document-passage-kb-v3",
+  "sources": [
+    {
+      "source": "train.csv",
+      "sha256": "be328a1a29c7641b6bdb0d1303c354464359fd24b611e1217ad039cf51c1118f",
+      "rows": 24960,
+      "papers": 24960,
+      "passages": 92060,
+      "invalid_doi": 2,
+      "shared_content": 31
+    },
+    {
+      "source": "dev.csv",
+      "sha256": "e1d6300fc97bf0156024bb53c88ae8e881fd12c0858170dd085d2a58b3d65ba9",
+      "rows": 6239,
+      "papers": 6239,
+      "passages": 23208,
+      "shared_content": 11,
+      "invalid_doi": 1
+    },
+    {
+      "source": "test.csv",
+      "sha256": "d0b2a0d28e550c13584c7fffb1c8d507fd7c6cad0d75a11230f766e6c633164b",
+      "rows": 2500,
+      "papers": 2489,
+      "passages": 9815,
+      "missing_title_or_abstract": 11,
+      "shared_content": 1
+    }
+  ],
+  "papers": 33688,
+  "passages": 125083,
+  "ambiguous_dois": 25,
+  "database_bytes": 189644800,
+  "seconds": 7.0947
+}

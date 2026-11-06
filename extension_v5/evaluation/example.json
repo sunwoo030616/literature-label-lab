@@ -1,0 +1,5 @@
+[
+  {"label":"스타틴 메타분석 표본","query":"studies patients 3449","pmid":"32882643"},
+  {"label":"CT 다기관 연구 표본","query":"patients 101 four institutions","doi":"10.2214/ajr.20.22976"},
+  {"label":"검증용 미등록 PMID","query":"vaccination outcomes","pmid":"999999999999"}
+]

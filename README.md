@@ -4,6 +4,11 @@
 
 새 내부1,000편에서 최초 frozen BiomedBERT .7474→규제 조정 .7889→부분 미세조정 .8068이었습니다. 튜닝 TF-IDF도 .7930으로 경쟁력 있었고, attention·관계 규제·temperature 보정의 일관된 이득은 확인하지 못했습니다. 최종 새 내부 표본의28개 조건과 불리한 결과를 보존합니다. [먼저 읽을 결과 해설](extension_v3/docs/RESULTS_WALKTHROUGH.md)에서 범위를 확인할 수 있습니다.
 
+
+## V5 과학문헌 지식베이스와 탐색 에이전트
+
+LitCovid **PMID 33,688건**의 제목과 초록을 정제해 **125,083개 근거 구간**으로 색인했습니다. 각 구간을 원본 CSV·레코드·문헌 버전과 연결했습니다. 여러 질문을 소질문별로 검색하고 실제 MCP 도구로 인용의 출처와 위치를 다시 확인합니다. [실행·검증 안내](extension_v5/docs/REPRODUCE.md) · [평가 결과](extension_v5/results/evaluation.json)
+
 ## 개발 단계별로 보기
 
 | 단계 | 내용 | 상태·문서 |
@@ -12,6 +17,7 @@
 | V2 | 저성능 원인 진단·partial/LoRA 미세조정·Qwen 인용 비교 | 완료. [보고서](followup_v2/docs/REPORT.md) / [쉬운 설명](followup_v2/docs/EXPLAIN.md) |
 | V3 | 긴 문헌 LoRA·chunk bag·관계 규제·검토 이력·최종 내부 감사 | 완료. [결과 해설](extension_v3/docs/RESULTS_WALKTHROUGH.md) / [전체 보고서](extension_v3/docs/REPORT.md) / [포폴 추가본](extension_v3/output/portfolio_followup.pdf) |
 | V4 | 33,645문헌 검색·무료 RAG 근거 검증·MCP·프로젝트 Skill | 완료. [쉬운 결과 해설](extension_v4/docs/RESULTS_WALKTHROUGH.md) / [재현](extension_v4/docs/REPRODUCE.md) / [포폴 추가본](extension_v4/output/pdf/rag_evidence_portfolio.pdf) |
+| V5 | 문헌 데이터 검수·버전 추적·소질문별 MCP 근거 검증 | [재현 안내](extension_v5/docs/REPRODUCE.md) |
 
 V1의 결과·보고서·모델은 해시로 보존합니다. 후속 버전은 최초 실패를 지우지 않고 별도로 비교합니다. 저장소에는 코드·정책·측정 결과를 올리고 원본 데이터·학습 가중치·SQLite·로컬 환경은 포함하지 않습니다. 생성형 Qwen의 in-context 예시와 BiomedBERT의 실제 가중치 미세조정을 구분합니다.
 

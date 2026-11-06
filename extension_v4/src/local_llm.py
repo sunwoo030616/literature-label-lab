@@ -9,7 +9,7 @@ from settings import ROOT, V4
 
 
 class LocalLLM:
-    def __init__(self):
+    def __init__(self, registry_path=V4 / "prompts/registry.json"):
         from mlx_lm import load
 
         path = Path(
@@ -25,7 +25,7 @@ class LocalLLM:
         self.model, self.tokenizer = load(
             str(path), tokenizer_config={"trust_remote_code": False}
         )
-        self.registry = json.loads((V4 / "prompts/registry.json").read_text())
+        self.registry = json.loads(Path(registry_path).read_text(encoding="utf-8"))
 
     def generate(self, version, payload):
         from mlx_lm import generate

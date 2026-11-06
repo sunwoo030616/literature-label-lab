@@ -1,0 +1,4103 @@
+{
+  "corpus": {
+    "papers": 33688,
+    "passages": 125083,
+    "failures": 0,
+    "examples": [],
+    "seconds": 1.3787
+  },
+  "protocol": {
+    "protocol_sha256": "be723b40beb4791fe5cbbfdcad02d6296b86e467255c794116b5f5f5e5b2ddd6",
+    "cases": [
+      {
+        "id": "statins",
+        "status": "verified_candidates",
+        "candidates": 3,
+        "only_target_pmid": true,
+        "v4_first_1200_anchor": true,
+        "v5_top_3_anchor": true,
+        "pass": true
+      },
+      {
+        "id": "buenos-aires",
+        "status": "verified_candidates",
+        "candidates": 2,
+        "only_target_pmid": true,
+        "v4_first_1200_anchor": true,
+        "v5_top_3_anchor": true,
+        "pass": true
+      },
+      {
+        "id": "ct-multicenter",
+        "status": "verified_candidates",
+        "candidates": 3,
+        "only_target_pmid": true,
+        "v4_first_1200_anchor": true,
+        "v5_top_3_anchor": true,
+        "pass": true
+      },
+      {
+        "id": "registry",
+        "status": "verified_candidates",
+        "candidates": 3,
+        "only_target_pmid": true,
+        "v4_first_1200_anchor": true,
+        "v5_top_3_anchor": true,
+        "pass": true
+      },
+      {
+        "id": "myelitis",
+        "status": "verified_candidates",
+        "candidates": 1,
+        "only_target_pmid": true,
+        "v4_first_1200_anchor": true,
+        "v5_top_3_anchor": true,
+        "pass": true
+      },
+      {
+        "id": "solar",
+        "status": "verified_candidates",
+        "candidates": 3,
+        "only_target_pmid": true,
+        "v4_first_1200_anchor": true,
+        "v5_top_3_anchor": true,
+        "pass": true
+      },
+      {
+        "id": "serology",
+        "status": "verified_candidates",
+        "candidates": 3,
+        "only_target_pmid": true,
+        "v4_first_1200_anchor": true,
+        "v5_top_3_anchor": true,
+        "pass": true
+      },
+      {
+        "id": "ventilation",
+        "status": "verified_candidates",
+        "candidates": 3,
+        "only_target_pmid": true,
+        "v4_first_1200_anchor": true,
+        "v5_top_3_anchor": true,
+        "pass": true
+      },
+      {
+        "id": "missing",
+        "status": "source_not_found",
+        "candidates": 0,
+        "expected_status": "source_not_found",
+        "pass": true
+      },
+      {
+        "id": "ambiguous",
+        "status": "ambiguous_doi",
+        "candidates": 0,
+        "expected_status": "ambiguous_doi",
+        "pass": true
+      },
+      {
+        "id": "irrelevant-scoped",
+        "status": "no_matching_passage",
+        "candidates": 0,
+        "expected_status": "no_matching_passage",
+        "pass": true
+      }
+    ],
+    "known_item_total": 8,
+    "v4_first_1200_anchor": 8,
+    "v5_top_3_anchor": 8,
+    "source_scope_correct": 8,
+    "guards": {
+      "quote_mismatch": true,
+      "source_version_mismatch": true,
+      "snapshot_changed": true,
+      "invalid_offsets": true,
+      "arbitrary_write_tool_rejected": true
+    },
+    "mcp_calls": 32,
+    "mcp_median_ms": 1.3915
+  },
+  "unscoped_retrieval": {
+    "total": 46,
+    "v4_hit_at_5": 22,
+    "v5_passage_only_hit_at_5": 20,
+    "v5_document_first_hit_at_5": 22,
+    "rows": [
+      {
+        "split": "dev",
+        "kind": "lexical",
+        "id": "q00-lexical",
+        "target": "32433100",
+        "v4_top5": [
+          "32704484",
+          "32433100",
+          "32869768",
+          "32448036",
+          "32834406"
+        ],
+        "passage_top5": [
+          "32433100",
+          "32869768",
+          "32704484",
+          "32485979",
+          "32967988"
+        ],
+        "document_top5": [
+          "32704484",
+          "32433100",
+          "32869768",
+          "32448036",
+          "32834406"
+        ]
+      },
+      {
+        "split": "dev",
+        "kind": "paraphrase",
+        "id": "q00-paraphrase",
+        "target": "32433100",
+        "v4_top5": [
+          "32704484",
+          "32433100",
+          "32343747",
+          "32908330",
+          "32360793"
+        ],
+        "passage_top5": [
+          "33061469",
+          "32726242",
+          "32868986",
+          "32908330",
+          "32195699"
+        ],
+        "document_top5": [
+          "32704484",
+          "32433100",
+          "32343747",
+          "32908330",
+          "32360793"
+        ]
+      },
+      {
+        "split": "dev",
+        "kind": "lexical",
+        "id": "q01-lexical",
+        "target": "32341442",
+        "v4_top5": [
+          "32341442",
+          "32547717",
+          "32208987",
+          "32412156",
+          "32367746"
+        ],
+        "passage_top5": [
+          "32412156",
+          "32208987",
+          "32422062",
+          "32547717",
+          "33038021"
+        ],
+        "document_top5": [
+          "32341442",
+          "32547717",
+          "32208987",
+          "32412156",
+          "32367746"
+        ]
+      },
+      {
+        "split": "dev",
+        "kind": "paraphrase",
+        "id": "q01-paraphrase",
+        "target": "32341442",
+        "v4_top5": [
+          "32340096",
+          "33006442",
+          "32882868",
+          "32834811",
+          "32990602"
+        ],
+        "passage_top5": [
+          "32256547",
+          "32572350",
+          "34224449",
+          "32740766",
+          "32305401"
+        ],
+        "document_top5": [
+          "32340096",
+          "33006442",
+          "32882868",
+          "32834811",
+          "32990602"
+        ]
+      },
+      {
+        "split": "dev",
+        "kind": "lexical",
+        "id": "q02-lexical",
+        "target": "32646881",
+        "v4_top5": [
+          "32646881",
+          "32709733",
+          "32358044",
+          "32914175",
+          "32387575"
+        ],
+        "passage_top5": [
+          "32646881",
+          "32646881",
+          "32709733",
+          "32462398",
+          "32646881"
+        ],
+        "document_top5": [
+          "32646881",
+          "32709733",
+          "32358044",
+          "32914175",
+          "32387575"
+        ]
+      },
+      {
+        "split": "dev",
+        "kind": "paraphrase",
+        "id": "q02-paraphrase",
+        "target": "32646881",
+        "v4_top5": [
+          "33032846",
+          "32387575",
+          "32919923",
+          "32981663",
+          "32482587"
+        ],
+        "passage_top5": [
+          "32919923",
+          "33032846",
+          "32482587",
+          "32482587",
+          "32919923"
+        ],
+        "document_top5": [
+          "33032846",
+          "32387575",
+          "32919923",
+          "32981663",
+          "32482587"
+        ]
+      },
+      {
+        "split": "dev",
+        "kind": "lexical",
+        "id": "q03-lexical",
+        "target": "32874794",
+        "v4_top5": [
+          "32874794",
+          "32384398",
+          "32752939",
+          "34211762",
+          "32728419"
+        ],
+        "passage_top5": [
+          "32874794",
+          "32874794",
+          "32841919",
+          "32752939",
+          "32370747"
+        ],
+        "document_top5": [
+          "32874794",
+          "32384398",
+          "32752939",
+          "34211762",
+          "32728419"
+        ]
+      },
+      {
+        "split": "dev",
+        "kind": "paraphrase",
+        "id": "q03-paraphrase",
+        "target": "32874794",
+        "v4_top5": [
+          "32838132",
+          "32422287",
+          "32617244",
+          "32526051",
+          "32681865"
+        ],
+        "passage_top5": [
+          "32617244",
+          "32422287",
+          "32754425",
+          "32735050",
+          "32297985"
+        ],
+        "document_top5": [
+          "32838132",
+          "32422287",
+          "32617244",
+          "32526051",
+          "32681865"
+        ]
+      },
+      {
+        "split": "dev",
+        "kind": "lexical",
+        "id": "q04-lexical",
+        "target": "32861744",
+        "v4_top5": [
+          "32861744",
+          "32312290",
+          "32427773",
+          "32962933",
+          "32267998"
+        ],
+        "passage_top5": [
+          "32861744",
+          "32513452",
+          "32861744",
+          "32427773",
+          "32962933"
+        ],
+        "document_top5": [
+          "32861744",
+          "32312290",
+          "32427773",
+          "32962933",
+          "32267998"
+        ]
+      },
+      {
+        "split": "dev",
+        "kind": "paraphrase",
+        "id": "q04-paraphrase",
+        "target": "32861744",
+        "v4_top5": [
+          "34204549",
+          "32783615",
+          "34207696",
+          "32542785",
+          "32594322"
+        ],
+        "passage_top5": [
+          "32594322",
+          "32783615",
+          "32765592",
+          "32779790",
+          "32797103"
+        ],
+        "document_top5": [
+          "34204549",
+          "32783615",
+          "34207696",
+          "32542785",
+          "32594322"
+        ]
+      },
+      {
+        "split": "dev",
+        "kind": "lexical",
+        "id": "q05-lexical",
+        "target": "32688039",
+        "v4_top5": [
+          "32688039",
+          "32580107",
+          "32936281",
+          "32827748",
+          "32463802"
+        ],
+        "passage_top5": [
+          "32688039",
+          "32688039",
+          "32827748",
+          "32580107",
+          "32688039"
+        ],
+        "document_top5": [
+          "32688039",
+          "32580107",
+          "32633754",
+          "32936281",
+          "32827748"
+        ]
+      },
+      {
+        "split": "dev",
+        "kind": "paraphrase",
+        "id": "q05-paraphrase",
+        "target": "32688039",
+        "v4_top5": [
+          "32936281",
+          "32624303",
+          "32385187",
+          "32711150",
+          "32677778"
+        ],
+        "passage_top5": [
+          "32675512",
+          "32357086",
+          "32739443",
+          "32406852",
+          "32711150"
+        ],
+        "document_top5": [
+          "32633754",
+          "32936281",
+          "32591132",
+          "32624303",
+          "32385187"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q06-lexical",
+        "target": "32956495",
+        "v4_top5": [
+          "32956495",
+          "32385712",
+          "33069094",
+          "32983141",
+          "32557557"
+        ],
+        "passage_top5": [
+          "32385712",
+          "32848802",
+          "32385712",
+          "32983141",
+          "32431755"
+        ],
+        "document_top5": [
+          "32956495",
+          "32385712",
+          "33069094",
+          "32983141",
+          "32557557"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q06-paraphrase",
+        "target": "32956495",
+        "v4_top5": [
+          "32385712",
+          "32557557",
+          "32995261",
+          "32806722",
+          "32749472"
+        ],
+        "passage_top5": [
+          "32385712",
+          "32690985",
+          "32557557",
+          "32385712",
+          "32838472"
+        ],
+        "document_top5": [
+          "32385712",
+          "32557557",
+          "32995261",
+          "32806722",
+          "32749472"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q07-lexical",
+        "target": "32882643",
+        "v4_top5": [
+          "32882643",
+          "32592657",
+          "33019426",
+          "32571616",
+          "32957539"
+        ],
+        "passage_top5": [
+          "32882643",
+          "32882643",
+          "32592657",
+          "33007661",
+          "33041057"
+        ],
+        "document_top5": [
+          "32882643",
+          "32592657",
+          "33019426",
+          "32571616",
+          "32957539"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q07-paraphrase",
+        "target": "32882643",
+        "v4_top5": [
+          "32570882",
+          "32870376",
+          "32758903",
+          "32375002",
+          "32425249"
+        ],
+        "passage_top5": [
+          "32570882",
+          "34212925",
+          "32870376",
+          "32375002",
+          "32758903"
+        ],
+        "document_top5": [
+          "32570882",
+          "32870376",
+          "32758903",
+          "32375002",
+          "32425249"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "korean",
+        "id": "q07-korean",
+        "target": "32882643",
+        "v4_top5": [],
+        "passage_top5": [],
+        "document_top5": []
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q08-lexical",
+        "target": "32442932",
+        "v4_top5": [
+          "32442932",
+          "33048785",
+          "33048783",
+          "32658842",
+          "32658844"
+        ],
+        "passage_top5": [
+          "32442932",
+          "33048785",
+          "32837881",
+          "32658841",
+          "34346995"
+        ],
+        "document_top5": [
+          "32442932",
+          "33048785",
+          "33048783",
+          "32658842",
+          "32658844"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q08-paraphrase",
+        "target": "32442932",
+        "v4_top5": [
+          "32244261",
+          "32566574",
+          "32495147",
+          "32397515",
+          "32247926"
+        ],
+        "passage_top5": [
+          "32566574",
+          "32442932",
+          "33033033",
+          "33045428",
+          "32868989"
+        ],
+        "document_top5": [
+          "32244261",
+          "32566574",
+          "32495147",
+          "32397515",
+          "32247926"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q09-lexical",
+        "target": "32125873",
+        "v4_top5": [
+          "32125873",
+          "34221639",
+          "32579236",
+          "32452731",
+          "32283052"
+        ],
+        "passage_top5": [
+          "32992435",
+          "32474479",
+          "32125873",
+          "32851078",
+          "32061200"
+        ],
+        "document_top5": [
+          "32125873",
+          "34221639",
+          "32579236",
+          "32452731",
+          "32283052"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q09-paraphrase",
+        "target": "32125873",
+        "v4_top5": [
+          "32524792",
+          "32444393",
+          "32558722",
+          "33043101",
+          "32949274"
+        ],
+        "passage_top5": [
+          "32444393",
+          "32505076",
+          "32243911",
+          "32810438",
+          "32613199"
+        ],
+        "document_top5": [
+          "32524792",
+          "32444393",
+          "32558722",
+          "33043101",
+          "32949274"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "korean",
+        "id": "q09-korean",
+        "target": "32125873",
+        "v4_top5": [
+          "32852587",
+          "32758155",
+          "32130038",
+          "32546365",
+          "32766927"
+        ],
+        "passage_top5": [
+          "32852587",
+          "32758155",
+          "32852587",
+          "33015110",
+          "32291502"
+        ],
+        "document_top5": [
+          "32852587",
+          "32758155",
+          "32130038",
+          "32546365",
+          "32766927"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q10-lexical",
+        "target": "32723435",
+        "v4_top5": [
+          "32723435",
+          "32789449",
+          "32800760",
+          "32409441",
+          "32471903"
+        ],
+        "passage_top5": [
+          "32789449",
+          "32723435",
+          "32789449",
+          "33020845",
+          "32409441"
+        ],
+        "document_top5": [
+          "32723435",
+          "32789449",
+          "32800760",
+          "32409441",
+          "32471903"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q10-paraphrase",
+        "target": "32723435",
+        "v4_top5": [
+          "32576335",
+          "32377666",
+          "32558193",
+          "34224155",
+          "32269598"
+        ],
+        "passage_top5": [
+          "32410272",
+          "32869133",
+          "32327001",
+          "33002549",
+          "32521411"
+        ],
+        "document_top5": [
+          "32576335",
+          "32377666",
+          "32558193",
+          "34224155",
+          "32269598"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q11-lexical",
+        "target": "32926676",
+        "v4_top5": [
+          "32926676",
+          "32784242",
+          "34370410",
+          "34226258",
+          "32772172"
+        ],
+        "passage_top5": [
+          "32926676",
+          "32772172",
+          "32685076",
+          "32426749",
+          "32922857"
+        ],
+        "document_top5": [
+          "32926676",
+          "32784242",
+          "34370410",
+          "34226258",
+          "32772172"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q11-paraphrase",
+        "target": "32926676",
+        "v4_top5": [
+          "32926676",
+          "34377452",
+          "32958554",
+          "34198838",
+          "33042674"
+        ],
+        "passage_top5": [
+          "32926676",
+          "34377452",
+          "32958554",
+          "34198838",
+          "32760733"
+        ],
+        "document_top5": [
+          "32926676",
+          "34377452",
+          "32958554",
+          "34198838",
+          "33042674"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "korean",
+        "id": "q11-korean",
+        "target": "32926676",
+        "v4_top5": [],
+        "passage_top5": [],
+        "document_top5": []
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q12-lexical",
+        "target": "34208755",
+        "v4_top5": [
+          "34208755",
+          "32531235",
+          "32571838",
+          "32493627",
+          "32756685"
+        ],
+        "passage_top5": [
+          "34208755",
+          "32493627",
+          "32817223",
+          "32266867",
+          "32531235"
+        ],
+        "document_top5": [
+          "34208755",
+          "32531235",
+          "32571838",
+          "32493627",
+          "32756685"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q12-paraphrase",
+        "target": "34208755",
+        "v4_top5": [
+          "32837536",
+          "32298218",
+          "32169481",
+          "32846088",
+          "32921279"
+        ],
+        "passage_top5": [
+          "32837536",
+          "32983400",
+          "32537482",
+          "32806067",
+          "32738306"
+        ],
+        "document_top5": [
+          "32837536",
+          "32298218",
+          "32169481",
+          "32846088",
+          "32921279"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q13-lexical",
+        "target": "34285313",
+        "v4_top5": [
+          "34285313",
+          "33075169",
+          "32502327",
+          "32763344",
+          "32355114"
+        ],
+        "passage_top5": [
+          "34285313",
+          "32502327",
+          "34285313",
+          "34285313",
+          "34285313"
+        ],
+        "document_top5": [
+          "34285313",
+          "33075169",
+          "32502327",
+          "32763344",
+          "32355114"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q13-paraphrase",
+        "target": "34285313",
+        "v4_top5": [
+          "32525979",
+          "32502327",
+          "34287031",
+          "32861186",
+          "32447087"
+        ],
+        "passage_top5": [
+          "32525979",
+          "32502327",
+          "32447087",
+          "32837311",
+          "33077792"
+        ],
+        "document_top5": [
+          "32525979",
+          "32502327",
+          "34287031",
+          "32861186",
+          "32447087"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "korean",
+        "id": "q13-korean",
+        "target": "34285313",
+        "v4_top5": [],
+        "passage_top5": [],
+        "document_top5": []
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q14-lexical",
+        "target": "34209238",
+        "v4_top5": [
+          "34209238",
+          "32405459",
+          "33028347",
+          "34211781",
+          "32443856"
+        ],
+        "passage_top5": [
+          "34209238",
+          "32405459",
+          "32559276",
+          "32586891",
+          "33028347"
+        ],
+        "document_top5": [
+          "34209238",
+          "32405459",
+          "33028347",
+          "34211781",
+          "32443856"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q14-paraphrase",
+        "target": "34209238",
+        "v4_top5": [
+          "32784530",
+          "32397896",
+          "32428112",
+          "32572869",
+          "32947805"
+        ],
+        "passage_top5": [
+          "32732461",
+          "32835155",
+          "34224635",
+          "32947805",
+          "34200979"
+        ],
+        "document_top5": [
+          "32784530",
+          "32397896",
+          "32428112",
+          "32572869",
+          "32947805"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q15-lexical",
+        "target": "32425648",
+        "v4_top5": [
+          "32425648",
+          "32957073",
+          "32790181",
+          "32827125",
+          "32956703"
+        ],
+        "passage_top5": [
+          "32425648",
+          "32357808",
+          "32505777",
+          "32962560",
+          "32958531"
+        ],
+        "document_top5": [
+          "32425648",
+          "32957073",
+          "32790181",
+          "32827125",
+          "32956703"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q15-paraphrase",
+        "target": "32425648",
+        "v4_top5": [
+          "32363143",
+          "32311512",
+          "32342927",
+          "32320064",
+          "32638712"
+        ],
+        "passage_top5": [
+          "32363143",
+          "32791199",
+          "32790639",
+          "32718896",
+          "32227494"
+        ],
+        "document_top5": [
+          "32363143",
+          "32311512",
+          "32342927",
+          "32320064",
+          "32638712"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "korean",
+        "id": "q15-korean",
+        "target": "32425648",
+        "v4_top5": [],
+        "passage_top5": [],
+        "document_top5": []
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q16-lexical",
+        "target": "32425246",
+        "v4_top5": [
+          "32425246",
+          "32855778",
+          "32669846",
+          "32680760",
+          "32768503"
+        ],
+        "passage_top5": [
+          "32425246",
+          "32425246",
+          "32855778",
+          "32855778",
+          "32750131"
+        ],
+        "document_top5": [
+          "32425246",
+          "32855778",
+          "32669846",
+          "32680760",
+          "32768503"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q16-paraphrase",
+        "target": "32425246",
+        "v4_top5": [
+          "32219882",
+          "32914973",
+          "32739645",
+          "32742920",
+          "32636851"
+        ],
+        "passage_top5": [
+          "32665054",
+          "32052466",
+          "32304488",
+          "32425246",
+          "32919216"
+        ],
+        "document_top5": [
+          "32219882",
+          "32914973",
+          "32739645",
+          "32742920",
+          "32636851"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q17-lexical",
+        "target": "32639236",
+        "v4_top5": [
+          "32639236",
+          "32345741",
+          "32968521",
+          "33025322",
+          "32984830"
+        ],
+        "passage_top5": [
+          "32639236",
+          "32639236",
+          "32639236",
+          "32345741",
+          "32968521"
+        ],
+        "document_top5": [
+          "32639236",
+          "32345741",
+          "32968521",
+          "33025322",
+          "32984830"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q17-paraphrase",
+        "target": "32639236",
+        "v4_top5": [
+          "34199681",
+          "32487005",
+          "34373829",
+          "33041635",
+          "32671348"
+        ],
+        "passage_top5": [
+          "32487005",
+          "34199681",
+          "32077661",
+          "32837591",
+          "32294813"
+        ],
+        "document_top5": [
+          "34199681",
+          "32487005",
+          "34373829",
+          "33041635",
+          "32671348"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "korean",
+        "id": "q17-korean",
+        "target": "32639236",
+        "v4_top5": [],
+        "passage_top5": [],
+        "document_top5": []
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q18-lexical",
+        "target": "32307593",
+        "v4_top5": [
+          "32307593",
+          "32462719",
+          "32837212",
+          "32613660",
+          "32329880"
+        ],
+        "passage_top5": [
+          "32527576",
+          "32613660",
+          "33077274",
+          "32786117",
+          "33063041"
+        ],
+        "document_top5": [
+          "32307593",
+          "32462719",
+          "32837212",
+          "32613660",
+          "32329880"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q18-paraphrase",
+        "target": "32307593",
+        "v4_top5": [
+          "32837212",
+          "32307519",
+          "32462719",
+          "32682671",
+          "32945085"
+        ],
+        "passage_top5": [
+          "32405411",
+          "32610865",
+          "32077661",
+          "34217468",
+          "33008018"
+        ],
+        "document_top5": [
+          "32837212",
+          "32307519",
+          "32462719",
+          "32682671",
+          "32945085"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "lexical",
+        "id": "q19-lexical",
+        "target": "32474630",
+        "v4_top5": [
+          "32474630",
+          "32485335",
+          "32933519",
+          "32815519",
+          "32995351"
+        ],
+        "passage_top5": [
+          "32474630",
+          "32933519",
+          "32242348",
+          "32995351",
+          "32933519"
+        ],
+        "document_top5": [
+          "32474630",
+          "32485335",
+          "32933519",
+          "32815519",
+          "32995351"
+        ]
+      },
+      {
+        "split": "test",
+        "kind": "paraphrase",
+        "id": "q19-paraphrase",
+        "target": "32474630",
+        "v4_top5": [
+          "32425637",
+          "32159317",
+          "32283285",
+          "32912123",
+          "32523979"
+        ],
+        "passage_top5": [
+          "32459672",
+          "33024960",
+          "32363506",
+          "33051736",
+          "34132519"
+        ],
+        "document_top5": [
+          "32425637",
+          "32159317",
+          "32283285",
+          "32912123",
+          "32523979"
+        ]
+      }
+    ]
+  },
+  "late_passage_probe": {
+    "total": 256,
+    "v4_visible_has_all": 0,
+    "v5_exact_passage_verified": 256,
+    "cases": [
+      {
+        "pmid": "32852587",
+        "anchors": [
+          "points",
+          "predominant",
+          "infection"
+        ],
+        "start": 1608,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33068668",
+        "anchors": [
+          "confirm",
+          "persistence",
+          "dietary"
+        ],
+        "start": 1700,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32228825",
+        "anchors": [
+          "strongly",
+          "believe",
+          "these"
+        ],
+        "start": 2447,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32602272",
+        "anchors": [
+          "medication",
+          "renin",
+          "angiotensin"
+        ],
+        "start": 1324,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32396132",
+        "anchors": [
+          "conclusions",
+          "designed",
+          "different"
+        ],
+        "start": 1359,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32496253",
+        "anchors": [
+          "conclusion",
+          "indicate",
+          "showing"
+        ],
+        "start": 1312,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32745308",
+        "anchors": [
+          "conclusions",
+          "people",
+          "which"
+        ],
+        "start": 1715,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32311109",
+        "anchors": [
+          "simultaneously",
+          "should",
+          "strengthen"
+        ],
+        "start": 1535,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32410714",
+        "anchors": [
+          "conclusions",
+          "associated",
+          "higher"
+        ],
+        "start": 1786,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32352535",
+        "anchors": [
+          "currently",
+          "including",
+          "remdesivir"
+        ],
+        "start": 2208,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32869011",
+        "anchors": [
+          "adjusting",
+          "however",
+          "hospital"
+        ],
+        "start": 1331,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34224196",
+        "anchors": [
+          "conclusion",
+          "comprehensive",
+          "there"
+        ],
+        "start": 1356,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32948987",
+        "anchors": [
+          "ultimately",
+          "network",
+          "provides"
+        ],
+        "start": 2136,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32655013",
+        "anchors": [
+          "presence",
+          "increased",
+          "diabetes"
+        ],
+        "start": 1446,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32837527",
+        "anchors": [
+          "protein",
+          "expression",
+          "atlas"
+        ],
+        "start": 1306,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32807565",
+        "anchors": [
+          "conclusion",
+          "women",
+          "speakers"
+        ],
+        "start": 1303,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32501293",
+        "anchors": [
+          "suggest",
+          "measurement",
+          "levels"
+        ],
+        "start": 1567,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33035129",
+        "anchors": [
+          "should",
+          "adapted",
+          "taking"
+        ],
+        "start": 1686,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33045281",
+        "anchors": [
+          "conclusions",
+          "highly",
+          "sensitive"
+        ],
+        "start": 1610,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34281612",
+        "anchors": [
+          "foreign",
+          "language",
+          "speakers"
+        ],
+        "start": 2210,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34226467",
+        "anchors": [
+          "severity",
+          "independent",
+          "predictor"
+        ],
+        "start": 1367,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33027035",
+        "anchors": [
+          "conclusions",
+          "dropped",
+          "significantly"
+        ],
+        "start": 1958,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32576608",
+        "anchors": [
+          "staff",
+          "interactions",
+          "should"
+        ],
+        "start": 1241,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32879102",
+        "anchors": [
+          "conclusions",
+          "significant",
+          "predictor"
+        ],
+        "start": 1367,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34341217",
+        "anchors": [
+          "addition",
+          "regulatory",
+          "certification"
+        ],
+        "start": 1338,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33053782",
+        "anchors": [
+          "incidence",
+          "among",
+          "along"
+        ],
+        "start": 1686,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33066791",
+        "anchors": [
+          "results",
+          "suggest",
+          "capability"
+        ],
+        "start": 1791,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32733706",
+        "anchors": [
+          "images",
+          "showed",
+          "interlobular"
+        ],
+        "start": 1337,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32399620",
+        "anchors": [
+          "conclusion",
+          "abnormalities",
+          "quantified"
+        ],
+        "start": 1640,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32396986",
+        "anchors": [
+          "consensus",
+          "includes",
+          "infectivity"
+        ],
+        "start": 1372,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32784192",
+        "anchors": [
+          "double",
+          "blinded",
+          "randomized"
+        ],
+        "start": 2494,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34221397",
+        "anchors": [
+          "however",
+          "invasive",
+          "mechanical"
+        ],
+        "start": 4043,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32792769",
+        "anchors": [
+          "aerosol",
+          "plume",
+          "regenerating"
+        ],
+        "start": 1919,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32923084",
+        "anchors": [
+          "conclusion",
+          "proposed",
+          "combating"
+        ],
+        "start": 1265,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32523137",
+        "anchors": [
+          "social",
+          "economic",
+          "consequences"
+        ],
+        "start": 1231,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34224515",
+        "anchors": [
+          "consistent",
+          "communication",
+          "families"
+        ],
+        "start": 1231,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32395494",
+        "anchors": [
+          "conclusions",
+          "accurately",
+          "reduce"
+        ],
+        "start": 1593,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32708750",
+        "anchors": [
+          "information",
+          "should",
+          "guide"
+        ],
+        "start": 1702,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32375884",
+        "anchors": [
+          "conclusions",
+          "special",
+          "should"
+        ],
+        "start": 1352,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32984615",
+        "anchors": [
+          "almost",
+          "suggesting",
+          "useful"
+        ],
+        "start": 1510,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32556807",
+        "anchors": [
+          "conclusion",
+          "frequently",
+          "patchy"
+        ],
+        "start": 1388,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32564002",
+        "anchors": [
+          "conclusions",
+          "experience",
+          "indicates"
+        ],
+        "start": 1285,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32510340",
+        "anchors": [
+          "specially",
+          "electrochemical",
+          "biosensor"
+        ],
+        "start": 1257,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33043106",
+        "anchors": [
+          "implementation",
+          "interventions",
+          "governmental"
+        ],
+        "start": 1758,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32726355",
+        "anchors": [
+          "while",
+          "awaiting",
+          "clinical"
+        ],
+        "start": 1328,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34292311",
+        "anchors": [
+          "although",
+          "localized",
+          "require"
+        ],
+        "start": 2143,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32199996",
+        "anchors": [
+          "these",
+          "proposals",
+          "evolve"
+        ],
+        "start": 1280,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33013745",
+        "anchors": [
+          "covers",
+          "produce",
+          "middle"
+        ],
+        "start": 1307,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32229706",
+        "anchors": [
+          "doxycycline",
+          "commonly",
+          "antibiotics"
+        ],
+        "start": 1670,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32386285",
+        "anchors": [
+          "conjunction",
+          "these",
+          "findings"
+        ],
+        "start": 1592,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32996453",
+        "anchors": [
+          "fundamental",
+          "prerequisite",
+          "principles"
+        ],
+        "start": 1442,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32929316",
+        "anchors": [
+          "conclusion",
+          "essential",
+          "precaution"
+        ],
+        "start": 1359,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32675217",
+        "anchors": [
+          "conclusions",
+          "among",
+          "associated"
+        ],
+        "start": 1650,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32938445",
+        "anchors": [
+          "conclusion",
+          "occur",
+          "absence"
+        ],
+        "start": 1297,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32452940",
+        "anchors": [
+          "forced",
+          "development",
+          "impactful"
+        ],
+        "start": 2541,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33024646",
+        "anchors": [
+          "there",
+          "improve",
+          "masks"
+        ],
+        "start": 1817,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34370958",
+        "anchors": [
+          "rapid",
+          "exponential",
+          "increase"
+        ],
+        "start": 1408,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33050463",
+        "anchors": [
+          "these",
+          "results",
+          "intra"
+        ],
+        "start": 1470,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32319538",
+        "anchors": [
+          "therefore",
+          "possess",
+          "preventive"
+        ],
+        "start": 1498,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32436355",
+        "anchors": [
+          "steep",
+          "increase",
+          "observed"
+        ],
+        "start": 1687,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33045425",
+        "anchors": [
+          "found",
+          "cannot",
+          "attributed"
+        ],
+        "start": 1246,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33010487",
+        "anchors": [
+          "conclusion",
+          "assessed",
+          "therapeutic"
+        ],
+        "start": 1442,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32877368",
+        "anchors": [
+          "nepalese",
+          "maintain",
+          "today"
+        ],
+        "start": 2045,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32966269",
+        "anchors": [
+          "proteins",
+          "present",
+          "potentially"
+        ],
+        "start": 1426,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32806657",
+        "anchors": [
+          "review",
+          "summarizes",
+          "current"
+        ],
+        "start": 2204,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33034151",
+        "anchors": [
+          "strategies",
+          "mitigate",
+          "developed"
+        ],
+        "start": 1550,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32706769",
+        "anchors": [
+          "further",
+          "emphasizes",
+          "present"
+        ],
+        "start": 1563,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32915271",
+        "anchors": [
+          "while",
+          "diagnosis",
+          "independently"
+        ],
+        "start": 1266,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32838058",
+        "anchors": [
+          "through",
+          "planning",
+          "prepare"
+        ],
+        "start": 1325,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32554251",
+        "anchors": [
+          "conclusion",
+          "effect",
+          "regulating"
+        ],
+        "start": 1653,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32105637",
+        "anchors": [
+          "interpretation",
+          "manifests",
+          "abnormalities"
+        ],
+        "start": 2038,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33014751",
+        "anchors": [
+          "showed",
+          "frequently",
+          "associated"
+        ],
+        "start": 1356,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32798468",
+        "anchors": [
+          "interpretation",
+          "survival",
+          "rescued"
+        ],
+        "start": 1810,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32253318",
+        "anchors": [
+          "showed",
+          "tolerated",
+          "could"
+        ],
+        "start": 1396,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32904892",
+        "anchors": [
+          "targeting",
+          "should",
+          "priority"
+        ],
+        "start": 1404,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34209009",
+        "anchors": [
+          "conclusions",
+          "sharp",
+          "slowdown"
+        ],
+        "start": 1681,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32983915",
+        "anchors": [
+          "while",
+          "observed",
+          "still"
+        ],
+        "start": 1742,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34201144",
+        "anchors": [
+          "southern",
+          "significant",
+          "northern"
+        ],
+        "start": 1744,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32959717",
+        "anchors": [
+          "cannot",
+          "reduced",
+          "understanding"
+        ],
+        "start": 1270,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32629804",
+        "anchors": [
+          "highlights",
+          "repurposed",
+          "suggests"
+        ],
+        "start": 1536,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32394467",
+        "anchors": [
+          "favipiravir",
+          "increases",
+          "clinical"
+        ],
+        "start": 1696,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32599968",
+        "anchors": [
+          "conclusion",
+          "appear",
+          "result"
+        ],
+        "start": 1769,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32982538",
+        "anchors": [
+          "addition",
+          "falsified",
+          "substandard"
+        ],
+        "start": 1378,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32660662",
+        "anchors": [
+          "while",
+          "preventing",
+          "another"
+        ],
+        "start": 1328,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32838371",
+        "anchors": [
+          "conclusion",
+          "observed",
+          "percentage"
+        ],
+        "start": 1342,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32668015",
+        "anchors": [
+          "conclusions",
+          "appropriate",
+          "operative"
+        ],
+        "start": 1237,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32857301",
+        "anchors": [
+          "complained",
+          "symptoms",
+          "exertional"
+        ],
+        "start": 2112,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32448805",
+        "anchors": [
+          "these",
+          "numbers",
+          "require"
+        ],
+        "start": 1793,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32798104",
+        "anchors": [
+          "further",
+          "required",
+          "understand"
+        ],
+        "start": 1234,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32533777",
+        "anchors": [
+          "prognosis",
+          "worse",
+          "aggravated"
+        ],
+        "start": 1503,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32298245",
+        "anchors": [
+          "locations",
+          "declined",
+          "decreasing"
+        ],
+        "start": 1445,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32828561",
+        "anchors": [
+          "holistic",
+          "consideration",
+          "lined"
+        ],
+        "start": 1291,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32889885",
+        "anchors": [
+          "there",
+          "significant",
+          "conclusions"
+        ],
+        "start": 1804,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32851129",
+        "anchors": [
+          "although",
+          "current",
+          "literature"
+        ],
+        "start": 1783,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32734645",
+        "anchors": [
+          "endorsed",
+          "national",
+          "foundation"
+        ],
+        "start": 1573,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32748122",
+        "anchors": [
+          "thromboprophylaxis",
+          "failure",
+          "individualised"
+        ],
+        "start": 1702,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32890524",
+        "anchors": [
+          "majority",
+          "providers",
+          "interested"
+        ],
+        "start": 1819,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32391663",
+        "anchors": [
+          "rapidly",
+          "progressed",
+          "within"
+        ],
+        "start": 1255,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33001409",
+        "anchors": [
+          "conclusion",
+          "identified",
+          "disease"
+        ],
+        "start": 1648,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32733980",
+        "anchors": [
+          "conclusion",
+          "infection",
+          "seems"
+        ],
+        "start": 1431,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32767639",
+        "anchors": [
+          "conclusion",
+          "effectively",
+          "suggesting"
+        ],
+        "start": 1218,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32824454",
+        "anchors": [
+          "there",
+          "probability",
+          "least"
+        ],
+        "start": 1313,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33031955",
+        "anchors": [
+          "results",
+          "analysis",
+          "validated"
+        ],
+        "start": 1244,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32617273",
+        "anchors": [
+          "therefore",
+          "sanitary",
+          "measures"
+        ],
+        "start": 1284,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32952302",
+        "anchors": [
+          "quantitative",
+          "estimates",
+          "performed"
+        ],
+        "start": 1320,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33067112",
+        "anchors": [
+          "additionally",
+          "worth",
+          "noting"
+        ],
+        "start": 1557,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32892293",
+        "anchors": [
+          "statistical",
+          "progressed",
+          "illness"
+        ],
+        "start": 1281,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32592160",
+        "anchors": [
+          "cause",
+          "increase",
+          "public"
+        ],
+        "start": 1444,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33078125",
+        "anchors": [
+          "recommend",
+          "structured",
+          "reporting"
+        ],
+        "start": 1272,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32869008",
+        "anchors": [
+          "strong",
+          "adopted",
+          "compensated"
+        ],
+        "start": 1686,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32678424",
+        "anchors": [
+          "comparable",
+          "approaches",
+          "other"
+        ],
+        "start": 2490,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32549123",
+        "anchors": [
+          "fifth",
+          "disallowed",
+          "testing"
+        ],
+        "start": 1279,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33043162",
+        "anchors": [
+          "increasing",
+          "result",
+          "higher"
+        ],
+        "start": 1702,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34131836",
+        "anchors": [
+          "actions",
+          "reduce",
+          "transmission"
+        ],
+        "start": 1580,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32755393",
+        "anchors": [
+          "conclusions",
+          "taken",
+          "together"
+        ],
+        "start": 1684,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32837756",
+        "anchors": [
+          "conclusions",
+          "associated",
+          "demonstrates"
+        ],
+        "start": 1242,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34219482",
+        "anchors": [
+          "conclusions",
+          "there",
+          "reduction"
+        ],
+        "start": 1327,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34131867",
+        "anchors": [
+          "survival",
+          "entire",
+          "cutoff"
+        ],
+        "start": 1395,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32638221",
+        "anchors": [
+          "evidence",
+          "based",
+          "comprehensive"
+        ],
+        "start": 1201,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32646731",
+        "anchors": [
+          "statistically",
+          "significant",
+          "differences"
+        ],
+        "start": 1202,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32425361",
+        "anchors": [
+          "however",
+          "groups",
+          "differ"
+        ],
+        "start": 1356,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32736117",
+        "anchors": [
+          "serum",
+          "increase",
+          "increasing"
+        ],
+        "start": 1349,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32726724",
+        "anchors": [
+          "conclusion",
+          "earlier",
+          "beneficial"
+        ],
+        "start": 1413,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34216119",
+        "anchors": [
+          "however",
+          "large",
+          "sample"
+        ],
+        "start": 2681,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32775775",
+        "anchors": [
+          "conclusions",
+          "conserve",
+          "pandemic"
+        ],
+        "start": 1483,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34199214",
+        "anchors": [
+          "clinical",
+          "worsening",
+          "adverse"
+        ],
+        "start": 1388,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32863816",
+        "anchors": [
+          "moreover",
+          "effects",
+          "inflammatory"
+        ],
+        "start": 1216,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32989431",
+        "anchors": [
+          "dhaka",
+          "surrounding",
+          "districts"
+        ],
+        "start": 1335,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32768693",
+        "anchors": [
+          "conclusions",
+          "prompt",
+          "before"
+        ],
+        "start": 1374,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32838171",
+        "anchors": [
+          "conclude",
+          "these",
+          "cohorts"
+        ],
+        "start": 1283,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32388937",
+        "anchors": [
+          "noteworthy",
+          "adverse",
+          "reactions"
+        ],
+        "start": 2259,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32395187",
+        "anchors": [
+          "conclusion",
+          "despite",
+          "limited"
+        ],
+        "start": 1656,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32651280",
+        "anchors": [
+          "furthermore",
+          "critical",
+          "generalized"
+        ],
+        "start": 1237,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32473875",
+        "anchors": [
+          "future",
+          "should",
+          "document"
+        ],
+        "start": 1305,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32676883",
+        "anchors": [
+          "based",
+          "currently",
+          "available"
+        ],
+        "start": 1525,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32731057",
+        "anchors": [
+          "conclusion",
+          "served",
+          "after"
+        ],
+        "start": 1213,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32936948",
+        "anchors": [
+          "positive",
+          "treatment",
+          "effect"
+        ],
+        "start": 3854,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32941618",
+        "anchors": [
+          "conclusions",
+          "phenotypic",
+          "circulating"
+        ],
+        "start": 1287,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33072875",
+        "anchors": [
+          "changed",
+          "during",
+          "different"
+        ],
+        "start": 1355,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32874862",
+        "anchors": [
+          "understanding",
+          "variation",
+          "vital"
+        ],
+        "start": 1600,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32345140",
+        "anchors": [
+          "sarmahighlightsstilbenoid",
+          "could",
+          "disruptors"
+        ],
+        "start": 1440,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34132436",
+        "anchors": [
+          "bioactivity",
+          "scores",
+          "absorption"
+        ],
+        "start": 1487,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33066750",
+        "anchors": [
+          "conclusion",
+          "hospitalised",
+          "level"
+        ],
+        "start": 1546,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32792942",
+        "anchors": [
+          "therefore",
+          "terms",
+          "molecule"
+        ],
+        "start": 1668,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32969629",
+        "anchors": [
+          "scientific",
+          "evidences",
+          "already"
+        ],
+        "start": 1596,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32924062",
+        "anchors": [
+          "domains",
+          "protein",
+          "confirmed"
+        ],
+        "start": 1202,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32973504",
+        "anchors": [
+          "antagonist",
+          "mogalizumab",
+          "known"
+        ],
+        "start": 1596,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32942143",
+        "anchors": [
+          "integration",
+          "methods",
+          "miniaturized"
+        ],
+        "start": 1858,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32611313",
+        "anchors": [
+          "pharmaceuticals",
+          "already",
+          "approved"
+        ],
+        "start": 1535,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32226286",
+        "anchors": [
+          "importantly",
+          "compare",
+          "contrast"
+        ],
+        "start": 1278,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32991675",
+        "anchors": [
+          "lessons",
+          "learned",
+          "revealed"
+        ],
+        "start": 1520,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32439366",
+        "anchors": [
+          "analysis",
+          "dynamics",
+          "revealed"
+        ],
+        "start": 1288,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33050511",
+        "anchors": [
+          "suggested",
+          "india",
+          "program"
+        ],
+        "start": 1913,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32228827",
+        "anchors": [
+          "future",
+          "basic",
+          "research"
+        ],
+        "start": 3144,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33077980",
+        "anchors": [
+          "conclusions",
+          "impact",
+          "system"
+        ],
+        "start": 1285,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32420919",
+        "anchors": [
+          "conclusions",
+          "provide",
+          "useful"
+        ],
+        "start": 1560,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32232423",
+        "anchors": [
+          "experience",
+          "systems",
+          "europe"
+        ],
+        "start": 1649,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32973965",
+        "anchors": [
+          "vigilant",
+          "atypical",
+          "presentations"
+        ],
+        "start": 1398,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33052202",
+        "anchors": [
+          "quest",
+          "unlock",
+          "conjugated"
+        ],
+        "start": 1367,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32838245",
+        "anchors": [
+          "variables",
+          "identified",
+          "altered"
+        ],
+        "start": 1800,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33065213",
+        "anchors": [
+          "addition",
+          "application",
+          "shown"
+        ],
+        "start": 1288,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32782814",
+        "anchors": [
+          "there",
+          "death",
+          "among"
+        ],
+        "start": 2327,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32841354",
+        "anchors": [
+          "feasible",
+          "minimum",
+          "recommended"
+        ],
+        "start": 1861,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32631771",
+        "anchors": [
+          "suggests",
+          "virulent",
+          "strain"
+        ],
+        "start": 1323,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32568771",
+        "anchors": [
+          "excluding",
+          "deceased",
+          "feeling"
+        ],
+        "start": 1234,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33013002",
+        "anchors": [
+          "provides",
+          "valuable",
+          "insights"
+        ],
+        "start": 1280,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32981926",
+        "anchors": [
+          "hemodialysis",
+          "failed",
+          "extubation"
+        ],
+        "start": 1438,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32643111",
+        "anchors": [
+          "based",
+          "widely",
+          "available"
+        ],
+        "start": 1216,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32745628",
+        "anchors": [
+          "discussion",
+          "carried",
+          "effect"
+        ],
+        "start": 1272,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32868092",
+        "anchors": [
+          "recognizing",
+          "knowledge",
+          "basis"
+        ],
+        "start": 1543,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34291224",
+        "anchors": [
+          "conclusions",
+          "severe",
+          "pneumonia"
+        ],
+        "start": 1803,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32478897",
+        "anchors": [
+          "preserve",
+          "provide",
+          "biologically"
+        ],
+        "start": 1434,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32761495",
+        "anchors": [
+          "hospital",
+          "mortality",
+          "conclusion"
+        ],
+        "start": 1214,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32724028",
+        "anchors": [
+          "conclusions",
+          "despite",
+          "absence"
+        ],
+        "start": 1348,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32474908",
+        "anchors": [
+          "exaggerated",
+          "covid",
+          "negative"
+        ],
+        "start": 1569,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32971527",
+        "anchors": [
+          "comprehensively",
+          "outlines",
+          "threat"
+        ],
+        "start": 1796,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33007143",
+        "anchors": [
+          "conclusions",
+          "interventions",
+          "increase"
+        ],
+        "start": 1314,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32882347",
+        "anchors": [
+          "increased",
+          "length",
+          "elderly"
+        ],
+        "start": 1998,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32964483",
+        "anchors": [
+          "conclusions",
+          "assessment",
+          "cardiac"
+        ],
+        "start": 1483,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34223367",
+        "anchors": [
+          "conclusions",
+          "occurrence",
+          "followed"
+        ],
+        "start": 1369,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32766458",
+        "anchors": [
+          "nourishing",
+          "niche",
+          "essential"
+        ],
+        "start": 1321,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32386882",
+        "anchors": [
+          "demonstrate",
+          "continued",
+          "commitment"
+        ],
+        "start": 1339,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32415860",
+        "anchors": [
+          "conclusions",
+          "dominant",
+          "elevation"
+        ],
+        "start": 1674,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32978176",
+        "anchors": [
+          "conclusion",
+          "evidence",
+          "based"
+        ],
+        "start": 1406,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32376108",
+        "anchors": [
+          "developing",
+          "context",
+          "specific"
+        ],
+        "start": 1703,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32683639",
+        "anchors": [
+          "conclusions",
+          "there",
+          "variation"
+        ],
+        "start": 1361,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32505910",
+        "anchors": [
+          "considering",
+          "recent",
+          "efforts"
+        ],
+        "start": 1745,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32472745",
+        "anchors": [
+          "these",
+          "reports",
+          "evaluated"
+        ],
+        "start": 1514,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34222534",
+        "anchors": [
+          "follows",
+          "better",
+          "preventive"
+        ],
+        "start": 1673,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34281623",
+        "anchors": [
+          "urgent",
+          "action",
+          "ambitious"
+        ],
+        "start": 2188,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33042695",
+        "anchors": [
+          "effort",
+          "guide",
+          "decision"
+        ],
+        "start": 2176,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32802318",
+        "anchors": [
+          "promising",
+          "further",
+          "experimental"
+        ],
+        "start": 1979,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32741085",
+        "anchors": [
+          "demonstrated",
+          "comparatively",
+          "compared"
+        ],
+        "start": 2024,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32715050",
+        "anchors": [
+          "began",
+          "summarize",
+          "interpret"
+        ],
+        "start": 2081,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32872421",
+        "anchors": [
+          "delaying",
+          "unnecessary",
+          "minimizing"
+        ],
+        "start": 1529,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32809981",
+        "anchors": [
+          "coming",
+          "months",
+          "beyond"
+        ],
+        "start": 1593,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34360989",
+        "anchors": [
+          "conclusion",
+          "suggest",
+          "negative"
+        ],
+        "start": 1213,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32540603",
+        "anchors": [
+          "another",
+          "selectively",
+          "reduces"
+        ],
+        "start": 1226,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32462378",
+        "anchors": [
+          "chest",
+          "revealed",
+          "ground"
+        ],
+        "start": 1258,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32997893",
+        "anchors": [
+          "similar",
+          "which",
+          "where"
+        ],
+        "start": 1297,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32877350",
+        "anchors": [
+          "conclusions",
+          "methodology",
+          "could"
+        ],
+        "start": 1606,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33042377",
+        "anchors": [
+          "decreased",
+          "whereas",
+          "increased"
+        ],
+        "start": 1290,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32915872",
+        "anchors": [
+          "conclusions",
+          "points",
+          "where"
+        ],
+        "start": 1980,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32528234",
+        "anchors": [
+          "conclusion",
+          "authors",
+          "upheld"
+        ],
+        "start": 1289,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33032335",
+        "anchors": [
+          "threat",
+          "clerks",
+          "while"
+        ],
+        "start": 1261,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32877391",
+        "anchors": [
+          "heart",
+          "failure",
+          "diagnostic"
+        ],
+        "start": 1224,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32240670",
+        "anchors": [
+          "rapid",
+          "progress",
+          "noted"
+        ],
+        "start": 1775,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34368752",
+        "anchors": [
+          "conclusion",
+          "interventions",
+          "contributed"
+        ],
+        "start": 1461,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "33058938",
+        "anchors": [
+          "conclusions",
+          "likely",
+          "delay"
+        ],
+        "start": 2023,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34198716",
+        "anchors": [
+          "owing",
+          "incidence",
+          "rates"
+        ],
+        "start": 1899,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34220204",
+        "anchors": [
+          "moreover",
+          "cases",
+          "result"
+        ],
+        "start": 1698,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32885797",
+        "anchors": [
+          "found",
+          "conclusions",
+          "probably"
+        ],
+        "start": 1376,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32829745",
+        "anchors": [
+          "findings",
+          "expected",
+          "apply"
+        ],
+        "start": 1490,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32752944",
+        "anchors": [
+          "furthermore",
+          "action",
+          "efficacy"
+        ],
+        "start": 1279,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32752123",
+        "anchors": [
+          "conclusions",
+          "appears",
+          "lower"
+        ],
+        "start": 1250,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32348561",
+        "anchors": [
+          "subjects",
+          "reported",
+          "discomfort"
+        ],
+        "start": 1365,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34226798",
+        "anchors": [
+          "optimizing",
+          "guidelines",
+          "developing"
+        ],
+        "start": 1470,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32191691",
+        "anchors": [
+          "these",
+          "assessed",
+          "calculating"
+        ],
+        "start": 1538,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32754610",
+        "anchors": [
+          "detection",
+          "urinary",
+          "microproteins"
+        ],
+        "start": 1581,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32641481",
+        "anchors": [
+          "present",
+          "confirms",
+          "relevance"
+        ],
+        "start": 2869,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32921706",
+        "anchors": [
+          "subgroup",
+          "revealed",
+          "severe"
+        ],
+        "start": 1400,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32348711",
+        "anchors": [
+          "conclusion",
+          "hospice",
+          "sector"
+        ],
+        "start": 1321,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32852883",
+        "anchors": [
+          "stratification",
+          "crucial",
+          "successfully"
+        ],
+        "start": 1586,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32749697",
+        "anchors": [
+          "dropped",
+          "volumes",
+          "before"
+        ],
+        "start": 1321,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32709482",
+        "anchors": [
+          "experience",
+          "suggest",
+          "programs"
+        ],
+        "start": 1767,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32534935",
+        "anchors": [
+          "eliminated",
+          "maintain",
+          "normal"
+        ],
+        "start": 1697,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32445330",
+        "anchors": [
+          "outbreak",
+          "contagious",
+          "threatens"
+        ],
+        "start": 1686,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32800064",
+        "anchors": [
+          "conclusions",
+          "higher",
+          "essential"
+        ],
+        "start": 1217,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32959618",
+        "anchors": [
+          "premature",
+          "relaxation",
+          "current"
+        ],
+        "start": 2569,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32868370",
+        "anchors": [
+          "conclusions",
+          "describe",
+          "tests"
+        ],
+        "start": 1697,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34199495",
+        "anchors": [
+          "emphasize",
+          "enhance",
+          "communication"
+        ],
+        "start": 2073,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32392377",
+        "anchors": [
+          "conclusion",
+          "impacting",
+          "health"
+        ],
+        "start": 1784,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32765938",
+        "anchors": [
+          "delivered",
+          "systemically",
+          "through"
+        ],
+        "start": 1300,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32567057",
+        "anchors": [
+          "implications",
+          "nursing",
+          "policy"
+        ],
+        "start": 1654,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32376398",
+        "anchors": [
+          "conclusion",
+          "showed",
+          "characterized"
+        ],
+        "start": 2246,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32619764",
+        "anchors": [
+          "interrupted",
+          "before",
+          "initialy"
+        ],
+        "start": 1263,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32663617",
+        "anchors": [
+          "methods",
+          "developed",
+          "efficiently"
+        ],
+        "start": 1310,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "34215561",
+        "anchors": [
+          "conclusion",
+          "ischemic",
+          "heart"
+        ],
+        "start": 1740,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32635302",
+        "anchors": [
+          "ideal",
+          "ability",
+          "adverse"
+        ],
+        "start": 1396,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32562544",
+        "anchors": [
+          "conclusions",
+          "acceptable",
+          "alternative"
+        ],
+        "start": 1590,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32401348",
+        "anchors": [
+          "benefit",
+          "analyses",
+          "focus"
+        ],
+        "start": 1284,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32542210",
+        "anchors": [
+          "drugs",
+          "targeting",
+          "already"
+        ],
+        "start": 1227,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32766546",
+        "anchors": [
+          "found",
+          "significantly",
+          "associated"
+        ],
+        "start": 1363,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32807696",
+        "anchors": [
+          "conclusion",
+          "during",
+          "first"
+        ],
+        "start": 1283,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32971756",
+        "anchors": [
+          "quantified",
+          "volumes",
+          "overall"
+        ],
+        "start": 1706,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32856063",
+        "anchors": [
+          "additional",
+          "strategies",
+          "needed"
+        ],
+        "start": 1647,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32687186",
+        "anchors": [
+          "conclusions",
+          "based",
+          "observed"
+        ],
+        "start": 1236,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32753646",
+        "anchors": [
+          "disclaimer",
+          "corresponds",
+          "early"
+        ],
+        "start": 1288,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32774008",
+        "anchors": [
+          "conservative",
+          "should",
+          "adopted"
+        ],
+        "start": 1708,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32879107",
+        "anchors": [
+          "conclusions",
+          "gastrointestinal",
+          "diarrhea"
+        ],
+        "start": 2239,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32771654",
+        "anchors": [
+          "conclusions",
+          "increased",
+          "small"
+        ],
+        "start": 1591,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32818545",
+        "anchors": [
+          "utilization",
+          "molecules",
+          "dosage"
+        ],
+        "start": 1215,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32978309",
+        "anchors": [
+          "conclusions",
+          "factors",
+          "generally"
+        ],
+        "start": 1492,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32964913",
+        "anchors": [
+          "conclusions",
+          "number",
+          "needed"
+        ],
+        "start": 1305,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32600078",
+        "anchors": [
+          "conclusions",
+          "lactate",
+          "dehydrogenase"
+        ],
+        "start": 1470,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32161968",
+        "anchors": [
+          "presents",
+          "remarkably",
+          "abnormal"
+        ],
+        "start": 1336,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      }
+    ]
+  }
+}

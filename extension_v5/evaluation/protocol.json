@@ -1,0 +1,18 @@
+{
+  "protocol": "science-evidence-v1",
+  "known_item_source": "V4 known-item questions reused as a development regression, with PMID and literal checks where applicable",
+  "budget": {"facets": 3, "passages_per_facet": 3},
+  "checks": [
+    {"id":"statins","label":"Statin meta-analysis","query":"studies patients 3449","pmid":"32882643","expected_pmid":"32882643","anchors":["3449"]},
+    {"id":"buenos-aires","label":"Buenos Aires cases","query":"twenty six cases","pmid":"32442932","expected_pmid":"32442932","anchors":["twenty six","26"]},
+    {"id":"ct-multicenter","label":"Hunan multicenter CT cohort","query":"101 patients four institutions","doi":"10.2214/ajr.20.22976","expected_pmid":"32125873","anchors":["101"]},
+    {"id":"registry","label":"Italian rheumatic registry","query":"232 patients registry","pmid":"32723435","expected_pmid":"32723435","anchors":["232"]},
+    {"id":"myelitis","label":"Myelitis treatment","query":"corticosteroids plasma exchange","pmid":"32926676","expected_pmid":"32926676","anchors":["plasma exchange"]},
+    {"id":"solar","label":"Solar UV inactivation","query":"summer noon inactivation less 2 min","pmid":"34285313","expected_pmid":"34285313","anchors":["less than 2 min"]},
+    {"id":"serology","label":"Serological assay cohort","query":"238 admitted hospital patients","pmid":"32425648","expected_pmid":"32425648","anchors":["238"]},
+    {"id":"ventilation","label":"Differential ventilation test","query":"two pairs patients 1 h ventilation","pmid":"32639236","expected_pmid":"32639236","anchors":["two pairs"]},
+    {"id":"missing","label":"Missing source","query":"vaccine efficacy","pmid":"999999999999","expected_status":"source_not_found"},
+    {"id":"ambiguous","label":"DOI with multiple PMID records","query":"surgical study","doi":"10.1001/jamasurg.2020.3107","expected_status":"ambiguous_doi"},
+    {"id":"irrelevant-scoped","label":"Scoped document without required terms","query":"astronaut jupiter","pmid":"32882643","require_all":true,"expected_status":"no_matching_passage"}
+  ]
+}
