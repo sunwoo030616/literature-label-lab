@@ -62,13 +62,13 @@ async def score(path, db_path, allow_partial):
                         db, case["question"][:250], limit=3
                     )["candidates"])
                 row = dict(id=case["id"], kind=case["kind"], requested_facets=case["requested_facets"],
-                           target=target, baseline_hit=baseline, methods={})
+                           target=target, source_scope=case["source_scope"], baseline_hit=baseline, methods={})
                 for version in VERSIONS:
                     generated = results[case["id"], version]
                     plan = generated.get("plan")
                     item = dict(valid_plan=plan is not None, planner_seconds=round(generated["seconds"], 3),
                                 hit=False, correct_facet_count=False, duplicate_facets=False,
-                                source_constraint_ok=False)
+                                source_constraint_ok=False if case["source_scope"] else None)
                     if plan:
                         facets = [Facet(**entry, **generated["scope"]) for entry in plan]
                         packet = await review(session, facets)
@@ -78,7 +78,8 @@ async def score(path, db_path, allow_partial):
                         item.update(hit=target in ids,
                                     correct_facet_count=len(facets) == case["requested_facets"],
                                     duplicate_facets=near_duplicate(plan), returned_pmids=ids,
-                                    source_constraint_ok=bool(ids) and set(ids) == {target},
+                                    source_constraint_ok=(bool(ids) and set(ids) == {target})
+                                    if case["source_scope"] else None,
                                     queries=[f.query for f in facets])
                     elif "error" in generated:
                         item["error"] = generated["error"]
@@ -92,15 +93,19 @@ async def score(path, db_path, allow_partial):
     for name, group in groups.items():
         by_version = {
             version: {
-                **{key: sum(r["methods"][version][key] for r in group)
+                **{key: sum(r["methods"][version][key] is True for r in group)
                    for key in ("valid_plan", "hit", "correct_facet_count", "duplicate_facets", "source_constraint_ok")},
                 "median_planner_seconds": round(median(r["methods"][version]["planner_seconds"] for r in group), 3),
             }
             for version in VERSIONS
         }
-        summary[name] = dict(n=len(group), baseline_n=sum(r["baseline_hit"] is not None for r in group),
+        first, second = VERSIONS
+        paired = [(row["methods"][first]["hit"], row["methods"][second]["hit"]) for row in group]
+        summary[name] = dict(n=len(group), scoped_n=sum(r["source_scope"] for r in group),
+                             baseline_n=sum(r["baseline_hit"] is not None for r in group),
                              baseline_hits=sum(r["baseline_hit"] is True for r in group),
-                             versions=by_version)
+                             v2_gains=sum(not a and b for a, b in paired),
+                             v2_regressions=sum(a and not b for a, b in paired), versions=by_version)
     return dict(checkpoint_fingerprint=fingerprint, planned_snapshot=json.loads(raw_manifest)["snapshot"],
                 evaluation_snapshot=evaluation_snapshot, cases_planned=len(cases), cases_paired=len(rows),
                 summary=summary, rows=rows)

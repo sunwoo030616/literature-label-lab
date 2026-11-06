@@ -17,7 +17,7 @@ import unicodedata
 V5 = Path(__file__).resolve().parents[1]
 DEFAULT_DB = V5 / "data/science.sqlite3"
 NORMALIZATION = "nfc-space-v1"
-INDEX_VERSION = "document-passage-kb-v3"
+INDEX_VERSION = "document-passage-kb-v6"
 SCHEMA = """
 CREATE TABLE sources (
     name TEXT PRIMARY KEY, sha256 TEXT NOT NULL
@@ -33,6 +33,7 @@ CREATE INDEX papers_doi ON papers(doi) WHERE doi <> '';
 CREATE TABLE passages (
     id INTEGER PRIMARY KEY, pmid TEXT NOT NULL REFERENCES papers(pmid),
     start INTEGER NOT NULL, end INTEGER NOT NULL, text TEXT NOT NULL,
+    section TEXT NOT NULL,
     UNIQUE(pmid, start, end)
 );
 CREATE VIRTUAL TABLE paper_fts USING fts5(title, abstract, content='papers', content_rowid='rowid');
@@ -44,12 +45,33 @@ CREATE TABLE audit (
     pmid TEXT, reason TEXT NOT NULL, retained_pmid TEXT REFERENCES papers(pmid),
     PRIMARY KEY (source, source_record, reason)
 );
+CREATE INDEX audit_pmid ON audit(pmid);
+CREATE INDEX audit_retained_pmid ON audit(retained_pmid);
 CREATE TABLE metadata (name TEXT PRIMARY KEY, value TEXT NOT NULL);
 """
 PMID = re.compile(r"[1-9][0-9]{0,11}")
 DOI = re.compile(r"10\.[0-9]{4,9}/[^\s]+")
 SENTENCE_BREAK = re.compile(r"(?<=[.!?]) (?=[A-Z0-9])")
 WORD = re.compile(r"[^\W_]+", re.UNICODE)
+
+
+HEADINGS = {
+    "background": "background", "introduction": "background",
+    "background and aims": "background", "background and objectives": "background",
+    "objective": "objective", "objectives": "objective", "purpose": "objective",
+    "aim": "objective", "aims": "objective", "aims and objectives": "objective",
+    "methods": "methods", "method": "methods", "materials and methods": "methods",
+    "design": "methods", "study design": "methods", "patients and methods": "methods",
+    "design and methods": "methods", "results": "results", "findings": "results",
+    "conclusions": "conclusion", "conclusion": "conclusion",
+    "interpretation": "conclusion", "limitations": "limitations",
+}
+_HEADING_NAMES = "|".join(sorted(HEADINGS, key=len, reverse=True))
+HEADING = re.compile(
+    r"(?<!\S)(?:(?i:(" + _HEADING_NAMES + r"))\s*:\s*|("
+    + _HEADING_NAMES.upper() + r")\.\s+)(?=\S)"
+)
+SECTIONS = frozenset(HEADINGS.values()) | {"unstructured"}
 
 
 def sha256(value):
@@ -94,6 +116,23 @@ def passage_spans(text, limit=500):
         end = boundary
     if end > start:
         yield start, end - (text[end - 1] == " ")
+
+
+def section_spans(abstract):
+    """Keep explicit structured-abstract headings, without inferring study sections."""
+    headers = list(HEADING.finditer(abstract))
+    sections = [(h.start(), HEADINGS[(h[1] or h[2]).lower()]) for h in headers]
+    names = {section for _, section in sections}
+    if len(names) < 2 or headers[0].start() > 100 or not names & {"methods", "results"}:
+        for start, end in passage_spans(abstract):
+            yield start, end, "unstructured"
+        return
+    if sections[0][0]:
+        sections.insert(0, (0, "unstructured"))
+    for index, (offset, section) in enumerate(sections):
+        end = sections[index + 1][0] if index + 1 < len(sections) else len(abstract)
+        for start, stop in passage_spans(abstract[offset:end].rstrip()):
+            yield offset + start, offset + stop, section
 
 
 def import_source(db, path, digest, manifest_digest):
@@ -144,11 +183,11 @@ def import_source(db, path, digest, manifest_digest):
             db.execute("INSERT INTO paper_fts(rowid,title,abstract) VALUES (?, ?, ?)",
                        (cursor.lastrowid, title, abstract))
             counts["papers"] += 1
-            for start, end in passage_spans(abstract):
+            for start, end, section in section_spans(abstract):
                 text = abstract[start:end]
                 cursor = db.execute(
-                    "INSERT INTO passages(pmid,start,end,text) VALUES (?, ?, ?, ?)",
-                    (pmid, start, end, text),
+                    "INSERT INTO passages(pmid,start,end,text,section) VALUES (?, ?, ?, ?, ?)",
+                    (pmid, start, end, text, section),
                 )
                 db.execute("INSERT INTO passage_fts(rowid,text) VALUES (?, ?)", (cursor.lastrowid, text))
                 counts["passages"] += 1
@@ -188,7 +227,11 @@ def build(destination, paths):
                 "SELECT count(*) FROM (SELECT doi FROM papers WHERE doi <> '' GROUP BY doi HAVING count(*) > 1)"
             ).fetchone()[0]
             paper_count = db.execute("SELECT count(*) FROM papers").fetchone()[0]
-            passage_count = db.execute("SELECT count(*) FROM passages").fetchone()[0]
+            sections = dict(db.execute("SELECT section,count(*) FROM passages GROUP BY section"))
+            passage_count = sum(sections.values())
+            structured_papers = db.execute(
+                "SELECT count(DISTINCT pmid) FROM passages WHERE section <> 'unstructured'"
+            ).fetchone()[0]
             if not paper_count or not passage_count:
                 raise ValueError("No searchable documents in the supplied sources")
             if db.execute("PRAGMA foreign_key_check").fetchone():
@@ -198,7 +241,8 @@ def build(destination, paths):
         os.replace(staging, destination)
     return dict(snapshot=identity, normalization=NORMALIZATION, index_version=INDEX_VERSION, sources=sources,
                 papers=paper_count, passages=passage_count, ambiguous_dois=ambiguous_dois,
-                database_bytes=destination.stat().st_size,
+                database_bytes=destination.stat().st_size, structured_papers=structured_papers,
+                section_counts=sections,
                 seconds=round(time.perf_counter() - started, 4))
 
 
@@ -239,11 +283,12 @@ def words(text):
     return WORD.findall(plain)
 
 
-def paper_passages(db, pmid, terms, require_all, limit, allow_title_match=False):
+def paper_passages(db, pmid, terms, require_all, limit, section, allow_title_match=False):
     rows = db.execute(
         """SELECT p.*, d.version, d.title, d.doi, d.journal, d.publication_type
-        FROM passages p JOIN papers d USING (pmid) WHERE p.pmid = ? ORDER BY p.start""",
-        (pmid,),
+        FROM passages p JOIN papers d USING (pmid)
+        WHERE p.pmid = ? AND (? = '' OR p.section = ?) ORDER BY p.start""",
+        (pmid, section, section),
     )
     scored = []
     for row in rows:
@@ -255,9 +300,11 @@ def paper_passages(db, pmid, terms, require_all, limit, allow_title_match=False)
     return [(row, "passage_terms" if score else "document_context") for score, _, row in sorted(scored)[:limit]]
 
 
-def search(db, query, limit=5, pmid="", doi="", require_all=False, method="document"):
+def search(db, query, limit=5, pmid="", doi="", require_all=False, method="document", section=""):
     if not 1 <= limit <= 10 or not 1 <= len(query) <= 250:
         raise ValueError("Invalid search budget")
+    if section and section not in SECTIONS:
+        raise ValueError("Unknown abstract section")
     if method not in {"document", "passage"}:
         raise ValueError("Unknown search method")
     identity = snapshot(db)
@@ -271,19 +318,19 @@ def search(db, query, limit=5, pmid="", doi="", require_all=False, method="docum
     operator = " AND " if require_all else " OR "
     expression = operator.join(f'"{term}"' for term in terms)
     if scope == "resolved":
-        matches = paper_passages(db, pmid, terms, require_all, limit)
+        matches = paper_passages(db, pmid, terms, require_all, limit, section)
     elif method == "document":
         # Rank a bounded set of papers first, then select one passage per paper.
         # This preserves title cues and prevents one long abstract from filling the result list.
         candidates = db.execute(
             """SELECT d.pmid FROM paper_fts JOIN papers d ON d.rowid = paper_fts.rowid
             WHERE paper_fts MATCH ? ORDER BY bm25(paper_fts, 3.0, 1.0), d.pmid LIMIT ?""",
-            (expression, limit * 3 if require_all else limit),
+            (expression, limit * 3 if require_all or section else limit),
         ).fetchall()
         matches = []
         for candidate in candidates:
             matches.extend(paper_passages(
-                db, candidate["pmid"], terms, require_all, limit=1,
+                db, candidate["pmid"], terms, require_all, limit=1, section=section,
                 allow_title_match=not require_all,
             ))
             if len(matches) == limit:
@@ -292,14 +339,15 @@ def search(db, query, limit=5, pmid="", doi="", require_all=False, method="docum
         rows = db.execute(
             """SELECT p.*, d.version, d.title, d.doi, d.journal, d.publication_type
             FROM passage_fts JOIN passages p ON passage_fts.rowid = p.id
-            JOIN papers d USING (pmid) WHERE passage_fts MATCH ?
+            JOIN papers d USING (pmid)
+            WHERE passage_fts MATCH ? AND (? = '' OR p.section = ?)
             ORDER BY bm25(passage_fts), p.id LIMIT ?""",
-            (operator.join(f'text : "{term}"' for term in terms), limit),
+            (operator.join(f'text : "{term}"' for term in terms), section, section, limit),
         )
         matches = [(row, "passage_terms") for row in rows]
     candidates = [
         dict(pmid=row["pmid"], doi=row["doi"], title=row["title"], journal=row["journal"],
-             publication_type=row["publication_type"], version=row["version"],
+             publication_type=row["publication_type"], section=row["section"], version=row["version"],
              start=row["start"], end=row["end"], quote=row["text"], match=match,
              url=f"https://pubmed.ncbi.nlm.nih.gov/{row['pmid']}/")
         for row, match in matches
@@ -311,7 +359,7 @@ def search(db, query, limit=5, pmid="", doi="", require_all=False, method="docum
 def verify(db, pmid, version, start, end, quote, expected_snapshot):
     if snapshot(db) != expected_snapshot:
         return {"valid": False, "reason": "snapshot_changed"}
-    row = db.execute("SELECT version, abstract FROM papers WHERE pmid = ?", (pmid,)).fetchone()
+    row = db.execute("SELECT version, abstract, doi FROM papers WHERE pmid = ?", (pmid,)).fetchone()
     if row is None or row["version"] != version:
         return {"valid": False, "reason": "source_version_mismatch"}
     if not 0 <= start < end <= len(row["abstract"]) or end - start > 500:
@@ -322,7 +370,15 @@ def verify(db, pmid, version, start, end, quote, expected_snapshot):
         "SELECT p.source, p.source_record, s.sha256 FROM papers p JOIN sources s ON p.source=s.name WHERE p.pmid=?",
         (pmid,),
     ).fetchone()
-    return {"valid": True, "reason": "exact_normalized_abstract_span", "provenance": dict(source)}
+    flags = {item[0] for item in db.execute(
+        "SELECT reason FROM audit WHERE pmid=? OR retained_pmid=?", (pmid, pmid)
+    )}
+    if row["doi"] and db.execute(
+        "SELECT 1 FROM papers WHERE doi=? AND pmid<>? LIMIT 1", (row["doi"], pmid)
+    ).fetchone():
+        flags.add("ambiguous_doi")
+    return {"valid": True, "reason": "exact_normalized_abstract_span",
+            "provenance": dict(source), "review_flags": sorted(flags)}
 
 
 def main():

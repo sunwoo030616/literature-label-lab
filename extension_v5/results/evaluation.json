@@ -1,10 +1,10 @@
 {
   "corpus": {
     "papers": 33688,
-    "passages": 125083,
+    "passages": 135415,
     "failures": 0,
     "examples": [],
-    "seconds": 1.3787
+    "seconds": 0.4921
   },
   "protocol": {
     "protocol_sha256": "be723b40beb4791fe5cbbfdcad02d6296b86e467255c794116b5f5f5e5b2ddd6",
@@ -115,12 +115,12 @@
       "arbitrary_write_tool_rejected": true
     },
     "mcp_calls": 32,
-    "mcp_median_ms": 1.3915
+    "mcp_median_ms": 20.5275
   },
   "unscoped_retrieval": {
     "total": 46,
     "v4_hit_at_5": 22,
-    "v5_passage_only_hit_at_5": 20,
+    "v5_passage_only_hit_at_5": 19,
     "v5_document_first_hit_at_5": 22,
     "rows": [
       {
@@ -194,7 +194,7 @@
           "32208987",
           "32422062",
           "32547717",
-          "33038021"
+          "32395474"
         ],
         "document_top5": [
           "32341442",
@@ -272,10 +272,10 @@
         ],
         "passage_top5": [
           "32919923",
+          "32482587",
           "33032846",
           "32482587",
-          "32482587",
-          "32919923"
+          "32482587"
         ],
         "document_top5": [
           "33032846",
@@ -302,7 +302,7 @@
           "32874794",
           "32841919",
           "32752939",
-          "32370747"
+          "32923084"
         ],
         "document_top5": [
           "32874794",
@@ -329,7 +329,7 @@
           "32422287",
           "32754425",
           "32735050",
-          "32297985"
+          "32294503"
         ],
         "document_top5": [
           "32838132",
@@ -353,10 +353,10 @@
         ],
         "passage_top5": [
           "32861744",
+          "32427774",
           "32513452",
           "32861744",
-          "32427773",
-          "32962933"
+          "32427773"
         ],
         "document_top5": [
           "32861744",
@@ -382,8 +382,8 @@
           "32594322",
           "32783615",
           "32765592",
-          "32779790",
-          "32797103"
+          "32797103",
+          "32779790"
         ],
         "document_top5": [
           "34204549",
@@ -408,9 +408,9 @@
         "passage_top5": [
           "32688039",
           "32688039",
+          "32688039",
           "32827748",
-          "32580107",
-          "32688039"
+          "32580107"
         ],
         "document_top5": [
           "32688039",
@@ -433,11 +433,11 @@
           "32677778"
         ],
         "passage_top5": [
-          "32675512",
           "32357086",
-          "32739443",
+          "32675512",
           "32406852",
-          "32711150"
+          "32739443",
+          "33039335"
         ],
         "document_top5": [
           "32633754",
@@ -515,10 +515,10 @@
         ],
         "passage_top5": [
           "32882643",
-          "32882643",
           "32592657",
-          "33007661",
-          "33041057"
+          "33041057",
+          "32542337",
+          "32700580"
         ],
         "document_top5": [
           "32882643",
@@ -542,9 +542,9 @@
         ],
         "passage_top5": [
           "32570882",
-          "34212925",
           "32870376",
           "32375002",
+          "34212925",
           "32758903"
         ],
         "document_top5": [
@@ -606,9 +606,9 @@
         "passage_top5": [
           "32566574",
           "32442932",
-          "33033033",
-          "33045428",
-          "32868989"
+          "32868989",
+          "32244261",
+          "32926572"
         ],
         "document_top5": [
           "32244261",
@@ -633,9 +633,9 @@
         "passage_top5": [
           "32992435",
           "32474479",
-          "32125873",
-          "32851078",
-          "32061200"
+          "33071084",
+          "32306755",
+          "32968416"
         ],
         "document_top5": [
           "32125873",
@@ -660,9 +660,9 @@
         "passage_top5": [
           "32444393",
           "32505076",
-          "32243911",
           "32810438",
-          "32613199"
+          "33013872",
+          "32516107"
         ],
         "document_top5": [
           "32524792",
@@ -689,7 +689,7 @@
           "32758155",
           "32852587",
           "33015110",
-          "32291502"
+          "32729028"
         ],
         "document_top5": [
           "32852587",
@@ -712,11 +712,11 @@
           "32471903"
         ],
         "passage_top5": [
-          "32789449",
           "32723435",
-          "32789449",
           "33020845",
-          "32409441"
+          "32789449",
+          "32409441",
+          "32789449"
         ],
         "document_top5": [
           "32723435",
@@ -740,10 +740,10 @@
         ],
         "passage_top5": [
           "32410272",
-          "32869133",
+          "32594627",
           "32327001",
-          "33002549",
-          "32521411"
+          "32521411",
+          "32504052"
         ],
         "document_top5": [
           "32576335",
@@ -795,9 +795,9 @@
         "passage_top5": [
           "32926676",
           "34377452",
+          "32791192",
           "32958554",
-          "34198838",
-          "32760733"
+          "34198838"
         ],
         "document_top5": [
           "32926676",
@@ -857,10 +857,10 @@
         ],
         "passage_top5": [
           "32837536",
+          "32544566",
           "32983400",
           "32537482",
-          "32806067",
-          "32738306"
+          "32806067"
         ],
         "document_top5": [
           "32837536",
@@ -884,10 +884,10 @@
         ],
         "passage_top5": [
           "34285313",
+          "34285313",
           "32502327",
           "34285313",
-          "34285313",
-          "34285313"
+          "33022467"
         ],
         "document_top5": [
           "34285313",
@@ -949,8 +949,8 @@
           "34209238",
           "32405459",
           "32559276",
-          "32586891",
-          "33028347"
+          "33028347",
+          "32673577"
         ],
         "document_top5": [
           "34209238",
@@ -976,8 +976,8 @@
           "32732461",
           "32835155",
           "34224635",
-          "32947805",
-          "34200979"
+          "32691488",
+          "32947805"
         ],
         "document_top5": [
           "32784530",
@@ -1004,7 +1004,7 @@
           "32357808",
           "32505777",
           "32962560",
-          "32958531"
+          "32607246"
         ],
         "document_top5": [
           "32425648",
@@ -1030,8 +1030,8 @@
           "32363143",
           "32791199",
           "32790639",
-          "32718896",
-          "32227494"
+          "32227494",
+          "32816387"
         ],
         "document_top5": [
           "32363143",
@@ -1066,7 +1066,7 @@
           "32425246",
           "32425246",
           "32855778",
-          "32855778",
+          "32520683",
           "32750131"
         ],
         "document_top5": [
@@ -1092,8 +1092,8 @@
         "passage_top5": [
           "32665054",
           "32052466",
-          "32304488",
           "32425246",
+          "32742920",
           "32919216"
         ],
         "document_top5": [
@@ -1119,9 +1119,9 @@
         "passage_top5": [
           "32639236",
           "32639236",
-          "32639236",
           "32345741",
-          "32968521"
+          "32639236",
+          "32345741"
         ],
         "document_top5": [
           "32639236",
@@ -1147,8 +1147,8 @@
           "32487005",
           "34199681",
           "32077661",
-          "32837591",
-          "32294813"
+          "32294813",
+          "32837591"
         ],
         "document_top5": [
           "34199681",
@@ -1180,11 +1180,11 @@
           "32329880"
         ],
         "passage_top5": [
-          "32527576",
           "32613660",
-          "33077274",
-          "32786117",
-          "33063041"
+          "32613660",
+          "32613660",
+          "33063041",
+          "32527576"
         ],
         "document_top5": [
           "32307593",
@@ -1208,9 +1208,9 @@
         ],
         "passage_top5": [
           "32405411",
-          "32610865",
           "32077661",
-          "34217468",
+          "32610865",
+          "32294813",
           "33008018"
         ],
         "document_top5": [
@@ -1234,10 +1234,10 @@
           "32995351"
         ],
         "passage_top5": [
-          "32474630",
           "32933519",
-          "32242348",
+          "32474630",
           "32995351",
+          "32602676",
           "32933519"
         ],
         "document_top5": [
@@ -1261,10 +1261,10 @@
           "32523979"
         ],
         "passage_top5": [
-          "32459672",
-          "33024960",
+          "32437022",
+          "34218753",
           "32363506",
-          "33051736",
+          "32459672",
           "34132519"
         ],
         "document_top5": [
@@ -1294,6 +1294,28 @@
         "v5_exact_passage_verified": true
       },
       {
+        "pmid": "33043879",
+        "anchors": [
+          "conclusion",
+          "effectively",
+          "through"
+        ],
+        "start": 1246,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32991941",
+        "anchors": [
+          "conclusions",
+          "multiple",
+          "efficiently"
+        ],
+        "start": 1263,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
         "pmid": "33068668",
         "anchors": [
           "confirm",
@@ -1318,11 +1340,11 @@
       {
         "pmid": "32602272",
         "anchors": [
-          "medication",
-          "renin",
-          "angiotensin"
+          "conclusion",
+          "resulted",
+          "aggressive"
         ],
-        "start": 1324,
+        "start": 1491,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -1395,11 +1417,11 @@
       {
         "pmid": "32869011",
         "anchors": [
-          "adjusting",
-          "however",
-          "hospital"
+          "interpretation",
+          "demonstrated",
+          "although"
         ],
-        "start": 1331,
+        "start": 1497,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -1461,22 +1483,22 @@
       {
         "pmid": "32501293",
         "anchors": [
-          "suggest",
-          "measurement",
-          "levels"
+          "conclusion",
+          "together",
+          "suggest"
         ],
-        "start": 1567,
+        "start": 1420,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "33035129",
         "anchors": [
-          "should",
-          "adapted",
-          "taking"
+          "conclusions",
+          "since",
+          "possible"
         ],
-        "start": 1686,
+        "start": 1535,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -1494,11 +1516,11 @@
       {
         "pmid": "34281612",
         "anchors": [
-          "foreign",
-          "language",
-          "speakers"
+          "conclusions",
+          "sample",
+          "clinically"
         ],
-        "start": 2210,
+        "start": 2011,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -1542,7 +1564,7 @@
           "significant",
           "predictor"
         ],
-        "start": 1367,
+        "start": 1472,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -1582,11 +1604,11 @@
       {
         "pmid": "32733706",
         "anchors": [
-          "images",
-          "showed",
-          "interlobular"
+          "conclusion",
+          "frequent",
+          "bilateral"
         ],
-        "start": 1337,
+        "start": 1419,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -1626,11 +1648,11 @@
       {
         "pmid": "34221397",
         "anchors": [
-          "however",
-          "invasive",
-          "mechanical"
+          "conclusion",
+          "pneumonia",
+          "contribute"
         ],
-        "start": 4043,
+        "start": 3879,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -1692,11 +1714,11 @@
       {
         "pmid": "32708750",
         "anchors": [
-          "information",
-          "should",
-          "guide"
+          "conclusions",
+          "frequently",
+          "asymptomatic"
         ],
-        "start": 1702,
+        "start": 1495,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -1714,11 +1736,11 @@
       {
         "pmid": "32984615",
         "anchors": [
-          "almost",
-          "suggesting",
-          "useful"
+          "conclusion",
+          "there",
+          "large"
         ],
-        "start": 1510,
+        "start": 1276,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -1888,13 +1910,24 @@
         "v5_exact_passage_verified": true
       },
       {
+        "pmid": "32311650",
+        "anchors": [
+          "conclusions",
+          "elder",
+          "blood"
+        ],
+        "start": 1455,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
         "pmid": "33024646",
         "anchors": [
-          "there",
-          "improve",
-          "masks"
+          "conclusion",
+          "exist",
+          "prevent"
         ],
-        "start": 1817,
+        "start": 1754,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -1921,6 +1954,17 @@
         "v5_exact_passage_verified": true
       },
       {
+        "pmid": "32600948",
+        "anchors": [
+          "conclusions",
+          "appears",
+          "present"
+        ],
+        "start": 1229,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
         "pmid": "32319538",
         "anchors": [
           "therefore",
@@ -1934,22 +1978,33 @@
       {
         "pmid": "32436355",
         "anchors": [
-          "steep",
-          "increase",
-          "observed"
+          "conclusion",
+          "study",
+          "demonstrates"
         ],
-        "start": 1687,
+        "start": 1819,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32925165",
+        "anchors": [
+          "conclusions",
+          "severity",
+          "reaches"
+        ],
+        "start": 1252,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "33045425",
         "anchors": [
-          "found",
-          "cannot",
-          "attributed"
+          "conclusions",
+          "general",
+          "lesson"
         ],
-        "start": 1246,
+        "start": 1439,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2020,24 +2075,13 @@
         "v5_exact_passage_verified": true
       },
       {
-        "pmid": "32915271",
-        "anchors": [
-          "while",
-          "diagnosis",
-          "independently"
-        ],
-        "start": 1266,
-        "v4_visible_has_all": false,
-        "v5_exact_passage_verified": true
-      },
-      {
         "pmid": "32838058",
         "anchors": [
-          "through",
-          "planning",
-          "prepare"
+          "conclusion",
+          "accurately",
+          "scenario"
         ],
-        "start": 1325,
+        "start": 1200,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2121,11 +2165,11 @@
       {
         "pmid": "32983915",
         "anchors": [
-          "while",
-          "observed",
-          "still"
+          "conclusions",
+          "resilient",
+          "during"
         ],
-        "start": 1742,
+        "start": 1649,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2137,17 +2181,6 @@
           "northern"
         ],
         "start": 1744,
-        "v4_visible_has_all": false,
-        "v5_exact_passage_verified": true
-      },
-      {
-        "pmid": "32959717",
-        "anchors": [
-          "cannot",
-          "reduced",
-          "understanding"
-        ],
-        "start": 1270,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2231,22 +2264,22 @@
       {
         "pmid": "32857301",
         "anchors": [
-          "complained",
-          "symptoms",
-          "exertional"
+          "conclusion",
+          "support",
+          "predictor"
         ],
-        "start": 2112,
+        "start": 2218,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "32448805",
         "anchors": [
-          "these",
-          "numbers",
-          "require"
+          "conclusions",
+          "could",
+          "serve"
         ],
-        "start": 1793,
+        "start": 1508,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2286,22 +2319,22 @@
       {
         "pmid": "32828561",
         "anchors": [
-          "holistic",
-          "consideration",
-          "lined"
+          "conclusion",
+          "illuminates",
+          "interconnected"
         ],
-        "start": 1291,
+        "start": 1414,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "32889885",
         "anchors": [
-          "there",
-          "significant",
-          "conclusions"
+          "conclusions",
+          "under",
+          "apneic"
         ],
-        "start": 1804,
+        "start": 1893,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2341,22 +2374,22 @@
       {
         "pmid": "32890524",
         "anchors": [
-          "majority",
-          "providers",
-          "interested"
+          "conclusions",
+          "convenient",
+          "means"
         ],
-        "start": 1819,
+        "start": 1677,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "32391663",
         "anchors": [
-          "rapidly",
-          "progressed",
-          "within"
+          "conclusions",
+          "certain",
+          "value"
         ],
-        "start": 1255,
+        "start": 1420,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2407,22 +2440,11 @@
       {
         "pmid": "33031955",
         "anchors": [
-          "results",
-          "analysis",
-          "validated"
+          "conclusion",
+          "trial",
+          "verify"
         ],
-        "start": 1244,
-        "v4_visible_has_all": false,
-        "v5_exact_passage_verified": true
-      },
-      {
-        "pmid": "32617273",
-        "anchors": [
-          "therefore",
-          "sanitary",
-          "measures"
-        ],
-        "start": 1284,
+        "start": 1459,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2438,13 +2460,24 @@
         "v5_exact_passage_verified": true
       },
       {
+        "pmid": "32921704",
+        "anchors": [
+          "conclusions",
+          "continuously",
+          "monitoring"
+        ],
+        "start": 1418,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
         "pmid": "33067112",
         "anchors": [
-          "additionally",
-          "worth",
-          "noting"
+          "conclusion",
+          "their",
+          "derivatives"
         ],
-        "start": 1557,
+        "start": 1770,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2462,11 +2495,11 @@
       {
         "pmid": "32592160",
         "anchors": [
-          "cause",
-          "increase",
-          "public"
+          "conclusion",
+          "reported",
+          "perception"
         ],
-        "start": 1444,
+        "start": 1284,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2506,11 +2539,11 @@
       {
         "pmid": "32549123",
         "anchors": [
-          "fifth",
-          "disallowed",
-          "testing"
+          "conclusions",
+          "showed",
+          "variation"
         ],
-        "start": 1279,
+        "start": 1427,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2572,11 +2605,11 @@
       {
         "pmid": "34131867",
         "anchors": [
-          "survival",
-          "entire",
-          "cutoff"
+          "conclusion",
+          "despite",
+          "comparable"
         ],
-        "start": 1395,
+        "start": 1489,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2594,33 +2627,44 @@
       {
         "pmid": "32646731",
         "anchors": [
-          "statistically",
-          "significant",
-          "differences"
+          "conclusions",
+          "group",
+          "number"
         ],
-        "start": 1202,
+        "start": 1345,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "32425361",
         "anchors": [
-          "however",
-          "groups",
-          "differ"
+          "conclusion",
+          "light",
+          "effectiveness"
         ],
-        "start": 1356,
+        "start": 1516,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32511972",
+        "anchors": [
+          "conclusions",
+          "remained",
+          "patients"
+        ],
+        "start": 1321,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "32736117",
         "anchors": [
+          "conclusions",
           "serum",
-          "increase",
-          "increasing"
+          "increase"
         ],
-        "start": 1349,
+        "start": 1273,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2638,11 +2682,11 @@
       {
         "pmid": "34216119",
         "anchors": [
-          "however",
-          "large",
-          "sample"
+          "minor",
+          "reported",
+          "neuropsychiatric"
         ],
-        "start": 2681,
+        "start": 2583,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2671,11 +2715,11 @@
       {
         "pmid": "32863816",
         "anchors": [
-          "moreover",
-          "effects",
-          "inflammatory"
+          "nevertheless",
+          "taken",
+          "vulnerable"
         ],
-        "start": 1216,
+        "start": 1342,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2715,11 +2759,11 @@
       {
         "pmid": "32388937",
         "anchors": [
-          "noteworthy",
-          "adverse",
-          "reactions"
+          "conclusions",
+          "evidences",
+          "could"
         ],
-        "start": 2259,
+        "start": 1965,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2746,17 +2790,6 @@
         "v5_exact_passage_verified": true
       },
       {
-        "pmid": "32473875",
-        "anchors": [
-          "future",
-          "should",
-          "document"
-        ],
-        "start": 1305,
-        "v4_visible_has_all": false,
-        "v5_exact_passage_verified": true
-      },
-      {
         "pmid": "32676883",
         "anchors": [
           "based",
@@ -2764,6 +2797,17 @@
           "available"
         ],
         "start": 1525,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32852324",
+        "anchors": [
+          "conclusion",
+          "appears",
+          "tolerated"
+        ],
+        "start": 1312,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2781,11 +2825,11 @@
       {
         "pmid": "32936948",
         "anchors": [
-          "positive",
-          "treatment",
-          "effect"
+          "interventions",
+          "large",
+          "dramatic"
         ],
-        "start": 3854,
+        "start": 3793,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2803,11 +2847,11 @@
       {
         "pmid": "33072875",
         "anchors": [
-          "changed",
-          "during",
-          "different"
+          "conclusions",
+          "treatment",
+          "redesigned"
         ],
-        "start": 1355,
+        "start": 1483,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2900,6 +2944,17 @@
         "v5_exact_passage_verified": true
       },
       {
+        "pmid": "32594160",
+        "anchors": [
+          "conclusion",
+          "increased",
+          "probability"
+        ],
+        "start": 1509,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
         "pmid": "32942143",
         "anchors": [
           "integration",
@@ -2946,11 +3001,11 @@
       {
         "pmid": "32439366",
         "anchors": [
-          "analysis",
-          "dynamics",
-          "revealed"
+          "conclusion",
+          "prolongs",
+          "particularly"
         ],
-        "start": 1288,
+        "start": 1427,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -2968,11 +3023,11 @@
       {
         "pmid": "32228827",
         "anchors": [
-          "future",
-          "basic",
-          "research"
+          "conclusions",
+          "abnormal",
+          "activation"
         ],
-        "start": 3144,
+        "start": 2897,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3034,11 +3089,11 @@
       {
         "pmid": "32838245",
         "anchors": [
-          "variables",
-          "identified",
-          "altered"
+          "interpretation",
+          "robust",
+          "worker"
         ],
-        "start": 1800,
+        "start": 1659,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3056,22 +3111,22 @@
       {
         "pmid": "32782814",
         "anchors": [
-          "there",
-          "death",
-          "among"
+          "conclusions",
+          "mortality",
+          "secondary"
         ],
-        "start": 2327,
+        "start": 2494,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "32841354",
         "anchors": [
-          "feasible",
-          "minimum",
-          "recommended"
+          "conclusions",
+          "isolation",
+          "should"
         ],
-        "start": 1861,
+        "start": 1736,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3089,11 +3144,11 @@
       {
         "pmid": "32568771",
         "anchors": [
-          "excluding",
-          "deceased",
-          "feeling"
+          "conclusion",
+          "twelve",
+          "identified"
         ],
-        "start": 1234,
+        "start": 1350,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3116,28 +3171,6 @@
           "extubation"
         ],
         "start": 1438,
-        "v4_visible_has_all": false,
-        "v5_exact_passage_verified": true
-      },
-      {
-        "pmid": "32643111",
-        "anchors": [
-          "based",
-          "widely",
-          "available"
-        ],
-        "start": 1216,
-        "v4_visible_has_all": false,
-        "v5_exact_passage_verified": true
-      },
-      {
-        "pmid": "32745628",
-        "anchors": [
-          "discussion",
-          "carried",
-          "effect"
-        ],
-        "start": 1272,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3199,11 +3232,11 @@
       {
         "pmid": "32474908",
         "anchors": [
-          "exaggerated",
-          "covid",
-          "negative"
+          "conclusions",
+          "serious",
+          "problems"
         ],
-        "start": 1569,
+        "start": 1442,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3232,11 +3265,11 @@
       {
         "pmid": "32882347",
         "anchors": [
-          "increased",
-          "length",
-          "elderly"
+          "conclusions",
+          "should",
+          "consider"
         ],
-        "start": 1998,
+        "start": 2200,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3247,7 +3280,7 @@
           "assessment",
           "cardiac"
         ],
-        "start": 1483,
+        "start": 1553,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3276,11 +3309,11 @@
       {
         "pmid": "32386882",
         "anchors": [
-          "demonstrate",
-          "continued",
-          "commitment"
+          "articulating",
+          "optimal",
+          "mechanisms"
         ],
-        "start": 1339,
+        "start": 1593,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3353,11 +3386,11 @@
       {
         "pmid": "34222534",
         "anchors": [
-          "follows",
-          "better",
-          "preventive"
+          "conclusion",
+          "majority",
+          "positive"
         ],
-        "start": 1673,
+        "start": 1590,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3386,22 +3419,22 @@
       {
         "pmid": "32802318",
         "anchors": [
-          "promising",
-          "further",
-          "experimental"
+          "conclusions",
+          "conclude",
+          "using"
         ],
-        "start": 1979,
+        "start": 1685,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "32741085",
         "anchors": [
-          "demonstrated",
-          "comparatively",
-          "compared"
+          "recommend",
+          "people",
+          "develop"
         ],
-        "start": 2024,
+        "start": 2149,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3463,22 +3496,11 @@
       {
         "pmid": "32462378",
         "anchors": [
-          "chest",
-          "revealed",
-          "ground"
+          "conclusion",
+          "fever",
+          "early"
         ],
-        "start": 1258,
-        "v4_visible_has_all": false,
-        "v5_exact_passage_verified": true
-      },
-      {
-        "pmid": "32997893",
-        "anchors": [
-          "similar",
-          "which",
-          "where"
-        ],
-        "start": 1297,
+        "start": 1425,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3529,11 +3551,11 @@
       {
         "pmid": "33032335",
         "anchors": [
-          "threat",
-          "clerks",
-          "while"
+          "conclusions",
+          "clear",
+          "different"
         ],
-        "start": 1261,
+        "start": 1524,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3551,11 +3573,11 @@
       {
         "pmid": "32240670",
         "anchors": [
-          "rapid",
-          "progress",
-          "noted"
+          "close",
+          "monitoring",
+          "timely"
         ],
-        "start": 1775,
+        "start": 2064,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3584,11 +3606,11 @@
       {
         "pmid": "34198716",
         "anchors": [
-          "owing",
-          "incidence",
-          "rates"
+          "conclusion",
+          "although",
+          "overall"
         ],
-        "start": 1899,
+        "start": 1725,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3606,22 +3628,22 @@
       {
         "pmid": "32885797",
         "anchors": [
-          "found",
           "conclusions",
-          "probably"
+          "probably",
+          "points"
         ],
-        "start": 1376,
+        "start": 1479,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "32829745",
         "anchors": [
-          "findings",
-          "expected",
-          "apply"
+          "conclusions",
+          "protects",
+          "wearer"
         ],
-        "start": 1490,
+        "start": 1381,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3661,11 +3683,22 @@
       {
         "pmid": "34226798",
         "anchors": [
-          "optimizing",
-          "guidelines",
-          "developing"
+          "conclusion",
+          "delay",
+          "poorer"
         ],
-        "start": 1470,
+        "start": 1382,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32769023",
+        "anchors": [
+          "conclusion",
+          "knowledge",
+          "important"
+        ],
+        "start": 1297,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3683,11 +3716,11 @@
       {
         "pmid": "32754610",
         "anchors": [
-          "detection",
-          "urinary",
-          "microproteins"
+          "conclusion",
+          "generally",
+          "during"
         ],
-        "start": 1581,
+        "start": 1501,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3705,11 +3738,11 @@
       {
         "pmid": "32921706",
         "anchors": [
-          "subgroup",
-          "revealed",
-          "severe"
+          "conclusion",
+          "regular",
+          "monitoring"
         ],
-        "start": 1400,
+        "start": 1542,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3727,33 +3760,33 @@
       {
         "pmid": "32852883",
         "anchors": [
-          "stratification",
-          "crucial",
-          "successfully"
+          "conclusion",
+          "identify",
+          "clear"
         ],
-        "start": 1586,
+        "start": 1469,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "32749697",
         "anchors": [
-          "dropped",
-          "volumes",
-          "before"
+          "conclusions",
+          "impact",
+          "number"
         ],
-        "start": 1321,
+        "start": 1443,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "32709482",
         "anchors": [
-          "experience",
-          "suggest",
-          "programs"
+          "conclusions",
+          "significant",
+          "impact"
         ],
-        "start": 1767,
+        "start": 1583,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3793,11 +3826,11 @@
       {
         "pmid": "32959618",
         "anchors": [
-          "premature",
-          "relaxation",
-          "current"
+          "meaning",
+          "lower",
+          "indicative"
         ],
-        "start": 2569,
+        "start": 2452,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -3969,22 +4002,22 @@
       {
         "pmid": "32971756",
         "anchors": [
-          "quantified",
-          "volumes",
-          "overall"
+          "conclusions",
+          "could",
+          "feasible"
         ],
-        "start": 1706,
+        "start": 1815,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
       {
         "pmid": "32856063",
         "anchors": [
-          "additional",
-          "strategies",
-          "needed"
+          "conclusions",
+          "represent",
+          "factor"
         ],
-        "start": 1647,
+        "start": 1461,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -4013,11 +4046,22 @@
       {
         "pmid": "32774008",
         "anchors": [
-          "conservative",
-          "should",
-          "adopted"
+          "surgery",
+          "femur",
+          "fragility"
         ],
-        "start": 1708,
+        "start": 1828,
+        "v4_visible_has_all": false,
+        "v5_exact_passage_verified": true
+      },
+      {
+        "pmid": "32808838",
+        "anchors": [
+          "conclusions",
+          "findings",
+          "increased"
+        ],
+        "start": 1342,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       },
@@ -4051,50 +4095,6 @@
           "dosage"
         ],
         "start": 1215,
-        "v4_visible_has_all": false,
-        "v5_exact_passage_verified": true
-      },
-      {
-        "pmid": "32978309",
-        "anchors": [
-          "conclusions",
-          "factors",
-          "generally"
-        ],
-        "start": 1492,
-        "v4_visible_has_all": false,
-        "v5_exact_passage_verified": true
-      },
-      {
-        "pmid": "32964913",
-        "anchors": [
-          "conclusions",
-          "number",
-          "needed"
-        ],
-        "start": 1305,
-        "v4_visible_has_all": false,
-        "v5_exact_passage_verified": true
-      },
-      {
-        "pmid": "32600078",
-        "anchors": [
-          "conclusions",
-          "lactate",
-          "dehydrogenase"
-        ],
-        "start": 1470,
-        "v4_visible_has_all": false,
-        "v5_exact_passage_verified": true
-      },
-      {
-        "pmid": "32161968",
-        "anchors": [
-          "presents",
-          "remarkably",
-          "abnormal"
-        ],
-        "start": 1336,
         "v4_visible_has_all": false,
         "v5_exact_passage_verified": true
       }

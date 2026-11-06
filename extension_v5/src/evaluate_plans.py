@@ -65,9 +65,13 @@ def main():
             case_id TEXT, version TEXT, result TEXT, PRIMARY KEY(case_id, version)
         );
         """)
-        prior = results.execute("SELECT fingerprint FROM manifest").fetchone()
+        prior = results.execute("SELECT fingerprint, content FROM manifest").fetchone()
         if prior and prior[0] != fingerprint:
-            raise ValueError("Checkpoint belongs to another corpus or prompt revision")
+            previous, requested = json.loads(prior[1]), json.loads(manifest)
+            previous.pop("snapshot")
+            requested.pop("snapshot")
+            if previous != requested:
+                raise ValueError("Checkpoint belongs to other questions or prompt versions")
         if not prior:
             results.execute("INSERT INTO manifest VALUES (?, ?)", (fingerprint, manifest))
             results.commit()
@@ -76,6 +80,11 @@ def main():
             print("All plan rows already available", flush=True)
             return
         model = local_model()
+        identities = set(results.execute(
+            "SELECT DISTINCT json_extract(result, '$.model'), json_extract(result, '$.revision') FROM plans"
+        ))
+        if identities and identities != {(model.identity["repo_id"], model.identity["revision"])}:
+            raise ValueError("Checkpoint was created with a different local model revision")
         started = time.perf_counter()
         for number, case in enumerate(cases, 1):
             for version in VERSIONS:

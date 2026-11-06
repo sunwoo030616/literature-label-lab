@@ -1,0 +1,27 @@
+{
+  "snapshot": "a065b0d2886fe137f6d1a544358a0d7178dad6026a18e50fae414bcdb665626d",
+  "selection": "science-source-trace-audit-v1",
+  "sources": [
+    {
+      "source": "train.csv",
+      "sha256": "be328a1a29c7641b6bdb0d1303c354464359fd24b611e1217ad039cf51c1118f",
+      "sampled_records": 100,
+      "verified_passages": 423,
+      "failures": []
+    },
+    {
+      "source": "dev.csv",
+      "sha256": "e1d6300fc97bf0156024bb53c88ae8e881fd12c0858170dd085d2a58b3d65ba9",
+      "sampled_records": 100,
+      "verified_passages": 424,
+      "failures": []
+    },
+    {
+      "source": "test.csv",
+      "sha256": "d0b2a0d28e550c13584c7fffb1c8d507fd7c6cad0d75a11230f766e6c633164b",
+      "sampled_records": 100,
+      "verified_passages": 423,
+      "failures": []
+    }
+  ]
+}

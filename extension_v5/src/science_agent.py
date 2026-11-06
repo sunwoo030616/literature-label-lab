@@ -14,7 +14,7 @@ from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, model_validator
 
-from knowledge_base import DEFAULT_DB, V5, normalize_doi
+from knowledge_base import DEFAULT_DB, SECTIONS, V5, normalize_doi
 
 MAX_FACETS = 3
 MAX_PASSAGES = 3
@@ -33,9 +33,12 @@ class Facet(Topic):
     pmid: Annotated[str, Field(pattern=r"^(?:[1-9][0-9]{0,11})?$")] = ""
     doi: Annotated[str, Field(max_length=200)] = ""
     require_all: bool = False
+    section: str = ""
 
     @model_validator(mode="after")
     def validate_source(self):
+        if self.section and self.section not in SECTIONS:
+            raise ValueError("Unknown abstract section")
         if self.pmid and self.doi:
             raise ValueError("Specify a PMID or DOI for each facet")
         if self.doi and not normalize_doi(self.doi):
@@ -112,7 +115,7 @@ async def review(session, facets, limit=MAX_PASSAGES):
     for facet in facets:
         found = await call("search_evidence", {
             "query": facet.query, "pmid": facet.pmid, "doi": facet.doi,
-            "limit": limit, "require_all": facet.require_all,
+            "limit": limit, "require_all": facet.require_all, "section": facet.section,
         })
         if identity is None:
             identity = found["snapshot"]
@@ -129,11 +132,12 @@ async def review(session, facets, limit=MAX_PASSAGES):
                 packet.clear()
                 return result("snapshot_changed")
             if check["valid"]:
-                verified.append({**candidate, "provenance": check["provenance"]})
+                verified.append({**candidate, "provenance": check["provenance"],
+                                 "review_flags": check["review_flags"]})
             else:
                 rejected.append({"pmid": candidate["pmid"], "reason": check["reason"]})
         packet.append(dict(label=facet.label, query=facet.query, pmid=facet.pmid, doi=facet.doi,
-                           status="verified_candidates" if verified else (
+                           section=facet.section, status="verified_candidates" if verified else (
                                "verification_failed" if rejected else found["status"]
                            ), evidence=verified, rejected=rejected))
     covered = sum(bool(item["evidence"]) for item in packet)

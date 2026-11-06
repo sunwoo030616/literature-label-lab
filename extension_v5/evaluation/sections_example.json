@@ -1,0 +1,4 @@
+[
+  {"label":"CONTROL-19 등록 연구의 포함 방법","query":"patients RMDs registry","pmid":"32723435","section":"methods"},
+  {"label":"CONTROL-19 등록 연구의 첫 표본","query":"232 patients","pmid":"32723435","section":"results","require_all":true}
+]

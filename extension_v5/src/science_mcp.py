@@ -3,7 +3,7 @@
 import argparse
 from contextlib import closing
 from pathlib import Path
-from typing import Annotated, Any
+from typing import Annotated, Any, Literal
 
 from mcp.server import MCPServer
 from mcp.types import ToolAnnotations
@@ -12,6 +12,7 @@ from pydantic import Field
 from knowledge_base import DEFAULT_DB, connect, search, verify
 
 Hash = Annotated[str, Field(pattern=r"^[0-9a-f]{64}$")]
+Section = Literal["", "unstructured", "background", "objective", "methods", "results", "conclusion", "limitations"]
 
 
 def create_server(db_path):
@@ -32,10 +33,11 @@ def create_server(db_path):
         pmid: Annotated[str, Field(pattern=r"^(?:[1-9][0-9]{0,11})?$")] = "",
         doi: Annotated[str, Field(max_length=200)] = "",
         require_all: bool = False,
+        section: Section = "",
     ) -> dict[str, Any]:
         """Find candidate passages. A supplied PMID or DOI restricts results to that record."""
         with closing(connect(db_path)) as db:
-            return search(db, query, limit, pmid, doi, require_all)
+            return search(db, query, limit, pmid, doi, require_all, section=section)
 
     @server.tool(annotations=read_only, structured_output=True)
     def verify_passage(

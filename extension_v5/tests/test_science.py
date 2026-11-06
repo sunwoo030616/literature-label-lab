@@ -39,6 +39,11 @@ def test_snapshot_audit_and_failed_build_keep_existing_database(tmp_path):
     with closing(connect(destination)) as db:
         assert search(db, "controlled result", pmid="11")["snapshot"] == first["snapshot"]
         assert search(db, "controlled result", doi="10.1000/SHARED")["status"] == "ambiguous_doi"
+        hit = search(db, "controlled result", pmid="11")["candidates"][0]
+        check = verify(db, "11", hit["version"], hit["start"], hit["end"], hit["quote"], first["snapshot"])
+        assert set(check["review_flags"]) == {
+            "duplicate_pmid", "conflicting_pmid", "shared_content", "ambiguous_doi",
+        }
         assert [tuple(row) for row in db.execute(
             "SELECT reason, retained_pmid FROM audit ORDER BY source_record"
         )] == [
@@ -126,3 +131,21 @@ def test_document_first_search_keeps_distinct_sources_and_marks_title_only_hits(
         }
         strict = search(db, "biomarker", limit=3, require_all=True)
         assert [r["pmid"] for r in strict["candidates"]] == ["12"]
+
+
+def test_structured_abstract_filters_methods_and_results_on_same_source(tmp_path):
+    path = source(tmp_path / "litcovid.csv", [
+        ("11", "Clinical registry",
+         "OBJECTIVE. Evaluate disease patterns. PATIENTS AND METHODS. We enrolled patients. RESULTS: 417 patients completed follow-up.", ""),
+        ("12", "Unstructured abstract",
+         "We enrolled patients. Small sample results. Data were not available.", ""),
+    ])
+    destination = tmp_path / "science.sqlite3"
+    report = build(destination, [path])
+    assert report["structured_papers"] == 1
+    with closing(connect(destination)) as db:
+        methods = search(db, "patients", pmid="11", section="methods")["candidates"]
+        results = search(db, "patients", pmid="11", section="results")["candidates"]
+        assert methods[0]["quote"] == "PATIENTS AND METHODS. We enrolled patients."
+        assert results[0]["quote"] == "RESULTS: 417 patients completed follow-up."
+        assert search(db, "patients", pmid="12", section="results")["status"] == "no_matching_passage"
